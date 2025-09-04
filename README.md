@@ -50,9 +50,8 @@ pip install -r requirements.txt
 * **Datasets:** Complete vs. Incomplete SRS documents.
 * **Models:**
 
-  * `google/long-t5-tglobal-large`
-  * `google/long-t5-tglobal-xl`
-  * `allenai/led-large-16384`
+  * `google/long-t5-tglobal-base`
+  * `allenai/led-base-16384`
 * **Metrics:** Structural consistency, requirement coverage, traceability accuracy, token efficiency.
 
 ---
