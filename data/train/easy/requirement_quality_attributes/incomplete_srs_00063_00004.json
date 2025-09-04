@@ -1,0 +1,62 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Cricket Management System (CMS) defines requirements for managing cricket matches, player statistics, ticketing, and fan engagement.",
+    "[SUBSEC] 1.2 Scope": "CMS enables users to schedule matches, track player performance, manage team rosters, and facilitate ticket sales.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "CMS integrates with sports analytics tools, ticketing platforms, and live streaming services.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "CMS provides a web-based and mobile-friendly UI for team managers, players, and fans.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "CMS supports live match scoring through electronic scoreboard integration.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "CMS integrates with API services for live scores, weather updates, and ticket bookings.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "CMS ensures secure user communication via TLS encryption and notification services.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "CMS optimizes data storage for historical match records and real-time analytics.",
+      "[SUBSUBSEC] 1.3.7 Operations": "CMS automates team management, match scheduling, ticketing, and player performance tracking.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "CMS supports multilingual content and multi-region match scheduling.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "CMS connects with broadcasting networks, sports databases, and ticketing agencies."
+    },
+    "[SUBSEC] 1.4 Product Functions": "CMS provides match scheduling, live score tracking, player performance analysis, and fan engagement.",
+    "[SUBSEC] 1.5 User Characteristics": "CMS serves team managers, players, tournament organizers, and fans.",
+    "[SUBSEC] 1.6 Limitations": "CMS requires an active internet connection for real-time updates and ticket bookings.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "CMS depends on sports data providers, ticketing APIs, and regulatory approvals.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Match Schedule: Fixture details for upcoming matches."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "API: Application Programming Interface",
+      "TLS: Transport Layer Security"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall integrate with sports analytics platforms to track player statistics.",
+      "REQ-INTF-002": "The system shall support secure ticket purchases through third-party payment gateways."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall allow users to view upcoming match schedules and venues (REQ-DB-001).",
+      "REQ-FUNC-002": "The system shall enable team managers to manage player rosters and match lineups.",
+      "REQ-FUNC-003": "The system shall provide real-time live score updates for ongoing matches (REQ-INTF-001).",
+      "REQ-FUNC-004": "The system shall track player performance metrics such as runs, wickets, and strike rates."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall offer an intuitive UI for match updates, team management, and ticketing."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process match updates without significant delay under normal conditions.",
+      "REQ-PERF-002": "The system shall support at least about a hundred,000 concurrent users without performance degradation."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store match results, player statistics, ticket sales, and fan engagement data."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall comply with international sports data reporting standards."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall adhere to data security regulations, including GDPR and PCI DSS."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall ensure data integrity, secure transactions, and seamless user experience (REQ-DSGN-001)."
+    }
+  },
+  "[SEC] 3. Verification": "Match accuracy checks, ticket sales validation, and security audits ensure reliability.",
+  "[SEC] 4. Supporting Information": "User manuals, API documentation, and sports data integration guidelines.",
+  "[SEC] 5. References": "GDPR compliance, PCI DSS guidelines, and international cricket regulations."
+}

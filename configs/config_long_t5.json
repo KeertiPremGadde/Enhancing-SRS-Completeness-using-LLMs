@@ -1,0 +1,42 @@
+{
+    "debug_mode": false,
+    "model": {
+      "name": "long-t5-tglobal-base",
+      "path": "/home/gadde/Thesis/models/pretrained/long-t5-tglobal-base",
+      "tokenizer_path": "/home/gadde/Thesis/models/pretrained/long-t5-tglobal-base",
+      "max_input_tokens": 925,
+      "max_output_tokens": 1024
+    },
+    "data": {
+      "train_mapping": "/home/gadde/Thesis/data/train/train_mapping.json",
+      "val_mapping": "/home/gadde/Thesis/data/val/val_mapping.json",
+      "test_mapping": "/home/gadde/Thesis/data/test/test_mapping.json"
+    },
+    "training": {
+      "batch_size": 1,
+      "learning_rate": 5e-6,
+      "num_epochs": 20,
+      "save_interval": 10,
+      "save_dir": "/home/gadde/Thesis/experiments/long-t5-tglobal-base-original-model",
+      "optimizer": {
+        "weight_decay": 0.0,
+        "gradient_clip": 1.0
+      },
+      "scheduler": {
+        "warmup_steps": 0,
+        "warmup_ratio": 0.0
+      },
+      "lora": {
+        "r": 32,
+        "alpha": 128,
+        "dropout": 0.05,
+        "target_modules": ["q", "k", "v", "o", "wi", "wo"]
+      },
+      "early_stopping": {
+        "enabled": true,
+        "patience": 3,
+        "min_delta": 0.001
+      }
+    }
+  }
+  

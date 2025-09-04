@@ -1,0 +1,65 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Qheadache defines requirements for developers and testers to implement game features and UI.",
+    "[SUBSEC] 1.2 Scope": "Qheadache is a standalone puzzle game designed to provide an interactive interface for solving user-defined challenges.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "Qheadache integrates with mouse, keyboard, and display systems for user interaction.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "Qheadache supports graphical menus, real-time visual feedback, and sound effects.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "Requires a keyboard, mouse, and a display with a minimum resolution of 800x600.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "Built using the Qt graphical library, ensuring compatibility with all Qt-supported platforms.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "Handles user input and output via mouse, keyboard, and graphical display.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "The system optimizes memory usage to support seamless gameplay.",
+      "[SUBSUBSEC] 1.3.7 Operations": "Qheadache supports single-player mode with game state management.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "Compatible with all systems that meet hardware and software specifications.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "No external service integrations required."
+    },
+    "[SUBSEC] 1.4 Product Functions": "Qheadache provides undo/redo functionality, time tracking, and score management.",
+    "[SUBSEC] 1.5 User Characteristics": "Intended for users aged 8 and above with basic computer skills.",
+    "[SUBSEC] 1.6 Limitations": "Requires compatible hardware and a Qt-supported OS.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "Requires functional Qt graphical libraries and compatible hardware.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Game Board: Interactive puzzle area.",
+      "Statistics: Tracks performance metrics."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "Qt: Graphical user interface library."
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall support mouse and keyboard for gameplay interactions.",
+      "REQ-INTF-002": "The system shall require a graphical display with a minimum resolution of 800x600."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall support undo/redo functionality for up to 1,000 actions (REQ-DB-001).",
+      "REQ-FUNC-002": "The system shall track and display user actions and elapsed time during gameplay.",
+      "REQ-FUNC-003": "The system shall record and display scores, associating them with user profiles (REQ-DB-002)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an intuitive menu system with graphical elements.",
+      "REQ-USAB-002": "The game shall provide real-time visual feedback for user actions."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall update user statistics within 1 second of an action and provide a lag-free experience."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store undo/redo history for up to 1,000 actions.",
+      "REQ-DB-002": "The system shall securely store player scores and performance statistics."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall follow a modular architecture for easier updates.",
+      "REQ-DSGN-002": "The software shall comply with Qt-supported operating system guidelines."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with cross-platform graphical standards supported by Qt.",
+      "REQ-COMP-002": "The system shall meet accessibility standards to accommodate users with visual impairments."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall be portable across Windows and other Qt-supported platforms.",
+      "REQ-ATTR-002": "The system shall log errors for debugging and troubleshooting."
+    }
+  },
+  "[SEC] 3. Verification": "Testing validates undo/redo, performance, and UI.",
+  "[SEC] 4. Supporting Information": "Setup guides, user manuals, and game optimization practices.",
+  "[SEC] 5. References": "Qt documentation and UI design standards."
+}

@@ -1,0 +1,62 @@
+{
+    "[SEC] 1. Introduction": {
+      "[SUBSEC] 1.1 Purpose": "The Grid 3D defines requirements for a scientific visualization tool enabling efficient 3D data exploration and analysis.",
+      "[SUBSEC] 1.2 Scope": "Grid 3D supports 3D visualization, grid manipulation, and interactive exploration for research.",
+      "[SUBSEC] 1.3 Product Perspective": {
+        "[SUBSUBSEC] 1.3.1 System Interfaces": "Grid 3D integrates with visualization tools and sensors for structured input.",
+        "[SUBSUBSEC] 1.3.2 User Interfaces": "Grid 3D provides an interactive 3D dashboard with zoom, rotation, and selection.",
+        "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "Grid 3D operates on personal computers with keyboard and mouse input.",
+        "[SUBSUBSEC] 1.3.4 Software Interfaces": "Grid 3D is compatible with Matlab for preprocessing and deploys via Tomcat/Apache.",
+        "[SUBSUBSEC] 1.3.5 Communications Interfaces": "Grid 3D supports Windows and Linux.",
+        "[SUBSUBSEC] 1.3.6 Memory Constraints": "Grid 3D supports datasets up to 2,000 points.",
+        "[SUBSUBSEC] 1.3.7 Operations": "Grid 3D supports real-time 3D plotting, zooming, rotating, and grid modifications.",
+        "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "Grid 3D adapts to research environments.",
+        "[SUBSUBSEC] 1.3.9 Interfaces with Services": "Grid 3D integrates with Matlab, Apache, and scientific tools."
+      },
+      "[SUBSEC] 1.4 Product Functions": "Grid 3D enables 3D plotting, dynamic labeling, zooming, and data exploration.",
+      "[SUBSEC] 1.5 User Characteristics": "Grid 3D supports researchers, students, and analysts.",
+      "[SUBSEC] 1.6 Limitations": "Grid 3D requires compatible OS, hardware, and data formats.",
+      "[SUBSEC] 1.7 Assumptions and Dependencies": "Grid 3D assumes Matlab, Tomcat, and supported hardware availability.",
+      "[SUBSEC] 1.8 Definitions": [
+        "Grid 3D: A tool for 3D visualization.",
+        "Cluster Title: Groups data points by attributes."
+      ],
+      "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+        "NIMR: National Institute for Medical Research"
+      ]
+    },
+    "[SEC] 2. Requirements": {
+      "[SUBSEC] 2.1 External Interfaces": {
+        "REQ-INTF-001": "The system shall accept structured text files.",
+        "REQ-INTF-002": "The system shall generate interactive 3D visualizations."
+      },
+      "[SUBSEC] 2.2 Functions": {
+        "REQ-FUNC-001": "The system shall plot data points using user-defined parameters (REQ-INTF-001).",
+        "REQ-FUNC-002": "The system shall label axes based on dataset headers (REQ-INTF-001).",
+        "REQ-FUNC-003": "The system shall allow grid rotation, zoom, and movement.",
+        "REQ-FUNC-004": "The system shall enable multiple point selection for analysis (REQ-FUNC-001)."
+      },
+      "[SUBSEC] 2.3 Usability Requirements": {
+        "REQ-USAB-001": "The system shall provide intuitive grid controls and point selection (REQ-FUNC-003)."
+      },
+      "[SUBSEC] 2.4 Performance Requirements": {
+        "REQ-PERF-001": "The system shall respond to zoom, rotation, and selection inputs within 2 seconds (REQ-FUNC-003)."
+      },
+      "[SUBSEC] 2.5 Logical Database Requirements": {
+        "REQ-DB-001": "The system shall store user grid settings for future sessions (REQ-FUNC-001).",
+        "REQ-DB-002": "The system shall maintain metadata records for traceability (REQ-FUNC-002)."
+      },
+      "[SUBSEC] 2.6 Design Constraints": {
+        "REQ-DSGN-001": "The system shall be compatible with Windows and Linux (REQ-INTF-002)."
+      },
+      "[SUBSEC] 2.7 Standards Compliance": {
+        "REQ-COMP-001": "The system shall comply with scientific visualization standards."
+      },
+      "[SUBSEC] 2.8 Software System Attributes": {
+        "REQ-ATTR-001": "The system shall maintain 99% reliability during visualization (REQ-PERF-001)."
+      }
+    },
+    "[SEC] 3. Verification": "Functional and performance tests shall validate plotting, labeling, and grid manipulation.",
+    "[SEC] 4. Supporting Information": "User manuals, configuration guides, and sample datasets.",
+    "[SEC] 5. References": "Grid 3D Design Documents, Matlab Integration Guidelines, Apache Deployment Instructions."
+  }

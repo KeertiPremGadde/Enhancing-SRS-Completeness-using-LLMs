@@ -1,0 +1,63 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Flight Management System (FMS) defines requirements for flight scheduling, pilot assignments, and aircraft tracking.",
+    "[SUBSEC] 1.2 Scope": "FMS supports airline operations, real-time flight monitoring, pilot scheduling, and aircraft maintenance tracking.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "FMS integrates with airline databases, airport systems, and pilot records for scheduling and compliance tracking.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "FMS provides web-based and mobile dashboards for administrators, pilots, and schedulers.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "FMS supports desktop workstations, mobile devices for pilots, and integration with control tower systems.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "FMS uses PostgreSQL for structured storage  REST APIs for flight scheduling  pilot assignments  aircraft tracking.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "FMS secures all communications via TLS encryption and multi-factor authentication.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "FMS is optimized for high-frequency flight operations and real-time status updates.",
+      "[SUBSUBSEC] 1.3.7 Operations": "FMS manages flight scheduling  pilot availability  aircraft readiness tracking.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "FMS is configurable for commercial and private airline operations.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "FMS connects with air traffic control  maintenance  and compliance reporting systems."
+    },
+    "[SUBSEC] 1.4 Product Functions": "FMS schedules flights  assigns pilots  tracks aircraft statuses  and ensures compliance with aviation regulations.",
+    "[SUBSEC] 1.5 User Characteristics": "Designed for airline administrators  flight schedulers  pilots  and maintenance staff managing airline operations.",
+    "[SUBSEC] 1.6 Limitations": "FMS requires continuous network connectivity for real-time flight monitoring and scheduling.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "FMS relies on accurate flight schedules  pilot availability  aircraft maintenance records.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Captain: Lead pilot.",
+      "Flight: Scheduled trip."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "FMS: Flight Management System",
+      "TLS: Transport Layer Security"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall integrate with airport databases for tracking flight schedules, departures, and arrivals.",
+      "REQ-INTF-002": "The system shall synchronize aircraft maintenance data."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall schedule flights, assign pilots based on availability, and track aircraft operational status (REQ-DB-001).",
+      "REQ-FUNC-002": "The system shall ensure each flight has a pilot, co-pilot, and captain (REQ-DB-002).",
+      "REQ-FUNC-003": "The system shall track aircraft states, including working, under repair, airborne, and landed (REQ-DB-003)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide a dashboard for flight and pilot management."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process scheduling and pilot assignments within 2 seconds."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store flight schedules, pilot assignments, and aircraft details.",
+      "REQ-DB-002": "The system shall store pilot data, including experience and roles.",
+      "REQ-DB-003": "The system shall store aircraft status, maintenance records, and logs."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall enforce authentication, role-based access controls, encrypted communication, and activity logging."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with aviation regulations."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall log flight changes, pilot assignments, and aircraft status updates."
+    }
+  },
+  "[SEC] 3. Verification": "Tests scheduling, assignments, aircraft tracking, and maintenance logs.",
+  "[SEC] 4. Supporting Information": "User guides, API documentation, compliance manuals.",
+  "[SEC] 5. References": "Aviation regulations, airline policies, and air traffic control standards."
+}

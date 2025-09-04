@@ -1,0 +1,63 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Municipal Library System (MLS) defines requirements for managing members  cataloging  borrowing  returns  and renewals.",
+    "[SUBSEC] 1.2 Scope": "MLS enables structured library operations  supporting registration  book classification  loan enforcement  overdue tracking  and consultation-only access.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "MLS integrates with member databases  identity verification  and cataloging systems for updates.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "MLS provides dashboards for managing subscriptions  catalog browsing  and loan tracking.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "MLS supports barcode scanners  computing devices for loan processing.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "MLS connects with PostgreSQL for storage  using REST APIs for identity verification  transaction history.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "MLS secures data via OAuth 2.0 authentication  JWT  and HTTPS encryption.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "MLS optimizes storage to handle large-scale document indexing  borrowing transactions.",
+      "[SUBSUBSEC] 1.3.7 Operations": "MLS ensures 24/7 availability with automated backups  scheduled maintenance.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "MLS is configurable for single  multi-branch library operations.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "MLS integrates with cloud/on-premise deployments  supporting cataloging services for document updates."
+    },
+    "[SUBSEC] 1.4 Product Functions": "MLS manages member subscriptions  document classification  book borrowing  overdue tracking  renewals.",
+    "[SUBSEC] 1.5 User Characteristics": "MLS serves librarians  registered members  system administrators.",
+    "[SUBSEC] 1.6 Limitations": "MLS requires internet connectivity for real-time borrowing extensions  catalog updates  identity verification.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "MLS relies on document classification  member records  external cataloging systems.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Member: User eligible to borrow.",
+      "Document: Cataloged item."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "MLS: Municipal Library System",
+      "API: Application Programming Interface",
+      "JWT: JSON Web Token"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall integrate with identity databases for member verification.",
+      "REQ-INTF-002": "The system shall connect with cataloging systems for document updates."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall allow librarians to register and manage members  including subscriptions and cancellations (REQ-DB-001).",
+      "REQ-FUNC-002": "The system shall classify documents as books  dictionaries  or comics  for cataloging (REQ-DB-001).",
+      "REQ-FUNC-003": "The system shall allow members to borrow up to 3 books  enforcing due dates and renewal requests  blocking overdue members until return (REQ-DB-001  REQ-INTF-002).",
+      "REQ-FUNC-004": "The system shall track borrowed books and return dates  preventing unauthorized extensions beyond policy limits (REQ-DB-001)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an interface to manage borrowing  returning  tracking."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process borrowing in 2 seconds."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall securely store member details  borrowing records  document classifications."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall ensure unique member  document IDs."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with data protection laws for member privacy."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall log all transactions  overdue instances  borrowing history for auditing."
+    }
+  },
+  "[SEC] 3. Verification": "Tests membership management  document classification  borrowing  renewals.",
+  "[SEC] 4. Supporting Information": "User manuals  API documentation  compliance policies.",
+  "[SEC] 5. References": "Library regulations  data protection laws  cataloging standards."
+}

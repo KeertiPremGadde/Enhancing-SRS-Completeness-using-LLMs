@@ -1,0 +1,67 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Factory Management System (FMS) defines requirements for managing factory machines, workers, production, and orders.",
+    "[SUBSEC] 1.2 Scope": "FMS supports machine tracking, workforce management, and order processing.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "FMS integrates with inventory, scheduling, CRM, and IoT systems.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "FMS allows managers and workers to oversee production and orders.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "FMS supports workstations, barcode scanners, and IoT devices.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "FMS uses PostgreSQL, MongoDB, REST APIs, and OAuth 2.0.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "FMS secures data via TLS encryption and access control.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "FMS is optimized for real-time data processing.",
+      "[SUBSUBSEC] 1.3.7 Operations": "FMS manages machines, workers, and orders.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "FMS is configurable for factory layouts.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "FMS connects with maintenance tools, suppliers, and compliance databases."
+    },
+    "[SUBSEC] 1.4 Product Functions": "FMS tracks machines, workers, production, and orders.",
+    "[SUBSEC] 1.5 User Characteristics": "FMS is designed for managers, operators, and planners.",
+    "[SUBSEC] 1.6 Limitations": "FMS requires updated machine and worker data.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "FMS relies on accurate schedules and maintenance logs.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Machine: Factory equipment used in production.",
+      "Worker: Employee assigned to factory tasks.",
+      "Product: Manufactured item in the production process."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "FMS: Factory Management System",
+      "API: Application Programming Interface",
+      "CRM: Customer Relationship Management",
+      "IoT: Internet of Things",
+      "TLS: Transport Layer Security"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall manage machine, worker, and order records (REQ-PERF-001).",
+      "REQ-INTF-002": "The system shall track production status, materials, and quality metrics (REQ-DB-90)."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall manage worker assignments, machine operations, and shift scheduling, generating alerts for pending shifts (REQ-DB-36).",
+      "REQ-FUNC-002": "The system shall track client orders, including status, delivery, and associated production schedules (REQ-DB-36).",
+      "REQ-FUNC-003": "The system shall log machine performance, maintenance, and downtime, generating alerts for failures (REQ-PERF-003)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an interface for managing production workflows."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall update logs and order statuses in real-time.",
+      "REQ-PERF-002": "The system shall process maintenance requests within 5 seconds."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store machine, worker, shift, and order records.",
+      "REQ-DB-002": "The system shall track production, materials, and performance history."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall ensure unique identification for machines, workers, and orders."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with safety and labor regulations."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall maintain logs for audits and compliance."
+    }
+  },
+  "[SEC] 3. Verification": "Tests machine tracking, worker scheduling, production, and order fulfillment.",
+  "[SEC] 4. Supporting Information": "User manuals, API documentation, and compliance guidelines.",
+  "[SEC] 5. References": "Factory safety laws, maintenance policies, and automation standards."
+}

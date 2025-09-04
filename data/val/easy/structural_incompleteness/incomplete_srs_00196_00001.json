@@ -1,0 +1,60 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.2 Scope": "RMS supports job posting, application management, screening, interview scheduling, communication, and skill assessments.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "RMS integrates with job boards, email services, applicant tracking systems, and background check platforms.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "RMS provides a web and mobile UI for recruiters, hiring managers, and job seekers.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "RMS supports desktops, tablets, and smartphones.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "RMS uses REST APIs, authentication protocols, and cloud storage.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "RMS optimizes storage for job postings, candidate applications, and interview data.",
+      "[SUBSUBSEC] 1.3.7 Operations": "RMS allows job posting, candidate tracking, interview scheduling, and job seeker communication.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "RMS customizes job recommendations and hiring workflows.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "RMS connects with payroll, HR platforms, and professional networking sites.",
+      "[SUBSUBSEC] 1.3.5 MISSING-TAG2": "RMS provides email notifications, messaging, and interview scheduling tools."
+    },
+    "[SUBSEC] 1.4 Product Functions": "RMS facilitates job posting, applicant tracking, interview scheduling, candidate assessments, and reporting.",
+    "[SUBSEC] 1.5 User Characteristics": "RMS serves recruiters, hiring managers, job seekers, and HR administrators.",
+    "[SUBSEC] 1.6 Limitations": "RMS requires internet access for job search, application submission, and interview scheduling.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "RMS relies on integration with third-party job boards, cloud-based databases, and communication platforms.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Applicant Tracking: Managing candidate applications."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "UI: User Interface",
+      "REST: Representational State Transfer"
+    ],
+    "[SUBSEC] 1.1 MISSING-TAG1": "The Recruitment Management System (RMS) helps recruiters manage job listings, applications, interviews, and hiring while job seekers can search, apply, and track jobs."
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall allow recruiters to create and publish job listings with descriptions, qualifications, and application requirements.",
+      "REQ-INTF-002": "The system shall enable job seekers to search, filter, and apply for jobs based on location, salary, and experience.",
+      "REQ-INTF-003": "The system shall support integration with external recruitment services, assessment tools, and social media platforms."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall allow job seekers to create profiles, upload resumes, submit applications, and receive automated notifications of their job applications (REQ-INTF-001, REQ-DB-001).",
+      "REQ-FUNC-002": "The system shall enable recruiters to screen resumes, track applications, schedule interviews, and conduct skills assessments, including customizable pre-screening tests (REQ-INTF-002, REQ-DB-001)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an intuitive UI for job posting, application tracking, and communication."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process job postings, applications, and notifications within 2 seconds."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall support secure data encryption for applicant and recruiter information."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with employment data protection regulations and equal hiring practices."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall ensure secure authentication and encrypted data storage."
+    },
+    "[SUBSEC] 2.5 MISSING-TAG3": {
+      "REQ-DB-001": "The system shall store job listings, applicant profiles, resumes, interview schedules, and feedback."
+    }
+  },
+  "[SEC] 3. Verification": "Tests validate job posting, candidate management, and interview workflows.",
+  "[SEC] 4. Supporting Information": "User guides, API documentation, and compliance guidelines.",
+  "[SEC] 5. References": "Recruitment policies, hiring regulations, and HR standards."
+}

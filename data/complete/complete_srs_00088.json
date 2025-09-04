@@ -1,0 +1,64 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Banking Management System (BMS) defines requirements for managing banking agencies, employees, customers, and transactions.",
+    "[SUBSEC] 1.2 Scope": "BMS supports agency operations, employee management, customer accounts, and secure transactions.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "BMS integrates with financial databases, regulatory platforms, and banking records.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "BMS provides web and mobile dashboards for administrators, directors, and employees.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "BMS supports banking terminals, biometrics, and ATMs.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "BMS uses PostgreSQL and REST/SOAP APIs for storage and transactions.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "BMS secures transactions via TLS encryption and multi-factor authentication.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "Optimized for high-volume transactions and real-time updates.",
+      "[SUBSUBSEC] 1.3.7 Operations": "BMS manages agencies, employees, customer accounts, and transactions.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "Configurable for agencies across regions.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "Integrates with regulatory bodies, credit bureaus, and tax authorities."
+    },
+    "[SUBSEC] 1.4 Product Functions": "BMS handles agency management, employee records, customer accounts, and transactions.",
+    "[SUBSEC] 1.5 User Characteristics": "Designed for administrators, directors, analysts, and auditors.",
+    "[SUBSEC] 1.6 Limitations": "Requires network connectivity for transactions.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "Depends on regulations, data integrity, and authentication.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Agency: Bank branch.",
+      "Customer: Bank account holder."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "BMS: Banking Management System",
+      "TLS: Transport Layer Security",
+      "API: Application Programming Interface"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+  "[SUBSEC] 2.1 External Interfaces": {
+    "REQ-INTF-001": "The system shall integrate with financial databases to manage customer records and transactions (REQ-DB-001).",
+    "REQ-INTF-002": "The system shall connect with regulatory bodies for compliance reporting and audits (REQ-DB-002)."
+  },
+  "[SUBSEC] 2.2 Functions": {
+    "REQ-FUNC-001": "The system shall manage agencies, directors, employees, and customer accounts (REQ-DB-001, REQ-DB-003).",
+    "REQ-FUNC-002": "The system shall track employee transfers between agencies and maintain an audit log (REQ-DB-002).",
+    "REQ-FUNC-003": "The system shall generate reports on financial performance, employee activity, and transaction history (REQ-DB-003)."
+  },
+  "[SUBSEC] 2.3 Usability Requirements": {
+    "REQ-USAB-001": "The system shall provide an interactive dashboard for banking transactions, compliance monitoring, and reporting."
+  },
+  "[SUBSEC] 2.4 Performance Requirements": {
+    "REQ-PERF-001": "The system shall process financial transactions within 3 seconds."
+  },
+  "[SUBSEC] 2.5 Logical Database Requirements": {
+    "REQ-DB-001": "The system shall store details of agencies, employees, directors, customers, and accounts.",
+    "REQ-DB-002": "The system shall store regulatory compliance records, audit logs, and risk assessments.",
+    "REQ-DB-003": "The system shall store transaction history, deposits, withdrawals, account balances, account types, and interest rates."
+  },
+  "[SUBSEC] 2.6 Design Constraints": {
+    "REQ-DSGN-001": "The system shall enforce authentication, encryption, and role-based access control mechanisms."
+  },
+  "[SUBSEC] 2.7 Standards Compliance": {
+    "REQ-COMP-001": "The system shall comply with banking security regulations, anti-money laundering laws, and financial audit requirements."
+  },
+  "[SUBSEC] 2.8 Software System Attributes": {
+    "REQ-ATTR-001": "The system shall log account activities, transaction approvals, and compliance reports for auditing."
+  }
+},
+"[SEC] 3. Verification": "Unit and integration tests validate agency management, transactions, and employee transfers.",
+"[SEC] 4. Supporting Information": "User manuals, API documentation, and compliance guidelines.",
+"[SEC] 5. References": "Financial regulations, banking security policies, and compliance standards."
+}

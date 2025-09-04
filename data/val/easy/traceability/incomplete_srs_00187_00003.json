@@ -1,0 +1,63 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Bank Management System (BMS) defines requirements for managing accounts, financial transactions, and stock trading.",
+    "[SUBSEC] 1.2 Scope": "BMS supports account management, savings, interest calculations, stock trading, and reporting.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "BMS integrates with stock exchanges, tax services, and customer databases.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "BMS provides web and mobile platforms for account and investment management.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "BMS supports ATMs, banking terminals, and secure mobile devices.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "BMS uses PostgreSQL for storage  REST APIs for transactions  account operations  and stock trading.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "BMS ensures encrypted transactions via TLS and two-factor authentication.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "BMS is optimized for high-frequency transactions and real-time stock data.",
+      "[SUBSUBSEC] 1.3.7 Operations": "BMS handles deposits, withdrawals, stock trades, and interest calculations.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "BMS is configurable for banking institutions with custom policies.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "BMS integrates with fraud detection, taxation, and reporting systems."
+    },
+    "[SUBSEC] 1.4 Product Functions": "BMS manages customer accounts, transactions, stock investments, interest applications, and commissions.",
+    "[SUBSEC] 1.5 User Characteristics": "BMS is designed for customers  bank staff  and investors needing secure financial tools.",
+    "[SUBSEC] 1.6 Limitations": "BMS requires internet connectivity for real-time transactions.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "BMS relies on real-time market data  secure authentication  and compliance rules.",
+    "[SUBSEC] 1.8 Definitions": {
+      "Ticker": "Stock market identifier."
+    },
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": {
+      "BMS": "Bank Management System",
+      "TLS": "Transport Layer Security"
+    }
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall integrate with customer databases for authentication and account management.",
+      "REQ-INTF-002": "The system shall connect with stock trading platforms to execute buy and sell orders."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall allow customers to open and manage savings and investment accounts (REQ-DB-001).",
+      "REQ-FUNC-002": "The system shall apply interest to savings accounts at set intervals (REQ-DB-002).",
+      "REQ-FUNC-003": "The system shall allow users to trade stocks by specifying ticker, quantity, and order type (REQ-DB-003).",
+      "REQ-FUNC-004": "The system shall apply a commission on stock transactions, deducted from the transaction (REQ-DB-003)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide a dashboard for tracking accounts and investments."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process financial transactions within 3 seconds."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store customer details  including name  address  account type  and balance.",
+      "REQ-DB-002": "The system shall store savings balances  accrued interest  and transaction history.",
+      "REQ-DB-003": "The system shall store stock trades  including ticker  quantity  fees  and timestamps."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall enforce encryption and multi-factor authentication."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with banking security regulations  financial monitoring  and anti-money laundering policies."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall log account activities  stock trades  and transactions for auditing."
+    }
+  },
+  "[SEC] 3. Verification": "Tests accounts, transactions, trades, and interest.",
+  "[SEC] 4. Supporting Information": "User guides, API documentation, and banking compliance manuals.",
+  "[SEC] 5. References": "Financial regulations, stock trading policies, and security standards."
+}

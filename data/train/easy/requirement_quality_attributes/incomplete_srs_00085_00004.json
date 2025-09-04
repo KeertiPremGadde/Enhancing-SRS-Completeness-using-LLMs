@@ -1,0 +1,63 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Hotel Management System (HMS) defines requirements for managing reservations, occupancy, staff, and financial transactions.",
+    "[SUBSEC] 1.2 Scope": "HMS supports room booking, guest check-ins, staff management, rent calculations, and financial reporting.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "HMS integrates with reservation databases, payment gateways, and guest records.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "HMS provides dashboards for managers, staff, and guests to manage reservations and transactions.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "HMS supports POS terminals, computing devices, and mobile access.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "HMS uses PostgreSQL for structured storage  REST APIs for reservations  billing  and staff management.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "HMS secures transactions via TLS encryption and multi-factor authentication.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "HMS is optimized for high-traffic booking operations and financial transactions.",
+      "[SUBSUBSEC] 1.3.7 Operations": "HMS manages room allocation  guest tracking  billing  financial reports.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "HMS is configurable for single and multi-chain hotels.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "HMS integrates with payment, tax, and compliance systems."
+    },
+    "[SUBSEC] 1.4 Product Functions": "HMS tracks room availability  guest check-ins  staff records  rent calculations  revenue reports.",
+    "[SUBSEC] 1.5 User Characteristics": "Designed for hotel managers  front desk staff  finance teams  and guests.",
+    "[SUBSEC] 1.6 Limitations": "HMS requires internet connectivity for real-time reservations and billing updates.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "HMS relies on accurate room availability  pricing data  and tax compliance.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Booking: Room reservation process.",
+      "Occupancy: Room status."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "HMS: Hotel Management System",
+      "TLS: Transport Layer Security"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall integrate with reservation databases for managing room availability.",
+      "REQ-INTF-002": "The system shall connect with payment gateways for processing guest transactions."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall track room occupancy, guest details, and booking periods (REQ-DB-001).",
+      "REQ-FUNC-002": "The system shall calculate rent per room using occupancy, pricing, and taxes (REQ-DB-002).",
+      "REQ-FUNC-003": "The system shall generate financial reports, including revenue, tax calculations, and discounts applied (REQ-DB-003)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide a management dashboard with search, filters, and financial tracking."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process reservations and rent calculations without significant delay."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store room details, including type, number, price, and occupancy status.",
+      "REQ-DB-002": "The system shall store guest records, including check-in, check-out, and payment history.",
+      "REQ-DB-003": "The system shall store financial transactions, including charges, taxes, and revenue data."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall enforce authentication, encryption, and role-based access controls."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with financial and hospitality industry standards."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall log booking modifications, check-ins, rent calculations, and refunds for auditing."
+    }
+  },
+  "[SEC] 3. Verification": "Tests room allocation, billing accuracy, guest tracking, and revenue calculations.",
+  "[SEC] 4. Supporting Information": "User guides, API documentation, and compliance manuals.",
+  "[SEC] 5. References": "Hospitality regulations, tax policies, and financial standards."
+}

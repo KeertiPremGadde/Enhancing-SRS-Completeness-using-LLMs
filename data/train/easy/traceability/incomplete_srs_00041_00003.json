@@ -1,0 +1,64 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Central Trading System (CTS) specifies requirements for managing stock trading, including processing, matching, and result generation.",
+    "[SUBSEC] 1.2 Scope": "CTS facilitates stock trading by analyzing instructions and matching them under specified rules while interfacing with related subsystems.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "CTS interfaces with trading client systems, databases, and information release modules.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "CTS provides an intuitive UI for inputting and managing trading instructions.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "CTS operates on systems with Intel Core i3 or AMD Ryzen 3 processors.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "CTS integrates with Java-based environments using socket programming.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "CTS supports secure communication between subsystems.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "CTS is optimized for systems with 8GB RAM for efficient trading operations.",
+      "[SUBSUBSEC] 1.3.7 Operations": "CTS manages trading instructions and ensures consistent data handling.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "CTS is configurable for various financial regulatory requirements.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "CTS interoperates with APIs for enhanced trading functionalities."
+    },
+    "[SUBSEC] 1.4 Product Functions": "CTS processes buy, sell, and cancel instructions while maintaining trading logs.",
+    "[SUBSEC] 1.5 User Characteristics": "CTS is designed for traders and system maintainers with intermediate technical knowledge.",
+    "[SUBSEC] 1.6 Limitations": "CTS requires a stable internet connection and supported hardware.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "CTS relies on Java Runtime Environment 17+ and supported operating systems.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Trading Instruction: Stock buy, sell, or cancel request.",
+      "Instruction Matching: Pairing compatible trade instructions."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "CTS: Central Trading System",
+      "UI: User Interface"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall accept trading instructions from the Transaction User Interface.",
+      "REQ-INTF-002": "The system shall send processed trading results to the Information Release Module."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall process buy, sell, and cancel instructions (REQ-INTF-001).",
+      "REQ-FUNC-002": "The system shall match instructions based on predefined rules (REQ-INTF-001).",
+      "REQ-FUNC-003": "The system shall log all processed instructions for audit purposes (REQ-INTF-002)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The interface shall provide real-time feedback for trading actions."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process 100 instructions per second.",
+      "REQ-PERF-002": "The system shall handle 1,000 concurrent users without performance degradation."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store trade logs for a minimum of 5 years.",
+      "REQ-DB-002": "The system shall ensure data integrity during concurrent accesses."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall adhere to modular design principles for scalability."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with financial data security regulations."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall maintain 99.9% uptime during trading hours.",
+      "REQ-ATTR-002": "User actions shall receive feedback within 2 seconds."
+    }
+  },
+  "[SEC] 3. Verification": "Unit and integration tests validate trading operations and system reliability.",
+  "[SEC] 4. Supporting Information": "User manuals, API documentation, and example trading workflows.",
+  "[SEC] 5. References": "CTS Technical Manual, Financial Data Standards, and Java Development Guidelines."
+}

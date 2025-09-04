@@ -1,0 +1,66 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Integrated Disaster Management System (IDMS) defines requirements to improve disaster preparedness, response, and recovery.",
+    "[SUBSEC] 1.2 Scope": "IDMS supports resource management, incident tracking, and stakeholder communication during disasters.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "IDMS provides intuitive dashboards and mobile applications for responders and administrators.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "IDMS operates on standard desktops, tablets, and smartphones.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "IDMS supports APIs for integration with third-party services and legacy systems.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "IDMS uses secure HTTPS protocols for data transmission.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "IDMS is optimized for real-time data updates and analytics.",
+      "[SUBSUBSEC] 1.3.7 Operations": "IDMS ensures 24/7 availability with disaster resilience and failover support.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "Configurable for diverse disaster scenarios and operational regions.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "IDMS connects to weather monitoring systems and notification services.",
+      "[SUBSUBSEC] 1.3.1 MISSING-TAG2": "IDMS integrates with GIS tools, emergency response applications, and resource management systems."
+    },
+    "[SUBSEC] 1.4 Product Functions": "IDMS facilitates resource allocation, incident management, and real-time reporting.",
+    "[SUBSEC] 1.5 User Characteristics": "Designed for emergency responders, administrators, and analysts with basic system training.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "IDMS assumes compatibility with GIS tools and adherence to disaster management protocols.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Incident: Coordinated disaster response event.",
+      "Resource: Assets used for disaster management."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "IDMS: Integrated Disaster Management System",
+      "GIS: Geographic Information System"
+    ],
+    "[SUBSEC] 1.6 MISSING-TAG1": "IDMS relies on stable network connectivity and operational third-party systems."
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall integrate with GIS tools for geospatial data visualization.",
+      "REQ-INTF-002": "The system shall connect to weather monitoring services for real-time updates."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall allow users to allocate resources dynamically during incidents (REQ-DB-001).",
+      "REQ-FUNC-002": "The system shall track incident updates in real time (REQ-DB-002)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide user-friendly dashboards for incident management.",
+      "REQ-USAB-002": "The system shall support multilingual functionality for global usage."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process resource allocation requests within 3 seconds (REQ-DB-001).",
+      "REQ-PERF-002": "The system shall support up to 1,500 concurrent users."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store incident data, resource inventories, and communication logs.",
+      "REQ-DB-002": "The database shall enable role-based access and historical data retrieval."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with ISO 22301 for business continuity management.",
+      "REQ-COMP-002": "The system shall adhere to ISO 27001 for data security."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall dynamically scale during disaster events.",
+      "REQ-ATTR-002": "The system shall log critical activities for auditing."
+    },
+    "[SUBSEC] 2.6 MISSING-TAG3": {
+      "REQ-DSGN-001": "The system shall adhere to a modular design for scalability.",
+      "REQ-DSGN-002": "The system shall comply with disaster response security protocols."
+    }
+  },
+  "[SEC] 3. Verification": "Functional validation, performance benchmarks, and compliance testing.",
+  "[SEC] 4. Supporting Information": "User manuals, training materials, and best practices for disaster management.",
+  "[SEC] 5. References": "ISO 22301 standards, GIS tool guides, and disaster management protocols."
+}

@@ -1,0 +1,288 @@
+{
+    "model_weights_check": {
+        "weight_tying": {
+            "embeddings_lm_head": true,
+            "encoder_decoder_shared": true
+        },
+        "training_state": {
+            "embeddings_grad": true,
+            "lm_head_grad": true,
+            "training_mode": false
+        },
+        "shape_consistency": {
+            "embeddings_shape": true,
+            "lm_head_shape": true,
+            "encoder_embed_shape": true,
+            "decoder_embed_shape": true
+        },
+        "initialization": {
+            "embeddings_std": 0.0653369203209877,
+            "lm_head_std": 0.0653369203209877
+        },
+        "attention_components": {
+            "attention_mask_fn": true,
+            "pos_embeddings_max_len": 16384
+        },
+        "device_consistency": {
+            "embeddings_device": true,
+            "lm_head_device": true,
+            "encoder_device": true,
+            "decoder_device": true
+        }
+    },
+    "hierarchical_relationships": {
+        "sec_subsec": 0.9788168668746948,
+        "subsec_subsubsec": 0.9764299988746643,
+        "sec_subsubsec": 0.9115567207336426
+    },
+    "expected_values": {
+        "expected": {
+            "SEC_BOS": 0.95,
+            "SUBSEC_SEC": 0.8,
+            "SUBSEC_BOUNDARY": 0.2,
+            "SUBSUBSEC_SUBSEC": 0.8,
+            "SUBSUBSEC_BOUNDARY": 0.2
+        },
+        "actual": {
+            "SEC_BOS": 0.9569939970970154,
+            "SUBSEC_SEC": 0.9788168668746948,
+            "SUBSEC_BOUNDARY": 0.36213943362236023,
+            "SUBSUBSEC_SUBSEC": 0.9764299988746643,
+            "SUBSUBSEC_BOUNDARY": 0.5547880530357361
+        },
+        "differences": {
+            "SEC_BOS": 0.006993997097015425,
+            "SUBSEC_SEC": 0.17881686687469478,
+            "SUBSEC_BOUNDARY": 0.16213943362236022,
+            "SUBSUBSEC_SUBSEC": 0.17642999887466426,
+            "SUBSUBSEC_BOUNDARY": 0.3547880530357361
+        }
+    },
+    "end_token_analysis": {
+        "[SEC]-[/SEC]": -0.022035332396626472,
+        "[SUBSEC]-[/SUBSEC]": -0.02500811219215393,
+        "[SUBSUBSEC]-[/SUBSUBSEC]": -0.04624103382229805
+    },
+    "random_init_check": {
+        "[/SEC]": {
+            "norm": 0.5305032134056091,
+            "mean": -0.00038281409069895744,
+            "std": 0.019151529297232628
+        },
+        "[/SUBSEC]": {
+            "norm": 0.5587683320045471,
+            "mean": -0.00030844181310385466,
+            "std": 0.02017359435558319
+        },
+        "[/SUBSUBSEC]": {
+            "norm": 0.5627394318580627,
+            "mean": -0.00024006806779652834,
+            "std": 0.0203179232776165
+        },
+        "[UNUSED1]": {
+            "norm": 0.5538602471351624,
+            "mean": -0.0009697978384792805,
+            "std": 0.019975174218416214
+        }
+    },
+    "lm_head_analysis": {
+        "[SEC]": {
+            "tied": true,
+            "input_norm": 1.840575933456421,
+            "output_norm": 1.840575933456421
+        },
+        "[SUBSEC]": {
+            "tied": true,
+            "input_norm": 1.558392882347107,
+            "output_norm": 1.558392882347107
+        },
+        "[SUBSUBSEC]": {
+            "tied": true,
+            "input_norm": 1.396759271621704,
+            "output_norm": 1.396759271621704
+        },
+        "[/SEC]": {
+            "tied": true,
+            "input_norm": 0.5305032134056091,
+            "output_norm": 0.5305032134056091
+        },
+        "[/SUBSEC]": {
+            "tied": true,
+            "input_norm": 0.5587683320045471,
+            "output_norm": 0.5587683320045471
+        },
+        "[/SUBSUBSEC]": {
+            "tied": true,
+            "input_norm": 0.5627394318580627,
+            "output_norm": 0.5627394318580627
+        },
+        "[UNUSED1]": {
+            "tied": true,
+            "input_norm": 0.5538602471351624,
+            "output_norm": 0.5538602471351624
+        }
+    },
+    "embedding_preservation": {
+        "max_difference": 0.0,
+        "average_difference": 0.0,
+        "percentage_change": 0.0,
+        "ks_test_statistic": 0.0,
+        "ks_test_p_value": 1.0
+    },
+    "padding_impact": {
+        "current_vocab_size": 50272,
+        "padded_size": 50272,
+        "padding_difference": 0,
+        "memory_usage_mb": 1548.5234375
+    },
+    "token_usage": {
+        "average_sequence_length": 21.333333333333332,
+        "special_token_frequency": {
+            "SEC": 3,
+            "SUBSEC": 3,
+            "SUBSUBSEC": 3
+        },
+        "context_window_usage": [
+            0.00146484375,
+            0.00103759765625,
+            0.00140380859375
+        ]
+    },
+    "embedding_space": {
+        "nearest_neighbors": {
+            "[SEC]": [
+                "[SUBSEC]",
+                "<s>",
+                "[SUBSUBSEC]",
+                "<pad>",
+                " RandomRedditor"
+            ],
+            "[SUBSEC]": [
+                "[SEC]",
+                "[SUBSUBSEC]",
+                "<s>",
+                "<pad>",
+                " RandomRedditor"
+            ],
+            "[SUBSUBSEC]": [
+                "[SUBSEC]",
+                "[SEC]",
+                "<s>",
+                "</s>",
+                "<pad>"
+            ]
+        },
+        "cluster_assignments": {
+            "[SEC]": 9,
+            "[SUBSEC]": 9,
+            "[SUBSUBSEC]": 9
+        }
+    },
+    "model_behavior": {
+        "[SEC] Test section\n": {
+            "special_token_scores": {
+                "SEC": 33.8618049621582,
+                "SUBSEC": 30.224916458129883,
+                "SUBSUBSEC": 27.315401077270508
+            }
+        },
+        "[SUBSEC] Test subsection\n": {
+            "special_token_scores": {
+                "SEC": 33.47193908691406,
+                "SUBSEC": 29.968109130859375,
+                "SUBSUBSEC": 27.16504669189453
+            }
+        },
+        "[SUBSUBSEC] Test subsubsection\n": {
+            "special_token_scores": {
+                "SEC": 33.397857666015625,
+                "SUBSEC": 29.908065795898438,
+                "SUBSUBSEC": 27.11622428894043
+            }
+        }
+    },
+    "performance_metrics": {
+        "tokenization_speed_ms": 16.7236328125,
+        "memory_usage_mb": 1558.953125,
+        "inference_time_ms": 2783.475875854492
+    },
+    "file_consistency": {
+        "config.json": {
+            "exists": true,
+            "size": 1213,
+            "content_summary": {
+                "_name_or_path": "str",
+                "activation_dropout": "float",
+                "activation_function": "str",
+                "architectures": "list",
+                "attention_dropout": "float",
+                "attention_window": "list",
+                "bos_token_id": "int",
+                "classif_dropout": "float",
+                "classifier_dropout": "float",
+                "d_model": "int",
+                "decoder_attention_heads": "int",
+                "decoder_ffn_dim": "int",
+                "decoder_layerdrop": "float",
+                "decoder_layers": "int",
+                "decoder_start_token_id": "int",
+                "dropout": "float",
+                "encoder_attention_heads": "int",
+                "encoder_ffn_dim": "int",
+                "encoder_layerdrop": "float",
+                "encoder_layers": "int",
+                "eos_token_id": "int",
+                "gradient_checkpointing": "bool",
+                "id2label": "dict",
+                "init_std": "float",
+                "is_encoder_decoder": "bool",
+                "label2id": "dict",
+                "max_decoder_position_embeddings": "int",
+                "max_encoder_position_embeddings": "int",
+                "model_type": "str",
+                "num_hidden_layers": "int",
+                "pad_token_id": "int",
+                "torch_dtype": "str",
+                "transformers_version": "str",
+                "use_cache": "bool",
+                "vocab_size": "int"
+            }
+        },
+        "pytorch_model.bin": {
+            "exists": true,
+            "size": 647702826
+        },
+        "special_tokens_map.json": {
+            "exists": true,
+            "size": 1964,
+            "content_summary": {
+                "additional_special_tokens": "list",
+                "bos_token": "dict",
+                "cls_token": "dict",
+                "eos_token": "dict",
+                "mask_token": "dict",
+                "pad_token": "dict",
+                "sep_token": "dict",
+                "unk_token": "dict"
+            }
+        },
+        "tokenizer_config.json": {
+            "exists": true,
+            "size": 1311,
+            "content_summary": {
+                "add_prefix_space": "bool",
+                "bos_token": "dict",
+                "clean_up_tokenization_spaces": "bool",
+                "cls_token": "dict",
+                "eos_token": "dict",
+                "errors": "str",
+                "mask_token": "dict",
+                "model_max_length": "int",
+                "pad_token": "dict",
+                "sep_token": "dict",
+                "tokenizer_class": "str",
+                "unk_token": "dict"
+            }
+        }
+    }
+}

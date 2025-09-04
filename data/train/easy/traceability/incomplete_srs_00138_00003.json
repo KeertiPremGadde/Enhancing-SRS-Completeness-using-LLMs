@@ -1,0 +1,63 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Online Registration System (ORS) defines requirements for self-service student registration, secure access, and high system availability while ensuring compliance with authentication policies.",
+    "[SUBSEC] 1.2 Scope": "ORS supports student enrollment, role-based access, administrative controls, and real-time course updates.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "ORS integrates with student databases, authentication services, and course catalog systems.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "ORS provides a responsive web UI for students, administrators, and IT support.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "ORS operates on cloud-hosted infrastructure with automatic scalability.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "ORS utilizes React.js for frontend, Node.js with Express for backend, PostgreSQL for data storage, and Redis for caching.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "ORS ensures encrypted data exchange via TLS 1.3 and OAuth 2.0 authentication.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "ORS optimizes concurrent student registrations with efficient query processing.",
+      "[SUBSUBSEC] 1.3.7 Operations": "ORS maintains 24/7 availability with IT and DBA support for issue resolution.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "ORS supports cross-browser and mobile-friendly access.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "ORS links to authentication, course management, and student record systems."
+    },
+    "[SUBSEC] 1.4 Product Functions": "ORS facilitates student registration, course selection, access control, and administrative oversight.",
+    "[SUBSEC] 1.5 User Characteristics": "ORS is designed for students, administrators, and IT teams managing system access and troubleshooting.",
+    "[SUBSEC] 1.6 Limitations": "ORS requires secure authentication, stable network connectivity, and periodic maintenance.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "ORS depends on authentication services, cloud infrastructure, and secured data transactions.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Self-Service: Users independently manage registration.",
+      "Access Control: Role-based permission enforcement."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "UI: User Interface",
+      "DBA: Database Administrator",
+      "TLS: Transport Layer Security",
+      "OAuth: Open Authorization"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall authenticate users via OAuth 2.0 and enforce role-based access.",
+      "REQ-INTF-002": "The system shall provide an online self-service registration portal with real-time updates."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall allow students to register, modify, or cancel course enrollments while ensuring real-time availability (REQ-INTF-002).",
+      "REQ-FUNC-002": "The system shall enforce access controls, allowing students to manage only their records while administrators have full system privileges (REQ-INTF-001).",
+      "REQ-FUNC-003": "The system shall maintain 24/7 uptime, providing IT and DBA support for issue resolution (REQ-INTF-001)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide a structured UI that enables students to complete registration with minimal guidance."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process registration requests within 3 seconds and reflect updates instantly."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall securely store student records, registration history, and course schedules."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall support cloud deployment with high availability and automatic scaling."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with authentication and data protection policies, ensuring secure access control (REQ-INTF-001)."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall ensure real-time registration updates and transaction security while minimizing downtime."
+    }
+  },
+  "[SEC] 3. Verification": "Registration workflows, uptime monitoring, and access control shall be tested.",
+  "[SEC] 4. Supporting Information": "User guides, API references, and security policies.",
+  "[SEC] 5. References": "Best practices for registration, authentication, and data security compliance."
+}

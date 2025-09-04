@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+venv/
+.env
+
+# VS Code
+.vscode/
+.history/
+
+# Jupyter / cache
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project: large artifacts
+models/
+experiments/
+data/**/images/
+data/**/raw/
+data/**/cache/
+data/**/tmp/
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.onnx
+*.zip
+*.7z
+*.tar
+*.gz

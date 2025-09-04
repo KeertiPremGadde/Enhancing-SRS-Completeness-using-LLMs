@@ -1,0 +1,63 @@
+{
+    "[SEC] 1. Introduction": {
+      "[SUBSEC] 1.1 Purpose": "The Banking System (BS) defines the requirements for online banking, financial management, secure transactions, and accessibility.",
+      "[SUBSEC] 1.2 Scope": "BS enables customers to manage finances, transactions, credit, and secure banking.",
+      "[SUBSEC] 1.3 Product Perspective": {
+        "[SUBSUBSEC] 1.3.1 System Interfaces": "BS integrates with payment gateways, currency exchange APIs, and fraud detection systems.",
+        "[SUBSUBSEC] 1.3.2 User Interfaces": "BS provides a web-based and mobile-friendly UI with large fonts and clear navigation.",
+        "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "BS supports ATMs, POS terminals, and biometric devices.",
+        "[SUBSUBSEC] 1.3.4 Software Interfaces": "BS supports integrations with accounting software, loan processing tools, and investment tracking platforms.",
+        "[SUBSUBSEC] 1.3.5 Communications Interfaces": "BS ensures secure communication using TLS encryption and multi-factor authentication.",
+        "[SUBSUBSEC] 1.3.6 Memory Constraints": "BS optimizes storage for efficiency.",
+        "[SUBSUBSEC] 1.3.7 Operations": "BS automates account setup, reporting, transactions, and security monitoring.",
+        "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "BS supports multilingual and multi-currency banking.",
+        "[SUBSUBSEC] 1.3.9 Interfaces with Services": "BS connects with international payment networks and credit scoring agencies."
+      },
+      "[SUBSEC] 1.4 Product Functions": "BS provides secure account access, transaction tracking, credit management, and financial reporting.",
+      "[SUBSEC] 1.5 User Characteristics": "BS serves individuals, business owners, travelers, senior citizens, and high-net-worth clients.",
+      "[SUBSEC] 1.6 Limitations": "BS requires stable internet connectivity for transactions and third-party integrations.",
+      "[SUBSEC] 1.7 Assumptions and Dependencies": "BS relies on banking regulations, financial integrations, and compliance frameworks.",
+      "[SUBSEC] 1.8 Definitions": [
+        "Credit Score: Loan eligibility rating."
+      ],
+      "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+        "API: Application Programming Interface",
+        "TLS: Transport Layer Security",
+        "ATM: Automated Teller Machine"
+      ]
+    },
+    "[SEC] 2. Requirements": {
+      "[SUBSEC] 2.1 External Interfaces": {
+        "REQ-INTF-001": "The system shall integrate with third-party payment gateways, foreign exchange platforms, and fraud monitoring systems.",
+        "REQ-INTF-002": "The system shall support connections with accounting tools, loan management systems, and investment tracking applications."
+      },
+      "[SUBSEC] 2.2 Functions": {
+        "REQ-FUNC-001": "The system shall allow customers to view their real-time account balance upon login (REQ-DB-001).",
+        "REQ-FUNC-002": "The system shall enable secure fund transfers between accounts, including domestic and international transactions (REQ-INTF-001).",
+        "REQ-FUNC-003": "The system shall provide detailed transaction history with filtering by date, type, amount, and business financial tracking (REQ-DB-001).",
+        "REQ-FUNC-004": "The system shall support recurring payments for bills and loans."
+      },
+      "[SUBSEC] 2.3 Usability Requirements": {
+        "REQ-USAB-001": "The system shall offer an accessible UI with large fonts."
+      },
+      "[SUBSEC] 2.4 Performance Requirements": {
+        "REQ-PERF-001": "The system shall process transactions within 3 seconds under normal conditions (REQ-FUNC-002).",
+        "REQ-PERF-002": "The system shall maintain 99.9% uptime availability."
+      },
+      "[SUBSEC] 2.5 Logical Database Requirements": {
+        "REQ-DB-001": "The system shall store customer balances, transactions, and credit scores."
+      },
+      "[SUBSEC] 2.6 Design Constraints": {
+        "REQ-DSGN-001": "The system shall comply with PCI DSS standards for secure financial transactions."
+      },
+      "[SUBSEC] 2.7 Standards Compliance": {
+        "REQ-COMP-001": "The system shall adhere to international banking security regulations, including GDPR and ISO/IEC 27001."
+      },
+      "[SUBSEC] 2.8 Software System Attributes": {
+        "REQ-ATTR-001": "The system shall implement biometric authentication, multi-factor security, and encrypted processing (REQ-DSGN-001)."
+      }
+    },
+    "[SEC] 3. Verification": "Automated security tests, transaction validation, and compliance audits ensure integrity.",
+    "[SEC] 4. Supporting Information": "User manuals, financial literacy guides, and API integration documentation.",
+    "[SEC] 5. References": "GDPR compliance framework, PCI DSS guidelines, and ISO/IEC 27001 security standards."
+  }

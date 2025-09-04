@@ -1,0 +1,63 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Interactive Campus Map System (ICMS) defines requirements for a mobile navigation application, ensuring real-time campus updates, intuitive user interaction, and accessibility across platforms.",
+    "[SUBSEC] 1.2 Scope": "ICMS supports interactive tabbed navigation, real-time updates, offline map caching, and audio-visual guidance.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "ICMS integrates with campus databases for building information, announcements, and navigation services.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "ICMS provides a responsive UI for iOS, Android, and kiosks, supporting touch-based interactions.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "ICMS runs on mobile devices and kiosks with internet and touch functionality.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "ICMS utilizes React Native for frontend, Node.js with Express for backend, and PostgreSQL for structured data storage.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "ICMS ensures real-time updates via WebSockets and REST APIs, with offline caching.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "ICMS optimizes data retrieval, smooth scrolling, and resource efficiency.",
+      "[SUBSUBSEC] 1.3.7 Operations": "ICMS provides real-time campus navigation, visual markers, and audio guidance.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "ICMS ensures compatibility across mobile devices, kiosks, and offline use.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "ICMS links to campus information systems, directories, and announcement services."
+    },
+    "[SUBSEC] 1.4 Product Functions": "ICMS enables interactive navigation, real-time updates, visual guidance, and offline campus maps.",
+    "[SUBSEC] 1.5 User Characteristics": "Designed for students, faculty, and visitors needing real-time campus guidance.",
+    "[SUBSEC] 1.6 Limitations": "Requires internet for updates; offline mode supports cached data only.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "Relies on campus databases, network connectivity, and GPS-enabled devices.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Tabbed Navigation: UI enabling quick section switching.",
+      "Visual Markers: Icons showing key locations."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "UI: User Interface",
+      "API: Application Programming Interface",
+      "ICMS: Interactive Campus Map System"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall provide a tabbed interface displaying the campus map and real-time announcements.",
+      "REQ-INTF-002": "The system shall retrieve and display location data from campus databases."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall allow users to scroll and zoom within the interactive map (REQ-INTF-001).",
+      "REQ-FUNC-002": "The system shall display visual markers indicating buildings with available audio guides (REQ-INTF-002).",
+      "REQ-FUNC-003": "The system shall include a pause/resume button for navigation continuity (REQ-INTF-002).",
+      "REQ-FUNC-004": "The system shall provide a return-to-start feature for home screen access (REQ-INTF-001)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide a responsive UI for intuitive map interaction."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall update announcements without significant delay."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store building data, user preferences, and navigation history."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall ensure compatibility with mobile and kiosk touch interfaces."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with accessibility guidelines for visual and audio navigation aids."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall optimize data caching for offline usability."
+    }
+  },
+  "[SEC] 3. Verification": "Navigation, tabbed UI, and interactive elements validated.",
+  "[SEC] 4. Supporting Information": "User guides, API documentation, and accessibility policies.",
+  "[SEC] 5. References": "Campus navigation standards, UI best practices, and touch interaction guidelines."
+}

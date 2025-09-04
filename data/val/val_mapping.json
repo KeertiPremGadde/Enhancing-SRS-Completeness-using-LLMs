@@ -1,0 +1,1102 @@
+[
+    {
+        "mapping_id": 1,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00165_00001.json",
+        "output": "data/complete/complete_srs_00165.json"
+    },
+    {
+        "mapping_id": 2,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00166_00001.json",
+        "output": "data/complete/complete_srs_00166.json"
+    },
+    {
+        "mapping_id": 3,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00167_00001.json",
+        "output": "data/complete/complete_srs_00167.json"
+    },
+    {
+        "mapping_id": 4,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00168_00001.json",
+        "output": "data/complete/complete_srs_00168.json"
+    },
+    {
+        "mapping_id": 5,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00169_00001.json",
+        "output": "data/complete/complete_srs_00169.json"
+    },
+    {
+        "mapping_id": 6,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00170_00001.json",
+        "output": "data/complete/complete_srs_00170.json"
+    },
+    {
+        "mapping_id": 7,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00171_00001.json",
+        "output": "data/complete/complete_srs_00171.json"
+    },
+    {
+        "mapping_id": 8,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00172_00001.json",
+        "output": "data/complete/complete_srs_00172.json"
+    },
+    {
+        "mapping_id": 9,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00173_00001.json",
+        "output": "data/complete/complete_srs_00173.json"
+    },
+    {
+        "mapping_id": 10,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00174_00001.json",
+        "output": "data/complete/complete_srs_00174.json"
+    },
+    {
+        "mapping_id": 11,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00175_00001.json",
+        "output": "data/complete/complete_srs_00175.json"
+    },
+    {
+        "mapping_id": 12,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00176_00001.json",
+        "output": "data/complete/complete_srs_00176.json"
+    },
+    {
+        "mapping_id": 13,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00177_00001.json",
+        "output": "data/complete/complete_srs_00177.json"
+    },
+    {
+        "mapping_id": 14,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00178_00001.json",
+        "output": "data/complete/complete_srs_00178.json"
+    },
+    {
+        "mapping_id": 15,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00179_00001.json",
+        "output": "data/complete/complete_srs_00179.json"
+    },
+    {
+        "mapping_id": 16,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00180_00001.json",
+        "output": "data/complete/complete_srs_00180.json"
+    },
+    {
+        "mapping_id": 17,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00181_00001.json",
+        "output": "data/complete/complete_srs_00181.json"
+    },
+    {
+        "mapping_id": 18,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00182_00001.json",
+        "output": "data/complete/complete_srs_00182.json"
+    },
+    {
+        "mapping_id": 19,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00183_00001.json",
+        "output": "data/complete/complete_srs_00183.json"
+    },
+    {
+        "mapping_id": 20,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00184_00001.json",
+        "output": "data/complete/complete_srs_00184.json"
+    },
+    {
+        "mapping_id": 21,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00185_00001.json",
+        "output": "data/complete/complete_srs_00185.json"
+    },
+    {
+        "mapping_id": 22,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00186_00001.json",
+        "output": "data/complete/complete_srs_00186.json"
+    },
+    {
+        "mapping_id": 23,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00187_00001.json",
+        "output": "data/complete/complete_srs_00187.json"
+    },
+    {
+        "mapping_id": 24,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00188_00001.json",
+        "output": "data/complete/complete_srs_00188.json"
+    },
+    {
+        "mapping_id": 25,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00189_00001.json",
+        "output": "data/complete/complete_srs_00189.json"
+    },
+    {
+        "mapping_id": 26,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00190_00001.json",
+        "output": "data/complete/complete_srs_00190.json"
+    },
+    {
+        "mapping_id": 27,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00191_00001.json",
+        "output": "data/complete/complete_srs_00191.json"
+    },
+    {
+        "mapping_id": 28,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00192_00001.json",
+        "output": "data/complete/complete_srs_00192.json"
+    },
+    {
+        "mapping_id": 29,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00193_00001.json",
+        "output": "data/complete/complete_srs_00193.json"
+    },
+    {
+        "mapping_id": 30,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00194_00001.json",
+        "output": "data/complete/complete_srs_00194.json"
+    },
+    {
+        "mapping_id": 31,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00195_00001.json",
+        "output": "data/complete/complete_srs_00195.json"
+    },
+    {
+        "mapping_id": 32,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00196_00001.json",
+        "output": "data/complete/complete_srs_00196.json"
+    },
+    {
+        "mapping_id": 33,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00197_00001.json",
+        "output": "data/complete/complete_srs_00197.json"
+    },
+    {
+        "mapping_id": 34,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00198_00001.json",
+        "output": "data/complete/complete_srs_00198.json"
+    },
+    {
+        "mapping_id": 35,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00199_00001.json",
+        "output": "data/complete/complete_srs_00199.json"
+    },
+    {
+        "mapping_id": 36,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00200_00001.json",
+        "output": "data/complete/complete_srs_00200.json"
+    },
+    {
+        "mapping_id": 37,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00201_00001.json",
+        "output": "data/complete/complete_srs_00201.json"
+    },
+    {
+        "mapping_id": 38,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00202_00001.json",
+        "output": "data/complete/complete_srs_00202.json"
+    },
+    {
+        "mapping_id": 39,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00203_00001.json",
+        "output": "data/complete/complete_srs_00203.json"
+    },
+    {
+        "mapping_id": 40,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00204_00001.json",
+        "output": "data/complete/complete_srs_00204.json"
+    },
+    {
+        "mapping_id": 41,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00205_00001.json",
+        "output": "data/complete/complete_srs_00205.json"
+    },
+    {
+        "mapping_id": 42,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00206_00001.json",
+        "output": "data/complete/complete_srs_00206.json"
+    },
+    {
+        "mapping_id": 43,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00207_00001.json",
+        "output": "data/complete/complete_srs_00207.json"
+    },
+    {
+        "mapping_id": 44,
+        "input": "data/val/easy/structural_incompleteness/incomplete_srs_00208_00001.json",
+        "output": "data/complete/complete_srs_00208.json"
+    },
+    {
+        "mapping_id": 45,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00165_00002.json",
+        "output": "data/complete/complete_srs_00165.json"
+    },
+    {
+        "mapping_id": 46,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00166_00002.json",
+        "output": "data/complete/complete_srs_00166.json"
+    },
+    {
+        "mapping_id": 47,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00167_00002.json",
+        "output": "data/complete/complete_srs_00167.json"
+    },
+    {
+        "mapping_id": 48,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00168_00002.json",
+        "output": "data/complete/complete_srs_00168.json"
+    },
+    {
+        "mapping_id": 49,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00169_00002.json",
+        "output": "data/complete/complete_srs_00169.json"
+    },
+    {
+        "mapping_id": 50,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00170_00002.json",
+        "output": "data/complete/complete_srs_00170.json"
+    },
+    {
+        "mapping_id": 51,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00171_00002.json",
+        "output": "data/complete/complete_srs_00171.json"
+    },
+    {
+        "mapping_id": 52,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00172_00002.json",
+        "output": "data/complete/complete_srs_00172.json"
+    },
+    {
+        "mapping_id": 53,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00173_00002.json",
+        "output": "data/complete/complete_srs_00173.json"
+    },
+    {
+        "mapping_id": 54,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00174_00002.json",
+        "output": "data/complete/complete_srs_00174.json"
+    },
+    {
+        "mapping_id": 55,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00175_00002.json",
+        "output": "data/complete/complete_srs_00175.json"
+    },
+    {
+        "mapping_id": 56,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00176_00002.json",
+        "output": "data/complete/complete_srs_00176.json"
+    },
+    {
+        "mapping_id": 57,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00177_00002.json",
+        "output": "data/complete/complete_srs_00177.json"
+    },
+    {
+        "mapping_id": 58,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00178_00002.json",
+        "output": "data/complete/complete_srs_00178.json"
+    },
+    {
+        "mapping_id": 59,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00179_00002.json",
+        "output": "data/complete/complete_srs_00179.json"
+    },
+    {
+        "mapping_id": 60,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00180_00002.json",
+        "output": "data/complete/complete_srs_00180.json"
+    },
+    {
+        "mapping_id": 61,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00181_00002.json",
+        "output": "data/complete/complete_srs_00181.json"
+    },
+    {
+        "mapping_id": 62,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00182_00002.json",
+        "output": "data/complete/complete_srs_00182.json"
+    },
+    {
+        "mapping_id": 63,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00183_00002.json",
+        "output": "data/complete/complete_srs_00183.json"
+    },
+    {
+        "mapping_id": 64,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00184_00002.json",
+        "output": "data/complete/complete_srs_00184.json"
+    },
+    {
+        "mapping_id": 65,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00185_00002.json",
+        "output": "data/complete/complete_srs_00185.json"
+    },
+    {
+        "mapping_id": 66,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00186_00002.json",
+        "output": "data/complete/complete_srs_00186.json"
+    },
+    {
+        "mapping_id": 67,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00187_00002.json",
+        "output": "data/complete/complete_srs_00187.json"
+    },
+    {
+        "mapping_id": 68,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00188_00002.json",
+        "output": "data/complete/complete_srs_00188.json"
+    },
+    {
+        "mapping_id": 69,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00189_00002.json",
+        "output": "data/complete/complete_srs_00189.json"
+    },
+    {
+        "mapping_id": 70,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00190_00002.json",
+        "output": "data/complete/complete_srs_00190.json"
+    },
+    {
+        "mapping_id": 71,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00191_00002.json",
+        "output": "data/complete/complete_srs_00191.json"
+    },
+    {
+        "mapping_id": 72,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00192_00002.json",
+        "output": "data/complete/complete_srs_00192.json"
+    },
+    {
+        "mapping_id": 73,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00193_00002.json",
+        "output": "data/complete/complete_srs_00193.json"
+    },
+    {
+        "mapping_id": 74,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00194_00002.json",
+        "output": "data/complete/complete_srs_00194.json"
+    },
+    {
+        "mapping_id": 75,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00195_00002.json",
+        "output": "data/complete/complete_srs_00195.json"
+    },
+    {
+        "mapping_id": 76,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00196_00002.json",
+        "output": "data/complete/complete_srs_00196.json"
+    },
+    {
+        "mapping_id": 77,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00197_00002.json",
+        "output": "data/complete/complete_srs_00197.json"
+    },
+    {
+        "mapping_id": 78,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00198_00002.json",
+        "output": "data/complete/complete_srs_00198.json"
+    },
+    {
+        "mapping_id": 79,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00199_00002.json",
+        "output": "data/complete/complete_srs_00199.json"
+    },
+    {
+        "mapping_id": 80,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00200_00002.json",
+        "output": "data/complete/complete_srs_00200.json"
+    },
+    {
+        "mapping_id": 81,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00201_00002.json",
+        "output": "data/complete/complete_srs_00201.json"
+    },
+    {
+        "mapping_id": 82,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00202_00002.json",
+        "output": "data/complete/complete_srs_00202.json"
+    },
+    {
+        "mapping_id": 83,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00203_00002.json",
+        "output": "data/complete/complete_srs_00203.json"
+    },
+    {
+        "mapping_id": 84,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00204_00002.json",
+        "output": "data/complete/complete_srs_00204.json"
+    },
+    {
+        "mapping_id": 85,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00205_00002.json",
+        "output": "data/complete/complete_srs_00205.json"
+    },
+    {
+        "mapping_id": 86,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00206_00002.json",
+        "output": "data/complete/complete_srs_00206.json"
+    },
+    {
+        "mapping_id": 87,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00207_00002.json",
+        "output": "data/complete/complete_srs_00207.json"
+    },
+    {
+        "mapping_id": 88,
+        "input": "data/val/easy/requirement_coverage/incomplete_srs_00208_00002.json",
+        "output": "data/complete/complete_srs_00208.json"
+    },
+    {
+        "mapping_id": 89,
+        "input": "data/val/easy/traceability/incomplete_srs_00165_00003.json",
+        "output": "data/complete/complete_srs_00165.json"
+    },
+    {
+        "mapping_id": 90,
+        "input": "data/val/easy/traceability/incomplete_srs_00166_00003.json",
+        "output": "data/complete/complete_srs_00166.json"
+    },
+    {
+        "mapping_id": 91,
+        "input": "data/val/easy/traceability/incomplete_srs_00167_00003.json",
+        "output": "data/complete/complete_srs_00167.json"
+    },
+    {
+        "mapping_id": 92,
+        "input": "data/val/easy/traceability/incomplete_srs_00168_00003.json",
+        "output": "data/complete/complete_srs_00168.json"
+    },
+    {
+        "mapping_id": 93,
+        "input": "data/val/easy/traceability/incomplete_srs_00169_00003.json",
+        "output": "data/complete/complete_srs_00169.json"
+    },
+    {
+        "mapping_id": 94,
+        "input": "data/val/easy/traceability/incomplete_srs_00170_00003.json",
+        "output": "data/complete/complete_srs_00170.json"
+    },
+    {
+        "mapping_id": 95,
+        "input": "data/val/easy/traceability/incomplete_srs_00171_00003.json",
+        "output": "data/complete/complete_srs_00171.json"
+    },
+    {
+        "mapping_id": 96,
+        "input": "data/val/easy/traceability/incomplete_srs_00172_00003.json",
+        "output": "data/complete/complete_srs_00172.json"
+    },
+    {
+        "mapping_id": 97,
+        "input": "data/val/easy/traceability/incomplete_srs_00173_00003.json",
+        "output": "data/complete/complete_srs_00173.json"
+    },
+    {
+        "mapping_id": 98,
+        "input": "data/val/easy/traceability/incomplete_srs_00174_00003.json",
+        "output": "data/complete/complete_srs_00174.json"
+    },
+    {
+        "mapping_id": 99,
+        "input": "data/val/easy/traceability/incomplete_srs_00175_00003.json",
+        "output": "data/complete/complete_srs_00175.json"
+    },
+    {
+        "mapping_id": 100,
+        "input": "data/val/easy/traceability/incomplete_srs_00176_00003.json",
+        "output": "data/complete/complete_srs_00176.json"
+    },
+    {
+        "mapping_id": 101,
+        "input": "data/val/easy/traceability/incomplete_srs_00177_00003.json",
+        "output": "data/complete/complete_srs_00177.json"
+    },
+    {
+        "mapping_id": 102,
+        "input": "data/val/easy/traceability/incomplete_srs_00178_00003.json",
+        "output": "data/complete/complete_srs_00178.json"
+    },
+    {
+        "mapping_id": 103,
+        "input": "data/val/easy/traceability/incomplete_srs_00179_00003.json",
+        "output": "data/complete/complete_srs_00179.json"
+    },
+    {
+        "mapping_id": 104,
+        "input": "data/val/easy/traceability/incomplete_srs_00180_00003.json",
+        "output": "data/complete/complete_srs_00180.json"
+    },
+    {
+        "mapping_id": 105,
+        "input": "data/val/easy/traceability/incomplete_srs_00181_00003.json",
+        "output": "data/complete/complete_srs_00181.json"
+    },
+    {
+        "mapping_id": 106,
+        "input": "data/val/easy/traceability/incomplete_srs_00182_00003.json",
+        "output": "data/complete/complete_srs_00182.json"
+    },
+    {
+        "mapping_id": 107,
+        "input": "data/val/easy/traceability/incomplete_srs_00183_00003.json",
+        "output": "data/complete/complete_srs_00183.json"
+    },
+    {
+        "mapping_id": 108,
+        "input": "data/val/easy/traceability/incomplete_srs_00184_00003.json",
+        "output": "data/complete/complete_srs_00184.json"
+    },
+    {
+        "mapping_id": 109,
+        "input": "data/val/easy/traceability/incomplete_srs_00185_00003.json",
+        "output": "data/complete/complete_srs_00185.json"
+    },
+    {
+        "mapping_id": 110,
+        "input": "data/val/easy/traceability/incomplete_srs_00186_00003.json",
+        "output": "data/complete/complete_srs_00186.json"
+    },
+    {
+        "mapping_id": 111,
+        "input": "data/val/easy/traceability/incomplete_srs_00187_00003.json",
+        "output": "data/complete/complete_srs_00187.json"
+    },
+    {
+        "mapping_id": 112,
+        "input": "data/val/easy/traceability/incomplete_srs_00188_00003.json",
+        "output": "data/complete/complete_srs_00188.json"
+    },
+    {
+        "mapping_id": 113,
+        "input": "data/val/easy/traceability/incomplete_srs_00189_00003.json",
+        "output": "data/complete/complete_srs_00189.json"
+    },
+    {
+        "mapping_id": 114,
+        "input": "data/val/easy/traceability/incomplete_srs_00190_00003.json",
+        "output": "data/complete/complete_srs_00190.json"
+    },
+    {
+        "mapping_id": 115,
+        "input": "data/val/easy/traceability/incomplete_srs_00191_00003.json",
+        "output": "data/complete/complete_srs_00191.json"
+    },
+    {
+        "mapping_id": 116,
+        "input": "data/val/easy/traceability/incomplete_srs_00192_00003.json",
+        "output": "data/complete/complete_srs_00192.json"
+    },
+    {
+        "mapping_id": 117,
+        "input": "data/val/easy/traceability/incomplete_srs_00193_00003.json",
+        "output": "data/complete/complete_srs_00193.json"
+    },
+    {
+        "mapping_id": 118,
+        "input": "data/val/easy/traceability/incomplete_srs_00194_00003.json",
+        "output": "data/complete/complete_srs_00194.json"
+    },
+    {
+        "mapping_id": 119,
+        "input": "data/val/easy/traceability/incomplete_srs_00195_00003.json",
+        "output": "data/complete/complete_srs_00195.json"
+    },
+    {
+        "mapping_id": 120,
+        "input": "data/val/easy/traceability/incomplete_srs_00196_00003.json",
+        "output": "data/complete/complete_srs_00196.json"
+    },
+    {
+        "mapping_id": 121,
+        "input": "data/val/easy/traceability/incomplete_srs_00197_00003.json",
+        "output": "data/complete/complete_srs_00197.json"
+    },
+    {
+        "mapping_id": 122,
+        "input": "data/val/easy/traceability/incomplete_srs_00198_00003.json",
+        "output": "data/complete/complete_srs_00198.json"
+    },
+    {
+        "mapping_id": 123,
+        "input": "data/val/easy/traceability/incomplete_srs_00199_00003.json",
+        "output": "data/complete/complete_srs_00199.json"
+    },
+    {
+        "mapping_id": 124,
+        "input": "data/val/easy/traceability/incomplete_srs_00200_00003.json",
+        "output": "data/complete/complete_srs_00200.json"
+    },
+    {
+        "mapping_id": 125,
+        "input": "data/val/easy/traceability/incomplete_srs_00201_00003.json",
+        "output": "data/complete/complete_srs_00201.json"
+    },
+    {
+        "mapping_id": 126,
+        "input": "data/val/easy/traceability/incomplete_srs_00202_00003.json",
+        "output": "data/complete/complete_srs_00202.json"
+    },
+    {
+        "mapping_id": 127,
+        "input": "data/val/easy/traceability/incomplete_srs_00203_00003.json",
+        "output": "data/complete/complete_srs_00203.json"
+    },
+    {
+        "mapping_id": 128,
+        "input": "data/val/easy/traceability/incomplete_srs_00204_00003.json",
+        "output": "data/complete/complete_srs_00204.json"
+    },
+    {
+        "mapping_id": 129,
+        "input": "data/val/easy/traceability/incomplete_srs_00205_00003.json",
+        "output": "data/complete/complete_srs_00205.json"
+    },
+    {
+        "mapping_id": 130,
+        "input": "data/val/easy/traceability/incomplete_srs_00206_00003.json",
+        "output": "data/complete/complete_srs_00206.json"
+    },
+    {
+        "mapping_id": 131,
+        "input": "data/val/easy/traceability/incomplete_srs_00207_00003.json",
+        "output": "data/complete/complete_srs_00207.json"
+    },
+    {
+        "mapping_id": 132,
+        "input": "data/val/easy/traceability/incomplete_srs_00208_00003.json",
+        "output": "data/complete/complete_srs_00208.json"
+    },
+    {
+        "mapping_id": 133,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00165_00004.json",
+        "output": "data/complete/complete_srs_00165.json"
+    },
+    {
+        "mapping_id": 134,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00166_00004.json",
+        "output": "data/complete/complete_srs_00166.json"
+    },
+    {
+        "mapping_id": 135,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00167_00004.json",
+        "output": "data/complete/complete_srs_00167.json"
+    },
+    {
+        "mapping_id": 136,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00168_00004.json",
+        "output": "data/complete/complete_srs_00168.json"
+    },
+    {
+        "mapping_id": 137,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00169_00004.json",
+        "output": "data/complete/complete_srs_00169.json"
+    },
+    {
+        "mapping_id": 138,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00170_00004.json",
+        "output": "data/complete/complete_srs_00170.json"
+    },
+    {
+        "mapping_id": 139,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00171_00004.json",
+        "output": "data/complete/complete_srs_00171.json"
+    },
+    {
+        "mapping_id": 140,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00172_00004.json",
+        "output": "data/complete/complete_srs_00172.json"
+    },
+    {
+        "mapping_id": 141,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00173_00004.json",
+        "output": "data/complete/complete_srs_00173.json"
+    },
+    {
+        "mapping_id": 142,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00174_00004.json",
+        "output": "data/complete/complete_srs_00174.json"
+    },
+    {
+        "mapping_id": 143,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00175_00004.json",
+        "output": "data/complete/complete_srs_00175.json"
+    },
+    {
+        "mapping_id": 144,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00176_00004.json",
+        "output": "data/complete/complete_srs_00176.json"
+    },
+    {
+        "mapping_id": 145,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00177_00004.json",
+        "output": "data/complete/complete_srs_00177.json"
+    },
+    {
+        "mapping_id": 146,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00178_00004.json",
+        "output": "data/complete/complete_srs_00178.json"
+    },
+    {
+        "mapping_id": 147,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00179_00004.json",
+        "output": "data/complete/complete_srs_00179.json"
+    },
+    {
+        "mapping_id": 148,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00180_00004.json",
+        "output": "data/complete/complete_srs_00180.json"
+    },
+    {
+        "mapping_id": 149,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00181_00004.json",
+        "output": "data/complete/complete_srs_00181.json"
+    },
+    {
+        "mapping_id": 150,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00182_00004.json",
+        "output": "data/complete/complete_srs_00182.json"
+    },
+    {
+        "mapping_id": 151,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00183_00004.json",
+        "output": "data/complete/complete_srs_00183.json"
+    },
+    {
+        "mapping_id": 152,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00184_00004.json",
+        "output": "data/complete/complete_srs_00184.json"
+    },
+    {
+        "mapping_id": 153,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00185_00004.json",
+        "output": "data/complete/complete_srs_00185.json"
+    },
+    {
+        "mapping_id": 154,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00186_00004.json",
+        "output": "data/complete/complete_srs_00186.json"
+    },
+    {
+        "mapping_id": 155,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00187_00004.json",
+        "output": "data/complete/complete_srs_00187.json"
+    },
+    {
+        "mapping_id": 156,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00188_00004.json",
+        "output": "data/complete/complete_srs_00188.json"
+    },
+    {
+        "mapping_id": 157,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00189_00004.json",
+        "output": "data/complete/complete_srs_00189.json"
+    },
+    {
+        "mapping_id": 158,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00190_00004.json",
+        "output": "data/complete/complete_srs_00190.json"
+    },
+    {
+        "mapping_id": 159,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00191_00004.json",
+        "output": "data/complete/complete_srs_00191.json"
+    },
+    {
+        "mapping_id": 160,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00192_00004.json",
+        "output": "data/complete/complete_srs_00192.json"
+    },
+    {
+        "mapping_id": 161,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00193_00004.json",
+        "output": "data/complete/complete_srs_00193.json"
+    },
+    {
+        "mapping_id": 162,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00194_00004.json",
+        "output": "data/complete/complete_srs_00194.json"
+    },
+    {
+        "mapping_id": 163,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00195_00004.json",
+        "output": "data/complete/complete_srs_00195.json"
+    },
+    {
+        "mapping_id": 164,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00196_00004.json",
+        "output": "data/complete/complete_srs_00196.json"
+    },
+    {
+        "mapping_id": 165,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00197_00004.json",
+        "output": "data/complete/complete_srs_00197.json"
+    },
+    {
+        "mapping_id": 166,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00198_00004.json",
+        "output": "data/complete/complete_srs_00198.json"
+    },
+    {
+        "mapping_id": 167,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00199_00004.json",
+        "output": "data/complete/complete_srs_00199.json"
+    },
+    {
+        "mapping_id": 168,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00200_00004.json",
+        "output": "data/complete/complete_srs_00200.json"
+    },
+    {
+        "mapping_id": 169,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00201_00004.json",
+        "output": "data/complete/complete_srs_00201.json"
+    },
+    {
+        "mapping_id": 170,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00202_00004.json",
+        "output": "data/complete/complete_srs_00202.json"
+    },
+    {
+        "mapping_id": 171,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00203_00004.json",
+        "output": "data/complete/complete_srs_00203.json"
+    },
+    {
+        "mapping_id": 172,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00204_00004.json",
+        "output": "data/complete/complete_srs_00204.json"
+    },
+    {
+        "mapping_id": 173,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00205_00004.json",
+        "output": "data/complete/complete_srs_00205.json"
+    },
+    {
+        "mapping_id": 174,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00206_00004.json",
+        "output": "data/complete/complete_srs_00206.json"
+    },
+    {
+        "mapping_id": 175,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00207_00004.json",
+        "output": "data/complete/complete_srs_00207.json"
+    },
+    {
+        "mapping_id": 176,
+        "input": "data/val/easy/requirement_quality_attributes/incomplete_srs_00208_00004.json",
+        "output": "data/complete/complete_srs_00208.json"
+    },
+    {
+        "mapping_id": 177,
+        "input": "data/complete/complete_srs_00165.json",
+        "output": "data/complete/complete_srs_00165.json"
+    },
+    {
+        "mapping_id": 178,
+        "input": "data/complete/complete_srs_00166.json",
+        "output": "data/complete/complete_srs_00166.json"
+    },
+    {
+        "mapping_id": 179,
+        "input": "data/complete/complete_srs_00167.json",
+        "output": "data/complete/complete_srs_00167.json"
+    },
+    {
+        "mapping_id": 180,
+        "input": "data/complete/complete_srs_00168.json",
+        "output": "data/complete/complete_srs_00168.json"
+    },
+    {
+        "mapping_id": 181,
+        "input": "data/complete/complete_srs_00169.json",
+        "output": "data/complete/complete_srs_00169.json"
+    },
+    {
+        "mapping_id": 182,
+        "input": "data/complete/complete_srs_00170.json",
+        "output": "data/complete/complete_srs_00170.json"
+    },
+    {
+        "mapping_id": 183,
+        "input": "data/complete/complete_srs_00171.json",
+        "output": "data/complete/complete_srs_00171.json"
+    },
+    {
+        "mapping_id": 184,
+        "input": "data/complete/complete_srs_00172.json",
+        "output": "data/complete/complete_srs_00172.json"
+    },
+    {
+        "mapping_id": 185,
+        "input": "data/complete/complete_srs_00173.json",
+        "output": "data/complete/complete_srs_00173.json"
+    },
+    {
+        "mapping_id": 186,
+        "input": "data/complete/complete_srs_00174.json",
+        "output": "data/complete/complete_srs_00174.json"
+    },
+    {
+        "mapping_id": 187,
+        "input": "data/complete/complete_srs_00175.json",
+        "output": "data/complete/complete_srs_00175.json"
+    },
+    {
+        "mapping_id": 188,
+        "input": "data/complete/complete_srs_00176.json",
+        "output": "data/complete/complete_srs_00176.json"
+    },
+    {
+        "mapping_id": 189,
+        "input": "data/complete/complete_srs_00177.json",
+        "output": "data/complete/complete_srs_00177.json"
+    },
+    {
+        "mapping_id": 190,
+        "input": "data/complete/complete_srs_00178.json",
+        "output": "data/complete/complete_srs_00178.json"
+    },
+    {
+        "mapping_id": 191,
+        "input": "data/complete/complete_srs_00179.json",
+        "output": "data/complete/complete_srs_00179.json"
+    },
+    {
+        "mapping_id": 192,
+        "input": "data/complete/complete_srs_00180.json",
+        "output": "data/complete/complete_srs_00180.json"
+    },
+    {
+        "mapping_id": 193,
+        "input": "data/complete/complete_srs_00181.json",
+        "output": "data/complete/complete_srs_00181.json"
+    },
+    {
+        "mapping_id": 194,
+        "input": "data/complete/complete_srs_00182.json",
+        "output": "data/complete/complete_srs_00182.json"
+    },
+    {
+        "mapping_id": 195,
+        "input": "data/complete/complete_srs_00183.json",
+        "output": "data/complete/complete_srs_00183.json"
+    },
+    {
+        "mapping_id": 196,
+        "input": "data/complete/complete_srs_00184.json",
+        "output": "data/complete/complete_srs_00184.json"
+    },
+    {
+        "mapping_id": 197,
+        "input": "data/complete/complete_srs_00185.json",
+        "output": "data/complete/complete_srs_00185.json"
+    },
+    {
+        "mapping_id": 198,
+        "input": "data/complete/complete_srs_00186.json",
+        "output": "data/complete/complete_srs_00186.json"
+    },
+    {
+        "mapping_id": 199,
+        "input": "data/complete/complete_srs_00187.json",
+        "output": "data/complete/complete_srs_00187.json"
+    },
+    {
+        "mapping_id": 200,
+        "input": "data/complete/complete_srs_00188.json",
+        "output": "data/complete/complete_srs_00188.json"
+    },
+    {
+        "mapping_id": 201,
+        "input": "data/complete/complete_srs_00189.json",
+        "output": "data/complete/complete_srs_00189.json"
+    },
+    {
+        "mapping_id": 202,
+        "input": "data/complete/complete_srs_00190.json",
+        "output": "data/complete/complete_srs_00190.json"
+    },
+    {
+        "mapping_id": 203,
+        "input": "data/complete/complete_srs_00191.json",
+        "output": "data/complete/complete_srs_00191.json"
+    },
+    {
+        "mapping_id": 204,
+        "input": "data/complete/complete_srs_00192.json",
+        "output": "data/complete/complete_srs_00192.json"
+    },
+    {
+        "mapping_id": 205,
+        "input": "data/complete/complete_srs_00193.json",
+        "output": "data/complete/complete_srs_00193.json"
+    },
+    {
+        "mapping_id": 206,
+        "input": "data/complete/complete_srs_00194.json",
+        "output": "data/complete/complete_srs_00194.json"
+    },
+    {
+        "mapping_id": 207,
+        "input": "data/complete/complete_srs_00195.json",
+        "output": "data/complete/complete_srs_00195.json"
+    },
+    {
+        "mapping_id": 208,
+        "input": "data/complete/complete_srs_00196.json",
+        "output": "data/complete/complete_srs_00196.json"
+    },
+    {
+        "mapping_id": 209,
+        "input": "data/complete/complete_srs_00197.json",
+        "output": "data/complete/complete_srs_00197.json"
+    },
+    {
+        "mapping_id": 210,
+        "input": "data/complete/complete_srs_00198.json",
+        "output": "data/complete/complete_srs_00198.json"
+    },
+    {
+        "mapping_id": 211,
+        "input": "data/complete/complete_srs_00199.json",
+        "output": "data/complete/complete_srs_00199.json"
+    },
+    {
+        "mapping_id": 212,
+        "input": "data/complete/complete_srs_00200.json",
+        "output": "data/complete/complete_srs_00200.json"
+    },
+    {
+        "mapping_id": 213,
+        "input": "data/complete/complete_srs_00201.json",
+        "output": "data/complete/complete_srs_00201.json"
+    },
+    {
+        "mapping_id": 214,
+        "input": "data/complete/complete_srs_00202.json",
+        "output": "data/complete/complete_srs_00202.json"
+    },
+    {
+        "mapping_id": 215,
+        "input": "data/complete/complete_srs_00203.json",
+        "output": "data/complete/complete_srs_00203.json"
+    },
+    {
+        "mapping_id": 216,
+        "input": "data/complete/complete_srs_00204.json",
+        "output": "data/complete/complete_srs_00204.json"
+    },
+    {
+        "mapping_id": 217,
+        "input": "data/complete/complete_srs_00205.json",
+        "output": "data/complete/complete_srs_00205.json"
+    },
+    {
+        "mapping_id": 218,
+        "input": "data/complete/complete_srs_00206.json",
+        "output": "data/complete/complete_srs_00206.json"
+    },
+    {
+        "mapping_id": 219,
+        "input": "data/complete/complete_srs_00207.json",
+        "output": "data/complete/complete_srs_00207.json"
+    },
+    {
+        "mapping_id": 220,
+        "input": "data/complete/complete_srs_00208.json",
+        "output": "data/complete/complete_srs_00208.json"
+    }
+]

@@ -1,0 +1,65 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The International Securities Identification Number (ISIN) defines requirements for automating issuance, amendment, and cancellation to enhance efficiency and compliance at JSE.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "ISIN integrates with STRATE's SAFIRES system, financial tools, and analytics platforms.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "ISIN provides dashboards and portals for application tracking.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "ISIN operates on JSE's IT infrastructure for cloud and on-premise deployment.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "ISIN follows SWIFT protocols for structured data exchange.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "ISIN ensures encrypted SWIFT messaging.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "ISIN optimizes storage and retrieval for high-volume processing.",
+      "[SUBSUBSEC] 1.3.7 Operations": "ISIN ensures uptime with failover mechanisms.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "ISIN integrates with reporting and compliance tools.",
+      "[SUBSUBSEC] 1.3.8 MISSING-TAG2": "ISIN supports diverse financial and regulatory environments."
+    },
+    "[SUBSEC] 1.4 Product Functions": "ISIN manages issuance, amendments, and transaction tracking.",
+    "[SUBSEC] 1.5 User Characteristics": "Designed for JSE staff, financial analysts, and regulatory teams.",
+    "[SUBSEC] 1.6 Limitations": "ISIN requires SWIFT connectivity, accurate input, and regulatory approvals.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "ISIN assumes ISO 6166 compliance, SWIFT integration, and SAFIRES compatibility.",
+    "[SUBSEC] 1.8 Definitions": [
+      "SAFIRES: South African Financial Instrument Registration System.",
+      "STRATE: Central securities depository."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "ISIN: International Securities Identification Number.",
+      "SWIFT: Society for Worldwide Interbank Financial Telecommunication.",
+      "JSE: Johannesburg Stock Exchange."
+    ],
+    "[SUBSEC] 1.2 MISSING-TAG1": "ISIN automates operations, ensuring accuracy, transparency, and financial integration."
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall interface with STRATE's SAFIRES system for ISIN issuance.",
+      "REQ-INTF-002": "The system shall use SWIFT MT 598 messages for communication (REQ-FUNC-001)."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall process ISIN requests within 2 minutes using ISO 6166 standards.",
+      "REQ-FUNC-002": "The system shall validate requests before processing (REQ-USAB-001).",
+      "REQ-FUNC-003": "The system shall support automated ISIN cancellations."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide dashboards for monitoring ISIN status.",
+      "REQ-USAB-002": "The system shall allow users to view and print ISIN details."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall handle 500 ISIN requests daily.",
+      "REQ-PERF-002": "The system shall support 100 concurrent users (REQ-ATTR-001)."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The database shall log all ISIN transactions for audits.",
+      "REQ-DB-002": "The database shall comply with ACID principles (REQ-ATTR-001)."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall adhere to JSE's IT infrastructure standards."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with ISO 6166 and SWIFT standards."
+    },
+    "[SUBSEC] 2.8 MISSING-TAG3": {
+      "REQ-ATTR-001": "The system shall scale to handle increased request volumes and  maintain 99.9% uptime (REQ-PERF-002)."
+    }
+  },
+  "[SEC] 3. Verification": "Unit, integration, and performance testing.",
+  "[SEC] 4. Supporting Information": "User manuals, SWIFT specifications, and troubleshooting guides.",
+  "[SEC] 5. References": "ISO 6166, SWIFT documentation, and JSE standards."
+}

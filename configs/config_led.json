@@ -1,0 +1,41 @@
+{
+  "debug_mode": true,
+  "model": {
+    "name": "led-base-16384",
+    "path": "/home/gadde/Thesis/models/pretrained/led-base-16384-updated",
+    "tokenizer_path": "/home/gadde/Thesis/models/pretrained/led-base-16384-updated",
+    "max_input_tokens": 925,
+    "max_output_tokens": 1024
+  },
+  "data": {
+    "train_mapping": "/home/gadde/Thesis/data/train/train_mapping.json",
+    "val_mapping": "/home/gadde/Thesis/data/val/val_mapping.json",
+    "test_mapping": "/home/gadde/Thesis/data/test/test_mapping.json"
+  },
+  "training": {
+    "batch_size": 1,
+    "learning_rate": 5e-6,
+    "num_epochs": 5,
+    "save_interval": 5,   
+    "save_dir": "/home/gadde/Thesis/experiments/led-base-16384",
+    "optimizer": {
+      "weight_decay": 0.0,
+      "gradient_clip": 1.0  
+    },
+    "scheduler": {          
+      "warmup_steps": 0,
+      "warmup_ratio": 0.0
+    },
+    "lora": {
+      "r": 32,
+      "alpha": 128,
+      "dropout": 0.05,
+      "target_modules": ["q_proj", "v_proj", "k_proj", "o_proj", "dense", "fc1", "fc2"]
+    },
+    "early_stopping": {
+    "enabled": true,
+    "patience": 3,
+    "min_delta": 0.001
+    }
+  }
+}

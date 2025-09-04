@@ -1,0 +1,65 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Department Management System (DMS) defines requirements for managing departments, office locations, and managerial assignments.",
+    "[SUBSEC] 1.2 Scope": "DMS supports department creation, office allocation, headquarters designation, manager assignments, and restructuring.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "DMS integrates with HR databases and office systems for real-time updates.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "DMS provides dashboards for department setup, office assignments, and manager tracking.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "DMS supports computing devices and authentication terminals.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "DMS uses PostgreSQL, REST APIs, linking with HR and payroll systems.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "DMS secures data via OAuth 2.0, JWT, and HTTPS.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "DMS optimizes storage for department and office data.",
+      "[SUBSUBSEC] 1.3.7 Operations": "DMS runs 24/7 with scheduled maintenance.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "DMS is configurable for multiple offices with role-based access.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "DMS integrates with cloud/on-premise deployments, linking with HR systems."
+    },
+    "[SUBSEC] 1.4 Product Functions": "DMS manages departments, office allocations, headquarters, and manager assignments.",
+    "[SUBSEC] 1.5 User Characteristics": "DMS serves HR personnel, department managers, and admins.",
+    "[SUBSEC] 1.6 Limitations": "DMS requires internet for real-time updates.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "DMS relies on HR records, office data, and system integration.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Department: Employee division.",
+      "Office: Workplace.",
+      "Headquarters: Main department office."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "DMS: Department Management System",
+      "JWT: JSON Web Token",
+      "API: Application Programming Interface",
+      "HR: Human Resources"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall integrate with HR databases to retrieve employee details (REQ-FUNC-001).",
+      "REQ-INTF-002": "The system shall connect with office systems to validate office assignments (REQ-FUNC-002)."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall allow admins to create departments and assign offices (REQ-DB-20, REQ-INTF-001).",
+      "REQ-FUNC-002": "The system shall designate a headquarters per department (REQ-PERF-001, REQ-INTF-002).",
+      "REQ-FUNC-003": "The system shall assign managers, tracking promotions and changes (REQ-DB-52).",
+      "REQ-FUNC-004": "The system shall support restructuring, allowing relocations and manager reassignment (REQ-PERF-001)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide a UI for department and office management."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall update departments, managers, and offices within 2s."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store department details, office locations, and manager records."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall ensure unique IDs for departments, offices, and managers."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with HR policies and data regulations."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall log department, office, and managerial changes for audits (REQ-DB-41)."
+    }
+  },
+  "[SEC] 3. Verification": "Tests department creation, office assignments, headquarters designation, manager allocation, and restructuring.",
+  "[SEC] 4. Supporting Information": "Guides, API docs, and training.",
+  "[SEC] 5. References": "Company HR policies and office management guidelines."
+}

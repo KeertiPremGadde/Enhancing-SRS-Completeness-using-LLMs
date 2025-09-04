@@ -1,0 +1,64 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Real Estate Listing System (RELS) defines requirements for managing real estate properties, including listing, tracking, and updating properties for sale.",
+    "[SUBSEC] 1.2 Scope": "RELS supports listing various property types, modifying their details, and managing availability.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "RELS integrates with real estate databases and listing services.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "RELS allows agents to manage listings and clients to browse properties.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "RELS supports desktops, tablets, and mobile devices.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "RELS uses PostgreSQL, MongoDB, REST APIs, and OAuth 2.0.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "RELS secures data via TLS encryption and access control.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "RELS is optimized for managing up to 100 active listings.",
+      "[SUBSUBSEC] 1.3.7 Operations": "RELS handles property listing, updates, and removals.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "RELS is configurable for agencies of different sizes.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "RELS connects with property evaluation, inquiries, and financial services."
+    },
+    "[SUBSEC] 1.4 Product Functions": "RELS manages property listings and updates.",
+    "[SUBSEC] 1.5 User Characteristics": "RELS is designed for real estate agents and property managers.",
+    "[SUBSEC] 1.6 Limitations": "RELS is limited to 100 active listings.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "RELS relies on accurate data entered by agents and regular updates to ensure property information remains relevant.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Villa: Standalone property with optional pool and street access.",
+      "Apartment: Building unit with floor and parking details.",
+      "Furnished Apartment: Apartment with a 1-5 furniture rating."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "RELS: Real Estate Listing System",
+      "API: Application Programming Interface",
+      "TLS: Transport Layer Security"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall manage property listings, including additions and updates (REQ-DB-001).",
+      "REQ-INTF-002": "The system shall track property attributes such as area, rooms, parking availability, and pricing to support accurate listings (REQ-DB-002)."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall allow agents to add, modify, and remove listings (REQ-DB-001).",
+      "REQ-FUNC-002": "The system shall maintain details for each property type, including villas, apartments, and furnished apartments (REQ-DB-002).",
+      "REQ-FUNC-003": "The system shall limit active property listings to 100 (REQ-DB-001)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an interface for property management."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall update property records within 3 seconds."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store property listings, including type, price, and area.",
+      "REQ-DB-002": "The system shall track additional details such as pools, floors, and furniture ratings."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall ensure unique identification for each listing."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with real estate data regulations."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall maintain logs for property updates."
+    }
+  },
+  "[SEC] 3. Verification": "Tests property listing, updates, and removals.",
+  "[SEC] 4. Supporting Information": "User manuals, API documentation, and compliance guidelines.",
+  "[SEC] 5. References": "Real estate policies, property management standards, and listing guidelines."
+}

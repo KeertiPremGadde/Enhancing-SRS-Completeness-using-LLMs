@@ -1,0 +1,62 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Personal Finance Management System (PFMS) enables users to manage personal finances by tracking income, expenses, investments, and budgets to achieve financial goals.",
+    "[SUBSEC] 1.2 Scope": "PFMS includes features for tracking income/expenses, budgeting, investment monitoring, and generating reports and alerts.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "PFMS integrates with banking and investment platforms to sync data.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "PFMS provides web and mobile apps.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "PFMS supports smartphones, tablets, and desktops.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "PFMS uses secure APIs for communication.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "PFMS sends alerts via email, SMS, and push notifications.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "PFMS optimizes memory usage.",
+      "[SUBSUBSEC] 1.3.7 Operations": "PFMS manages financial activities like budgeting, tracking expenses, and alerts.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "PFMS customizes notifications and settings according to user preferences.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "PFMS Integrates with third-party financial tools."
+    },
+    "[SUBSEC] 1.4 Product Functions": "PFMS tracks income/expenses, categorizes them, summarizes over time, tracks investments, provides real-time data, and offers budgeting tools to create, manage budgets, set alerts, and access financial resources for better management.",
+    "[SUBSEC] 1.5 User Characteristics": "PFMS serves individuals, business owners, students, and anyone needing financial tools.",
+    "[SUBSEC] 1.6 Limitations": "PFMS requires internet access for syncing and notifications.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "PFMS depends on secure APIs and data storage services.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Budget: Resource allocation."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "API: Application Programming Interface"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall link bank accounts for transaction tracking and budgeting.",
+      "REQ-INTF-002": "The system shall integrate with investment platforms for portfolio syncing.",
+      "REQ-INTF-003": "The system shall share financial data with third-party tools."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall track income/expenses, categorize them, summarize over time, and track investments and provide real-time performance data (REQ-INTF-001, REQ-INTF-002).",
+      "REQ-FUNC-002": "The system shall provide budgeting tools to create and manage budgets, send alerts on budget limits, and provide educational resources for financial management (REQ-INTF-003)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an intuitive interface for managing income, expenses, and budgets."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall sync data with external platforms in under 3 seconds.",
+      "REQ-PERF-002": "The system shall generate real-time reports to track financial progress within 2 seconds."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall securely store financial data with encryption."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall support cross-platform functionality and ensure compatibility across devices.",
+      "REQ-DSGN-002": "The system shall have a responsive design for all screen sizes."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with GDPR for personal data handling and meet PCI-DSS standards for payment data security."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall use encrypted communication for all data transfers.",
+      "REQ-ATTR-002": "The system shall ensure high availability with minimal downtime."
+    }
+  },
+  "[SEC] 3. Verification": "Test integration, syncing, alerts, and budgeting.",
+  "[SEC] 4. Supporting Information": "User guides, API docs, compliance, and best practices.",
+  "[SEC] 5. References": "Personal finance guidelines, GDPR, and investment monitoring practices."
+}

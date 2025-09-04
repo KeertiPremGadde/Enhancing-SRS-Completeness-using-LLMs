@@ -1,0 +1,62 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Job Recruitment & Application Platform (JRAP) defines requirements for job postings, applicant tracking, interview scheduling, and candidate management.",
+    "[SUBSEC] 1.2 Scope": "JRAP supports job listing creation, application tracking, interview scheduling, and recruiter collaboration.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "JRAP integrates with applicant tracking systems, email, and authentication services.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "JRAP provides a web and mobile UI for job seekers and recruiters.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "JRAP supports desktops, tablets, and smartphones.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "JRAP uses REST APIs, OAuth authentication, and cloud storage.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "JRAP supports messaging, notifications, and video interviews.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "JRAP optimizes storage for job postings and candidate profiles.",
+      "[SUBSUBSEC] 1.3.7 Operations": "JRAP enables job postings, application tracking, interviews, and collaboration.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "JRAP customizes job recommendations based on user activity.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "JRAP connects with job boards, background verification, and payroll systems for seamless hiring."
+    },
+    "[SUBSEC] 1.4 Product Functions": "JRAP enables recruiters to post jobs, manage applications, schedule interviews, and communicate with candidates. Job seekers can search, apply, and track applications.",
+    "[SUBSEC] 1.5 User Characteristics": "JRAP serves job seekers, recruiters, and HR managers.",
+    "[SUBSEC] 1.6 Limitations": "JRAP requires internet access for real-time updates.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "JRAP relies on job board APIs, cloud storage, and secure authentication.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Application Tracking: Managing submitted applications."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "API: Application Programming Interface",
+      "UI: User Interface",
+      "JRAP: Job Recruitment & Application Platform",
+      "REST: Representational State Transfer"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall allow recruiters to create and manage job postings.",
+      "REQ-INTF-002": "The system shall allow job seekers to search and apply for jobs.",
+      "REQ-INTF-003": "The system shall support resume uploads and candidate tracking."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall allow TO-BE-DEFINED (REQ-INTF-001, REQ-DB-001).",
+      "REQ-FUNC-002": "The system shall allow job seekers to search, filter, apply for jobs, track application status, and receive personalized job recommendations (REQ-INTF-002, REQ-DB-001)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an intuitive UI for job searching and recruiter interactions."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process job searches and applications within 2 seconds."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store job postings, applications, candidate profiles, resumes, recruiter feedback, and interview schedules."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall provide adaptive job recommendations."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with employment data privacy laws."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall ensure encrypted data storage and secure authentication."
+    }
+  },
+  "[SEC] 3. Verification": "Tests validate job postings, search accuracy, application tracking, and notifications.",
+  "[SEC] 4. Supporting Information": "User guides, API documentation, and compliance guidelines.",
+  "[SEC] 5. References": "Job posting standards, applicant tracking practices, and GDPR compliance."
+}

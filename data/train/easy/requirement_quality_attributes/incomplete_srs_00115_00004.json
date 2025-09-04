@@ -1,0 +1,67 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The CamperPlus System (CP) defines requirements for camper registration, activity management, and communication.",
+    "[SUBSEC] 1.2 Scope": "CP supports scheduling, feedback, and secure messaging for camp admins, parents, and staff.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "CP integrates with payment gateways, email, and scheduling tools via secure APIs.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "CP provides web and mobile dashboards with role-based access (RBAC).",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "CP operates on cloud servers and mobile devices.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "CP connects to encrypted storage and logging services.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "CP enforces HTTPS, TLS 1.3, and OAuth 2.0.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "CP optimizes storage for large datasets.",
+      "[SUBSUBSEC] 1.3.7 Operations": "CP ensures 24/7 uptime with failover support.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "CP supports multilingual content and time zones.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "CP links with emergency and health systems."
+    },
+    "[SUBSEC] 1.4 Product Functions": "CP manages registration, scheduling, attendance, and messaging.",
+    "[SUBSEC] 1.5 User Characteristics": "CP serves admins, parents, counselors, and staff.",
+    "[SUBSEC] 1.6 Limitations": "CP requires internet and third-party compliance.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "CP follows GDPR, ISO 27001, and secure API protocols.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Camper: Registered child.",
+      "Activity: Scheduled event.",
+      "RBAC: Role-based access."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "HTTPS: Secure web protocol.",
+      "OAuth: Open Authorization.",
+      "TLS: Secure transmission."
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall integrate with payment gateways via OAuth 2.0.",
+      "REQ-INTF-002": "The system shall send encrypted notifications and connect with scheduling APIs.",
+      "REQ-INTF-003": "The system shall enforce API security via rate limiting and IP whitelisting."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall allow admins to manage campers and activities (REQ-DB-001).",
+      "REQ-FUNC-002": "The system shall enable parents to enroll children securely via MFA.",
+      "REQ-FUNC-003": "The system shall track attendance, feedback, and store emergency contacts (REQ-DB-002)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an intuitive interface with SSO."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process transactions in a few seconds and support roughly a thousand users."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store camper and parent data securely via AES-256.",
+      "REQ-DB-002": "The system shall maintain schedules and logs with access control."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall comply with GDPR and ISO 27001.",
+      "REQ-DSGN-002": "The system shall encrypt data (AES-256, TLS 1.3) and support failover."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall follow ISO security and event management standards."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall enforce RBAC, MFA, and cryptographic logging.",
+      "REQ-ATTR-002": "The system shall ensure nearly always uptime and secure API transactions."
+    }
+  },
+  "[SEC] 3. Verification": "Security audits, penetration tests, and compliance validation.",
+  "[SEC] 4. Supporting Information": "System architecture, API security policies, and compliance documentation.",
+  "[SEC] 5. References": "GDPR, ISO 27001, OAuth 2.0, AES-256, TLS 1.3."
+}

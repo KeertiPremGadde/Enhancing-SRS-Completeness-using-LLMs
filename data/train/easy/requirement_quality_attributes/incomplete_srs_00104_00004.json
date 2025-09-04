@@ -1,0 +1,62 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Media Library System (MLS) defines authentication, customer registration, borrowing management, and overdue tracking requirements for library operations.",
+    "[SUBSEC] 1.2 Scope": "MLS supports customer registration, work categorization, borrowing management, overdue tracking, and consultation-only access.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "MLS integrates with identity databases, cataloging systems, and external media databases.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "MLS provides a structured UI for customer registration, borrowing history, and media catalog access.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "MLS supports barcode scanners and computing devices for loan processing.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "MLS uses a React.js frontend, Node.js backend, PostgreSQL storage, and REST APIs for integration.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "MLS employs OAuth 2.0 authentication and TLS 1.3 encryption for secure transactions.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "MLS optimizes data storage for high-volume borrowing records and real-time transactions.",
+      "[SUBSUBSEC] 1.3.7 Operations": "MLS ensures 24/7 availability with scheduled maintenance.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "MLS supports multi-branch libraries with configurable access policies.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "MLS integrates with cloud-based or on-premise deployments, supporting Docker and AWS."
+    },
+    "[SUBSEC] 1.4 Product Functions": "MLS enables customer registration, borrowing transactions, overdue management, and consultation-only access.",
+    "[SUBSEC] 1.5 User Characteristics": "MLS is designed for librarians, registered customers, and library administrators.",
+    "[SUBSEC] 1.6 Limitations": "MLS requires internet access for real-time updates and external database synchronization.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "MLS relies on identity verification, borrowing history, and cataloging systems.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Borrowing Sheet: A record of customer loans and due dates."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "MLS: Media Library System",
+      "API: Application Programming Interface",
+      "TLS: Transport Layer Security"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall integrate with identity databases for customer verification.",
+      "REQ-INTF-002": "The system shall connect with external cataloging services for media updates."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall allow librarians to register customers, assign membership types, and update records (REQ-DB-001).",
+      "REQ-FUNC-002": "The system shall manage loans, enforce borrowing limits, apply overdue penalties, and send notifications (REQ-DB-001, REQ-INTF-002).",
+      "REQ-FUNC-003": "The system shall block overdue borrowers, send alerts, and lift restrictions upon return (REQ-DB-001).",
+      "REQ-FUNC-004": "The system shall differentiate borrowable and consultation-only works, enforcing restrictions where applicable (REQ-DB-001)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an intuitive UI for searching, reserving, and borrowing works."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process borrowing transactions without significant delay."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall securely store customer details, loan records, and borrowing history."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall ensure unique customer and work identifiers."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with data protection regulations for customer privacy."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall log transactions, enforce access controls, and encrypt sensitive data."
+    }
+  },
+  "[SEC] 3. Verification": "Tests for customer registration, borrowing restrictions, overdue handling, and consultation-only enforcement.",
+  "[SEC] 4. Supporting Information": "User guides, API documentation, and security policies.",
+  "[SEC] 5. References": "Library management best practices and data privacy regulations."
+}

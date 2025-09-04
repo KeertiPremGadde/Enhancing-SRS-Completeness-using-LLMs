@@ -1,0 +1,65 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The GParted v0.6.0-1 defines requirements for a partition manager supporting disk management tasks.",
+    "[SUBSEC] 1.2 Scope": "GParted provides tools for creating, resizing, and formatting partitions across file systems.",
+    "[SUBSEC] 1.4 Product Functions": "GParted supports partition creation, deletion, resizing, cloning, and file system formatting.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "GParted integrates with GNU Parted libraries and system utilities for device management.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "GParted provides a GUI with menus, toolbars, and graphical partition representation.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "GParted supports IDE, SATA, RAID controllers, and USB devices.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "GParted relies on GNU/Linux-based utilities for partition operations.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "GParted supports network setup via dhclient for updates.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "GParted runs on low-resource systems with minimal memory requirements.",
+      "[SUBSUBSEC] 1.3.7 Operations": "GParted operates as a LiveCD application without requiring installation.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "GParted links with backup and cloud storage services for partition management.",
+      "[SUBSUBSEC] 1.3.8 MISSING-TAG2": "GParted is configurable for administrators and casual users."
+    },
+    "[SUBSEC] 1.6 Limitations": "GParted relies on GNU/Linux and libparted for core functionality.",
+    "[SUBSEC] 1.8 Definitions": [
+      "LiveCD: Bootable media runs software without installation.",
+      "Partition: Logical division."
+    ],
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "GParted assumes compatible file systems and hardware support.",
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "GUI: Graphical User Interface",
+      "RAID: Redundant Array of Independent Disks"
+    ],
+    "[SUBSEC] 1.5 MISSING-TAG1": "GParted is designed for system administrators and casual users managing disk partitions."
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall allow users to create, delete, resize, and format partitions.",
+      "REQ-FUNC-002": "The system shall support file system labeling and integrity checks (REQ-FUNC-001).",
+      "REQ-FUNC-003": "The system shall enable partition cloning and migration for disk management (REQ-INTF-001)."
+    },
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall integrate with GNU Parted libraries for partition operations.",
+      "REQ-INTF-002": "The system shall support GUI and CLI interactions."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an intuitive GUI with graphical disk representation.",
+      "REQ-USAB-002": "The system shall include help documentation and warnings for critical actions."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall maintain logs of partition changes for auditing (REQ-FUNC-001).",
+      "REQ-DB-002": "The system shall store configuration settings for user sessions."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process partition modifications within 5 seconds on standard drives.",
+      "REQ-PERF-002": "The system shall support drives up to 2TB without performance degradation."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with POSIX standards for interoperability."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall log critical actions and provide error notifications."
+    },
+    "[SUBSEC] 2.6 MISSING-TAG3": {
+      "REQ-DSGN-001": "The system shall adhere to the GNU License version 2.",
+      "REQ-DSGN-002": "The system shall be compatible with major Linux distributions."
+    }
+  },
+  "[SEC] 3. Verification": "Unit, integration, and user testing for compliance.",
+  "[SEC] 4. Supporting Information": "Manuals, configuration guides, and online documentation.",
+  "[SEC] 5. References": "GParted official documentation, SourceForge project page, and POSIX standards."
+}

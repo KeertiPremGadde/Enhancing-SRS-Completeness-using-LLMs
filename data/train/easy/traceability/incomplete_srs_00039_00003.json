@@ -1,0 +1,61 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Neéos Child Care Management (NCCM) defines requirements for a child care management system to streamline administrative and operational tasks.",
+    "[SUBSEC] 1.2 Scope": "NCCM automates child care operations, including attendance tracking, billing, reminders, and compliance.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "NCCM integrates with web browsers and centralized databases for secure storage.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "NCCM provides role-based dashboards for administrators, teachers, and assistants.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "NCCM operates on devices supporting web browsers with internet access.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "NCCM utilizes ASP.NET for development and connects with reporting tools.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "NCCM ensures secure data exchange using HTTP/HTTPS.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "NCCM securely stores child and staff records with optimized memory use.",
+      "[SUBSUBSEC] 1.3.7 Operations": "NCCM enables real-time attendance tracking, reminders, and automated billing.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "NCCM supports flexible configurations for different child care centers.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "NCCM integrates with payment gateways and third-party reporting services."
+    },
+    "[SUBSEC] 1.4 Product Functions": "NCCM tracks attendance, generates invoices, manages immunization records, and produces reports.",
+    "[SUBSEC] 1.5 User Characteristics": "NCCM is designed for administrators, teachers, and assistants with basic computer proficiency.",
+    "[SUBSEC] 1.6 Limitations": "NCCM depends on ASP.NET-supported web servers and stable internet connectivity.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "NCCM assumes users have access to supported browsers and hardware.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Daily Reminder: Automated notifications for scheduled tasks."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "NCCM: Neéos Child Care Management",
+      "ASP.NET: Active Server Pages .NET"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall support login functionality with unique usernames and passwords.",
+      "REQ-INTF-002": "The system shall provide dashboards with role-specific access to features."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall track child arrival and departure times for billing (REQ-FUNC-002).",
+      "REQ-FUNC-002": "The system shall maintain records of authorized child pickup individuals (REQ-INTF-54).",
+      "REQ-FUNC-003": "The system shall generate invoices with detailed billing information (REQ-PERF-001, REQ-DB-001).",
+      "REQ-FUNC-004": "The system shall manage classroom waiting lists dynamically."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide intuitive interfaces with clear navigation (REQ-FUNC-002)."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process attendance records within 3 seconds of submission (REQ-FUNC-67)."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store child attendance and billing records for a minimum of 1 year (REQ-INTF-001)."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall follow security best practices, including password encryption (REQ-INTF-99)."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with child care data privacy regulations."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall maintain 99% uptime during operational hours."
+    }
+  },
+  "[SEC] 3. Verification": "Unit testing for login, billing, and integration testing for dashboards and reminders.",
+  "[SEC] 4. Supporting Information": "User manuals, technical guides, and configuration examples.",
+  "[SEC] 5. References": "NCCM User Guide, ASP.NET Development Manual, Data Privacy Regulations."
+}

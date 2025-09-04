@@ -1,0 +1,67 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The THEMAS defines requirements to optimize energy consumption and operational efficiency in facilities.",
+    "[SUBSEC] 1.2 Scope": "THEMAS supports real-time monitoring, predictive analytics, and automated energy management.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "THEMAS integrates with building automation, smart meters, and IoT devices.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "THEMAS provides dashboards and mobile-friendly interfaces for facility managers.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "THEMAS runs on cloud-hosted servers and IoT hardware.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "THEMAS supports APIs for third-party integrations.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "THEMAS uses secure MQTT and HTTPS protocols.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "The system ensures efficient memory use on embedded devices, optimizing performance while maintaining minimal energy consumption.",
+      "[SUBSUBSEC] 1.3.7 Operations": "THEMAS ensures 24/7 availability with planned maintenance and automated failover to minimize downtime.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "The system scales to diverse facilities, adapting to different energy infrastructures and operational needs.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "THEMAS connects with external analytics, compliance platforms, and energy regulation databases for monitoring and reporting."
+    },
+    "[SUBSEC] 1.4 Product Functions": "THEMAS monitors energy, analyzes patterns, and optimizes consumption.",
+    "[SUBSEC] 1.5 User Characteristics": "Users include facility managers, energy analysts, and system administrators.",
+    "[SUBSEC] 1.6 Limitations": "THEMAS relies on stable internet connectivity and functional IoT hardware.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "THEMAS requires operational IoT devices and API integrations.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Energy Analytics: Analysis of energy use patterns.",
+      "Dashboard: UI for monitoring real-time metrics."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "MQTT: Message Queuing Telemetry Transport",
+      "IoT: Internet of Things",
+      "GDPR: General Data Protection Regulation"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall integrate with IoT devices for energy data collection.",
+      "REQ-INTF-002": "The system shall support APIs for third-party analytics tools."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall provide energy usage trends and historical data.",
+      "REQ-FUNC-002": "The system shall enable automated energy optimization based on rules (REQ-INTF-001)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide customizable dashboards for visualization.",
+      "REQ-USAB-002": "The system shall support WCAG 2.1 accessibility compliance."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall display energy data within 2 seconds.",
+      "REQ-PERF-002": "The system shall support 1,000 concurrent users at peak hours."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store energy data and logs securely (REQ-FUNC-001).",
+      "REQ-DB-002": "The database shall enable role-based access and real-time updates."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall be compatible with AWS and Azure cloud platforms.",
+      "REQ-DSGN-002": "The system shall follow modular design principles."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with GDPR for data protection.",
+      "REQ-COMP-002": "The system shall meet ISO 50001 energy management standards."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall support dynamic scaling for growing data volumes.",
+      "REQ-ATTR-002": "The system shall log all critical actions for auditing."
+    }
+  },
+  "[SEC] 3. Verification": "Functional, performance, and compliance testing.",
+  "[SEC] 4. Supporting Information": "Setup guides, user training, IoT integration manuals, and Energy optimization practices.",
+  "[SEC] 5. References": "ISO 50001, MQTT standards, and GDPR compliance."
+}

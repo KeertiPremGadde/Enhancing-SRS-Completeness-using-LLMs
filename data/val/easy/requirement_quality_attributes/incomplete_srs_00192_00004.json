@@ -1,0 +1,64 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The School Management System (SMS) defines requirements for managing courses, trainers, and documents.",
+    "[SUBSEC] 1.2 Scope": "SMS supports course catalog, scheduling, registration, trainer assignment, and document storage.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "SMS integrates with school websites, email services, and document storage for automated updates, notifications, and secure file management.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "SMS provides web dashboards using React.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "SMS supports web-based access on computing devices.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "SMS uses PostgreSQL, REST APIs, and scheduling systems.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "SMS secures data transmission via HTTPS.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "SMS optimizes storage for course and participant data.",
+      "[SUBSUBSEC] 1.3.7 Operations": "SMS ensures 24/7 availability with maintenance.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "SMS supports flexible course structures.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "SMS links to document repositories and LMS."
+    },
+    "[SUBSEC] 1.4 Product Functions": "SMS manages courses, trainers, registrations, and documents.",
+    "[SUBSEC] 1.5 User Characteristics": "SMS is designed for administrators, trainers, and students.",
+    "[SUBSEC] 1.6 Limitations": "SMS requires internet; depends on email and document storage.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "SMS relies on OAuth authentication and cloud storage.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Course Catalog: List of courses, trainers, and schedules.",
+      "Referenced Document: Supporting material stored in document repositories."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "SMS: School Management System",
+      "HTTPS: Hypertext Transfer Protocol Secure",
+      "LMS: Learning Management System"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall allow course catalog updates via API calls to school websites.",
+      "REQ-INTF-002": "The system shall send email invitations using SendGrid."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall allow administrators to manage courses and schedules (REQ-DB-001).",
+      "REQ-FUNC-002": "The system shall register participants and send confirmations (REQ-DB-001).",
+      "REQ-FUNC-003": "The system shall assign trainers and store session records."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an interactive dashboard (REQ-FUNC-001).",
+      "REQ-USAB-002": "The system shall display course schedules, trainers, and participants."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process registrations without significant delay (REQ-FUNC-002).",
+      "REQ-PERF-002": "The system shall load course catalogs in under a couple seconds (REQ-FUNC-001)."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall securely store courses, registrations, trainer assignments, and session records (REQ-FUNC-001, REQ-FUNC-002)."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall enforce role-based access control for administrators, trainers, and participants (REQ-DB-001)."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with GDPR and FERPA."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall log all course updates and registrations."
+    }
+  },
+  "[SEC] 3. Verification": "Unit, integration, and load testing validate course management, registration, and trainer assignments.",
+  "[SEC] 4. Supporting Information": "User manuals, API documentation, security policies.",
+  "[SEC] 5. References": "GDPR, FERPA and Educational data privacy regulations."
+}

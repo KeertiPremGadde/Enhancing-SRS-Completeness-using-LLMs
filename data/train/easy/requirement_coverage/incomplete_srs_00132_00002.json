@@ -1,0 +1,63 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The WCS Reporting System (WCS-RS) defines requirements for an IBM-compliant reporting platform ensuring usability, security, and efficiency.",
+    "[SUBSEC] 1.2 Scope": "WCS-RS supports report generation, authentication, database integration, and IBM branding compliance.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "WCS-RS integrates with IBM W3 authentication, CCR databases, and reporting services.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "WCS-RS provides a GUI-based reporting dashboard formatted for 800x600 resolution.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "WCS-RS runs on IBM workstations with Windows 10+ or cloud infrastructure.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "WCS-RS utilizes REST APIs, BI tools like Power BI and Tableau, and SQL databases.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "WCS-RS ensures encrypted data transmission.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "WCS-RS optimizes high-volume queries for efficiency.",
+      "[SUBSUBSEC] 1.3.7 Operations": "WCS-RS ensures continuous availability with scheduled updates.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "WCS-RS supports international CCR data integration.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "WCS-RS links to authentication, reporting, and compliance monitoring."
+    },
+    "[SUBSEC] 1.4 Product Functions": "WCS-RS facilitates report generation, authentication, monitoring, and scheduled updates.",
+    "[SUBSEC] 1.5 User Characteristics": "WCS-RS is designed for CCR users, supervisors, and administrators.",
+    "[SUBSEC] 1.6 Limitations": "WCS-RS requires IBM workstations, Windows OS, and W3 intranet access.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "WCS-RS relies on IBM authentication, CCR database access, and weekly queries.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Point-and-Click UI: Interface operated using a mouse or keyboard.",
+      "BI Tools: Business intelligence tools."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "GUI: Graphical User Interface",
+      "IBM W3: IBM Intranet",
+      "CCR: Corporate Community Grants"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall authenticate users via IBM W3 login.",
+      "REQ-INTF-002": "The system shall connect to WCS databases and CCR data sources.",
+      "REQ-INTF-003": "The system shall export reports in Excel (.xls, .xlsx) format."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall enable TO-BE-DEFINED (REQ-INTF-002, REQ-DB-001).",
+      "REQ-FUNC-002": "The system shall refresh data weekly via automated queries (REQ-INTF-002, REQ-DB-001)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an intuitive UI, allowing 90% of users to generate reports on first use."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process 90% of queries within 2 seconds.",
+      "REQ-PERF-002": "The system shall support modern screen resolutions."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store user roles, report templates, and query logs."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall comply with IBM branding, displaying IBM and CCR logos."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall follow IBM security policies and prevent cookie-based logins."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall ensure 95% uptime relative to IBM W3 availability."
+    }
+  },
+  "[SEC] 3. Verification": "Report generation, authentication, and security shall be tested.",
+  "[SEC] 4. Supporting Information": "User manuals, UI guides, and IBM branding policies.",
+  "[SEC] 5. References": "IBM usability standards, W3 authentication, and WCS policies."
+}

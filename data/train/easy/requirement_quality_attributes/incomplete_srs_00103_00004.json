@@ -1,0 +1,63 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Company Engine Component Manufacturing System (CECMS) defines requirements for processing orders, tracking production, and managing final assembly.",
+    "[SUBSEC] 1.2 Scope": "CECMS supports order classification, supplier coordination, inventory tracking, invoicing, and production fulfillment.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "CECMS integrates with sales, supplier, and production databases for real-time updates.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "CECMS provides dashboards for order, stock, and production tracking.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "CECMS supports factory automation systems, barcode scanners, and order processing terminals.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "CECMS connects with ERP, procurement, and supplier systems via PostgreSQL/MySQL, REST APIs.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "CECMS secures data via HTTPS, OAuth 2.0, and JWT authentication.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "CECMS optimizes storage for orders and inventory.",
+      "[SUBSUBSEC] 1.3.7 Operations": "CECMS ensures 24/7 availability with automated monitoring and maintenance.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "CECMS is configurable for multiple factories and supply chains.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "CECMS integrates with cloud, logistics, and supplier networks."
+    },
+    "[SUBSEC] 1.4 Product Functions": "CECMS manages orders, production tracking, inventory classification, supplier coordination, and invoicing.",
+    "[SUBSEC] 1.5 User Characteristics": "CECMS serves sales teams, production managers, and inventory personnel.",
+    "[SUBSEC] 1.6 Limitations": "CECMS requires internet for real-time updates, supplier coordination.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "CECMS relies on supplier networks, sales databases, and production schedules.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Stock: Acquired production components.",
+      "Invoice: Payment and refund document."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "CECMS: Company Engine Component Manufacturing System",
+      "JWT: JSON Web Token",
+      "ERP: Enterprise Resource Planning",
+      "OAuth: Open Authorization"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall integrate with production databases.",
+      "REQ-INTF-002": "The system shall connect with supplier systems to track part availability and lead times."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall process customer orders, prioritizing those with several+ past orders, applying a 20% stock increase for priority clients (REQ-DB-001).",
+      "REQ-FUNC-002": "The system shall classify parts and generate factory and stock listings (REQ-DB-001, REQ-INTF-002).",
+      "REQ-FUNC-003": "The system shall track order fulfillment and invoicing, monitoring production, payments, and deliveries (REQ-DB-001)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an order and stock tracking interface with filters, updates, and reports."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall generate reports in 2s during normal demand and 5s during high demand."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall securely store order, production, supplier, and invoicing data."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall assign unique tracking IDs."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with industry standards, ensuring encryption, audit logs, financial transaction security, and compliance with tax regulations."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall log order, invoice, supplier updates, retaining records for 12 months (REQ-DB-001)."
+    }
+  },
+  "[SEC] 3. Verification": "Tests for order prioritization, supplier tracking, invoicing, and assembly coordination.",
+  "[SEC] 4. Supporting Information": "User manuals, API documentation, procurement guidelines, and compliance policies.",
+  "[SEC] 5. References": "Manufacturing, financial, and procurement policies."
+}

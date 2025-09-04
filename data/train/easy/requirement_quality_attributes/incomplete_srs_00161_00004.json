@@ -1,0 +1,64 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Claims and Repair Management System (CRMS) defines requirements for compliance, usability, security, and performance in handling claims and repair facility operations.",
+    "[SUBSEC] 1.2 Scope": "CRMS provides a secure platform for claims processing and repair facility management, ensuring corporate and regulatory compliance.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "CRMS integrates with the ChoiceParts system and repair facility databases.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "CRMS supports a professional UI compliant with corporate design guidelines.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "CRMS is compatible with desktops in office and repair shop environments.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "CRMS uses RESTful APIs for search operations and transaction processing.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "CRMS ensures secure data exchange using HTTPS/TLS 1.3.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "CRMS is optimized for high-volume insurance transactions.",
+      "[SUBSUBSEC] 1.3.7 Operations": "CRMS maintains generally available uptime per corporate schedules.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "CRMS supports accessibility and remote usage by adjusters.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "CRMS links to compliance, insurance, and claims databases."
+    },
+    "[SUBSEC] 1.4 Product Functions": "CRMS facilitates recycled parts searches, preferred repair facility selection, and audit reporting.",
+    "[SUBSEC] 1.5 User Characteristics": "CRMS is designed for adjusters and collision estimators handling claims and repairs.",
+    "[SUBSEC] 1.6 Limitations": "CRMS requires stable corporate network access and authentication.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "CRMS depends on the ChoiceParts system and repair facility database.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Recycled Parts: Salvaged vehicle parts for repairs.",
+      "Audit Report: Evaluation of recycled parts usage."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "TLS: Transport Layer Security",
+      "API: Application Programming Interface"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall interface with the ChoiceParts system for daily parts data retrieval.",
+      "REQ-INTF-002": "The system shall connect to the repair facility rating database to store and retrieve facility scores."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall allow adjusters to search for preferred repair facilities using vehicle data (REQ-INTF-002).",
+      "REQ-FUNC-002": "The system shall enable collision estimators to search for recycled parts based on vehicle parts and supplier lists (REQ-INTF-001).",
+      "REQ-FUNC-003": "The system shall generate an audit report detailing recycled parts availability and usage."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall comply with corporate UI and color scheme standards.",
+      "REQ-USAB-002": "The system shall provide in-app help for at least 90% of functionalities."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall return recycled parts search results within a brief moment under normal conditions.",
+      "REQ-PERF-002": "The system shall complete repair facility searches within 8 seconds."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall retain search results for recycled parts and repair facilities for reference."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall comply with corporate architecture guidelines.",
+      "REQ-DSGN-002": "The system shall operate on existing corporate hardware."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with Sarbanes-Oxley and insurance regulations."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall maintain generally available uptime, following corporate availability guidelines."
+    }
+  },
+  "[SEC] 3. Verification": "Tests search accuracy, audit reports, UI compliance, and security enforcement.",
+  "[SEC] 4. Supporting Information": "Compliance guidelines and UI standards.",
+  "[SEC] 5. References": "Sarbanes-Oxley Act (SOX) and insurance regulations."
+}

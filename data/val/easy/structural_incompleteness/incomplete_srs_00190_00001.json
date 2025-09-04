@@ -1,0 +1,65 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Personnel Management System (PMS) defines requirements for managing personnel in regional departments and local agencies.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "PMS integrates with HR databases, payroll systems, and regional agency records.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "PMS allows HR personnel and regional managers to manage employee and agency details.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "PMS supports workstations, tablets, and secure authentication devices.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "PMS uses PostgreSQL, MongoDB, REST APIs, and OAuth 2.0 for security.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "PMS secures data via TLS encryption and role-based access control.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "PMS is optimized for large-scale personnel tracking and regional data storage.",
+      "[SUBSUBSEC] 1.3.7 Operations": "PMS manages employees, agencies, and assignments.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "PMS is configurable for regional departments and agencies.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "PMS connects with payroll, employee benefits, performance evaluation, and reporting tools."
+    },
+    "[SUBSEC] 1.2 Scope": "PMS supports personnel tracking, regional management, and agency structuring.",
+    "[SUBSEC] 1.4 Product Functions": "PMS manages personnel records, agencies, and reporting.",
+    "[SUBSEC] 1.5 User Characteristics": "PMS is designed for HR personnel, regional managers, and administrative staff.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "PMS relies on an up-to-date employee database and properly assigned regional managers.",
+    "[SUBSEC] 1.6 Limitations": "PMS requires updated personnel data and active agency connections.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Personnel: Employees working in local agencies or regional departments.",
+      "Regional Management: Regional departments managing agencies.",
+      "Local Agency: Company branch per region."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "PMS: Personnel Management System",
+      "HR: Human Resources",
+      "API: Application Programming Interface"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall store and manage personnel records for local agencies (REQ-DB-001).",
+      "REQ-INTF-002": "The system shall track regional departments and their managed agencies (REQ-DB-002)."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process personnel updates in under 2 seconds."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall allow registration and modification of personnel details (REQ-DB-001).",
+      "REQ-FUNC-002": "The system shall manage assignments of employees to local agencies and regional departments (REQ-DB-002).",
+      "REQ-FUNC-003": "The system shall generate reports on personnel distribution across agencies (REQ-DB-003)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an interface for managing personnel and agencies."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store personnel details, including role and agency.",
+      "REQ-DB-002": "The system shall store regional department codes, labels, and linked local agencies.",
+      "REQ-DB-003": "The system shall store personnel performance data."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall enforce unique identification for employees, agencies, and regional departments."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with HR data security and regional employment regulations."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall log personnel updates and assignments."
+    }
+  },
+  "[SEC] 3. Verification": "Tests personnel management, agency tracking, and reporting functionalities.",
+  "[SEC] 4. Supporting Information": "User guides, API documentation, and HR policies.",
+  "[SEC] 5. References": "Employment regulations, personnel tracking standards, and company HR policies."
+}

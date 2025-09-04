@@ -1,0 +1,64 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The University Management System (UMS) defines requirements for managing departments, personnel, offices, and classrooms.",
+    "[SUBSEC] 1.2 Scope": "UMS supports university structure, department allocations, personnel assignments, and facility tracking.",
+    "[SUBSEC] 1.4 Product Functions": "UMS facilitates department management, personnel assignments, and facility tracking.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "UMS integrates with university databases and facility management systems for real-time updates on department structures and faculty workload tracking.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "UMS provides administrative dashboards for personnel and department management.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "UMS operates on university computing devices.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "UMS supports PostgreSQL for storage and integrates with HR records via REST APIs.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "UMS secures data transmission using HTTPS, OAuth 2.0, and JWT authentication.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "UMS optimizes storage for personnel and facility data.",
+      "[SUBSUBSEC] 1.3.7 Operations": "UMS ensures continuous availability with scheduled maintenance and data backups.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "UMS is configurable for diverse university structures.",
+      "[SUBSUBSEC] 1.3.9 MISSING-TAG2": "UMS links with academic planning and facility tracking systems."
+    },
+    "[SUBSEC] 1.5 User Characteristics": "UMS serves university administrators, faculty, and facility managers.",
+    "[SUBSEC] 1.6 Limitations": "UMS requires internet connectivity for real-time updates.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Department: Academic unit managing offices and personnel.",
+      "Classroom: University facility with an ID and seat count.",
+      "Professor: Faculty member categorized as Full, Associate, or Assistant Professor."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "UMS: University Management System",
+      "HTTPS: Hypertext Transfer Protocol Secure",
+      "JWT: JSON Web Token"
+    ],
+    "[SUBSEC] 1.7 MISSING-TAG1": "UMS depends on HR systems and academic databases."
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall integrate with university databases for personnel and facilities.",
+      "REQ-INTF-002": "The system shall communicate with HR systems for professor and employee records."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall manage departments, offices, and facility assignments (REQ-DB-001).",
+      "REQ-FUNC-002": "The system shall assign professors to departments (REQ-INTF-002).",
+      "REQ-FUNC-003": "The system shall ensure every employee is assigned an office."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall load department data within 2 seconds under normal load and within 3 seconds during peak usage with 1,000 concurrent users.",
+      "REQ-PERF-002": "The system shall process personnel assignments within 3 seconds."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an interactive dashboard for personnel and department assignments."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall ensure unique identification for personnel and facilities."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall log department and personnel updates, retaining audit logs for 12 months."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with university data policies."
+    },
+    "[SUBSEC] 2.5 MISSING-TAG3": {
+      "REQ-DB-001": "The system shall store department details, personnel records, and facilities."
+    }
+  },
+  "[SEC] 3. Verification": "Verification includes department management, personnel assignments, and facility tracking tests.",
+  "[SEC] 4. Supporting Information": "User manuals, API documentation, onboarding tutorials, sample API requests, and compliance training guides for university staff.",
+  "[SEC] 5. References": "University data policies and facility tracking guidelines."
+}

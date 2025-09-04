@@ -1,0 +1,65 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Bath Data Archive (BDA) defines functional and technical requirements for managing, depositing, and reusing research datasets.",
+    "[SUBSEC] 1.2 Scope": "BDA supports dataset deposits, metadata, licensing, embargoes, and access control.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "BDA integrates with CRIS, LDAP, and APIs.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "BDA provides web-based workflows for dataset submission and metadata management.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "BDA operates on scalable university cloud infrastructure.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "BDA supports REST APIs for automated deposits and metadata harvesting.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "BDA ensures secure HTTPS communication.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "BDA optimizes resource allocation for handling large dataset uploads.",
+      "[SUBSUBSEC] 1.3.7 Operations": "BDA ensures 24/7 uptime.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "BDA supports multilingual metadata.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "BDA links to repositories and indexers."
+    },
+    "[SUBSEC] 1.5 User Characteristics": "BDA serves depositors, researchers, administrators, and funding agencies.",
+    "[SUBSEC] 1.4 Product Functions": "BDA supports dataset deposits, licensing, embargoes, and citation tracking.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "BDA requires compliance with archival standards and persistent identifier systems.",
+    "[SUBSEC] 1.6 Limitations": "BDA relies on university infrastructure and integrations.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Dataset: Research files stored in BDA.",
+      "DOI: Persistent identifier for dataset citation."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "CRIS: Current Research Information System",
+      "SWORD2: Simple Web-service Offering Repository Deposit"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall integrate with CRIS and LDAP for authentication and metadata synchronization.",
+      "REQ-INTF-002": "The system shall provide SWORD2 APIs for automated deposits.",
+      "REQ-INTF-003": "The system shall enable metadata harvesting."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall allow dataset deposits with auto-metadata (REQ-DB-001).",
+      "REQ-FUNC-002": "The system shall enforce licensing, embargoes, and access controls while linking datasets to publications (REQ-DSGN-001, REQ-DSGN-002).",
+      "REQ-FUNC-003": "The system shall mint DOIs, track dataset citations, and support multilingual metadata management (REQ-DB-002)."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall upload datasets within 10 sec.",
+      "REQ-PERF-002": "The system shall support up to 5,000 users while maintaining optimal response times (REQ-ATTR-001)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an intuitive, web-based interface with familiar navigation (REQ-DSGN-002)."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store metadata in an indexed relational DB and manage datasets in distributed storage."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall adhere to ISO 14721 for digital preservation compliance."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall comply with GDPR and archival data protection standards.",
+      "REQ-DSGN-002": "The system shall encrypt all data at rest and in transit."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall provide role-based access control.",
+      "REQ-ATTR-002": "The system shall ensure 99.9% system uptime."
+    }
+  },
+  "[SEC] 3. Verification": "Functional tests for dataset deposits, licensing enforcement, and system performance benchmarks.",
+  "[SEC] 4. Supporting Information": "Metadata schemas, architecture, and APIs.",
+  "[SEC] 5. References": "GDPR, ISO 14721, and SWORD2."
+}

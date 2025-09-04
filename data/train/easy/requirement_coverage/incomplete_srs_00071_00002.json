@@ -1,0 +1,58 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Online Grocery System (OGS) enables customers to browse, place orders, and track deliveries.",
+    "[SUBSEC] 1.2 Scope": "OGS supports product search, order management, cart functionality, delivery tracking, customer accounts, payments, and notifications.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "OGS integrates with payment gateways, delivery services, and authentication systems.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "OGS offers web and mobile apps for both customers and administrators.",
+      "[SUBSUBSEC] 1.3.3 Hardware and Software Interfaces": "OGS is accessible on desktops, laptops, and mobile devices using REST APIs for integration with external services.",
+      "[SUBSUBSEC] 1.3.4 Communications Interfaces": "OGS sends notifications via email, SMS, and in-app messages for order updates.",
+      "[SUBSUBSEC] 1.3.5 Memory Constraints": "OGS optimizes storage for product data, customer orders, and delivery information.",
+      "[SUBSUBSEC] 1.3.6 Operations": "OGS supports order creation, payment processing, and delivery tracking.",
+      "[SUBSUBSEC] 1.3.7 Site Adaptation Requirements": "OGS customizes interfaces and notifications based on user roles.",
+      "[SUBSUBSEC] 1.3.8 Interfaces with Services": "OGS integrates with third-party systems for payment processing and order tracking.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "OGS integrates with third-party systems for payment processing and order tracking."
+    },
+    "[SUBSEC] 1.4 Product Functions": "OGS allows customers to browse products, place orders, track deliveries, manage payments, and create shopping lists.",
+    "[SUBSEC] 1.5 User Characteristics": "OGS serves customers, supermarket managers, and delivery personnel.",
+    "[SUBSEC] 1.6 Limitations": "OGS requires internet access for order placement, payment, and tracking.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "OGS relies on external payment gateways, delivery services, and real-time order tracking systems.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Order: Customer request."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "UI: User Interface."
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall allow customers to place orders and set delivery preferences.",
+      "REQ-INTF-002": "The system shall integrate with external payment processors and delivery services."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall allow customers to browse products, place orders, select delivery preferences, and track delivery statuses with real-time updates. (REQ-INTF-001, REQ-DB-001, REQ-INTF-002)",
+      "REQ-FUNC-002": "The system shall provide TO-BE-DEFINED (REQ-INTF-002, REQ-DB-001)"
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an intuitive UI for browsing, ordering, and tracking deliveries. (REQ-FUNC-001)"
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall provide real-time updates on orders and delivery status within 2 seconds. (REQ-FUNC-001)"
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store customer data, order history, payment details, and delivery status in a secure database. (REQ-FUNC-002)"
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall ensure secure authentication and data storage. (REQ-FUNC-002)"
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with data protection regulations like GDPR. (REQ-DSGN-001)"
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall ensure encrypted communication for secure data transfer. (REQ-PERF-001)"
+    }
+  },
+  "[SEC] 3. Verification": "Validate order placement, payment processing, and real-time order tracking.",
+  "[SEC] 4. Supporting Information": "User guides, API instructions for integration, and system setup details.",
+  "[SEC] 5. References": "E-commerce best practices, food delivery system standards, and data protection regulations."
+}

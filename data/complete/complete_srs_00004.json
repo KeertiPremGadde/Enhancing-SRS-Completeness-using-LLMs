@@ -1,0 +1,65 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Crime & Criminal Tracking Network and Systems (CCTNS) improves crime tracking, citizen interaction, and police workflows.",
+    "[SUBSEC] 1.2 Scope": "CCTNS facilitates complaint handling, evidence management, and secure communication among stakeholders.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "CCTNS integrates with court systems and citizen portals via RESTful APIs.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "CCTNS provides web-based responsive interfaces for police personnel and citizens.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "CCTNS operates on secure cloud servers and police workstations.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "CCTNS supports PostgreSQL 16 and OpenAPI-based APIs.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "CCTNS uses HTTPS and TLS 1.3 for secure communications.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "CCTNS is optimized for minimal endpoint memory usage.",
+      "[SUBSUBSEC] 1.3.7 Operations": "CCTNS ensures 24/7 availability with automated failover.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "CCTNS operates across diverse network setups.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "CCTNS integrates with Aadhaar for identity verification."
+    },
+    "[SUBSEC] 1.4 Product Functions": "CCTNS provides complaint registration, investigation tracking, and citizen support.",
+    "[SUBSEC] 1.5 User Characteristics": "Users include citizens, police personnel, and administrators.",
+    "[SUBSEC] 1.6 Limitations": "CCTNS requires stable internet and API access.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "CCTNS relies on operational external services.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Complaint: Request by a citizen for police intervention.",
+      "Evidence: Material relevant to a criminal investigation."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "CCTNS: Crime & Criminal Tracking Network and Systems"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall integrate with court systems to manage case statuses.",
+      "REQ-INTF-002": "The system shall provide secure complaint registration through citizen portals."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall allow citizens to file complaints and track updates (REQ-DB-001).",
+      "REQ-FUNC-002": "The system shall enable police to manage investigations, including evidence tracking (REQ-DB-002)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide intuitive dashboards for user-friendly navigation.",
+      "REQ-USAB-002": "The system shall support both desktop and mobile platforms."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process case searches within 5 seconds.",
+      "REQ-PERF-002": "The system shall support up to 2,000 concurrent users."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store complaints and logs in PostgreSQL 16.",
+      "REQ-DB-002": "The database shall support role-based access control."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall comply with WCAG 2.1 accessibility standards.",
+      "REQ-DSGN-002": "The system shall be compatible with Ubuntu 22.04 LTS."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall adhere to GDPR data protection regulations.",
+      "REQ-COMP-002": "The system shall ensure metadata compliance with open standards."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall provide audit logging for administrative actions.",
+      "REQ-ATTR-002": "The system shall scale dynamically based on demand."
+    }
+  },
+  "[SEC] 3. Verification": "Functional validation, usability testing, and compliance assessments for GDPR and WCAG 2.1 will be performed.",
+  "[SEC] 4. Supporting Information": "Administrator guides, OpenAPI documentation, and technical support materials will be available.",
+  "[SEC] 5. References": "WCAG 2.1, GDPR, OpenAPI, and TLS 1.3 specifications."
+}

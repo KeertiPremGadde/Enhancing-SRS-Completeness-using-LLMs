@@ -1,0 +1,61 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Structured Complaint Tracking and Lab Scheduling System (SCTLS) defines requirements for complaint reporting, automated lab scheduling, and equipment documentation, ensuring operational efficiency and structured management.",
+    "[SUBSEC] 1.2 Scope": "SCTLS supports complaint logging, response tracking, lab scheduling automation, and equipment record management.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "SCTLS integrates with admin dashboards for report generation, automated scheduling, and real-time equipment tracking.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "SCTLS provides a web-based UI for complaint submission, response tracking, and lab schedule monitoring.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "SCTLS runs on desktops, tablets, and mobile devices supporting web access.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "SCTLS uses React.js for frontend, Node.js with Express for backend, and PostgreSQL for structured data storage.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "SCTLS ensures automated notifications via email/SMS for complaint tracking, lab availability, and maintenance alerts.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "SCTLS optimizes report generation and real-time scheduling with minimal resource consumption.",
+      "[SUBSUBSEC] 1.3.7 Operations": "SCTLS enables structured complaint logging, efficient lab scheduling, and secure equipment documentation.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "SCTLS supports secure web-based access with real-time database synchronization.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "SCTLS links to authentication, reporting, and scheduling APIs."
+    },
+    "[SUBSEC] 1.4 Product Functions": "SCTLS facilitates complaint tracking, response monitoring, lab scheduling automation, and equipment documentation.",
+    "[SUBSEC] 1.5 User Characteristics": "Designed for students, faculty, and administrators managing complaints and lab schedules.",
+    "[SUBSEC] 1.6 Limitations": "SCTLS requires internet connectivity for real-time reporting and scheduling updates.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "SCTLS depends on database integrity, real-time scheduling updates, and secure authentication services.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Complaint Report: User-submitted issue logs for resolution tracking.",
+      "Lab Scheduling: System for reserving and tracking lab usage."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "UI: User Interface",
+      "API: Application Programming Interface",
+      "SCTLS: Structured Complaint Tracking and Lab Scheduling System"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall generate complaint reports for administrators and response reports for users.",
+      "REQ-INTF-002": "The system shall integrate with lab scheduling services and maintain equipment records."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall allow users to TO-BE-DEFINED (REQ-INTF-001).",
+      "REQ-FUNC-002": "The system shall automate lab scheduling, prevent conflicts, and maintain equipment documentation (REQ-INTF-002)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide a structured UI for complaint tracking and lab scheduling."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall generate reports within 3 seconds and handle up to 100 concurrent complaint submissions."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall securely store complaint records, response reports, lab schedules, and equipment logs."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall support web-based access with secure authentication."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall log complaint resolutions, lab modifications, and adhere to API security standards (OAuth 2.0)."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall maintain high availability for complaint tracking and scheduling functions."
+    }
+  },
+  "[SEC] 3. Verification": "Complaint tracking, report generation, and lab scheduling validated.",
+  "[SEC] 4. Supporting Information": "User guides, API references, and lab scheduling policies.",
+  "[SEC] 5. References": "Complaint resolution protocols, lab management standards, and data integrity guidelines."
+}

@@ -1,0 +1,64 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The County Portal (CP) defines requirements for managing applications, permits, inspections, and property records.",
+    "[SUBSEC] 1.2 Scope": "CP supports tracking, inspections, payments, notifications, and reports.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "CP integrates with GIS, payment gateways, and email services.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "CP provides dashboards for applicants, inspectors, and admins.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "CP operates on cloud and on-prem servers.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "CP integrates with PostgreSQL, GIS, and repositories.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "CP secures API access via OAuth 2.0, TLS 1.3, and rate limiting.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "CP processes large geospatial datasets efficiently.",
+      "[SUBSUBSEC] 1.3.7 Operations": "CP ensures 99.9% uptime with backups.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "CP supports zoning laws and workflows.",
+      "[SUBSUBSEC] 1.3.9 MISSING-TAG2": "CP connects with GIS, repositories, and logs."
+    },
+    "[SUBSEC] 1.4 Product Functions": "CP manages applications, permits, inspections, reports, and transactions.",
+    "[SUBSEC] 1.5 User Characteristics": "CP is designed for applicants, inspectors, and admins with RBAC.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "CP assumes compliance with building codes, zoning laws, and security policies.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Application: Permit request.",
+      "Inspection: Compliance verification.",
+      "OAuth 2.0: Secure authorization."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "GIS: Geographic Information System",
+      "MFA: Multi-Factor Authentication",
+      "RBAC: Role-Based Access Control"
+    ],
+    "[SUBSEC] 1.6 MISSING-TAG1": "CP depends on external data, availability, and regulations."
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall integrate with GIS for permit tracking and geospatial updates.",
+      "REQ-INTF-002": "The system shall process payments and encrypted notifications via TLS 1.3 and secure API access via OAuth 2.0, TLS 1.3, and rate limiting."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall allow users to submit, track, and update applications and permits (REQ-DB-001, REQ-SEC-001).",
+      "REQ-FUNC-002": "The system shall enable inspectors to schedule and log inspections with digital signatures (REQ-DB-002).",
+      "REQ-FUNC-003": "The system shall provide dashboards with RBAC (REQ-USAB-001)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an intuitive interface with MFA."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process updates in 3s and support 5,000 users."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store data with AES-256 and audit trails."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall comply with GDPR, ISO 27001, NIST, and encrypt data using AES-256 and TLS 1.3."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall enforce RBAC with MFA for authentication and enforce API rate limiting (100 requests/min per user).",
+      "REQ-ATTR-002": "The system shall ensure 99.9% uptime with failover and cryptographic logging."
+    },
+    "[SUBSEC] 2.7 MISSING-TAG3": {
+      "REQ-COMP-001": "The system shall adhere to ISO cybersecurity and data protection standards."
+    }
+  },
+  "[SEC] 3. Verification": "Audits, penetration tests, and compliance checks.",
+  "[SEC] 4. Supporting Information": "System architecture, security policies, and compliance reports.",
+  "[SEC] 5. References": "GDPR, ISO 27001, NIST, OAuth 2.0, PCI-DSS, and GIS documentation."
+}

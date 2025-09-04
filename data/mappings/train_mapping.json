@@ -1,0 +1,4102 @@
+[
+    {
+        "mapping_id": 415,
+        "input": "data/train/easy/traceability/incomplete_srs_00087_00003.json",
+        "output": "data/complete/complete_srs_00087.json"
+    },
+    {
+        "mapping_id": 346,
+        "input": "data/train/easy/traceability/incomplete_srs_00018_00003.json",
+        "output": "data/complete/complete_srs_00018.json"
+    },
+    {
+        "mapping_id": 24,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00024_00001.json",
+        "output": "data/complete/complete_srs_00024.json"
+    },
+    {
+        "mapping_id": 514,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00022_00004.json",
+        "output": "data/complete/complete_srs_00022.json"
+    },
+    {
+        "mapping_id": 527,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00035_00004.json",
+        "output": "data/complete/complete_srs_00035.json"
+    },
+    {
+        "mapping_id": 638,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00146_00004.json",
+        "output": "data/complete/complete_srs_00146.json"
+    },
+    {
+        "mapping_id": 479,
+        "input": "data/train/easy/traceability/incomplete_srs_00151_00003.json",
+        "output": "data/complete/complete_srs_00151.json"
+    },
+    {
+        "mapping_id": 591,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00099_00004.json",
+        "output": "data/complete/complete_srs_00099.json"
+    },
+    {
+        "mapping_id": 303,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00139_00002.json",
+        "output": "data/complete/complete_srs_00139.json"
+    },
+    {
+        "mapping_id": 601,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00109_00004.json",
+        "output": "data/complete/complete_srs_00109.json"
+    },
+    {
+        "mapping_id": 496,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00004_00004.json",
+        "output": "data/complete/complete_srs_00004.json"
+    },
+    {
+        "mapping_id": 228,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00064_00002.json",
+        "output": "data/complete/complete_srs_00064.json"
+    },
+    {
+        "mapping_id": 70,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00070_00001.json",
+        "output": "data/complete/complete_srs_00070.json"
+    },
+    {
+        "mapping_id": 370,
+        "input": "data/train/easy/traceability/incomplete_srs_00042_00003.json",
+        "output": "data/complete/complete_srs_00042.json"
+    },
+    {
+        "mapping_id": 499,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00007_00004.json",
+        "output": "data/complete/complete_srs_00007.json"
+    },
+    {
+        "mapping_id": 178,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00014_00002.json",
+        "output": "data/complete/complete_srs_00014.json"
+    },
+    {
+        "mapping_id": 13,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00013_00001.json",
+        "output": "data/complete/complete_srs_00013.json"
+    },
+    {
+        "mapping_id": 310,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00146_00002.json",
+        "output": "data/complete/complete_srs_00146.json"
+    },
+    {
+        "mapping_id": 428,
+        "input": "data/train/easy/traceability/incomplete_srs_00100_00003.json",
+        "output": "data/complete/complete_srs_00100.json"
+    },
+    {
+        "mapping_id": 528,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00036_00004.json",
+        "output": "data/complete/complete_srs_00036.json"
+    },
+    {
+        "mapping_id": 107,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00107_00001.json",
+        "output": "data/complete/complete_srs_00107.json"
+    },
+    {
+        "mapping_id": 542,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00050_00004.json",
+        "output": "data/complete/complete_srs_00050.json"
+    },
+    {
+        "mapping_id": 578,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00086_00004.json",
+        "output": "data/complete/complete_srs_00086.json"
+    },
+    {
+        "mapping_id": 420,
+        "input": "data/train/easy/traceability/incomplete_srs_00092_00003.json",
+        "output": "data/complete/complete_srs_00092.json"
+    },
+    {
+        "mapping_id": 309,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00145_00002.json",
+        "output": "data/complete/complete_srs_00145.json"
+    },
+    {
+        "mapping_id": 567,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00075_00004.json",
+        "output": "data/complete/complete_srs_00075.json"
+    },
+    {
+        "mapping_id": 3,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00003_00001.json",
+        "output": "data/complete/complete_srs_00003.json"
+    },
+    {
+        "mapping_id": 394,
+        "input": "data/train/easy/traceability/incomplete_srs_00066_00003.json",
+        "output": "data/complete/complete_srs_00066.json"
+    },
+    {
+        "mapping_id": 75,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00075_00001.json",
+        "output": "data/complete/complete_srs_00075.json"
+    },
+    {
+        "mapping_id": 308,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00144_00002.json",
+        "output": "data/complete/complete_srs_00144.json"
+    },
+    {
+        "mapping_id": 469,
+        "input": "data/train/easy/traceability/incomplete_srs_00141_00003.json",
+        "output": "data/complete/complete_srs_00141.json"
+    },
+    {
+        "mapping_id": 330,
+        "input": "data/train/easy/traceability/incomplete_srs_00002_00003.json",
+        "output": "data/complete/complete_srs_00002.json"
+    },
+    {
+        "mapping_id": 15,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00015_00001.json",
+        "output": "data/complete/complete_srs_00015.json"
+    },
+    {
+        "mapping_id": 119,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00119_00001.json",
+        "output": "data/complete/complete_srs_00119.json"
+    },
+    {
+        "mapping_id": 9,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00009_00001.json",
+        "output": "data/complete/complete_srs_00009.json"
+    },
+    {
+        "mapping_id": 639,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00147_00004.json",
+        "output": "data/complete/complete_srs_00147.json"
+    },
+    {
+        "mapping_id": 341,
+        "input": "data/train/easy/traceability/incomplete_srs_00013_00003.json",
+        "output": "data/complete/complete_srs_00013.json"
+    },
+    {
+        "mapping_id": 468,
+        "input": "data/train/easy/traceability/incomplete_srs_00140_00003.json",
+        "output": "data/complete/complete_srs_00140.json"
+    },
+    {
+        "mapping_id": 210,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00046_00002.json",
+        "output": "data/complete/complete_srs_00046.json"
+    },
+    {
+        "mapping_id": 507,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00015_00004.json",
+        "output": "data/complete/complete_srs_00015.json"
+    },
+    {
+        "mapping_id": 304,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00140_00002.json",
+        "output": "data/complete/complete_srs_00140.json"
+    },
+    {
+        "mapping_id": 452,
+        "input": "data/train/easy/traceability/incomplete_srs_00124_00003.json",
+        "output": "data/complete/complete_srs_00124.json"
+    },
+    {
+        "mapping_id": 263,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00099_00002.json",
+        "output": "data/complete/complete_srs_00099.json"
+    },
+    {
+        "mapping_id": 63,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00063_00001.json",
+        "output": "data/complete/complete_srs_00063.json"
+    },
+    {
+        "mapping_id": 286,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00122_00002.json",
+        "output": "data/complete/complete_srs_00122.json"
+    },
+    {
+        "mapping_id": 492,
+        "input": "data/train/easy/traceability/incomplete_srs_00164_00003.json",
+        "output": "data/complete/complete_srs_00164.json"
+    },
+    {
+        "mapping_id": 53,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00053_00001.json",
+        "output": "data/complete/complete_srs_00053.json"
+    },
+    {
+        "mapping_id": 589,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00097_00004.json",
+        "output": "data/complete/complete_srs_00097.json"
+    },
+    {
+        "mapping_id": 34,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00034_00001.json",
+        "output": "data/complete/complete_srs_00034.json"
+    },
+    {
+        "mapping_id": 551,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00059_00004.json",
+        "output": "data/complete/complete_srs_00059.json"
+    },
+    {
+        "mapping_id": 216,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00052_00002.json",
+        "output": "data/complete/complete_srs_00052.json"
+    },
+    {
+        "mapping_id": 71,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00071_00001.json",
+        "output": "data/complete/complete_srs_00071.json"
+    },
+    {
+        "mapping_id": 212,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00048_00002.json",
+        "output": "data/complete/complete_srs_00048.json"
+    },
+    {
+        "mapping_id": 93,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00093_00001.json",
+        "output": "data/complete/complete_srs_00093.json"
+    },
+    {
+        "mapping_id": 73,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00073_00001.json",
+        "output": "data/complete/complete_srs_00073.json"
+    },
+    {
+        "mapping_id": 545,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00053_00004.json",
+        "output": "data/complete/complete_srs_00053.json"
+    },
+    {
+        "mapping_id": 444,
+        "input": "data/train/easy/traceability/incomplete_srs_00116_00003.json",
+        "output": "data/complete/complete_srs_00116.json"
+    },
+    {
+        "mapping_id": 582,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00090_00004.json",
+        "output": "data/complete/complete_srs_00090.json"
+    },
+    {
+        "mapping_id": 607,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00115_00004.json",
+        "output": "data/complete/complete_srs_00115.json"
+    },
+    {
+        "mapping_id": 404,
+        "input": "data/train/easy/traceability/incomplete_srs_00076_00003.json",
+        "output": "data/complete/complete_srs_00076.json"
+    },
+    {
+        "mapping_id": 536,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00044_00004.json",
+        "output": "data/complete/complete_srs_00044.json"
+    },
+    {
+        "mapping_id": 236,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00072_00002.json",
+        "output": "data/complete/complete_srs_00072.json"
+    },
+    {
+        "mapping_id": 88,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00088_00001.json",
+        "output": "data/complete/complete_srs_00088.json"
+    },
+    {
+        "mapping_id": 198,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00034_00002.json",
+        "output": "data/complete/complete_srs_00034.json"
+    },
+    {
+        "mapping_id": 351,
+        "input": "data/train/easy/traceability/incomplete_srs_00023_00003.json",
+        "output": "data/complete/complete_srs_00023.json"
+    },
+    {
+        "mapping_id": 491,
+        "input": "data/train/easy/traceability/incomplete_srs_00163_00003.json",
+        "output": "data/complete/complete_srs_00163.json"
+    },
+    {
+        "mapping_id": 336,
+        "input": "data/train/easy/traceability/incomplete_srs_00008_00003.json",
+        "output": "data/complete/complete_srs_00008.json"
+    },
+    {
+        "mapping_id": 416,
+        "input": "data/train/easy/traceability/incomplete_srs_00088_00003.json",
+        "output": "data/complete/complete_srs_00088.json"
+    },
+    {
+        "mapping_id": 177,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00013_00002.json",
+        "output": "data/complete/complete_srs_00013.json"
+    },
+    {
+        "mapping_id": 150,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00150_00001.json",
+        "output": "data/complete/complete_srs_00150.json"
+    },
+    {
+        "mapping_id": 337,
+        "input": "data/train/easy/traceability/incomplete_srs_00009_00003.json",
+        "output": "data/complete/complete_srs_00009.json"
+    },
+    {
+        "mapping_id": 196,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00032_00002.json",
+        "output": "data/complete/complete_srs_00032.json"
+    },
+    {
+        "mapping_id": 16,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00016_00001.json",
+        "output": "data/complete/complete_srs_00016.json"
+    },
+    {
+        "mapping_id": 220,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00056_00002.json",
+        "output": "data/complete/complete_srs_00056.json"
+    },
+    {
+        "mapping_id": 350,
+        "input": "data/train/easy/traceability/incomplete_srs_00022_00003.json",
+        "output": "data/complete/complete_srs_00022.json"
+    },
+    {
+        "mapping_id": 603,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00111_00004.json",
+        "output": "data/complete/complete_srs_00111.json"
+    },
+    {
+        "mapping_id": 288,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00124_00002.json",
+        "output": "data/complete/complete_srs_00124.json"
+    },
+    {
+        "mapping_id": 381,
+        "input": "data/train/easy/traceability/incomplete_srs_00053_00003.json",
+        "output": "data/complete/complete_srs_00053.json"
+    },
+    {
+        "mapping_id": 295,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00131_00002.json",
+        "output": "data/complete/complete_srs_00131.json"
+    },
+    {
+        "mapping_id": 186,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00022_00002.json",
+        "output": "data/complete/complete_srs_00022.json"
+    },
+    {
+        "mapping_id": 287,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00123_00002.json",
+        "output": "data/complete/complete_srs_00123.json"
+    },
+    {
+        "mapping_id": 14,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00014_00001.json",
+        "output": "data/complete/complete_srs_00014.json"
+    },
+    {
+        "mapping_id": 267,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00103_00002.json",
+        "output": "data/complete/complete_srs_00103.json"
+    },
+    {
+        "mapping_id": 352,
+        "input": "data/train/easy/traceability/incomplete_srs_00024_00003.json",
+        "output": "data/complete/complete_srs_00024.json"
+    },
+    {
+        "mapping_id": 101,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00101_00001.json",
+        "output": "data/complete/complete_srs_00101.json"
+    },
+    {
+        "mapping_id": 139,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00139_00001.json",
+        "output": "data/complete/complete_srs_00139.json"
+    },
+    {
+        "mapping_id": 320,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00156_00002.json",
+        "output": "data/complete/complete_srs_00156.json"
+    },
+    {
+        "mapping_id": 213,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00049_00002.json",
+        "output": "data/complete/complete_srs_00049.json"
+    },
+    {
+        "mapping_id": 141,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00141_00001.json",
+        "output": "data/complete/complete_srs_00141.json"
+    },
+    {
+        "mapping_id": 25,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00025_00001.json",
+        "output": "data/complete/complete_srs_00025.json"
+    },
+    {
+        "mapping_id": 133,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00133_00001.json",
+        "output": "data/complete/complete_srs_00133.json"
+    },
+    {
+        "mapping_id": 361,
+        "input": "data/train/easy/traceability/incomplete_srs_00033_00003.json",
+        "output": "data/complete/complete_srs_00033.json"
+    },
+    {
+        "mapping_id": 132,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00132_00001.json",
+        "output": "data/complete/complete_srs_00132.json"
+    },
+    {
+        "mapping_id": 199,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00035_00002.json",
+        "output": "data/complete/complete_srs_00035.json"
+    },
+    {
+        "mapping_id": 281,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00117_00002.json",
+        "output": "data/complete/complete_srs_00117.json"
+    },
+    {
+        "mapping_id": 238,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00074_00002.json",
+        "output": "data/complete/complete_srs_00074.json"
+    },
+    {
+        "mapping_id": 322,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00158_00002.json",
+        "output": "data/complete/complete_srs_00158.json"
+    },
+    {
+        "mapping_id": 151,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00151_00001.json",
+        "output": "data/complete/complete_srs_00151.json"
+    },
+    {
+        "mapping_id": 6,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00006_00001.json",
+        "output": "data/complete/complete_srs_00006.json"
+    },
+    {
+        "mapping_id": 451,
+        "input": "data/train/easy/traceability/incomplete_srs_00123_00003.json",
+        "output": "data/complete/complete_srs_00123.json"
+    },
+    {
+        "mapping_id": 367,
+        "input": "data/train/easy/traceability/incomplete_srs_00039_00003.json",
+        "output": "data/complete/complete_srs_00039.json"
+    },
+    {
+        "mapping_id": 615,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00123_00004.json",
+        "output": "data/complete/complete_srs_00123.json"
+    },
+    {
+        "mapping_id": 29,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00029_00001.json",
+        "output": "data/complete/complete_srs_00029.json"
+    },
+    {
+        "mapping_id": 246,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00082_00002.json",
+        "output": "data/complete/complete_srs_00082.json"
+    },
+    {
+        "mapping_id": 453,
+        "input": "data/train/easy/traceability/incomplete_srs_00125_00003.json",
+        "output": "data/complete/complete_srs_00125.json"
+    },
+    {
+        "mapping_id": 376,
+        "input": "data/train/easy/traceability/incomplete_srs_00048_00003.json",
+        "output": "data/complete/complete_srs_00048.json"
+    },
+    {
+        "mapping_id": 97,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00097_00001.json",
+        "output": "data/complete/complete_srs_00097.json"
+    },
+    {
+        "mapping_id": 369,
+        "input": "data/train/easy/traceability/incomplete_srs_00041_00003.json",
+        "output": "data/complete/complete_srs_00041.json"
+    },
+    {
+        "mapping_id": 316,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00152_00002.json",
+        "output": "data/complete/complete_srs_00152.json"
+    },
+    {
+        "mapping_id": 43,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00043_00001.json",
+        "output": "data/complete/complete_srs_00043.json"
+    },
+    {
+        "mapping_id": 188,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00024_00002.json",
+        "output": "data/complete/complete_srs_00024.json"
+    },
+    {
+        "mapping_id": 598,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00106_00004.json",
+        "output": "data/complete/complete_srs_00106.json"
+    },
+    {
+        "mapping_id": 117,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00117_00001.json",
+        "output": "data/complete/complete_srs_00117.json"
+    },
+    {
+        "mapping_id": 504,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00012_00004.json",
+        "output": "data/complete/complete_srs_00012.json"
+    },
+    {
+        "mapping_id": 443,
+        "input": "data/train/easy/traceability/incomplete_srs_00115_00003.json",
+        "output": "data/complete/complete_srs_00115.json"
+    },
+    {
+        "mapping_id": 379,
+        "input": "data/train/easy/traceability/incomplete_srs_00051_00003.json",
+        "output": "data/complete/complete_srs_00051.json"
+    },
+    {
+        "mapping_id": 185,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00021_00002.json",
+        "output": "data/complete/complete_srs_00021.json"
+    },
+    {
+        "mapping_id": 22,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00022_00001.json",
+        "output": "data/complete/complete_srs_00022.json"
+    },
+    {
+        "mapping_id": 619,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00127_00004.json",
+        "output": "data/complete/complete_srs_00127.json"
+    },
+    {
+        "mapping_id": 519,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00027_00004.json",
+        "output": "data/complete/complete_srs_00027.json"
+    },
+    {
+        "mapping_id": 631,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00139_00004.json",
+        "output": "data/complete/complete_srs_00139.json"
+    },
+    {
+        "mapping_id": 102,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00102_00001.json",
+        "output": "data/complete/complete_srs_00102.json"
+    },
+    {
+        "mapping_id": 399,
+        "input": "data/train/easy/traceability/incomplete_srs_00071_00003.json",
+        "output": "data/complete/complete_srs_00071.json"
+    },
+    {
+        "mapping_id": 163,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00163_00001.json",
+        "output": "data/complete/complete_srs_00163.json"
+    },
+    {
+        "mapping_id": 509,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00017_00004.json",
+        "output": "data/complete/complete_srs_00017.json"
+    },
+    {
+        "mapping_id": 87,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00087_00001.json",
+        "output": "data/complete/complete_srs_00087.json"
+    },
+    {
+        "mapping_id": 590,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00098_00004.json",
+        "output": "data/complete/complete_srs_00098.json"
+    },
+    {
+        "mapping_id": 114,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00114_00001.json",
+        "output": "data/complete/complete_srs_00114.json"
+    },
+    {
+        "mapping_id": 120,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00120_00001.json",
+        "output": "data/complete/complete_srs_00120.json"
+    },
+    {
+        "mapping_id": 266,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00102_00002.json",
+        "output": "data/complete/complete_srs_00102.json"
+    },
+    {
+        "mapping_id": 633,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00141_00004.json",
+        "output": "data/complete/complete_srs_00141.json"
+    },
+    {
+        "mapping_id": 488,
+        "input": "data/train/easy/traceability/incomplete_srs_00160_00003.json",
+        "output": "data/complete/complete_srs_00160.json"
+    },
+    {
+        "mapping_id": 586,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00094_00004.json",
+        "output": "data/complete/complete_srs_00094.json"
+    },
+    {
+        "mapping_id": 137,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00137_00001.json",
+        "output": "data/complete/complete_srs_00137.json"
+    },
+    {
+        "mapping_id": 612,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00120_00004.json",
+        "output": "data/complete/complete_srs_00120.json"
+    },
+    {
+        "mapping_id": 283,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00119_00002.json",
+        "output": "data/complete/complete_srs_00119.json"
+    },
+    {
+        "mapping_id": 78,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00078_00001.json",
+        "output": "data/complete/complete_srs_00078.json"
+    },
+    {
+        "mapping_id": 613,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00121_00004.json",
+        "output": "data/complete/complete_srs_00121.json"
+    },
+    {
+        "mapping_id": 365,
+        "input": "data/train/easy/traceability/incomplete_srs_00037_00003.json",
+        "output": "data/complete/complete_srs_00037.json"
+    },
+    {
+        "mapping_id": 494,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00002_00004.json",
+        "output": "data/complete/complete_srs_00002.json"
+    },
+    {
+        "mapping_id": 425,
+        "input": "data/train/easy/traceability/incomplete_srs_00097_00003.json",
+        "output": "data/complete/complete_srs_00097.json"
+    },
+    {
+        "mapping_id": 255,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00091_00002.json",
+        "output": "data/complete/complete_srs_00091.json"
+    },
+    {
+        "mapping_id": 535,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00043_00004.json",
+        "output": "data/complete/complete_srs_00043.json"
+    },
+    {
+        "mapping_id": 257,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00093_00002.json",
+        "output": "data/complete/complete_srs_00093.json"
+    },
+    {
+        "mapping_id": 596,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00104_00004.json",
+        "output": "data/complete/complete_srs_00104.json"
+    },
+    {
+        "mapping_id": 84,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00084_00001.json",
+        "output": "data/complete/complete_srs_00084.json"
+    },
+    {
+        "mapping_id": 600,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00108_00004.json",
+        "output": "data/complete/complete_srs_00108.json"
+    },
+    {
+        "mapping_id": 472,
+        "input": "data/train/easy/traceability/incomplete_srs_00144_00003.json",
+        "output": "data/complete/complete_srs_00144.json"
+    },
+    {
+        "mapping_id": 130,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00130_00001.json",
+        "output": "data/complete/complete_srs_00130.json"
+    },
+    {
+        "mapping_id": 307,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00143_00002.json",
+        "output": "data/complete/complete_srs_00143.json"
+    },
+    {
+        "mapping_id": 356,
+        "input": "data/train/easy/traceability/incomplete_srs_00028_00003.json",
+        "output": "data/complete/complete_srs_00028.json"
+    },
+    {
+        "mapping_id": 241,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00077_00002.json",
+        "output": "data/complete/complete_srs_00077.json"
+    },
+    {
+        "mapping_id": 526,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00034_00004.json",
+        "output": "data/complete/complete_srs_00034.json"
+    },
+    {
+        "mapping_id": 191,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00027_00002.json",
+        "output": "data/complete/complete_srs_00027.json"
+    },
+    {
+        "mapping_id": 111,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00111_00001.json",
+        "output": "data/complete/complete_srs_00111.json"
+    },
+    {
+        "mapping_id": 252,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00088_00002.json",
+        "output": "data/complete/complete_srs_00088.json"
+    },
+    {
+        "mapping_id": 580,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00088_00004.json",
+        "output": "data/complete/complete_srs_00088.json"
+    },
+    {
+        "mapping_id": 184,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00020_00002.json",
+        "output": "data/complete/complete_srs_00020.json"
+    },
+    {
+        "mapping_id": 325,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00161_00002.json",
+        "output": "data/complete/complete_srs_00161.json"
+    },
+    {
+        "mapping_id": 517,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00025_00004.json",
+        "output": "data/complete/complete_srs_00025.json"
+    },
+    {
+        "mapping_id": 442,
+        "input": "data/train/easy/traceability/incomplete_srs_00114_00003.json",
+        "output": "data/complete/complete_srs_00114.json"
+    },
+    {
+        "mapping_id": 538,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00046_00004.json",
+        "output": "data/complete/complete_srs_00046.json"
+    },
+    {
+        "mapping_id": 490,
+        "input": "data/train/easy/traceability/incomplete_srs_00162_00003.json",
+        "output": "data/complete/complete_srs_00162.json"
+    },
+    {
+        "mapping_id": 422,
+        "input": "data/train/easy/traceability/incomplete_srs_00094_00003.json",
+        "output": "data/complete/complete_srs_00094.json"
+    },
+    {
+        "mapping_id": 148,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00148_00001.json",
+        "output": "data/complete/complete_srs_00148.json"
+    },
+    {
+        "mapping_id": 427,
+        "input": "data/train/easy/traceability/incomplete_srs_00099_00003.json",
+        "output": "data/complete/complete_srs_00099.json"
+    },
+    {
+        "mapping_id": 181,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00017_00002.json",
+        "output": "data/complete/complete_srs_00017.json"
+    },
+    {
+        "mapping_id": 187,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00023_00002.json",
+        "output": "data/complete/complete_srs_00023.json"
+    },
+    {
+        "mapping_id": 156,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00156_00001.json",
+        "output": "data/complete/complete_srs_00156.json"
+    },
+    {
+        "mapping_id": 173,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00009_00002.json",
+        "output": "data/complete/complete_srs_00009.json"
+    },
+    {
+        "mapping_id": 329,
+        "input": "data/train/easy/traceability/incomplete_srs_00001_00003.json",
+        "output": "data/complete/complete_srs_00001.json"
+    },
+    {
+        "mapping_id": 89,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00089_00001.json",
+        "output": "data/complete/complete_srs_00089.json"
+    },
+    {
+        "mapping_id": 360,
+        "input": "data/train/easy/traceability/incomplete_srs_00032_00003.json",
+        "output": "data/complete/complete_srs_00032.json"
+    },
+    {
+        "mapping_id": 153,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00153_00001.json",
+        "output": "data/complete/complete_srs_00153.json"
+    },
+    {
+        "mapping_id": 214,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00050_00002.json",
+        "output": "data/complete/complete_srs_00050.json"
+    },
+    {
+        "mapping_id": 493,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00001_00004.json",
+        "output": "data/complete/complete_srs_00001.json"
+    },
+    {
+        "mapping_id": 478,
+        "input": "data/train/easy/traceability/incomplete_srs_00150_00003.json",
+        "output": "data/complete/complete_srs_00150.json"
+    },
+    {
+        "mapping_id": 149,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00149_00001.json",
+        "output": "data/complete/complete_srs_00149.json"
+    },
+    {
+        "mapping_id": 651,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00159_00004.json",
+        "output": "data/complete/complete_srs_00159.json"
+    },
+    {
+        "mapping_id": 327,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00163_00002.json",
+        "output": "data/complete/complete_srs_00163.json"
+    },
+    {
+        "mapping_id": 347,
+        "input": "data/train/easy/traceability/incomplete_srs_00019_00003.json",
+        "output": "data/complete/complete_srs_00019.json"
+    },
+    {
+        "mapping_id": 385,
+        "input": "data/train/easy/traceability/incomplete_srs_00057_00003.json",
+        "output": "data/complete/complete_srs_00057.json"
+    },
+    {
+        "mapping_id": 193,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00029_00002.json",
+        "output": "data/complete/complete_srs_00029.json"
+    },
+    {
+        "mapping_id": 138,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00138_00001.json",
+        "output": "data/complete/complete_srs_00138.json"
+    },
+    {
+        "mapping_id": 405,
+        "input": "data/train/easy/traceability/incomplete_srs_00077_00003.json",
+        "output": "data/complete/complete_srs_00077.json"
+    },
+    {
+        "mapping_id": 194,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00030_00002.json",
+        "output": "data/complete/complete_srs_00030.json"
+    },
+    {
+        "mapping_id": 131,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00131_00001.json",
+        "output": "data/complete/complete_srs_00131.json"
+    },
+    {
+        "mapping_id": 165,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00001_00002.json",
+        "output": "data/complete/complete_srs_00001.json"
+    },
+    {
+        "mapping_id": 440,
+        "input": "data/train/easy/traceability/incomplete_srs_00112_00003.json",
+        "output": "data/complete/complete_srs_00112.json"
+    },
+    {
+        "mapping_id": 463,
+        "input": "data/train/easy/traceability/incomplete_srs_00135_00003.json",
+        "output": "data/complete/complete_srs_00135.json"
+    },
+    {
+        "mapping_id": 18,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00018_00001.json",
+        "output": "data/complete/complete_srs_00018.json"
+    },
+    {
+        "mapping_id": 398,
+        "input": "data/train/easy/traceability/incomplete_srs_00070_00003.json",
+        "output": "data/complete/complete_srs_00070.json"
+    },
+    {
+        "mapping_id": 498,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00006_00004.json",
+        "output": "data/complete/complete_srs_00006.json"
+    },
+    {
+        "mapping_id": 473,
+        "input": "data/train/easy/traceability/incomplete_srs_00145_00003.json",
+        "output": "data/complete/complete_srs_00145.json"
+    },
+    {
+        "mapping_id": 421,
+        "input": "data/train/easy/traceability/incomplete_srs_00093_00003.json",
+        "output": "data/complete/complete_srs_00093.json"
+    },
+    {
+        "mapping_id": 169,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00005_00002.json",
+        "output": "data/complete/complete_srs_00005.json"
+    },
+    {
+        "mapping_id": 223,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00059_00002.json",
+        "output": "data/complete/complete_srs_00059.json"
+    },
+    {
+        "mapping_id": 262,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00098_00002.json",
+        "output": "data/complete/complete_srs_00098.json"
+    },
+    {
+        "mapping_id": 59,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00059_00001.json",
+        "output": "data/complete/complete_srs_00059.json"
+    },
+    {
+        "mapping_id": 634,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00142_00004.json",
+        "output": "data/complete/complete_srs_00142.json"
+    },
+    {
+        "mapping_id": 647,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00155_00004.json",
+        "output": "data/complete/complete_srs_00155.json"
+    },
+    {
+        "mapping_id": 532,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00040_00004.json",
+        "output": "data/complete/complete_srs_00040.json"
+    },
+    {
+        "mapping_id": 481,
+        "input": "data/train/easy/traceability/incomplete_srs_00153_00003.json",
+        "output": "data/complete/complete_srs_00153.json"
+    },
+    {
+        "mapping_id": 57,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00057_00001.json",
+        "output": "data/complete/complete_srs_00057.json"
+    },
+    {
+        "mapping_id": 340,
+        "input": "data/train/easy/traceability/incomplete_srs_00012_00003.json",
+        "output": "data/complete/complete_srs_00012.json"
+    },
+    {
+        "mapping_id": 10,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00010_00001.json",
+        "output": "data/complete/complete_srs_00010.json"
+    },
+    {
+        "mapping_id": 362,
+        "input": "data/train/easy/traceability/incomplete_srs_00034_00003.json",
+        "output": "data/complete/complete_srs_00034.json"
+    },
+    {
+        "mapping_id": 413,
+        "input": "data/train/easy/traceability/incomplete_srs_00085_00003.json",
+        "output": "data/complete/complete_srs_00085.json"
+    },
+    {
+        "mapping_id": 180,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00016_00002.json",
+        "output": "data/complete/complete_srs_00016.json"
+    },
+    {
+        "mapping_id": 202,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00038_00002.json",
+        "output": "data/complete/complete_srs_00038.json"
+    },
+    {
+        "mapping_id": 500,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00008_00004.json",
+        "output": "data/complete/complete_srs_00008.json"
+    },
+    {
+        "mapping_id": 328,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00164_00002.json",
+        "output": "data/complete/complete_srs_00164.json"
+    },
+    {
+        "mapping_id": 242,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00078_00002.json",
+        "output": "data/complete/complete_srs_00078.json"
+    },
+    {
+        "mapping_id": 632,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00140_00004.json",
+        "output": "data/complete/complete_srs_00140.json"
+    },
+    {
+        "mapping_id": 248,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00084_00002.json",
+        "output": "data/complete/complete_srs_00084.json"
+    },
+    {
+        "mapping_id": 172,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00008_00002.json",
+        "output": "data/complete/complete_srs_00008.json"
+    },
+    {
+        "mapping_id": 377,
+        "input": "data/train/easy/traceability/incomplete_srs_00049_00003.json",
+        "output": "data/complete/complete_srs_00049.json"
+    },
+    {
+        "mapping_id": 313,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00149_00002.json",
+        "output": "data/complete/complete_srs_00149.json"
+    },
+    {
+        "mapping_id": 201,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00037_00002.json",
+        "output": "data/complete/complete_srs_00037.json"
+    },
+    {
+        "mapping_id": 382,
+        "input": "data/train/easy/traceability/incomplete_srs_00054_00003.json",
+        "output": "data/complete/complete_srs_00054.json"
+    },
+    {
+        "mapping_id": 189,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00025_00002.json",
+        "output": "data/complete/complete_srs_00025.json"
+    },
+    {
+        "mapping_id": 298,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00134_00002.json",
+        "output": "data/complete/complete_srs_00134.json"
+    },
+    {
+        "mapping_id": 628,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00136_00004.json",
+        "output": "data/complete/complete_srs_00136.json"
+    },
+    {
+        "mapping_id": 106,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00106_00001.json",
+        "output": "data/complete/complete_srs_00106.json"
+    },
+    {
+        "mapping_id": 46,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00046_00001.json",
+        "output": "data/complete/complete_srs_00046.json"
+    },
+    {
+        "mapping_id": 208,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00044_00002.json",
+        "output": "data/complete/complete_srs_00044.json"
+    },
+    {
+        "mapping_id": 563,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00071_00004.json",
+        "output": "data/complete/complete_srs_00071.json"
+    },
+    {
+        "mapping_id": 410,
+        "input": "data/train/easy/traceability/incomplete_srs_00082_00003.json",
+        "output": "data/complete/complete_srs_00082.json"
+    },
+    {
+        "mapping_id": 222,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00058_00002.json",
+        "output": "data/complete/complete_srs_00058.json"
+    },
+    {
+        "mapping_id": 61,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00061_00001.json",
+        "output": "data/complete/complete_srs_00061.json"
+    },
+    {
+        "mapping_id": 40,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00040_00001.json",
+        "output": "data/complete/complete_srs_00040.json"
+    },
+    {
+        "mapping_id": 467,
+        "input": "data/train/easy/traceability/incomplete_srs_00139_00003.json",
+        "output": "data/complete/complete_srs_00139.json"
+    },
+    {
+        "mapping_id": 159,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00159_00001.json",
+        "output": "data/complete/complete_srs_00159.json"
+    },
+    {
+        "mapping_id": 280,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00116_00002.json",
+        "output": "data/complete/complete_srs_00116.json"
+    },
+    {
+        "mapping_id": 641,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00149_00004.json",
+        "output": "data/complete/complete_srs_00149.json"
+    },
+    {
+        "mapping_id": 464,
+        "input": "data/train/easy/traceability/incomplete_srs_00136_00003.json",
+        "output": "data/complete/complete_srs_00136.json"
+    },
+    {
+        "mapping_id": 144,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00144_00001.json",
+        "output": "data/complete/complete_srs_00144.json"
+    },
+    {
+        "mapping_id": 565,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00073_00004.json",
+        "output": "data/complete/complete_srs_00073.json"
+    },
+    {
+        "mapping_id": 91,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00091_00001.json",
+        "output": "data/complete/complete_srs_00091.json"
+    },
+    {
+        "mapping_id": 400,
+        "input": "data/train/easy/traceability/incomplete_srs_00072_00003.json",
+        "output": "data/complete/complete_srs_00072.json"
+    },
+    {
+        "mapping_id": 269,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00105_00002.json",
+        "output": "data/complete/complete_srs_00105.json"
+    },
+    {
+        "mapping_id": 64,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00064_00001.json",
+        "output": "data/complete/complete_srs_00064.json"
+    },
+    {
+        "mapping_id": 175,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00011_00002.json",
+        "output": "data/complete/complete_srs_00011.json"
+    },
+    {
+        "mapping_id": 502,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00010_00004.json",
+        "output": "data/complete/complete_srs_00010.json"
+    },
+    {
+        "mapping_id": 92,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00092_00001.json",
+        "output": "data/complete/complete_srs_00092.json"
+    },
+    {
+        "mapping_id": 386,
+        "input": "data/train/easy/traceability/incomplete_srs_00058_00003.json",
+        "output": "data/complete/complete_srs_00058.json"
+    },
+    {
+        "mapping_id": 254,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00090_00002.json",
+        "output": "data/complete/complete_srs_00090.json"
+    },
+    {
+        "mapping_id": 256,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00092_00002.json",
+        "output": "data/complete/complete_srs_00092.json"
+    },
+    {
+        "mapping_id": 521,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00029_00004.json",
+        "output": "data/complete/complete_srs_00029.json"
+    },
+    {
+        "mapping_id": 597,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00105_00004.json",
+        "output": "data/complete/complete_srs_00105.json"
+    },
+    {
+        "mapping_id": 231,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00067_00002.json",
+        "output": "data/complete/complete_srs_00067.json"
+    },
+    {
+        "mapping_id": 396,
+        "input": "data/train/easy/traceability/incomplete_srs_00068_00003.json",
+        "output": "data/complete/complete_srs_00068.json"
+    },
+    {
+        "mapping_id": 79,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00079_00001.json",
+        "output": "data/complete/complete_srs_00079.json"
+    },
+    {
+        "mapping_id": 457,
+        "input": "data/train/easy/traceability/incomplete_srs_00129_00003.json",
+        "output": "data/complete/complete_srs_00129.json"
+    },
+    {
+        "mapping_id": 459,
+        "input": "data/train/easy/traceability/incomplete_srs_00131_00003.json",
+        "output": "data/complete/complete_srs_00131.json"
+    },
+    {
+        "mapping_id": 419,
+        "input": "data/train/easy/traceability/incomplete_srs_00091_00003.json",
+        "output": "data/complete/complete_srs_00091.json"
+    },
+    {
+        "mapping_id": 76,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00076_00001.json",
+        "output": "data/complete/complete_srs_00076.json"
+    },
+    {
+        "mapping_id": 533,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00041_00004.json",
+        "output": "data/complete/complete_srs_00041.json"
+    },
+    {
+        "mapping_id": 19,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00019_00001.json",
+        "output": "data/complete/complete_srs_00019.json"
+    },
+    {
+        "mapping_id": 77,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00077_00001.json",
+        "output": "data/complete/complete_srs_00077.json"
+    },
+    {
+        "mapping_id": 392,
+        "input": "data/train/easy/traceability/incomplete_srs_00064_00003.json",
+        "output": "data/complete/complete_srs_00064.json"
+    },
+    {
+        "mapping_id": 636,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00144_00004.json",
+        "output": "data/complete/complete_srs_00144.json"
+    },
+    {
+        "mapping_id": 294,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00130_00002.json",
+        "output": "data/complete/complete_srs_00130.json"
+    },
+    {
+        "mapping_id": 219,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00055_00002.json",
+        "output": "data/complete/complete_srs_00055.json"
+    },
+    {
+        "mapping_id": 541,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00049_00004.json",
+        "output": "data/complete/complete_srs_00049.json"
+    },
+    {
+        "mapping_id": 83,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00083_00001.json",
+        "output": "data/complete/complete_srs_00083.json"
+    },
+    {
+        "mapping_id": 135,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00135_00001.json",
+        "output": "data/complete/complete_srs_00135.json"
+    },
+    {
+        "mapping_id": 67,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00067_00001.json",
+        "output": "data/complete/complete_srs_00067.json"
+    },
+    {
+        "mapping_id": 171,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00007_00002.json",
+        "output": "data/complete/complete_srs_00007.json"
+    },
+    {
+        "mapping_id": 564,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00072_00004.json",
+        "output": "data/complete/complete_srs_00072.json"
+    },
+    {
+        "mapping_id": 23,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00023_00001.json",
+        "output": "data/complete/complete_srs_00023.json"
+    },
+    {
+        "mapping_id": 558,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00066_00004.json",
+        "output": "data/complete/complete_srs_00066.json"
+    },
+    {
+        "mapping_id": 616,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00124_00004.json",
+        "output": "data/complete/complete_srs_00124.json"
+    },
+    {
+        "mapping_id": 384,
+        "input": "data/train/easy/traceability/incomplete_srs_00056_00003.json",
+        "output": "data/complete/complete_srs_00056.json"
+    },
+    {
+        "mapping_id": 27,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00027_00001.json",
+        "output": "data/complete/complete_srs_00027.json"
+    },
+    {
+        "mapping_id": 129,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00129_00001.json",
+        "output": "data/complete/complete_srs_00129.json"
+    },
+    {
+        "mapping_id": 583,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00091_00004.json",
+        "output": "data/complete/complete_srs_00091.json"
+    },
+    {
+        "mapping_id": 259,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00095_00002.json",
+        "output": "data/complete/complete_srs_00095.json"
+    },
+    {
+        "mapping_id": 312,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00148_00002.json",
+        "output": "data/complete/complete_srs_00148.json"
+    },
+    {
+        "mapping_id": 448,
+        "input": "data/train/easy/traceability/incomplete_srs_00120_00003.json",
+        "output": "data/complete/complete_srs_00120.json"
+    },
+    {
+        "mapping_id": 585,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00093_00004.json",
+        "output": "data/complete/complete_srs_00093.json"
+    },
+    {
+        "mapping_id": 108,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00108_00001.json",
+        "output": "data/complete/complete_srs_00108.json"
+    },
+    {
+        "mapping_id": 145,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00145_00001.json",
+        "output": "data/complete/complete_srs_00145.json"
+    },
+    {
+        "mapping_id": 140,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00140_00001.json",
+        "output": "data/complete/complete_srs_00140.json"
+    },
+    {
+        "mapping_id": 449,
+        "input": "data/train/easy/traceability/incomplete_srs_00121_00003.json",
+        "output": "data/complete/complete_srs_00121.json"
+    },
+    {
+        "mapping_id": 431,
+        "input": "data/train/easy/traceability/incomplete_srs_00103_00003.json",
+        "output": "data/complete/complete_srs_00103.json"
+    },
+    {
+        "mapping_id": 55,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00055_00001.json",
+        "output": "data/complete/complete_srs_00055.json"
+    },
+    {
+        "mapping_id": 60,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00060_00001.json",
+        "output": "data/complete/complete_srs_00060.json"
+    },
+    {
+        "mapping_id": 523,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00031_00004.json",
+        "output": "data/complete/complete_srs_00031.json"
+    },
+    {
+        "mapping_id": 69,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00069_00001.json",
+        "output": "data/complete/complete_srs_00069.json"
+    },
+    {
+        "mapping_id": 54,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00054_00001.json",
+        "output": "data/complete/complete_srs_00054.json"
+    },
+    {
+        "mapping_id": 516,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00024_00004.json",
+        "output": "data/complete/complete_srs_00024.json"
+    },
+    {
+        "mapping_id": 455,
+        "input": "data/train/easy/traceability/incomplete_srs_00127_00003.json",
+        "output": "data/complete/complete_srs_00127.json"
+    },
+    {
+        "mapping_id": 314,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00150_00002.json",
+        "output": "data/complete/complete_srs_00150.json"
+    },
+    {
+        "mapping_id": 483,
+        "input": "data/train/easy/traceability/incomplete_srs_00155_00003.json",
+        "output": "data/complete/complete_srs_00155.json"
+    },
+    {
+        "mapping_id": 155,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00155_00001.json",
+        "output": "data/complete/complete_srs_00155.json"
+    },
+    {
+        "mapping_id": 279,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00115_00002.json",
+        "output": "data/complete/complete_srs_00115.json"
+    },
+    {
+        "mapping_id": 466,
+        "input": "data/train/easy/traceability/incomplete_srs_00138_00003.json",
+        "output": "data/complete/complete_srs_00138.json"
+    },
+    {
+        "mapping_id": 348,
+        "input": "data/train/easy/traceability/incomplete_srs_00020_00003.json",
+        "output": "data/complete/complete_srs_00020.json"
+    },
+    {
+        "mapping_id": 146,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00146_00001.json",
+        "output": "data/complete/complete_srs_00146.json"
+    },
+    {
+        "mapping_id": 190,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00026_00002.json",
+        "output": "data/complete/complete_srs_00026.json"
+    },
+    {
+        "mapping_id": 126,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00126_00001.json",
+        "output": "data/complete/complete_srs_00126.json"
+    },
+    {
+        "mapping_id": 437,
+        "input": "data/train/easy/traceability/incomplete_srs_00109_00003.json",
+        "output": "data/complete/complete_srs_00109.json"
+    },
+    {
+        "mapping_id": 179,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00015_00002.json",
+        "output": "data/complete/complete_srs_00015.json"
+    },
+    {
+        "mapping_id": 319,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00155_00002.json",
+        "output": "data/complete/complete_srs_00155.json"
+    },
+    {
+        "mapping_id": 321,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00157_00002.json",
+        "output": "data/complete/complete_srs_00157.json"
+    },
+    {
+        "mapping_id": 260,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00096_00002.json",
+        "output": "data/complete/complete_srs_00096.json"
+    },
+    {
+        "mapping_id": 378,
+        "input": "data/train/easy/traceability/incomplete_srs_00050_00003.json",
+        "output": "data/complete/complete_srs_00050.json"
+    },
+    {
+        "mapping_id": 276,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00112_00002.json",
+        "output": "data/complete/complete_srs_00112.json"
+    },
+    {
+        "mapping_id": 315,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00151_00002.json",
+        "output": "data/complete/complete_srs_00151.json"
+    },
+    {
+        "mapping_id": 52,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00052_00001.json",
+        "output": "data/complete/complete_srs_00052.json"
+    },
+    {
+        "mapping_id": 289,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00125_00002.json",
+        "output": "data/complete/complete_srs_00125.json"
+    },
+    {
+        "mapping_id": 317,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00153_00002.json",
+        "output": "data/complete/complete_srs_00153.json"
+    },
+    {
+        "mapping_id": 5,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00005_00001.json",
+        "output": "data/complete/complete_srs_00005.json"
+    },
+    {
+        "mapping_id": 38,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00038_00001.json",
+        "output": "data/complete/complete_srs_00038.json"
+    },
+    {
+        "mapping_id": 326,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00162_00002.json",
+        "output": "data/complete/complete_srs_00162.json"
+    },
+    {
+        "mapping_id": 574,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00082_00004.json",
+        "output": "data/complete/complete_srs_00082.json"
+    },
+    {
+        "mapping_id": 154,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00154_00001.json",
+        "output": "data/complete/complete_srs_00154.json"
+    },
+    {
+        "mapping_id": 544,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00052_00004.json",
+        "output": "data/complete/complete_srs_00052.json"
+    },
+    {
+        "mapping_id": 203,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00039_00002.json",
+        "output": "data/complete/complete_srs_00039.json"
+    },
+    {
+        "mapping_id": 432,
+        "input": "data/train/easy/traceability/incomplete_srs_00104_00003.json",
+        "output": "data/complete/complete_srs_00104.json"
+    },
+    {
+        "mapping_id": 611,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00119_00004.json",
+        "output": "data/complete/complete_srs_00119.json"
+    },
+    {
+        "mapping_id": 355,
+        "input": "data/train/easy/traceability/incomplete_srs_00027_00003.json",
+        "output": "data/complete/complete_srs_00027.json"
+    },
+    {
+        "mapping_id": 620,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00128_00004.json",
+        "output": "data/complete/complete_srs_00128.json"
+    },
+    {
+        "mapping_id": 134,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00134_00001.json",
+        "output": "data/complete/complete_srs_00134.json"
+    },
+    {
+        "mapping_id": 531,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00039_00004.json",
+        "output": "data/complete/complete_srs_00039.json"
+    },
+    {
+        "mapping_id": 268,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00104_00002.json",
+        "output": "data/complete/complete_srs_00104.json"
+    },
+    {
+        "mapping_id": 290,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00126_00002.json",
+        "output": "data/complete/complete_srs_00126.json"
+    },
+    {
+        "mapping_id": 299,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00135_00002.json",
+        "output": "data/complete/complete_srs_00135.json"
+    },
+    {
+        "mapping_id": 588,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00096_00004.json",
+        "output": "data/complete/complete_srs_00096.json"
+    },
+    {
+        "mapping_id": 412,
+        "input": "data/train/easy/traceability/incomplete_srs_00084_00003.json",
+        "output": "data/complete/complete_srs_00084.json"
+    },
+    {
+        "mapping_id": 318,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00154_00002.json",
+        "output": "data/complete/complete_srs_00154.json"
+    },
+    {
+        "mapping_id": 21,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00021_00001.json",
+        "output": "data/complete/complete_srs_00021.json"
+    },
+    {
+        "mapping_id": 342,
+        "input": "data/train/easy/traceability/incomplete_srs_00014_00003.json",
+        "output": "data/complete/complete_srs_00014.json"
+    },
+    {
+        "mapping_id": 358,
+        "input": "data/train/easy/traceability/incomplete_srs_00030_00003.json",
+        "output": "data/complete/complete_srs_00030.json"
+    },
+    {
+        "mapping_id": 530,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00038_00004.json",
+        "output": "data/complete/complete_srs_00038.json"
+    },
+    {
+        "mapping_id": 292,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00128_00002.json",
+        "output": "data/complete/complete_srs_00128.json"
+    },
+    {
+        "mapping_id": 462,
+        "input": "data/train/easy/traceability/incomplete_srs_00134_00003.json",
+        "output": "data/complete/complete_srs_00134.json"
+    },
+    {
+        "mapping_id": 407,
+        "input": "data/train/easy/traceability/incomplete_srs_00079_00003.json",
+        "output": "data/complete/complete_srs_00079.json"
+    },
+    {
+        "mapping_id": 121,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00121_00001.json",
+        "output": "data/complete/complete_srs_00121.json"
+    },
+    {
+        "mapping_id": 445,
+        "input": "data/train/easy/traceability/incomplete_srs_00117_00003.json",
+        "output": "data/complete/complete_srs_00117.json"
+    },
+    {
+        "mapping_id": 305,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00141_00002.json",
+        "output": "data/complete/complete_srs_00141.json"
+    },
+    {
+        "mapping_id": 495,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00003_00004.json",
+        "output": "data/complete/complete_srs_00003.json"
+    },
+    {
+        "mapping_id": 642,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00150_00004.json",
+        "output": "data/complete/complete_srs_00150.json"
+    },
+    {
+        "mapping_id": 42,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00042_00001.json",
+        "output": "data/complete/complete_srs_00042.json"
+    },
+    {
+        "mapping_id": 261,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00097_00002.json",
+        "output": "data/complete/complete_srs_00097.json"
+    },
+    {
+        "mapping_id": 581,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00089_00004.json",
+        "output": "data/complete/complete_srs_00089.json"
+    },
+    {
+        "mapping_id": 608,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00116_00004.json",
+        "output": "data/complete/complete_srs_00116.json"
+    },
+    {
+        "mapping_id": 561,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00069_00004.json",
+        "output": "data/complete/complete_srs_00069.json"
+    },
+    {
+        "mapping_id": 539,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00047_00004.json",
+        "output": "data/complete/complete_srs_00047.json"
+    },
+    {
+        "mapping_id": 245,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00081_00002.json",
+        "output": "data/complete/complete_srs_00081.json"
+    },
+    {
+        "mapping_id": 300,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00136_00002.json",
+        "output": "data/complete/complete_srs_00136.json"
+    },
+    {
+        "mapping_id": 609,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00117_00004.json",
+        "output": "data/complete/complete_srs_00117.json"
+    },
+    {
+        "mapping_id": 359,
+        "input": "data/train/easy/traceability/incomplete_srs_00031_00003.json",
+        "output": "data/complete/complete_srs_00031.json"
+    },
+    {
+        "mapping_id": 161,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00161_00001.json",
+        "output": "data/complete/complete_srs_00161.json"
+    },
+    {
+        "mapping_id": 408,
+        "input": "data/train/easy/traceability/incomplete_srs_00080_00003.json",
+        "output": "data/complete/complete_srs_00080.json"
+    },
+    {
+        "mapping_id": 278,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00114_00002.json",
+        "output": "data/complete/complete_srs_00114.json"
+    },
+    {
+        "mapping_id": 599,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00107_00004.json",
+        "output": "data/complete/complete_srs_00107.json"
+    },
+    {
+        "mapping_id": 510,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00018_00004.json",
+        "output": "data/complete/complete_srs_00018.json"
+    },
+    {
+        "mapping_id": 112,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00112_00001.json",
+        "output": "data/complete/complete_srs_00112.json"
+    },
+    {
+        "mapping_id": 152,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00152_00001.json",
+        "output": "data/complete/complete_srs_00152.json"
+    },
+    {
+        "mapping_id": 401,
+        "input": "data/train/easy/traceability/incomplete_srs_00073_00003.json",
+        "output": "data/complete/complete_srs_00073.json"
+    },
+    {
+        "mapping_id": 80,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00080_00001.json",
+        "output": "data/complete/complete_srs_00080.json"
+    },
+    {
+        "mapping_id": 250,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00086_00002.json",
+        "output": "data/complete/complete_srs_00086.json"
+    },
+    {
+        "mapping_id": 339,
+        "input": "data/train/easy/traceability/incomplete_srs_00011_00003.json",
+        "output": "data/complete/complete_srs_00011.json"
+    },
+    {
+        "mapping_id": 594,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00102_00004.json",
+        "output": "data/complete/complete_srs_00102.json"
+    },
+    {
+        "mapping_id": 357,
+        "input": "data/train/easy/traceability/incomplete_srs_00029_00003.json",
+        "output": "data/complete/complete_srs_00029.json"
+    },
+    {
+        "mapping_id": 397,
+        "input": "data/train/easy/traceability/incomplete_srs_00069_00003.json",
+        "output": "data/complete/complete_srs_00069.json"
+    },
+    {
+        "mapping_id": 562,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00070_00004.json",
+        "output": "data/complete/complete_srs_00070.json"
+    },
+    {
+        "mapping_id": 233,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00069_00002.json",
+        "output": "data/complete/complete_srs_00069.json"
+    },
+    {
+        "mapping_id": 484,
+        "input": "data/train/easy/traceability/incomplete_srs_00156_00003.json",
+        "output": "data/complete/complete_srs_00156.json"
+    },
+    {
+        "mapping_id": 200,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00036_00002.json",
+        "output": "data/complete/complete_srs_00036.json"
+    },
+    {
+        "mapping_id": 2,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00002_00001.json",
+        "output": "data/complete/complete_srs_00002.json"
+    },
+    {
+        "mapping_id": 195,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00031_00002.json",
+        "output": "data/complete/complete_srs_00031.json"
+    },
+    {
+        "mapping_id": 487,
+        "input": "data/train/easy/traceability/incomplete_srs_00159_00003.json",
+        "output": "data/complete/complete_srs_00159.json"
+    },
+    {
+        "mapping_id": 482,
+        "input": "data/train/easy/traceability/incomplete_srs_00154_00003.json",
+        "output": "data/complete/complete_srs_00154.json"
+    },
+    {
+        "mapping_id": 206,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00042_00002.json",
+        "output": "data/complete/complete_srs_00042.json"
+    },
+    {
+        "mapping_id": 435,
+        "input": "data/train/easy/traceability/incomplete_srs_00107_00003.json",
+        "output": "data/complete/complete_srs_00107.json"
+    },
+    {
+        "mapping_id": 247,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00083_00002.json",
+        "output": "data/complete/complete_srs_00083.json"
+    },
+    {
+        "mapping_id": 436,
+        "input": "data/train/easy/traceability/incomplete_srs_00108_00003.json",
+        "output": "data/complete/complete_srs_00108.json"
+    },
+    {
+        "mapping_id": 424,
+        "input": "data/train/easy/traceability/incomplete_srs_00096_00003.json",
+        "output": "data/complete/complete_srs_00096.json"
+    },
+    {
+        "mapping_id": 86,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00086_00001.json",
+        "output": "data/complete/complete_srs_00086.json"
+    },
+    {
+        "mapping_id": 556,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00064_00004.json",
+        "output": "data/complete/complete_srs_00064.json"
+    },
+    {
+        "mapping_id": 48,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00048_00001.json",
+        "output": "data/complete/complete_srs_00048.json"
+    },
+    {
+        "mapping_id": 8,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00008_00001.json",
+        "output": "data/complete/complete_srs_00008.json"
+    },
+    {
+        "mapping_id": 434,
+        "input": "data/train/easy/traceability/incomplete_srs_00106_00003.json",
+        "output": "data/complete/complete_srs_00106.json"
+    },
+    {
+        "mapping_id": 334,
+        "input": "data/train/easy/traceability/incomplete_srs_00006_00003.json",
+        "output": "data/complete/complete_srs_00006.json"
+    },
+    {
+        "mapping_id": 654,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00162_00004.json",
+        "output": "data/complete/complete_srs_00162.json"
+    },
+    {
+        "mapping_id": 555,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00063_00004.json",
+        "output": "data/complete/complete_srs_00063.json"
+    },
+    {
+        "mapping_id": 486,
+        "input": "data/train/easy/traceability/incomplete_srs_00158_00003.json",
+        "output": "data/complete/complete_srs_00158.json"
+    },
+    {
+        "mapping_id": 227,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00063_00002.json",
+        "output": "data/complete/complete_srs_00063.json"
+    },
+    {
+        "mapping_id": 39,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00039_00001.json",
+        "output": "data/complete/complete_srs_00039.json"
+    },
+    {
+        "mapping_id": 403,
+        "input": "data/train/easy/traceability/incomplete_srs_00075_00003.json",
+        "output": "data/complete/complete_srs_00075.json"
+    },
+    {
+        "mapping_id": 237,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00073_00002.json",
+        "output": "data/complete/complete_srs_00073.json"
+    },
+    {
+        "mapping_id": 438,
+        "input": "data/train/easy/traceability/incomplete_srs_00110_00003.json",
+        "output": "data/complete/complete_srs_00110.json"
+    },
+    {
+        "mapping_id": 549,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00057_00004.json",
+        "output": "data/complete/complete_srs_00057.json"
+    },
+    {
+        "mapping_id": 417,
+        "input": "data/train/easy/traceability/incomplete_srs_00089_00003.json",
+        "output": "data/complete/complete_srs_00089.json"
+    },
+    {
+        "mapping_id": 602,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00110_00004.json",
+        "output": "data/complete/complete_srs_00110.json"
+    },
+    {
+        "mapping_id": 230,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00066_00002.json",
+        "output": "data/complete/complete_srs_00066.json"
+    },
+    {
+        "mapping_id": 570,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00078_00004.json",
+        "output": "data/complete/complete_srs_00078.json"
+    },
+    {
+        "mapping_id": 423,
+        "input": "data/train/easy/traceability/incomplete_srs_00095_00003.json",
+        "output": "data/complete/complete_srs_00095.json"
+    },
+    {
+        "mapping_id": 99,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00099_00001.json",
+        "output": "data/complete/complete_srs_00099.json"
+    },
+    {
+        "mapping_id": 610,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00118_00004.json",
+        "output": "data/complete/complete_srs_00118.json"
+    },
+    {
+        "mapping_id": 56,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00056_00001.json",
+        "output": "data/complete/complete_srs_00056.json"
+    },
+    {
+        "mapping_id": 458,
+        "input": "data/train/easy/traceability/incomplete_srs_00130_00003.json",
+        "output": "data/complete/complete_srs_00130.json"
+    },
+    {
+        "mapping_id": 373,
+        "input": "data/train/easy/traceability/incomplete_srs_00045_00003.json",
+        "output": "data/complete/complete_srs_00045.json"
+    },
+    {
+        "mapping_id": 207,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00043_00002.json",
+        "output": "data/complete/complete_srs_00043.json"
+    },
+    {
+        "mapping_id": 32,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00032_00001.json",
+        "output": "data/complete/complete_srs_00032.json"
+    },
+    {
+        "mapping_id": 51,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00051_00001.json",
+        "output": "data/complete/complete_srs_00051.json"
+    },
+    {
+        "mapping_id": 331,
+        "input": "data/train/easy/traceability/incomplete_srs_00003_00003.json",
+        "output": "data/complete/complete_srs_00003.json"
+    },
+    {
+        "mapping_id": 335,
+        "input": "data/train/easy/traceability/incomplete_srs_00007_00003.json",
+        "output": "data/complete/complete_srs_00007.json"
+    },
+    {
+        "mapping_id": 621,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00129_00004.json",
+        "output": "data/complete/complete_srs_00129.json"
+    },
+    {
+        "mapping_id": 637,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00145_00004.json",
+        "output": "data/complete/complete_srs_00145.json"
+    },
+    {
+        "mapping_id": 475,
+        "input": "data/train/easy/traceability/incomplete_srs_00147_00003.json",
+        "output": "data/complete/complete_srs_00147.json"
+    },
+    {
+        "mapping_id": 240,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00076_00002.json",
+        "output": "data/complete/complete_srs_00076.json"
+    },
+    {
+        "mapping_id": 211,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00047_00002.json",
+        "output": "data/complete/complete_srs_00047.json"
+    },
+    {
+        "mapping_id": 540,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00048_00004.json",
+        "output": "data/complete/complete_srs_00048.json"
+    },
+    {
+        "mapping_id": 182,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00018_00002.json",
+        "output": "data/complete/complete_srs_00018.json"
+    },
+    {
+        "mapping_id": 622,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00130_00004.json",
+        "output": "data/complete/complete_srs_00130.json"
+    },
+    {
+        "mapping_id": 489,
+        "input": "data/train/easy/traceability/incomplete_srs_00161_00003.json",
+        "output": "data/complete/complete_srs_00161.json"
+    },
+    {
+        "mapping_id": 50,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00050_00001.json",
+        "output": "data/complete/complete_srs_00050.json"
+    },
+    {
+        "mapping_id": 548,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00056_00004.json",
+        "output": "data/complete/complete_srs_00056.json"
+    },
+    {
+        "mapping_id": 98,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00098_00001.json",
+        "output": "data/complete/complete_srs_00098.json"
+    },
+    {
+        "mapping_id": 209,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00045_00002.json",
+        "output": "data/complete/complete_srs_00045.json"
+    },
+    {
+        "mapping_id": 508,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00016_00004.json",
+        "output": "data/complete/complete_srs_00016.json"
+    },
+    {
+        "mapping_id": 429,
+        "input": "data/train/easy/traceability/incomplete_srs_00101_00003.json",
+        "output": "data/complete/complete_srs_00101.json"
+    },
+    {
+        "mapping_id": 402,
+        "input": "data/train/easy/traceability/incomplete_srs_00074_00003.json",
+        "output": "data/complete/complete_srs_00074.json"
+    },
+    {
+        "mapping_id": 125,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00125_00001.json",
+        "output": "data/complete/complete_srs_00125.json"
+    },
+    {
+        "mapping_id": 243,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00079_00002.json",
+        "output": "data/complete/complete_srs_00079.json"
+    },
+    {
+        "mapping_id": 296,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00132_00002.json",
+        "output": "data/complete/complete_srs_00132.json"
+    },
+    {
+        "mapping_id": 293,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00129_00002.json",
+        "output": "data/complete/complete_srs_00129.json"
+    },
+    {
+        "mapping_id": 554,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00062_00004.json",
+        "output": "data/complete/complete_srs_00062.json"
+    },
+    {
+        "mapping_id": 569,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00077_00004.json",
+        "output": "data/complete/complete_srs_00077.json"
+    },
+    {
+        "mapping_id": 477,
+        "input": "data/train/easy/traceability/incomplete_srs_00149_00003.json",
+        "output": "data/complete/complete_srs_00149.json"
+    },
+    {
+        "mapping_id": 110,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00110_00001.json",
+        "output": "data/complete/complete_srs_00110.json"
+    },
+    {
+        "mapping_id": 497,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00005_00004.json",
+        "output": "data/complete/complete_srs_00005.json"
+    },
+    {
+        "mapping_id": 343,
+        "input": "data/train/easy/traceability/incomplete_srs_00015_00003.json",
+        "output": "data/complete/complete_srs_00015.json"
+    },
+    {
+        "mapping_id": 560,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00068_00004.json",
+        "output": "data/complete/complete_srs_00068.json"
+    },
+    {
+        "mapping_id": 122,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00122_00001.json",
+        "output": "data/complete/complete_srs_00122.json"
+    },
+    {
+        "mapping_id": 264,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00100_00002.json",
+        "output": "data/complete/complete_srs_00100.json"
+    },
+    {
+        "mapping_id": 503,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00011_00004.json",
+        "output": "data/complete/complete_srs_00011.json"
+    },
+    {
+        "mapping_id": 170,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00006_00002.json",
+        "output": "data/complete/complete_srs_00006.json"
+    },
+    {
+        "mapping_id": 441,
+        "input": "data/train/easy/traceability/incomplete_srs_00113_00003.json",
+        "output": "data/complete/complete_srs_00113.json"
+    },
+    {
+        "mapping_id": 17,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00017_00001.json",
+        "output": "data/complete/complete_srs_00017.json"
+    },
+    {
+        "mapping_id": 35,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00035_00001.json",
+        "output": "data/complete/complete_srs_00035.json"
+    },
+    {
+        "mapping_id": 454,
+        "input": "data/train/easy/traceability/incomplete_srs_00126_00003.json",
+        "output": "data/complete/complete_srs_00126.json"
+    },
+    {
+        "mapping_id": 643,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00151_00004.json",
+        "output": "data/complete/complete_srs_00151.json"
+    },
+    {
+        "mapping_id": 572,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00080_00004.json",
+        "output": "data/complete/complete_srs_00080.json"
+    },
+    {
+        "mapping_id": 363,
+        "input": "data/train/easy/traceability/incomplete_srs_00035_00003.json",
+        "output": "data/complete/complete_srs_00035.json"
+    },
+    {
+        "mapping_id": 37,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00037_00001.json",
+        "output": "data/complete/complete_srs_00037.json"
+    },
+    {
+        "mapping_id": 529,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00037_00004.json",
+        "output": "data/complete/complete_srs_00037.json"
+    },
+    {
+        "mapping_id": 584,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00092_00004.json",
+        "output": "data/complete/complete_srs_00092.json"
+    },
+    {
+        "mapping_id": 456,
+        "input": "data/train/easy/traceability/incomplete_srs_00128_00003.json",
+        "output": "data/complete/complete_srs_00128.json"
+    },
+    {
+        "mapping_id": 537,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00045_00004.json",
+        "output": "data/complete/complete_srs_00045.json"
+    },
+    {
+        "mapping_id": 284,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00120_00002.json",
+        "output": "data/complete/complete_srs_00120.json"
+    },
+    {
+        "mapping_id": 302,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00138_00002.json",
+        "output": "data/complete/complete_srs_00138.json"
+    },
+    {
+        "mapping_id": 11,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00011_00001.json",
+        "output": "data/complete/complete_srs_00011.json"
+    },
+    {
+        "mapping_id": 174,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00010_00002.json",
+        "output": "data/complete/complete_srs_00010.json"
+    },
+    {
+        "mapping_id": 573,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00081_00004.json",
+        "output": "data/complete/complete_srs_00081.json"
+    },
+    {
+        "mapping_id": 116,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00116_00001.json",
+        "output": "data/complete/complete_srs_00116.json"
+    },
+    {
+        "mapping_id": 127,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00127_00001.json",
+        "output": "data/complete/complete_srs_00127.json"
+    },
+    {
+        "mapping_id": 62,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00062_00001.json",
+        "output": "data/complete/complete_srs_00062.json"
+    },
+    {
+        "mapping_id": 232,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00068_00002.json",
+        "output": "data/complete/complete_srs_00068.json"
+    },
+    {
+        "mapping_id": 265,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00101_00002.json",
+        "output": "data/complete/complete_srs_00101.json"
+    },
+    {
+        "mapping_id": 461,
+        "input": "data/train/easy/traceability/incomplete_srs_00133_00003.json",
+        "output": "data/complete/complete_srs_00133.json"
+    },
+    {
+        "mapping_id": 553,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00061_00004.json",
+        "output": "data/complete/complete_srs_00061.json"
+    },
+    {
+        "mapping_id": 192,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00028_00002.json",
+        "output": "data/complete/complete_srs_00028.json"
+    },
+    {
+        "mapping_id": 576,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00084_00004.json",
+        "output": "data/complete/complete_srs_00084.json"
+    },
+    {
+        "mapping_id": 344,
+        "input": "data/train/easy/traceability/incomplete_srs_00016_00003.json",
+        "output": "data/complete/complete_srs_00016.json"
+    },
+    {
+        "mapping_id": 205,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00041_00002.json",
+        "output": "data/complete/complete_srs_00041.json"
+    },
+    {
+        "mapping_id": 623,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00131_00004.json",
+        "output": "data/complete/complete_srs_00131.json"
+    },
+    {
+        "mapping_id": 366,
+        "input": "data/train/easy/traceability/incomplete_srs_00038_00003.json",
+        "output": "data/complete/complete_srs_00038.json"
+    },
+    {
+        "mapping_id": 103,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00103_00001.json",
+        "output": "data/complete/complete_srs_00103.json"
+    },
+    {
+        "mapping_id": 354,
+        "input": "data/train/easy/traceability/incomplete_srs_00026_00003.json",
+        "output": "data/complete/complete_srs_00026.json"
+    },
+    {
+        "mapping_id": 630,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00138_00004.json",
+        "output": "data/complete/complete_srs_00138.json"
+    },
+    {
+        "mapping_id": 387,
+        "input": "data/train/easy/traceability/incomplete_srs_00059_00003.json",
+        "output": "data/complete/complete_srs_00059.json"
+    },
+    {
+        "mapping_id": 579,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00087_00004.json",
+        "output": "data/complete/complete_srs_00087.json"
+    },
+    {
+        "mapping_id": 476,
+        "input": "data/train/easy/traceability/incomplete_srs_00148_00003.json",
+        "output": "data/complete/complete_srs_00148.json"
+    },
+    {
+        "mapping_id": 524,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00032_00004.json",
+        "output": "data/complete/complete_srs_00032.json"
+    },
+    {
+        "mapping_id": 568,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00076_00004.json",
+        "output": "data/complete/complete_srs_00076.json"
+    },
+    {
+        "mapping_id": 311,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00147_00002.json",
+        "output": "data/complete/complete_srs_00147.json"
+    },
+    {
+        "mapping_id": 447,
+        "input": "data/train/easy/traceability/incomplete_srs_00119_00003.json",
+        "output": "data/complete/complete_srs_00119.json"
+    },
+    {
+        "mapping_id": 614,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00122_00004.json",
+        "output": "data/complete/complete_srs_00122.json"
+    },
+    {
+        "mapping_id": 136,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00136_00001.json",
+        "output": "data/complete/complete_srs_00136.json"
+    },
+    {
+        "mapping_id": 85,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00085_00001.json",
+        "output": "data/complete/complete_srs_00085.json"
+    },
+    {
+        "mapping_id": 653,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00161_00004.json",
+        "output": "data/complete/complete_srs_00161.json"
+    },
+    {
+        "mapping_id": 515,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00023_00004.json",
+        "output": "data/complete/complete_srs_00023.json"
+    },
+    {
+        "mapping_id": 244,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00080_00002.json",
+        "output": "data/complete/complete_srs_00080.json"
+    },
+    {
+        "mapping_id": 338,
+        "input": "data/train/easy/traceability/incomplete_srs_00010_00003.json",
+        "output": "data/complete/complete_srs_00010.json"
+    },
+    {
+        "mapping_id": 543,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00051_00004.json",
+        "output": "data/complete/complete_srs_00051.json"
+    },
+    {
+        "mapping_id": 65,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00065_00001.json",
+        "output": "data/complete/complete_srs_00065.json"
+    },
+    {
+        "mapping_id": 393,
+        "input": "data/train/easy/traceability/incomplete_srs_00065_00003.json",
+        "output": "data/complete/complete_srs_00065.json"
+    },
+    {
+        "mapping_id": 273,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00109_00002.json",
+        "output": "data/complete/complete_srs_00109.json"
+    },
+    {
+        "mapping_id": 595,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00103_00004.json",
+        "output": "data/complete/complete_srs_00103.json"
+    },
+    {
+        "mapping_id": 36,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00036_00001.json",
+        "output": "data/complete/complete_srs_00036.json"
+    },
+    {
+        "mapping_id": 418,
+        "input": "data/train/easy/traceability/incomplete_srs_00090_00003.json",
+        "output": "data/complete/complete_srs_00090.json"
+    },
+    {
+        "mapping_id": 249,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00085_00002.json",
+        "output": "data/complete/complete_srs_00085.json"
+    },
+    {
+        "mapping_id": 375,
+        "input": "data/train/easy/traceability/incomplete_srs_00047_00003.json",
+        "output": "data/complete/complete_srs_00047.json"
+    },
+    {
+        "mapping_id": 44,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00044_00001.json",
+        "output": "data/complete/complete_srs_00044.json"
+    },
+    {
+        "mapping_id": 41,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00041_00001.json",
+        "output": "data/complete/complete_srs_00041.json"
+    },
+    {
+        "mapping_id": 485,
+        "input": "data/train/easy/traceability/incomplete_srs_00157_00003.json",
+        "output": "data/complete/complete_srs_00157.json"
+    },
+    {
+        "mapping_id": 291,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00127_00002.json",
+        "output": "data/complete/complete_srs_00127.json"
+    },
+    {
+        "mapping_id": 511,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00019_00004.json",
+        "output": "data/complete/complete_srs_00019.json"
+    },
+    {
+        "mapping_id": 124,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00124_00001.json",
+        "output": "data/complete/complete_srs_00124.json"
+    },
+    {
+        "mapping_id": 30,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00030_00001.json",
+        "output": "data/complete/complete_srs_00030.json"
+    },
+    {
+        "mapping_id": 123,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00123_00001.json",
+        "output": "data/complete/complete_srs_00123.json"
+    },
+    {
+        "mapping_id": 158,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00158_00001.json",
+        "output": "data/complete/complete_srs_00158.json"
+    },
+    {
+        "mapping_id": 414,
+        "input": "data/train/easy/traceability/incomplete_srs_00086_00003.json",
+        "output": "data/complete/complete_srs_00086.json"
+    },
+    {
+        "mapping_id": 426,
+        "input": "data/train/easy/traceability/incomplete_srs_00098_00003.json",
+        "output": "data/complete/complete_srs_00098.json"
+    },
+    {
+        "mapping_id": 505,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00013_00004.json",
+        "output": "data/complete/complete_srs_00013.json"
+    },
+    {
+        "mapping_id": 450,
+        "input": "data/train/easy/traceability/incomplete_srs_00122_00003.json",
+        "output": "data/complete/complete_srs_00122.json"
+    },
+    {
+        "mapping_id": 372,
+        "input": "data/train/easy/traceability/incomplete_srs_00044_00003.json",
+        "output": "data/complete/complete_srs_00044.json"
+    },
+    {
+        "mapping_id": 534,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00042_00004.json",
+        "output": "data/complete/complete_srs_00042.json"
+    },
+    {
+        "mapping_id": 20,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00020_00001.json",
+        "output": "data/complete/complete_srs_00020.json"
+    },
+    {
+        "mapping_id": 501,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00009_00004.json",
+        "output": "data/complete/complete_srs_00009.json"
+    },
+    {
+        "mapping_id": 332,
+        "input": "data/train/easy/traceability/incomplete_srs_00004_00003.json",
+        "output": "data/complete/complete_srs_00004.json"
+    },
+    {
+        "mapping_id": 1,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00001_00001.json",
+        "output": "data/complete/complete_srs_00001.json"
+    },
+    {
+        "mapping_id": 166,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00002_00002.json",
+        "output": "data/complete/complete_srs_00002.json"
+    },
+    {
+        "mapping_id": 383,
+        "input": "data/train/easy/traceability/incomplete_srs_00055_00003.json",
+        "output": "data/complete/complete_srs_00055.json"
+    },
+    {
+        "mapping_id": 546,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00054_00004.json",
+        "output": "data/complete/complete_srs_00054.json"
+    },
+    {
+        "mapping_id": 635,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00143_00004.json",
+        "output": "data/complete/complete_srs_00143.json"
+    },
+    {
+        "mapping_id": 525,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00033_00004.json",
+        "output": "data/complete/complete_srs_00033.json"
+    },
+    {
+        "mapping_id": 306,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00142_00002.json",
+        "output": "data/complete/complete_srs_00142.json"
+    },
+    {
+        "mapping_id": 109,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00109_00001.json",
+        "output": "data/complete/complete_srs_00109.json"
+    },
+    {
+        "mapping_id": 520,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00028_00004.json",
+        "output": "data/complete/complete_srs_00028.json"
+    },
+    {
+        "mapping_id": 183,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00019_00002.json",
+        "output": "data/complete/complete_srs_00019.json"
+    },
+    {
+        "mapping_id": 513,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00021_00004.json",
+        "output": "data/complete/complete_srs_00021.json"
+    },
+    {
+        "mapping_id": 557,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00065_00004.json",
+        "output": "data/complete/complete_srs_00065.json"
+    },
+    {
+        "mapping_id": 4,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00004_00001.json",
+        "output": "data/complete/complete_srs_00004.json"
+    },
+    {
+        "mapping_id": 593,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00101_00004.json",
+        "output": "data/complete/complete_srs_00101.json"
+    },
+    {
+        "mapping_id": 162,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00162_00001.json",
+        "output": "data/complete/complete_srs_00162.json"
+    },
+    {
+        "mapping_id": 446,
+        "input": "data/train/easy/traceability/incomplete_srs_00118_00003.json",
+        "output": "data/complete/complete_srs_00118.json"
+    },
+    {
+        "mapping_id": 606,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00114_00004.json",
+        "output": "data/complete/complete_srs_00114.json"
+    },
+    {
+        "mapping_id": 656,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00164_00004.json",
+        "output": "data/complete/complete_srs_00164.json"
+    },
+    {
+        "mapping_id": 625,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00133_00004.json",
+        "output": "data/complete/complete_srs_00133.json"
+    },
+    {
+        "mapping_id": 587,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00095_00004.json",
+        "output": "data/complete/complete_srs_00095.json"
+    },
+    {
+        "mapping_id": 118,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00118_00001.json",
+        "output": "data/complete/complete_srs_00118.json"
+    },
+    {
+        "mapping_id": 12,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00012_00001.json",
+        "output": "data/complete/complete_srs_00012.json"
+    },
+    {
+        "mapping_id": 258,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00094_00002.json",
+        "output": "data/complete/complete_srs_00094.json"
+    },
+    {
+        "mapping_id": 480,
+        "input": "data/train/easy/traceability/incomplete_srs_00152_00003.json",
+        "output": "data/complete/complete_srs_00152.json"
+    },
+    {
+        "mapping_id": 391,
+        "input": "data/train/easy/traceability/incomplete_srs_00063_00003.json",
+        "output": "data/complete/complete_srs_00063.json"
+    },
+    {
+        "mapping_id": 395,
+        "input": "data/train/easy/traceability/incomplete_srs_00067_00003.json",
+        "output": "data/complete/complete_srs_00067.json"
+    },
+    {
+        "mapping_id": 66,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00066_00001.json",
+        "output": "data/complete/complete_srs_00066.json"
+    },
+    {
+        "mapping_id": 626,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00134_00004.json",
+        "output": "data/complete/complete_srs_00134.json"
+    },
+    {
+        "mapping_id": 627,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00135_00004.json",
+        "output": "data/complete/complete_srs_00135.json"
+    },
+    {
+        "mapping_id": 157,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00157_00001.json",
+        "output": "data/complete/complete_srs_00157.json"
+    },
+    {
+        "mapping_id": 113,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00113_00001.json",
+        "output": "data/complete/complete_srs_00113.json"
+    },
+    {
+        "mapping_id": 49,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00049_00001.json",
+        "output": "data/complete/complete_srs_00049.json"
+    },
+    {
+        "mapping_id": 94,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00094_00001.json",
+        "output": "data/complete/complete_srs_00094.json"
+    },
+    {
+        "mapping_id": 506,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00014_00004.json",
+        "output": "data/complete/complete_srs_00014.json"
+    },
+    {
+        "mapping_id": 522,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00030_00004.json",
+        "output": "data/complete/complete_srs_00030.json"
+    },
+    {
+        "mapping_id": 142,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00142_00001.json",
+        "output": "data/complete/complete_srs_00142.json"
+    },
+    {
+        "mapping_id": 577,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00085_00004.json",
+        "output": "data/complete/complete_srs_00085.json"
+    },
+    {
+        "mapping_id": 646,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00154_00004.json",
+        "output": "data/complete/complete_srs_00154.json"
+    },
+    {
+        "mapping_id": 409,
+        "input": "data/train/easy/traceability/incomplete_srs_00081_00003.json",
+        "output": "data/complete/complete_srs_00081.json"
+    },
+    {
+        "mapping_id": 439,
+        "input": "data/train/easy/traceability/incomplete_srs_00111_00003.json",
+        "output": "data/complete/complete_srs_00111.json"
+    },
+    {
+        "mapping_id": 270,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00106_00002.json",
+        "output": "data/complete/complete_srs_00106.json"
+    },
+    {
+        "mapping_id": 552,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00060_00004.json",
+        "output": "data/complete/complete_srs_00060.json"
+    },
+    {
+        "mapping_id": 253,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00089_00002.json",
+        "output": "data/complete/complete_srs_00089.json"
+    },
+    {
+        "mapping_id": 650,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00158_00004.json",
+        "output": "data/complete/complete_srs_00158.json"
+    },
+    {
+        "mapping_id": 272,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00108_00002.json",
+        "output": "data/complete/complete_srs_00108.json"
+    },
+    {
+        "mapping_id": 147,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00147_00001.json",
+        "output": "data/complete/complete_srs_00147.json"
+    },
+    {
+        "mapping_id": 470,
+        "input": "data/train/easy/traceability/incomplete_srs_00142_00003.json",
+        "output": "data/complete/complete_srs_00142.json"
+    },
+    {
+        "mapping_id": 406,
+        "input": "data/train/easy/traceability/incomplete_srs_00078_00003.json",
+        "output": "data/complete/complete_srs_00078.json"
+    },
+    {
+        "mapping_id": 512,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00020_00004.json",
+        "output": "data/complete/complete_srs_00020.json"
+    },
+    {
+        "mapping_id": 218,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00054_00002.json",
+        "output": "data/complete/complete_srs_00054.json"
+    },
+    {
+        "mapping_id": 323,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00159_00002.json",
+        "output": "data/complete/complete_srs_00159.json"
+    },
+    {
+        "mapping_id": 217,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00053_00002.json",
+        "output": "data/complete/complete_srs_00053.json"
+    },
+    {
+        "mapping_id": 68,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00068_00001.json",
+        "output": "data/complete/complete_srs_00068.json"
+    },
+    {
+        "mapping_id": 275,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00111_00002.json",
+        "output": "data/complete/complete_srs_00111.json"
+    },
+    {
+        "mapping_id": 411,
+        "input": "data/train/easy/traceability/incomplete_srs_00083_00003.json",
+        "output": "data/complete/complete_srs_00083.json"
+    },
+    {
+        "mapping_id": 324,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00160_00002.json",
+        "output": "data/complete/complete_srs_00160.json"
+    },
+    {
+        "mapping_id": 644,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00152_00004.json",
+        "output": "data/complete/complete_srs_00152.json"
+    },
+    {
+        "mapping_id": 235,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00071_00002.json",
+        "output": "data/complete/complete_srs_00071.json"
+    },
+    {
+        "mapping_id": 58,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00058_00001.json",
+        "output": "data/complete/complete_srs_00058.json"
+    },
+    {
+        "mapping_id": 333,
+        "input": "data/train/easy/traceability/incomplete_srs_00005_00003.json",
+        "output": "data/complete/complete_srs_00005.json"
+    },
+    {
+        "mapping_id": 225,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00061_00002.json",
+        "output": "data/complete/complete_srs_00061.json"
+    },
+    {
+        "mapping_id": 571,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00079_00004.json",
+        "output": "data/complete/complete_srs_00079.json"
+    },
+    {
+        "mapping_id": 277,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00113_00002.json",
+        "output": "data/complete/complete_srs_00113.json"
+    },
+    {
+        "mapping_id": 389,
+        "input": "data/train/easy/traceability/incomplete_srs_00061_00003.json",
+        "output": "data/complete/complete_srs_00061.json"
+    },
+    {
+        "mapping_id": 474,
+        "input": "data/train/easy/traceability/incomplete_srs_00146_00003.json",
+        "output": "data/complete/complete_srs_00146.json"
+    },
+    {
+        "mapping_id": 168,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00004_00002.json",
+        "output": "data/complete/complete_srs_00004.json"
+    },
+    {
+        "mapping_id": 652,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00160_00004.json",
+        "output": "data/complete/complete_srs_00160.json"
+    },
+    {
+        "mapping_id": 547,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00055_00004.json",
+        "output": "data/complete/complete_srs_00055.json"
+    },
+    {
+        "mapping_id": 176,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00012_00002.json",
+        "output": "data/complete/complete_srs_00012.json"
+    },
+    {
+        "mapping_id": 74,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00074_00001.json",
+        "output": "data/complete/complete_srs_00074.json"
+    },
+    {
+        "mapping_id": 274,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00110_00002.json",
+        "output": "data/complete/complete_srs_00110.json"
+    },
+    {
+        "mapping_id": 215,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00051_00002.json",
+        "output": "data/complete/complete_srs_00051.json"
+    },
+    {
+        "mapping_id": 364,
+        "input": "data/train/easy/traceability/incomplete_srs_00036_00003.json",
+        "output": "data/complete/complete_srs_00036.json"
+    },
+    {
+        "mapping_id": 380,
+        "input": "data/train/easy/traceability/incomplete_srs_00052_00003.json",
+        "output": "data/complete/complete_srs_00052.json"
+    },
+    {
+        "mapping_id": 167,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00003_00002.json",
+        "output": "data/complete/complete_srs_00003.json"
+    },
+    {
+        "mapping_id": 374,
+        "input": "data/train/easy/traceability/incomplete_srs_00046_00003.json",
+        "output": "data/complete/complete_srs_00046.json"
+    },
+    {
+        "mapping_id": 465,
+        "input": "data/train/easy/traceability/incomplete_srs_00137_00003.json",
+        "output": "data/complete/complete_srs_00137.json"
+    },
+    {
+        "mapping_id": 624,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00132_00004.json",
+        "output": "data/complete/complete_srs_00132.json"
+    },
+    {
+        "mapping_id": 618,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00126_00004.json",
+        "output": "data/complete/complete_srs_00126.json"
+    },
+    {
+        "mapping_id": 104,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00104_00001.json",
+        "output": "data/complete/complete_srs_00104.json"
+    },
+    {
+        "mapping_id": 640,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00148_00004.json",
+        "output": "data/complete/complete_srs_00148.json"
+    },
+    {
+        "mapping_id": 82,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00082_00001.json",
+        "output": "data/complete/complete_srs_00082.json"
+    },
+    {
+        "mapping_id": 297,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00133_00002.json",
+        "output": "data/complete/complete_srs_00133.json"
+    },
+    {
+        "mapping_id": 234,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00070_00002.json",
+        "output": "data/complete/complete_srs_00070.json"
+    },
+    {
+        "mapping_id": 47,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00047_00001.json",
+        "output": "data/complete/complete_srs_00047.json"
+    },
+    {
+        "mapping_id": 72,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00072_00001.json",
+        "output": "data/complete/complete_srs_00072.json"
+    },
+    {
+        "mapping_id": 197,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00033_00002.json",
+        "output": "data/complete/complete_srs_00033.json"
+    },
+    {
+        "mapping_id": 592,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00100_00004.json",
+        "output": "data/complete/complete_srs_00100.json"
+    },
+    {
+        "mapping_id": 371,
+        "input": "data/train/easy/traceability/incomplete_srs_00043_00003.json",
+        "output": "data/complete/complete_srs_00043.json"
+    },
+    {
+        "mapping_id": 301,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00137_00002.json",
+        "output": "data/complete/complete_srs_00137.json"
+    },
+    {
+        "mapping_id": 566,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00074_00004.json",
+        "output": "data/complete/complete_srs_00074.json"
+    },
+    {
+        "mapping_id": 81,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00081_00001.json",
+        "output": "data/complete/complete_srs_00081.json"
+    },
+    {
+        "mapping_id": 388,
+        "input": "data/train/easy/traceability/incomplete_srs_00060_00003.json",
+        "output": "data/complete/complete_srs_00060.json"
+    },
+    {
+        "mapping_id": 128,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00128_00001.json",
+        "output": "data/complete/complete_srs_00128.json"
+    },
+    {
+        "mapping_id": 550,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00058_00004.json",
+        "output": "data/complete/complete_srs_00058.json"
+    },
+    {
+        "mapping_id": 471,
+        "input": "data/train/easy/traceability/incomplete_srs_00143_00003.json",
+        "output": "data/complete/complete_srs_00143.json"
+    },
+    {
+        "mapping_id": 45,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00045_00001.json",
+        "output": "data/complete/complete_srs_00045.json"
+    },
+    {
+        "mapping_id": 271,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00107_00002.json",
+        "output": "data/complete/complete_srs_00107.json"
+    },
+    {
+        "mapping_id": 353,
+        "input": "data/train/easy/traceability/incomplete_srs_00025_00003.json",
+        "output": "data/complete/complete_srs_00025.json"
+    },
+    {
+        "mapping_id": 368,
+        "input": "data/train/easy/traceability/incomplete_srs_00040_00003.json",
+        "output": "data/complete/complete_srs_00040.json"
+    },
+    {
+        "mapping_id": 100,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00100_00001.json",
+        "output": "data/complete/complete_srs_00100.json"
+    },
+    {
+        "mapping_id": 390,
+        "input": "data/train/easy/traceability/incomplete_srs_00062_00003.json",
+        "output": "data/complete/complete_srs_00062.json"
+    },
+    {
+        "mapping_id": 95,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00095_00001.json",
+        "output": "data/complete/complete_srs_00095.json"
+    },
+    {
+        "mapping_id": 649,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00157_00004.json",
+        "output": "data/complete/complete_srs_00157.json"
+    },
+    {
+        "mapping_id": 345,
+        "input": "data/train/easy/traceability/incomplete_srs_00017_00003.json",
+        "output": "data/complete/complete_srs_00017.json"
+    },
+    {
+        "mapping_id": 221,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00057_00002.json",
+        "output": "data/complete/complete_srs_00057.json"
+    },
+    {
+        "mapping_id": 160,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00160_00001.json",
+        "output": "data/complete/complete_srs_00160.json"
+    },
+    {
+        "mapping_id": 629,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00137_00004.json",
+        "output": "data/complete/complete_srs_00137.json"
+    },
+    {
+        "mapping_id": 349,
+        "input": "data/train/easy/traceability/incomplete_srs_00021_00003.json",
+        "output": "data/complete/complete_srs_00021.json"
+    },
+    {
+        "mapping_id": 645,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00153_00004.json",
+        "output": "data/complete/complete_srs_00153.json"
+    },
+    {
+        "mapping_id": 164,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00164_00001.json",
+        "output": "data/complete/complete_srs_00164.json"
+    },
+    {
+        "mapping_id": 7,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00007_00001.json",
+        "output": "data/complete/complete_srs_00007.json"
+    },
+    {
+        "mapping_id": 285,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00121_00002.json",
+        "output": "data/complete/complete_srs_00121.json"
+    },
+    {
+        "mapping_id": 604,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00112_00004.json",
+        "output": "data/complete/complete_srs_00112.json"
+    },
+    {
+        "mapping_id": 460,
+        "input": "data/train/easy/traceability/incomplete_srs_00132_00003.json",
+        "output": "data/complete/complete_srs_00132.json"
+    },
+    {
+        "mapping_id": 226,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00062_00002.json",
+        "output": "data/complete/complete_srs_00062.json"
+    },
+    {
+        "mapping_id": 430,
+        "input": "data/train/easy/traceability/incomplete_srs_00102_00003.json",
+        "output": "data/complete/complete_srs_00102.json"
+    },
+    {
+        "mapping_id": 648,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00156_00004.json",
+        "output": "data/complete/complete_srs_00156.json"
+    },
+    {
+        "mapping_id": 204,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00040_00002.json",
+        "output": "data/complete/complete_srs_00040.json"
+    },
+    {
+        "mapping_id": 575,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00083_00004.json",
+        "output": "data/complete/complete_srs_00083.json"
+    },
+    {
+        "mapping_id": 28,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00028_00001.json",
+        "output": "data/complete/complete_srs_00028.json"
+    },
+    {
+        "mapping_id": 617,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00125_00004.json",
+        "output": "data/complete/complete_srs_00125.json"
+    },
+    {
+        "mapping_id": 518,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00026_00004.json",
+        "output": "data/complete/complete_srs_00026.json"
+    },
+    {
+        "mapping_id": 239,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00075_00002.json",
+        "output": "data/complete/complete_srs_00075.json"
+    },
+    {
+        "mapping_id": 224,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00060_00002.json",
+        "output": "data/complete/complete_srs_00060.json"
+    },
+    {
+        "mapping_id": 96,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00096_00001.json",
+        "output": "data/complete/complete_srs_00096.json"
+    },
+    {
+        "mapping_id": 31,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00031_00001.json",
+        "output": "data/complete/complete_srs_00031.json"
+    },
+    {
+        "mapping_id": 33,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00033_00001.json",
+        "output": "data/complete/complete_srs_00033.json"
+    },
+    {
+        "mapping_id": 433,
+        "input": "data/train/easy/traceability/incomplete_srs_00105_00003.json",
+        "output": "data/complete/complete_srs_00105.json"
+    },
+    {
+        "mapping_id": 605,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00113_00004.json",
+        "output": "data/complete/complete_srs_00113.json"
+    },
+    {
+        "mapping_id": 90,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00090_00001.json",
+        "output": "data/complete/complete_srs_00090.json"
+    },
+    {
+        "mapping_id": 559,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00067_00004.json",
+        "output": "data/complete/complete_srs_00067.json"
+    },
+    {
+        "mapping_id": 105,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00105_00001.json",
+        "output": "data/complete/complete_srs_00105.json"
+    },
+    {
+        "mapping_id": 143,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00143_00001.json",
+        "output": "data/complete/complete_srs_00143.json"
+    },
+    {
+        "mapping_id": 229,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00065_00002.json",
+        "output": "data/complete/complete_srs_00065.json"
+    },
+    {
+        "mapping_id": 251,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00087_00002.json",
+        "output": "data/complete/complete_srs_00087.json"
+    },
+    {
+        "mapping_id": 282,
+        "input": "data/train/easy/requirement_coverage/incomplete_srs_00118_00002.json",
+        "output": "data/complete/complete_srs_00118.json"
+    },
+    {
+        "mapping_id": 26,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00026_00001.json",
+        "output": "data/complete/complete_srs_00026.json"
+    },
+    {
+        "mapping_id": 115,
+        "input": "data/train/easy/structural_incompleteness/incomplete_srs_00115_00001.json",
+        "output": "data/complete/complete_srs_00115.json"
+    },
+    {
+        "mapping_id": 655,
+        "input": "data/train/easy/requirement_quality_attributes/incomplete_srs_00163_00004.json",
+        "output": "data/complete/complete_srs_00163.json"
+    },
+    {
+        "mapping_id": 657,
+        "input": "data/complete/complete_srs_00001.json",
+        "output": "data/complete/complete_srs_00001.json"
+    },
+    {
+        "mapping_id": 658,
+        "input": "data/complete/complete_srs_00002.json",
+        "output": "data/complete/complete_srs_00002.json"
+    },
+    {
+        "mapping_id": 659,
+        "input": "data/complete/complete_srs_00003.json",
+        "output": "data/complete/complete_srs_00003.json"
+    },
+    {
+        "mapping_id": 660,
+        "input": "data/complete/complete_srs_00004.json",
+        "output": "data/complete/complete_srs_00004.json"
+    },
+    {
+        "mapping_id": 661,
+        "input": "data/complete/complete_srs_00005.json",
+        "output": "data/complete/complete_srs_00005.json"
+    },
+    {
+        "mapping_id": 662,
+        "input": "data/complete/complete_srs_00006.json",
+        "output": "data/complete/complete_srs_00006.json"
+    },
+    {
+        "mapping_id": 663,
+        "input": "data/complete/complete_srs_00007.json",
+        "output": "data/complete/complete_srs_00007.json"
+    },
+    {
+        "mapping_id": 664,
+        "input": "data/complete/complete_srs_00008.json",
+        "output": "data/complete/complete_srs_00008.json"
+    },
+    {
+        "mapping_id": 665,
+        "input": "data/complete/complete_srs_00009.json",
+        "output": "data/complete/complete_srs_00009.json"
+    },
+    {
+        "mapping_id": 666,
+        "input": "data/complete/complete_srs_00010.json",
+        "output": "data/complete/complete_srs_00010.json"
+    },
+    {
+        "mapping_id": 667,
+        "input": "data/complete/complete_srs_00011.json",
+        "output": "data/complete/complete_srs_00011.json"
+    },
+    {
+        "mapping_id": 668,
+        "input": "data/complete/complete_srs_00012.json",
+        "output": "data/complete/complete_srs_00012.json"
+    },
+    {
+        "mapping_id": 669,
+        "input": "data/complete/complete_srs_00013.json",
+        "output": "data/complete/complete_srs_00013.json"
+    },
+    {
+        "mapping_id": 670,
+        "input": "data/complete/complete_srs_00014.json",
+        "output": "data/complete/complete_srs_00014.json"
+    },
+    {
+        "mapping_id": 671,
+        "input": "data/complete/complete_srs_00015.json",
+        "output": "data/complete/complete_srs_00015.json"
+    },
+    {
+        "mapping_id": 672,
+        "input": "data/complete/complete_srs_00016.json",
+        "output": "data/complete/complete_srs_00016.json"
+    },
+    {
+        "mapping_id": 673,
+        "input": "data/complete/complete_srs_00017.json",
+        "output": "data/complete/complete_srs_00017.json"
+    },
+    {
+        "mapping_id": 674,
+        "input": "data/complete/complete_srs_00018.json",
+        "output": "data/complete/complete_srs_00018.json"
+    },
+    {
+        "mapping_id": 675,
+        "input": "data/complete/complete_srs_00019.json",
+        "output": "data/complete/complete_srs_00019.json"
+    },
+    {
+        "mapping_id": 676,
+        "input": "data/complete/complete_srs_00020.json",
+        "output": "data/complete/complete_srs_00020.json"
+    },
+    {
+        "mapping_id": 677,
+        "input": "data/complete/complete_srs_00021.json",
+        "output": "data/complete/complete_srs_00021.json"
+    },
+    {
+        "mapping_id": 678,
+        "input": "data/complete/complete_srs_00022.json",
+        "output": "data/complete/complete_srs_00022.json"
+    },
+    {
+        "mapping_id": 679,
+        "input": "data/complete/complete_srs_00023.json",
+        "output": "data/complete/complete_srs_00023.json"
+    },
+    {
+        "mapping_id": 680,
+        "input": "data/complete/complete_srs_00024.json",
+        "output": "data/complete/complete_srs_00024.json"
+    },
+    {
+        "mapping_id": 681,
+        "input": "data/complete/complete_srs_00025.json",
+        "output": "data/complete/complete_srs_00025.json"
+    },
+    {
+        "mapping_id": 682,
+        "input": "data/complete/complete_srs_00026.json",
+        "output": "data/complete/complete_srs_00026.json"
+    },
+    {
+        "mapping_id": 683,
+        "input": "data/complete/complete_srs_00027.json",
+        "output": "data/complete/complete_srs_00027.json"
+    },
+    {
+        "mapping_id": 684,
+        "input": "data/complete/complete_srs_00028.json",
+        "output": "data/complete/complete_srs_00028.json"
+    },
+    {
+        "mapping_id": 685,
+        "input": "data/complete/complete_srs_00029.json",
+        "output": "data/complete/complete_srs_00029.json"
+    },
+    {
+        "mapping_id": 686,
+        "input": "data/complete/complete_srs_00030.json",
+        "output": "data/complete/complete_srs_00030.json"
+    },
+    {
+        "mapping_id": 687,
+        "input": "data/complete/complete_srs_00031.json",
+        "output": "data/complete/complete_srs_00031.json"
+    },
+    {
+        "mapping_id": 688,
+        "input": "data/complete/complete_srs_00032.json",
+        "output": "data/complete/complete_srs_00032.json"
+    },
+    {
+        "mapping_id": 689,
+        "input": "data/complete/complete_srs_00033.json",
+        "output": "data/complete/complete_srs_00033.json"
+    },
+    {
+        "mapping_id": 690,
+        "input": "data/complete/complete_srs_00034.json",
+        "output": "data/complete/complete_srs_00034.json"
+    },
+    {
+        "mapping_id": 691,
+        "input": "data/complete/complete_srs_00035.json",
+        "output": "data/complete/complete_srs_00035.json"
+    },
+    {
+        "mapping_id": 692,
+        "input": "data/complete/complete_srs_00036.json",
+        "output": "data/complete/complete_srs_00036.json"
+    },
+    {
+        "mapping_id": 693,
+        "input": "data/complete/complete_srs_00037.json",
+        "output": "data/complete/complete_srs_00037.json"
+    },
+    {
+        "mapping_id": 694,
+        "input": "data/complete/complete_srs_00038.json",
+        "output": "data/complete/complete_srs_00038.json"
+    },
+    {
+        "mapping_id": 695,
+        "input": "data/complete/complete_srs_00039.json",
+        "output": "data/complete/complete_srs_00039.json"
+    },
+    {
+        "mapping_id": 696,
+        "input": "data/complete/complete_srs_00040.json",
+        "output": "data/complete/complete_srs_00040.json"
+    },
+    {
+        "mapping_id": 697,
+        "input": "data/complete/complete_srs_00041.json",
+        "output": "data/complete/complete_srs_00041.json"
+    },
+    {
+        "mapping_id": 698,
+        "input": "data/complete/complete_srs_00042.json",
+        "output": "data/complete/complete_srs_00042.json"
+    },
+    {
+        "mapping_id": 699,
+        "input": "data/complete/complete_srs_00043.json",
+        "output": "data/complete/complete_srs_00043.json"
+    },
+    {
+        "mapping_id": 700,
+        "input": "data/complete/complete_srs_00044.json",
+        "output": "data/complete/complete_srs_00044.json"
+    },
+    {
+        "mapping_id": 701,
+        "input": "data/complete/complete_srs_00045.json",
+        "output": "data/complete/complete_srs_00045.json"
+    },
+    {
+        "mapping_id": 702,
+        "input": "data/complete/complete_srs_00046.json",
+        "output": "data/complete/complete_srs_00046.json"
+    },
+    {
+        "mapping_id": 703,
+        "input": "data/complete/complete_srs_00047.json",
+        "output": "data/complete/complete_srs_00047.json"
+    },
+    {
+        "mapping_id": 704,
+        "input": "data/complete/complete_srs_00048.json",
+        "output": "data/complete/complete_srs_00048.json"
+    },
+    {
+        "mapping_id": 705,
+        "input": "data/complete/complete_srs_00049.json",
+        "output": "data/complete/complete_srs_00049.json"
+    },
+    {
+        "mapping_id": 706,
+        "input": "data/complete/complete_srs_00050.json",
+        "output": "data/complete/complete_srs_00050.json"
+    },
+    {
+        "mapping_id": 707,
+        "input": "data/complete/complete_srs_00051.json",
+        "output": "data/complete/complete_srs_00051.json"
+    },
+    {
+        "mapping_id": 708,
+        "input": "data/complete/complete_srs_00052.json",
+        "output": "data/complete/complete_srs_00052.json"
+    },
+    {
+        "mapping_id": 709,
+        "input": "data/complete/complete_srs_00053.json",
+        "output": "data/complete/complete_srs_00053.json"
+    },
+    {
+        "mapping_id": 710,
+        "input": "data/complete/complete_srs_00054.json",
+        "output": "data/complete/complete_srs_00054.json"
+    },
+    {
+        "mapping_id": 711,
+        "input": "data/complete/complete_srs_00055.json",
+        "output": "data/complete/complete_srs_00055.json"
+    },
+    {
+        "mapping_id": 712,
+        "input": "data/complete/complete_srs_00056.json",
+        "output": "data/complete/complete_srs_00056.json"
+    },
+    {
+        "mapping_id": 713,
+        "input": "data/complete/complete_srs_00057.json",
+        "output": "data/complete/complete_srs_00057.json"
+    },
+    {
+        "mapping_id": 714,
+        "input": "data/complete/complete_srs_00058.json",
+        "output": "data/complete/complete_srs_00058.json"
+    },
+    {
+        "mapping_id": 715,
+        "input": "data/complete/complete_srs_00059.json",
+        "output": "data/complete/complete_srs_00059.json"
+    },
+    {
+        "mapping_id": 716,
+        "input": "data/complete/complete_srs_00060.json",
+        "output": "data/complete/complete_srs_00060.json"
+    },
+    {
+        "mapping_id": 717,
+        "input": "data/complete/complete_srs_00061.json",
+        "output": "data/complete/complete_srs_00061.json"
+    },
+    {
+        "mapping_id": 718,
+        "input": "data/complete/complete_srs_00062.json",
+        "output": "data/complete/complete_srs_00062.json"
+    },
+    {
+        "mapping_id": 719,
+        "input": "data/complete/complete_srs_00063.json",
+        "output": "data/complete/complete_srs_00063.json"
+    },
+    {
+        "mapping_id": 720,
+        "input": "data/complete/complete_srs_00064.json",
+        "output": "data/complete/complete_srs_00064.json"
+    },
+    {
+        "mapping_id": 721,
+        "input": "data/complete/complete_srs_00065.json",
+        "output": "data/complete/complete_srs_00065.json"
+    },
+    {
+        "mapping_id": 722,
+        "input": "data/complete/complete_srs_00066.json",
+        "output": "data/complete/complete_srs_00066.json"
+    },
+    {
+        "mapping_id": 723,
+        "input": "data/complete/complete_srs_00067.json",
+        "output": "data/complete/complete_srs_00067.json"
+    },
+    {
+        "mapping_id": 724,
+        "input": "data/complete/complete_srs_00068.json",
+        "output": "data/complete/complete_srs_00068.json"
+    },
+    {
+        "mapping_id": 725,
+        "input": "data/complete/complete_srs_00069.json",
+        "output": "data/complete/complete_srs_00069.json"
+    },
+    {
+        "mapping_id": 726,
+        "input": "data/complete/complete_srs_00070.json",
+        "output": "data/complete/complete_srs_00070.json"
+    },
+    {
+        "mapping_id": 727,
+        "input": "data/complete/complete_srs_00071.json",
+        "output": "data/complete/complete_srs_00071.json"
+    },
+    {
+        "mapping_id": 728,
+        "input": "data/complete/complete_srs_00072.json",
+        "output": "data/complete/complete_srs_00072.json"
+    },
+    {
+        "mapping_id": 729,
+        "input": "data/complete/complete_srs_00073.json",
+        "output": "data/complete/complete_srs_00073.json"
+    },
+    {
+        "mapping_id": 730,
+        "input": "data/complete/complete_srs_00074.json",
+        "output": "data/complete/complete_srs_00074.json"
+    },
+    {
+        "mapping_id": 731,
+        "input": "data/complete/complete_srs_00075.json",
+        "output": "data/complete/complete_srs_00075.json"
+    },
+    {
+        "mapping_id": 732,
+        "input": "data/complete/complete_srs_00076.json",
+        "output": "data/complete/complete_srs_00076.json"
+    },
+    {
+        "mapping_id": 733,
+        "input": "data/complete/complete_srs_00077.json",
+        "output": "data/complete/complete_srs_00077.json"
+    },
+    {
+        "mapping_id": 734,
+        "input": "data/complete/complete_srs_00078.json",
+        "output": "data/complete/complete_srs_00078.json"
+    },
+    {
+        "mapping_id": 735,
+        "input": "data/complete/complete_srs_00079.json",
+        "output": "data/complete/complete_srs_00079.json"
+    },
+    {
+        "mapping_id": 736,
+        "input": "data/complete/complete_srs_00080.json",
+        "output": "data/complete/complete_srs_00080.json"
+    },
+    {
+        "mapping_id": 737,
+        "input": "data/complete/complete_srs_00081.json",
+        "output": "data/complete/complete_srs_00081.json"
+    },
+    {
+        "mapping_id": 738,
+        "input": "data/complete/complete_srs_00082.json",
+        "output": "data/complete/complete_srs_00082.json"
+    },
+    {
+        "mapping_id": 739,
+        "input": "data/complete/complete_srs_00083.json",
+        "output": "data/complete/complete_srs_00083.json"
+    },
+    {
+        "mapping_id": 740,
+        "input": "data/complete/complete_srs_00084.json",
+        "output": "data/complete/complete_srs_00084.json"
+    },
+    {
+        "mapping_id": 741,
+        "input": "data/complete/complete_srs_00085.json",
+        "output": "data/complete/complete_srs_00085.json"
+    },
+    {
+        "mapping_id": 742,
+        "input": "data/complete/complete_srs_00086.json",
+        "output": "data/complete/complete_srs_00086.json"
+    },
+    {
+        "mapping_id": 743,
+        "input": "data/complete/complete_srs_00087.json",
+        "output": "data/complete/complete_srs_00087.json"
+    },
+    {
+        "mapping_id": 744,
+        "input": "data/complete/complete_srs_00088.json",
+        "output": "data/complete/complete_srs_00088.json"
+    },
+    {
+        "mapping_id": 745,
+        "input": "data/complete/complete_srs_00089.json",
+        "output": "data/complete/complete_srs_00089.json"
+    },
+    {
+        "mapping_id": 746,
+        "input": "data/complete/complete_srs_00090.json",
+        "output": "data/complete/complete_srs_00090.json"
+    },
+    {
+        "mapping_id": 747,
+        "input": "data/complete/complete_srs_00091.json",
+        "output": "data/complete/complete_srs_00091.json"
+    },
+    {
+        "mapping_id": 748,
+        "input": "data/complete/complete_srs_00092.json",
+        "output": "data/complete/complete_srs_00092.json"
+    },
+    {
+        "mapping_id": 749,
+        "input": "data/complete/complete_srs_00093.json",
+        "output": "data/complete/complete_srs_00093.json"
+    },
+    {
+        "mapping_id": 750,
+        "input": "data/complete/complete_srs_00094.json",
+        "output": "data/complete/complete_srs_00094.json"
+    },
+    {
+        "mapping_id": 751,
+        "input": "data/complete/complete_srs_00095.json",
+        "output": "data/complete/complete_srs_00095.json"
+    },
+    {
+        "mapping_id": 752,
+        "input": "data/complete/complete_srs_00096.json",
+        "output": "data/complete/complete_srs_00096.json"
+    },
+    {
+        "mapping_id": 753,
+        "input": "data/complete/complete_srs_00097.json",
+        "output": "data/complete/complete_srs_00097.json"
+    },
+    {
+        "mapping_id": 754,
+        "input": "data/complete/complete_srs_00098.json",
+        "output": "data/complete/complete_srs_00098.json"
+    },
+    {
+        "mapping_id": 755,
+        "input": "data/complete/complete_srs_00099.json",
+        "output": "data/complete/complete_srs_00099.json"
+    },
+    {
+        "mapping_id": 756,
+        "input": "data/complete/complete_srs_00100.json",
+        "output": "data/complete/complete_srs_00100.json"
+    },
+    {
+        "mapping_id": 757,
+        "input": "data/complete/complete_srs_00101.json",
+        "output": "data/complete/complete_srs_00101.json"
+    },
+    {
+        "mapping_id": 758,
+        "input": "data/complete/complete_srs_00102.json",
+        "output": "data/complete/complete_srs_00102.json"
+    },
+    {
+        "mapping_id": 759,
+        "input": "data/complete/complete_srs_00103.json",
+        "output": "data/complete/complete_srs_00103.json"
+    },
+    {
+        "mapping_id": 760,
+        "input": "data/complete/complete_srs_00104.json",
+        "output": "data/complete/complete_srs_00104.json"
+    },
+    {
+        "mapping_id": 761,
+        "input": "data/complete/complete_srs_00105.json",
+        "output": "data/complete/complete_srs_00105.json"
+    },
+    {
+        "mapping_id": 762,
+        "input": "data/complete/complete_srs_00106.json",
+        "output": "data/complete/complete_srs_00106.json"
+    },
+    {
+        "mapping_id": 763,
+        "input": "data/complete/complete_srs_00107.json",
+        "output": "data/complete/complete_srs_00107.json"
+    },
+    {
+        "mapping_id": 764,
+        "input": "data/complete/complete_srs_00108.json",
+        "output": "data/complete/complete_srs_00108.json"
+    },
+    {
+        "mapping_id": 765,
+        "input": "data/complete/complete_srs_00109.json",
+        "output": "data/complete/complete_srs_00109.json"
+    },
+    {
+        "mapping_id": 766,
+        "input": "data/complete/complete_srs_00110.json",
+        "output": "data/complete/complete_srs_00110.json"
+    },
+    {
+        "mapping_id": 767,
+        "input": "data/complete/complete_srs_00111.json",
+        "output": "data/complete/complete_srs_00111.json"
+    },
+    {
+        "mapping_id": 768,
+        "input": "data/complete/complete_srs_00112.json",
+        "output": "data/complete/complete_srs_00112.json"
+    },
+    {
+        "mapping_id": 769,
+        "input": "data/complete/complete_srs_00113.json",
+        "output": "data/complete/complete_srs_00113.json"
+    },
+    {
+        "mapping_id": 770,
+        "input": "data/complete/complete_srs_00114.json",
+        "output": "data/complete/complete_srs_00114.json"
+    },
+    {
+        "mapping_id": 771,
+        "input": "data/complete/complete_srs_00115.json",
+        "output": "data/complete/complete_srs_00115.json"
+    },
+    {
+        "mapping_id": 772,
+        "input": "data/complete/complete_srs_00116.json",
+        "output": "data/complete/complete_srs_00116.json"
+    },
+    {
+        "mapping_id": 773,
+        "input": "data/complete/complete_srs_00117.json",
+        "output": "data/complete/complete_srs_00117.json"
+    },
+    {
+        "mapping_id": 774,
+        "input": "data/complete/complete_srs_00118.json",
+        "output": "data/complete/complete_srs_00118.json"
+    },
+    {
+        "mapping_id": 775,
+        "input": "data/complete/complete_srs_00119.json",
+        "output": "data/complete/complete_srs_00119.json"
+    },
+    {
+        "mapping_id": 776,
+        "input": "data/complete/complete_srs_00120.json",
+        "output": "data/complete/complete_srs_00120.json"
+    },
+    {
+        "mapping_id": 777,
+        "input": "data/complete/complete_srs_00121.json",
+        "output": "data/complete/complete_srs_00121.json"
+    },
+    {
+        "mapping_id": 778,
+        "input": "data/complete/complete_srs_00122.json",
+        "output": "data/complete/complete_srs_00122.json"
+    },
+    {
+        "mapping_id": 779,
+        "input": "data/complete/complete_srs_00123.json",
+        "output": "data/complete/complete_srs_00123.json"
+    },
+    {
+        "mapping_id": 780,
+        "input": "data/complete/complete_srs_00124.json",
+        "output": "data/complete/complete_srs_00124.json"
+    },
+    {
+        "mapping_id": 781,
+        "input": "data/complete/complete_srs_00125.json",
+        "output": "data/complete/complete_srs_00125.json"
+    },
+    {
+        "mapping_id": 782,
+        "input": "data/complete/complete_srs_00126.json",
+        "output": "data/complete/complete_srs_00126.json"
+    },
+    {
+        "mapping_id": 783,
+        "input": "data/complete/complete_srs_00127.json",
+        "output": "data/complete/complete_srs_00127.json"
+    },
+    {
+        "mapping_id": 784,
+        "input": "data/complete/complete_srs_00128.json",
+        "output": "data/complete/complete_srs_00128.json"
+    },
+    {
+        "mapping_id": 785,
+        "input": "data/complete/complete_srs_00129.json",
+        "output": "data/complete/complete_srs_00129.json"
+    },
+    {
+        "mapping_id": 786,
+        "input": "data/complete/complete_srs_00130.json",
+        "output": "data/complete/complete_srs_00130.json"
+    },
+    {
+        "mapping_id": 787,
+        "input": "data/complete/complete_srs_00131.json",
+        "output": "data/complete/complete_srs_00131.json"
+    },
+    {
+        "mapping_id": 788,
+        "input": "data/complete/complete_srs_00132.json",
+        "output": "data/complete/complete_srs_00132.json"
+    },
+    {
+        "mapping_id": 789,
+        "input": "data/complete/complete_srs_00133.json",
+        "output": "data/complete/complete_srs_00133.json"
+    },
+    {
+        "mapping_id": 790,
+        "input": "data/complete/complete_srs_00134.json",
+        "output": "data/complete/complete_srs_00134.json"
+    },
+    {
+        "mapping_id": 791,
+        "input": "data/complete/complete_srs_00135.json",
+        "output": "data/complete/complete_srs_00135.json"
+    },
+    {
+        "mapping_id": 792,
+        "input": "data/complete/complete_srs_00136.json",
+        "output": "data/complete/complete_srs_00136.json"
+    },
+    {
+        "mapping_id": 793,
+        "input": "data/complete/complete_srs_00137.json",
+        "output": "data/complete/complete_srs_00137.json"
+    },
+    {
+        "mapping_id": 794,
+        "input": "data/complete/complete_srs_00138.json",
+        "output": "data/complete/complete_srs_00138.json"
+    },
+    {
+        "mapping_id": 795,
+        "input": "data/complete/complete_srs_00139.json",
+        "output": "data/complete/complete_srs_00139.json"
+    },
+    {
+        "mapping_id": 796,
+        "input": "data/complete/complete_srs_00140.json",
+        "output": "data/complete/complete_srs_00140.json"
+    },
+    {
+        "mapping_id": 797,
+        "input": "data/complete/complete_srs_00141.json",
+        "output": "data/complete/complete_srs_00141.json"
+    },
+    {
+        "mapping_id": 798,
+        "input": "data/complete/complete_srs_00142.json",
+        "output": "data/complete/complete_srs_00142.json"
+    },
+    {
+        "mapping_id": 799,
+        "input": "data/complete/complete_srs_00143.json",
+        "output": "data/complete/complete_srs_00143.json"
+    },
+    {
+        "mapping_id": 800,
+        "input": "data/complete/complete_srs_00144.json",
+        "output": "data/complete/complete_srs_00144.json"
+    },
+    {
+        "mapping_id": 801,
+        "input": "data/complete/complete_srs_00145.json",
+        "output": "data/complete/complete_srs_00145.json"
+    },
+    {
+        "mapping_id": 802,
+        "input": "data/complete/complete_srs_00146.json",
+        "output": "data/complete/complete_srs_00146.json"
+    },
+    {
+        "mapping_id": 803,
+        "input": "data/complete/complete_srs_00147.json",
+        "output": "data/complete/complete_srs_00147.json"
+    },
+    {
+        "mapping_id": 804,
+        "input": "data/complete/complete_srs_00148.json",
+        "output": "data/complete/complete_srs_00148.json"
+    },
+    {
+        "mapping_id": 805,
+        "input": "data/complete/complete_srs_00149.json",
+        "output": "data/complete/complete_srs_00149.json"
+    },
+    {
+        "mapping_id": 806,
+        "input": "data/complete/complete_srs_00150.json",
+        "output": "data/complete/complete_srs_00150.json"
+    },
+    {
+        "mapping_id": 807,
+        "input": "data/complete/complete_srs_00151.json",
+        "output": "data/complete/complete_srs_00151.json"
+    },
+    {
+        "mapping_id": 808,
+        "input": "data/complete/complete_srs_00152.json",
+        "output": "data/complete/complete_srs_00152.json"
+    },
+    {
+        "mapping_id": 809,
+        "input": "data/complete/complete_srs_00153.json",
+        "output": "data/complete/complete_srs_00153.json"
+    },
+    {
+        "mapping_id": 810,
+        "input": "data/complete/complete_srs_00154.json",
+        "output": "data/complete/complete_srs_00154.json"
+    },
+    {
+        "mapping_id": 811,
+        "input": "data/complete/complete_srs_00155.json",
+        "output": "data/complete/complete_srs_00155.json"
+    },
+    {
+        "mapping_id": 812,
+        "input": "data/complete/complete_srs_00156.json",
+        "output": "data/complete/complete_srs_00156.json"
+    },
+    {
+        "mapping_id": 813,
+        "input": "data/complete/complete_srs_00157.json",
+        "output": "data/complete/complete_srs_00157.json"
+    },
+    {
+        "mapping_id": 814,
+        "input": "data/complete/complete_srs_00158.json",
+        "output": "data/complete/complete_srs_00158.json"
+    },
+    {
+        "mapping_id": 815,
+        "input": "data/complete/complete_srs_00159.json",
+        "output": "data/complete/complete_srs_00159.json"
+    },
+    {
+        "mapping_id": 816,
+        "input": "data/complete/complete_srs_00160.json",
+        "output": "data/complete/complete_srs_00160.json"
+    },
+    {
+        "mapping_id": 817,
+        "input": "data/complete/complete_srs_00161.json",
+        "output": "data/complete/complete_srs_00161.json"
+    },
+    {
+        "mapping_id": 818,
+        "input": "data/complete/complete_srs_00162.json",
+        "output": "data/complete/complete_srs_00162.json"
+    },
+    {
+        "mapping_id": 819,
+        "input": "data/complete/complete_srs_00163.json",
+        "output": "data/complete/complete_srs_00163.json"
+    },
+    {
+        "mapping_id": 820,
+        "input": "data/complete/complete_srs_00164.json",
+        "output": "data/complete/complete_srs_00164.json"
+    }
+]

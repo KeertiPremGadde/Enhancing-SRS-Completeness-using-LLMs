@@ -1,0 +1,60 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Wedding Planning System (WPS) defines requirements for managing wedding events, vendors, budgets, invitations, and guest coordination.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "WPS integrates with venue booking platforms, financial planning tools, and guest management services.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "WPS provides a web-based and mobile-friendly UI for wedding organizers, vendors, and guests.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "WPS supports printing invitations, venue access via QR codes, and integrations with event management kiosks.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "WPS connects with third-party APIs for vendor recommendations, payment processing, and RSVP management.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "WPS ensures secure communication via TLS encryption and multi-channel notifications.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "WPS optimizes storage for guest lists, vendor details, wedding registries, and budget tracking.",
+      "[SUBSUBSEC] 1.3.7 Operations": "WPS automates wedding checklist management, budget tracking, RSVP handling, and scheduling.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "WPS supports multi-regional vendor availability, multiple currencies, and localized wedding customs.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "WPS connects with catering, photography, venue, and travel service providers."
+    },
+    "[SUBSEC] 1.2 Scope": "WPS enables users to organize wedding tasks, book vendors, manage guest lists, and track budgets while integrating with financial and event services.",
+    "[SUBSEC] 1.4 Product Functions": "WPS supports wedding planning checklists, budget tracking, vendor booking, invitation management, and event coordination.",
+    "[SUBSEC] 1.5 User Characteristics": "WPS serves engaged couples, wedding planners, vendors, and guests.",
+    "[SUBSEC] 1.6 Limitations": "WPS requires vendor and guest participation for successful event execution.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "WPS depends on vendor partnerships, financial service integrations, and wedding industry regulations.",
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "WPS: Wedding Planning System",
+      "TLS: Transport Layer Security",
+      "QR: Quick Response (Code)"
+    ],
+    "[SUBSEC] 1.8 Definitions": [
+      "RSVP: Guest confirmation for event attendance."
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall integrate with vendors and support secure online payments for bookings."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide a user-friendly UI with interactive planning tools and event dashboards."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall provide wedding checklist management, event scheduling, and budget tracking with expense categorization (REQ-DB-001, REQ-INTF-001).",
+      "REQ-FUNC-002": "The system shall enable searching, booking wedding vendors, designing invitations, and managing RSVPs (REQ-INTF-001).",
+      "REQ-FUNC-003": "The system shall provide real-time communication channels for guests, vendors, and planners."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall support 1,000 users and generate reports in 3 seconds."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store checklists, budget details, guest lists, and vendor contracts."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall adhere to GDPR for user data protection and PCI DSS for secure payments."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall comply with financial and personal data security regulations."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall ensure data encryption, secure payments, and automated backup services (REQ-DSGN-001)."
+    }
+  },
+  "[SEC] 3. Verification": "Budget accuracy checks, vendor booking validation, and security audits ensure reliability.",
+  "[SEC] 4. Supporting Information": "User guides, vendor manuals, and payment integration.",
+  "[SEC] 5. References": "GDPR compliance, PCI DSS guidelines, and wedding event management standards."
+}

@@ -1,0 +1,65 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Cinema Ticketing and Screening Management System (CTSMS) defines requirements for managing film screenings, seat reservations, and ticket sales.",
+    "[SUBSEC] 1.2 Scope": "CTSMS automates film scheduling, ticket reservations, and seating management across cinema locations.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "CTSMS integrates with ticketing, payment, and scheduling systems.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "CTSMS provides dashboards for administrators and an online portal for customers.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "CTSMS supports barcode scanners, kiosks, and digital displays.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "CTSMS uses PostgreSQL, MongoDB, and REST APIs for booking and scheduling.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "CTSMS ensures secure transactions via TLS encryption and access control.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "CTSMS optimizes performance for real-time transactions.",
+      "[SUBSUBSEC] 1.3.7 Operations": "CTSMS manages showtimes, reservations, payments, and seating.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "CTSMS adapts to different cinema layouts and seating policies.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "CTSMS connects with distributor databases, promotions, and loyalty programs."
+    },
+    "[SUBSEC] 1.4 Product Functions": "CTSMS enables movie scheduling, reservations, ticket sales, and reporting.",
+    "[SUBSEC] 1.5 User Characteristics": "CTSMS is designed for theater admins, booking agents, and customers.",
+    "[SUBSEC] 1.6 Limitations": "CTSMS requires internet connectivity for real-time availability and online bookings.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "CTSMS depends on accurate film schedules, available seating, and secure payments.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Screening: Scheduled movie showtime.",
+      "Seat Allocation: Process of reserving seats.",
+      "Box Office: Physical ticket sales location."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "API: Application Programming Interface",
+      "TLS: Transport Layer Security"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall integrate with cinema management software to manage schedules (REQ-DB-001).",
+      "REQ-INTF-002": "The system shall track seat reservations and ticket sales (REQ-DB-002).",
+      "REQ-INTF-003": "The system shall process online and in-person payments securely (REQ-DB-003)."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall manage TO-BE-DEFINED (REQ-DB-001).",
+      "REQ-FUNC-002": "The system shall handle ticket bookings, cancellations, and seat selection (REQ-DB-002).",
+      "REQ-FUNC-003": "The system shall generate sales and booking reports (REQ-DB-003)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide a web and mobile interface for customers and an admin dashboard."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process ticket transactions within 2 seconds."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store movie schedules and auditorium details.",
+      "REQ-DB-002": "The system shall track ticket reservations and seat availability.",
+      "REQ-DB-003": "The system shall maintain transaction and refund records."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall ensure unique IDs for screenings, tickets, and users."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with cinema regulations and payment security standards."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall log booking modifications and transactions."
+    }
+  },
+  "[SEC] 3. Verification": "Tests scheduling, ticket processing, seat selection, and refunds.",
+  "[SEC] 4. Supporting Information": "User manuals, API documentation, troubleshooting guides, and compliance policies.",
+  "[SEC] 5. References": "Cinema industry standards, payment security policies, and customer data protection regulations."
+}

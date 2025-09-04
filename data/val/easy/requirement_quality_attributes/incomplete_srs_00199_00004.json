@@ -1,0 +1,65 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Cornell Repository System (CRS) defines technical and functional requirements for managing and sharing research materials.",
+    "[SUBSEC] 1.2 Scope": "CRS enables artifact upload, metadata curation, search, citation generation, and administrative workflows.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "CRS integrates with library systems, metadata services, and indexing platforms.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "CRS provides web and mobile interfaces for artifact management.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "CRS operates on scalable cloud infrastructure.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "CRS supports API integrations and metadata harvesting.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "CRS ensures secure HTTPS-based data exchange.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "CRS optimizes storage for large datasets and multimedia files.",
+      "[SUBSUBSEC] 1.3.7 Operations": "CRS maintains 24/7 uptime with automated maintenance.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "CRS supports multilingual metadata and localization.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "CRS links with academic repositories and citation indexing tools."
+    },
+    "[SUBSEC] 1.4 Product Functions": "CRS enables artifact upload, metadata management, and search.",
+    "[SUBSEC] 1.5 User Characteristics": "CRS serves faculty, researchers, and institutional staff.",
+    "[SUBSEC] 1.6 Limitations": "CRS relies on institutional network stability, metadata quality, and third-party APIs.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "CRS requires external database connectivity and cloud hosting services.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Artifact: Digital content representing scholarly work.",
+      "Citation: Formatted reference for uploaded artifacts."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "HTTPS: Hypertext Transfer Protocol Secure"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall integrate with library systems and metadata harvesters via REST APIs.",
+      "REQ-INTF-002": "The system shall support Shibboleth authentication for secure access management."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall enable artifact uploads with customizable metadata fields (REQ-DB-001).",
+      "REQ-FUNC-002": "The system shall support keyword, author, and title-based artifact searches (REQ-DB-001).",
+      "REQ-FUNC-003": "The system shall generate citations for uploaded artifacts in multiple formats (REQ-DB-002).",
+      "REQ-FUNC-004": "The system shall allow administrators to manage artifact access and embargo policies (REQ-DSGN-001)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide a user-friendly, multilingual interface (REQ-DSGN-002)."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process artifact uploads promptly.",
+      "REQ-PERF-002": "The system shall support many thousands concurrent users without performance degradation (REQ-ATTR-001)."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store metadata in a scalable relational database.",
+      "REQ-DB-002": "The system shall manage artifact files using distributed object storage."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall comply with GDPR for data privacy and archival regulations.",
+      "REQ-DSGN-002": "The system shall encrypt data at rest and in transit."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall adhere to ISO/IEC 27001 for information security management."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall maintain nearly always uptime.",
+      "REQ-ATTR-002": "The system shall provide usage analytics and access reports."
+    }
+  },
+  "[SEC] 3. Verification": "Functional, usability, and performance tests.",
+  "[SEC] 4. Supporting Information": "Metadata schemas, system architecture, and workflow examples.",
+  "[SEC] 5. References": "GDPR, ISO/IEC 27001, and repository standards."
+}

@@ -1,0 +1,64 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Physician/Pharmacist System (PPS) defines secure authentication, structured UI navigation, patient record management, and prescription tracking requirements.",
+    "[SUBSEC] 1.2 Scope": "PPS ensures user authentication, patient data access, prescription tracking, and a structured, intuitive UI for physicians and pharmacists.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "PPS integrates with authentication, patient management, and prescription tracking services.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "PPS provides a structured web-based and mobile UI for medical professionals.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "PPS runs on cloud infrastructure optimized for desktops and tablets.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "PPS uses React.js frontend, Node.js backend, PostgreSQL for storage, and Redis caching.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "PPS secures API transactions via TLS 1.3 encryption.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "PPS optimizes data retrieval for patient records and prescriptions.",
+      "[SUBSUBSEC] 1.3.7 Operations": "PPS manages authentication, prescription tracking, and structured UI navigation.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "PPS ensures accessibility, multi-device support, and real-time updates.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "PPS connects to authentication, patient records, and prescription APIs."
+    },
+    "[SUBSEC] 1.4 Product Functions": "PPS enables secure login, patient record access, prescription tracking, and structured UI navigation.",
+    "[SUBSEC] 1.5 User Characteristics": "PPS is designed for physicians and pharmacists managing patient records and prescriptions.",
+    "[SUBSEC] 1.6 Limitations": "PPS requires stable internet connectivity for real-time access and secure authentication.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "PPS relies on encryption, cloud-hosted records, and structured UI.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Patient Records: Secure medical data storage.",
+      "Authentication: Role-based secure login."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "UI: User Interface",
+      "API: Application Programming Interface",
+      "TLS: Transport Layer Security",
+      "PPS: Physician/Pharmacist System"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall enforce authentication before granting access to patient data.",
+      "REQ-INTF-002": "The system shall integrate with patient databases for retrieving and updating records."
+    },
+    "[SUBSEC] 2.2 Functions": {
+     "REQ-FUNC-001": "The system shall require user login and display patient lists after authentication (REQ-INTF-002).",
+      "REQ-FUNC-002": "The system shall provide structured navigation for patient records and prescriptions (REQ-INTF-002).",
+      "REQ-FUNC-003": "The system shall allow physicians and pharmacists to add, delete, and update patient records (REQ-INTF-002)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide a structured UI with readable fonts and easy navigation."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall retrieve patient information within 2 seconds.",
+      "REQ-PERF-002": "The system shall maintain 99.5% uptime with ~4.38 hours per month downtime."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall securely store patient data, prescription history, and user logs."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall provide structured navigation for records, prescriptions, and notes."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with healthcare data protection standards."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall ensure authentication security, structured UI, and prescription tracking."
+    }
+  },
+  "[SEC] 3. Verification": "User authentication, patient record access, and structured navigation validated.",
+  "[SEC] 4. Supporting Information": "User guides, API documentation, security policies, and UI accessibility standards.",
+  "[SEC] 5. References": "Healthcare data protection laws, UI/UX best practices, and authentication protocols."
+}

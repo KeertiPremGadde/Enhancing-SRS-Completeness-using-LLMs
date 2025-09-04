@@ -1,0 +1,62 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Moodle Enhancements document defines functional and non-functional requirements for improving courseware and educational outcomes at the University of Puget Sound.",
+    "[SUBSEC] 1.2 Scope": "Moodle Enhancements focus on addressing gaps in existing courseware and improving educational outcomes using Moodle’s extensibility.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "Moodle Enhancements integrate with APIs for grading, assignments, and communication tools.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "Moodle Enhancements provide dashboards for students, professors, and administrators.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "Moodle Enhancements support web-based and mobile access via compatible devices.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "Moodle Enhancements connect with Moodle’s core APIs for data exchange and customization.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "Moodle Enhancements utilize secure protocols like HTTPS for data transmission.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "Moodle Enhancements are optimized for scalable usage with minimal memory footprint.",
+      "[SUBSUBSEC] 1.3.7 Operations": "Moodle Enhancements operate continuously with scheduled maintenance periods.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "Moodle Enhancements are customizable for the University’s specific workflows and processes.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "Moodle Enhancements integrate with external rulebooks, scheduling systems, and analytics platforms."
+    },
+    "[SUBSEC] 1.5 User Characteristics": "Moodle Enhancements are designed for students, professors, and administrators with diverse technical skills.",
+    "[SUBSEC] 1.6 Limitations": "Moodle Enhancements rely on stable network connectivity and API availability.",
+    "[SUBSEC] 1.4 Product Functions": "Moodle Enhancements support file uploads, notifications, grading, and voice recording for enhanced learning experiences.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "Moodle Enhancements assume the adoption of Moodle and use of its existing APIs.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Actor: A user of the Moodle system.",
+      "Portfolio: Stored voice recordings."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "Moodle: Modular Object-Oriented Dynamic Learning Environment",
+      "API: Application Programming Interface"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall integrate with Moodle APIs for grading and assignments (REQ-FUNC-001).",
+      "REQ-INTF-002": "The system shall connect with external scheduling tools (REQ-INTF-003)."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall allow file uploads on specific pages (REQ-INTF-001).",
+      "REQ-FUNC-002": "The system shall provide TO-BE-DEFINED (REQ-DB-001).",
+      "REQ-FUNC-003": "The system shall support notifications via email and SMS (REQ-INTF-32)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The interface shall be intuitive and support multilingual usage."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall handle roughly a thousand concurrent users during peak periods."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The database shall store course-related data securely (REQ-ATTR-001)."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall adhere to modular architecture for extensibility."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with ISO 27001 for security standards.",
+      "REQ-COMP-002": "The system shall adhere to WCAG 2.1 for accessibility."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall dynamically scale based on user load (REQ-DB-001)."
+    }
+  },
+  "[SEC] 3. Verification": "Functional and performance testing validate enhancements, including file uploads and notifications.",
+  "[SEC] 4. Supporting Information": "User manuals, online documentation, and FAQs.",
+  "[SEC] 5. References": "ISO 27001 standards, WCAG 2.1 accessibility guidelines, and Moodle API documentation."
+}

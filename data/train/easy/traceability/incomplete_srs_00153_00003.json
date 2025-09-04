@@ -1,0 +1,64 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Supermarket System (SMS) defines authentication, connectivity, transaction security, and availability requirements.",
+    "[SUBSEC] 1.2 Scope": "SMS supports network efficiency, access control, uptime monitoring, and IT compliance.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "SMS integrates with authentication, network monitoring, and transaction processing databases.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "SMS provides a web-based UI for staff and administrators.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "SMS runs on supermarket networks and cloud servers.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "SMS uses a React.js frontend, Node.js backend, and PostgreSQL for secure data storage.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "SMS ensures encrypted data transmission via TLS 1.3.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "SMS optimizes transaction processing.",
+      "[SUBSUBSEC] 1.3.7 Operations": "SMS manages user authentication, real-time transaction processing, and system uptime monitoring.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "SMS ensures stable connectivity, platform independence, and real-time system monitoring.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "SMS connects to authentication, security monitoring, and transaction APIs."
+    },
+    "[SUBSEC] 1.4 Product Functions": "SMS ensures authentication, speed, system availability, and IT compliance.",
+    "[SUBSEC] 1.5 User Characteristics": "SMS is designed for staff, admins, and IT managers handling security and operations.",
+    "[SUBSEC] 1.6 Limitations": "SMS requires stable connectivity for transactions and monitoring.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "SMS relies on encryption, stable internet, and uptime monitoring.",
+    "[SUBSEC] 1.8 Definitions": [
+      "High-Speed Network: Enables real-time transactions.",
+      "Secure Authentication: Encrypted access and roles."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "UI: User Interface",
+      "API: Application Programming Interface",
+      "SHA-2: Secure Hash Algorithm 2",
+      "TLS: Transport Layer Security"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall integrate with authentication and network monitoring services.",
+      "REQ-INTF-002": "The system shall enforce role-based authentication for employees, managers, and administrators."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall require users to log in using credentials secured via SHA-2 encryption (REQ-INTF-75).",
+      "REQ-FUNC-002": "The system shall restrict access based on operational hours (REQ-FUNC-001)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an intuitive UI with optimized transaction flow for supermarket staff (REQ-FUNC-001)."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall ensure real-time transaction processing with minimal latency (REQ-FUNC-001).",
+      "REQ-PERF-002": "The system shall maintain 99.5% uptime with continuous server monitoring (REQ-INTF-11)."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall securely store credentials, transaction logs, and performance records (REQ-INTF-15)."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall enforce SHA-2 encryption for password storage.",
+      "REQ-DSGN-002": "The system shall restrict back-end access to authenticated administrators."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with encryption, authentication, and security best practices (REQ-DSGN-001)."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall ensure high availability, security, and real-time monitoring for network threats (REQ-DSGN-002, REQ-COMP-001)."
+    }
+  },
+  "[SEC] 3. Verification": "Network speed, authentication security, uptime, and transaction performance validated.",
+  "[SEC] 4. Supporting Information": "User manuals, API documentation, system performance guidelines, and security policies.",
+  "[SEC] 5. References": "Network protocols, authentication best practices, uptime guidelines, and database security standards."
+}

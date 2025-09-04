@@ -1,0 +1,67 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Planning Poker System (PPS) defines requirements for collaborative estimation in agile teams.",
+    "[SUBSEC] 1.2 Scope": "PPS supports estimation sessions, workflows, and reporting for agile teams.",
+    "[SUBSEC] 1.4 Product Functions": "PPS facilitates game creation, estimation workflows, and team performance reporting.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "PPS integrates with Google Sheets, email services, and project management APIs.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "PPS provides web-based dashboards for moderators and participants.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "PPS operates on desktops and mobile devices.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "PPS supports REST APIs for importing and exporting estimation data.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "PPS ensures secure communication using HTTPS.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "PPS optimizes storage for game histories and user settings.",
+      "[SUBSUBSEC] 1.3.7 Operations": "PPS ensures 24/7 availability with minimal downtime.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "PPS supports multilingual interfaces and time zone configuration.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "PPS links with third-party project management and spreadsheet tools."
+    },
+    "[SUBSEC] 1.5 User Characteristics": "PPS is designed for moderators, participants, and administrators.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "PPS follows web accessibility and security standards.",
+    "[SUBSEC] 1.6 Limitations": "PPS requires internet connectivity and external authentication services.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Game: Estimation session.",
+      "Item: Task for estimation."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "HTTPS: Secure web protocol.",
+      "REST: Representational State Transfer."
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall integrate with Google Sheets for importing estimation items.",
+      "REQ-INTF-002": "The system shall send email invitations to participants.",
+      "REQ-INTF-003": "The system shall export game transcripts in HTML and CSV formats."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall enable moderators to create games and manage items (REQ-DB-001).",
+      "REQ-FUNC-002": "The system shall allow participants to submit, update, and reveal estimates (REQ-ATTR-001).",
+      "REQ-FUNC-003": "The system shall store game transcripts and estimation metrics for reporting (REQ-DB-002).",
+      "REQ-FUNC-004": "The system shall support re-estimation of previously estimated items."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an intuitive interface for estimation workflows."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process estimate submissions within 2 seconds.",
+      "REQ-PERF-002": "The system shall support up to 15 participants per game."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall comply with web accessibility standards.",
+      "REQ-DSGN-002": "The system shall encrypt all communications (TLS 1.3)."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store game configurations and user settings securely.",
+      "REQ-DB-002": "The system shall manage transcripts and estimation logs."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall provide role-based access control (RBAC).",
+      "REQ-ATTR-002": "The system shall ensure 99.9% uptime and secure API transactions."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall adhere to W3C web standards."
+    }
+  },
+  "[SEC] 3. Verification": "Verification includes tests for game creation, estimation workflows, and transcript exports.",
+  "[SEC] 4. Supporting Information": "System architecture, API documentation, and accessibility compliance reports.",
+  "[SEC] 5. References": "W3C standards, REST APIs, and Google Sheets documentation."
+}

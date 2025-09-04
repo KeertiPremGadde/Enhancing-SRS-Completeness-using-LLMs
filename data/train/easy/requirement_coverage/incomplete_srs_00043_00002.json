@@ -1,0 +1,65 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The European Train Control System (ERTMS/ETCS) document defines requirements to ensure safety, reliability, and interoperability in railway operations.",
+    "[SUBSEC] 1.2 Scope": "ERTMS/ETCS focuses on operational requirements, excluding technical specifications for components not implemented in SRS 2.3.0.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "ERTMS/ETCS interfaces with national control systems for compatibility.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "ERTMS/ETCS provides a DMI for operational interactions.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "ERTMS/ETCS integrates with balises, loops, and radio systems.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "ERTMS/ETCS operates with standardized software for train control.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "ERTMS/ETCS supports continuous and intermittent data transmission.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "ERTMS/ETCS stores operational and national values persistently.",
+      "[SUBSUBSEC] 1.3.7 Operations": "ERTMS/ETCS manages train supervision, level transitions, and faults.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "ERTMS/ETCS is customizable for national needs.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "ERTMS/ETCS integrates with RBC and interlocking systems."
+    },
+    "[SUBSEC] 1.4 Product Functions": "ERTMS/ETCS monitors train movement, calculates speed profiles, and manages emergency functions.",
+    "[SUBSEC] 1.5 User Characteristics": "ERTMS/ETCS is designed for drivers, operators, and maintainers with varying expertise.",
+    "[SUBSEC] 1.6 Limitations": "ERTMS/ETCS is dependent on trackside and onboard equipment compatibility.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "ERTMS/ETCS relies on RBC communication, trackside installations, and national values.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Balise: Device for track-to-train data transmission.",
+      "Movement Authority: Permission for a train to proceed."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "ETCS: European Train Control System",
+      "RBC: Radio Block Centre",
+      "DMI: Driver-Machine Interface"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall support data exchange with national control systems.",
+      "REQ-INTF-002": "The DMI shall display operational states and speed profiles."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall calculate TO-BE-DEFINED (REQ-INTF-002).",
+      "REQ-FUNC-002": "The system shall manage transitions between operational levels (REQ-INTF-001).",
+      "REQ-FUNC-003": "The system shall execute emergency brake functions."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The DMI shall provide clear and intuitive displays for drivers."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process state transitions within 5 seconds.",
+      "REQ-PERF-002": "The system shall maintain 99.9% uptime under normal conditions."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store operational and fault data for at least 24 hours.",
+      "REQ-DB-002": "The system shall enable data retrieval for analysis."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall comply with ETCS interoperability standards."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall adhere to European railway safety regulations."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall operate within latency limits for commands.",
+      "REQ-ATTR-002": "The system shall provide feedback within 1 second for user actions."
+    }
+  },
+  "[SEC] 3. Verification": "Tests validate operational functions, fault handling, and compatibility with trackside systems.",
+  "[SEC] 4. Supporting Information": "Includes manuals, user guides, and regulatory references.",
+  "[SEC] 5. References": "ETCS Technical Manual, ERA Safety Standards, and National Rail Guidelines."
+}

@@ -1,0 +1,67 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Bath Data Archive (BDA) defines requirements for managing, depositing, and accessing research datasets.",
+    "[SUBSEC] 1.2 Scope": "BDA supports dataset deposits, metadata, licensing, embargoes, and controlled access.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "BDA integrates with CRIS, LDAP, and APIs for authentication and metadata.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "BDA provides web workflows for deposits and updates.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "BDA operates on scalable university infrastructure.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "BDA supports REST APIs for deposits and retrieval.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "BDA ensures secure HTTPS-based data exchange.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "BDA is optimized for handling large datasets.",
+      "[SUBSUBSEC] 1.3.7 Operations": "BDA ensures 24/7 uptime with automated monitoring.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "BDA supports multilingual metadata and localized access policies.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "BDA links to repositories, indexing tools, and metadata aggregators."
+    },
+    "[SUBSEC] 1.4 Product Functions": "BDA supports deposits, licensing, embargoes, and metadata tracking.",
+    "[SUBSEC] 1.5 User Characteristics": "BDA serves researchers, administrators, and funders.",
+    "[SUBSEC] 1.6 Limitations": "BDA depends on university infrastructure, network stability, and external integrations.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "Requires compliance with archival standards and persistent identifiers.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Dataset: Files in BDA."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "CRIS: Current Research Information System",
+      "DOI: Digital Object Identifier",
+      "DMP: Data Management Plan"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall integrate with CRIS and LDAP for authentication and metadata exchange.",
+      "REQ-INTF-002": "The system shall provide APIs for automated dataset deposits.",
+      "REQ-INTF-003": "The system shall support metadata harvesting."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall allow TO-BE-DEFINED (REQ-DB-001).",
+      "REQ-FUNC-002": "The system shall manage licensing, embargoes, and controlled access (REQ-DSGN-001).",
+      "REQ-FUNC-003": "The system shall enforce role-based dataset access (REQ-ATTR-001).",
+      "REQ-FUNC-004": "The system shall link datasets to DMPs and publications (REQ-DSGN-002)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an intuitive web-based interface (REQ-DSGN-002)."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process metadata updates within 5 seconds.",
+      "REQ-PERF-002": "The system shall support up to 3,000 users without performance degradation (REQ-ATTR-002)."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store metadata in a relational database with indexing.",
+      "REQ-DB-002": "The system shall manage dataset versions and track changes."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall comply with GDPR and funding body standards.",
+      "REQ-DSGN-002": "The system shall encrypt all stored and transmitted data."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall adhere to ISO 14721 for digital preservation."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall provide role-based access.",
+      "REQ-ATTR-002": "The system shall ensure 99.9% uptime."
+    }
+  },
+  "[SEC] 3. Verification": "Validates deposits, updates, and benchmarks.",
+  "[SEC] 4. Supporting Information": "Schemas, API docs, and system diagrams.",
+  "[SEC] 5. References": "ISO 14721, GDPR, and SWORD2 API documentation."
+}

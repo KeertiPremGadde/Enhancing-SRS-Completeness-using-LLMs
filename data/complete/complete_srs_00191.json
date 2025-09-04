@@ -1,0 +1,64 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Warehouse Management System (WMS) defines requirements for managing warehouse storage, truck loading/unloading, and inventory allocation.",
+    "[SUBSEC] 1.2 Scope": "WMS supports automated location assignment, manual loading/unloading tracking, and employee supervision.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "WMS integrates with inventory management and logistics systems.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "WMS allows managers and employees to input item details, track inventory, and generate allocation lists.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "WMS supports barcode scanners and handheld inventory devices.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "WMS uses PostgreSQL, MongoDB, REST APIs, and OAuth 2.0.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "WMS secures data via TLS encryption and access control.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "WMS is optimized for high-volume inventory tracking.",
+      "[SUBSUBSEC] 1.3.7 Operations": "WMS manages truck loading/unloading, inventory allocation, and slot availability.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "WMS is configurable for different warehouse layouts.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "WMS connects with supplier databases, shipment tracking, and compliance systems."
+    },
+    "[SUBSEC] 1.4 Product Functions": "WMS automates inventory placement, truck loading, and warehouse slot management.",
+    "[SUBSEC] 1.5 User Characteristics": "WMS is designed for warehouse managers responsible for logistics, supervisors overseeing operations, and employees handling stock movements.",
+    "[SUBSEC] 1.6 Limitations": "WMS requires manual entry for item characteristics and truck assignments.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "WMS relies on accurate stock information and employee inputs.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Truck Loading: Process of allocating items for dispatch.",
+      "Truck Unloading: Process of storing received items.",
+      "Slot: A defined warehouse storage location."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "API: Application Programming Interface",
+      "TLS: Transport Layer Security",
+      "WMS: Warehouse Management System"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall manage warehouse stock locations (REQ-DB-001).",
+      "REQ-INTF-002": "The system shall track truck loading and unloading activities (REQ-DB-002)."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall automatically allocate storage locations for unloaded items (REQ-DB-001).",
+      "REQ-FUNC-002": "The system shall track item details and availability in real time (REQ-DB-002).",
+      "REQ-FUNC-003": "The system shall manage truck loading by freeing assigned slots (REQ-DB-002)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an interface for managing warehouse stock and truck scheduling."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall update inventory records within 2 seconds of data entry, ensuring real-time visibility for tracking stock movements and order fulfillment."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store warehouse slot allocations and item details.",
+      "REQ-DB-002": "The system shall track truck loading and unloading records."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall ensure unique identification for warehouse slots and items."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with warehouse safety and logistics standards."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall maintain logs for inventory audits and compliance checks."
+    }
+  },
+  "[SEC] 3. Verification": "Unit and integration tests validate stock tracking, truck assignment, and warehouse slot allocation.",
+  "[SEC] 4. Supporting Information": "User manuals, API documentation, and compliance guidelines.",
+  "[SEC] 5. References": "Warehouse management standards, logistics guidelines, and inventory policies."
+}

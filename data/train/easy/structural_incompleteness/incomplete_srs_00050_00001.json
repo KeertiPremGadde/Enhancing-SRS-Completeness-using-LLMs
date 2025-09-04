@@ -1,0 +1,69 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.2 Scope": "PMS enables publication management, allowing users to search, download, and upload content.",
+    "[SUBSEC] 1.1 Purpose": "The Publications Management System (PMS) defines requirements for guiding development, testing, and project management.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "PMS integrates with MySQL databases and web servers.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "PMS provides web-based and CLI access.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "PMS supports standard peripherals.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "PMS supports browsers and server technologies.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "PMS ensures secure data exchange using TCP/IP.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "PMS efficiently handles large publication databases.",
+      "[SUBSUBSEC] 1.3.7 Operations": "PMS supports continuous online access and maintenance.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "PMS runs on Linux-based systems with Ruby.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "PMS integrates with cloud-based publication services."
+    },
+    "[SUBSEC] 1.5 User Characteristics": "PMS serves admins, members, and guests with different access levels.",
+    "[SUBSEC] 1.4 Product Functions": "PMS enables publication search, user management, and uploads.",
+    "[SUBSEC] 1.6 Limitations": "PMS requires internet, compatible browsers, and media-capable hardware.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "PMS requires a stable web server, internet, and compatible OS.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Guest:  User who can register or log in.",
+      "VUB-Network User:  User with IP-based access.",
+      "Member:  User with publication search and download rights.",
+      "Publisher:  User who uploads and manages content.",
+      "Moderator:  Publisher with extended content review rights.",
+      "Administrator:  User with full system control."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "PMS:  Publications Management System",
+      "CLI:  Command Line Interface",
+      "HTTP:  Hypertext Transfer Protocol",
+      "TCP/IP:  Transmission Control Protocol/Internet Protocol"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall allow users to search for publications (REQ-INTF-001).",
+      "REQ-FUNC-002": "The system shall allow users to download publications (REQ-INTF-001).",
+      "REQ-FUNC-003": "The system shall allow publishers to upload content (REQ-INTF-002)."
+    },
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall provide web access through standard browsers.",
+      "REQ-INTF-002": "The system shall allow CLI access for administrators."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an intuitive interface for searching and browsing."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall return search results within 5 seconds for up to 1,000 publications."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall securely store publications and user data in MySQL."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with ISO 27001 security standards.",
+      "REQ-COMP-002": "The system shall adhere to WCAG 2.1 accessibility guidelines."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall follow modular architecture for scalability.",
+      "REQ-DSGN-002": "The system shall comply with web standards."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall be portable and log errors for troubleshooting."
+    }
+  },
+  "[SEC] 3. Verification": "Functional testing will validate search, upload, and download features, while performance testing ensures efficiency.",
+  "[SEC] 4. Supporting Information": "User manuals, system guides, and documentation.",
+  "[SEC] 5. References": "ISO 27001, W3C XHTML standards, and MySQL documentation."
+}

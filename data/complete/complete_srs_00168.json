@@ -1,0 +1,64 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The European Train Control System (ETCS) defines requirements to ensure safe and efficient rail operations under the European Rail Traffic Management System (ERTMS).",
+    "[SUBSEC] 1.2 Scope": "ETCS manages train control, signaling, and cross-border traffic.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "ETCS integrates with onboard balises, GSM-R networks, and traffic management systems.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "ETCS provides interactive consoles for train operators and displays for traffic controllers.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "ETCS runs on onboard computers, trackside units, and balises.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "ETCS integrates signaling software and GSM-R systems.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "ETCS uses GSM-R protocols for secure and real-time communication.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "Optimized for real-time data and secure logs.",
+      "[SUBSUBSEC] 1.3.7 Operations": "ETCS ensures 24/7 operation with scheduled maintenance and failover mechanisms.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "Configurable for various railway networks.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "ETCS connects to traffic management systems for live monitoring and coordination."
+    },
+    "[SUBSEC] 1.4 Product Functions": "ETCS monitors train signals, enforces speed limits, and calculates movement authority.",
+    "[SUBSEC] 1.5 User Characteristics": "Designed for train operators, traffic managers, and railway infrastructure controllers.",
+    "[SUBSEC] 1.6 Limitations": "ETCS relies on stable GSM-R communication, trackside equipment, and ETCS-compliant infrastructure.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "ETCS requires operational GSM-R coverage and adherence to Baseline 3 standards.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Balise: Trackside train positioning device.",
+      "Movement Authority: Approved train movement."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "ERTMS: European Rail Traffic Management System",
+      "ETCS: European Train Control System",
+      "GSM-R: Global System for Mobile Communications Railway"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall integrate with GSM-R and onboard balises for communication.",
+      "REQ-INTF-002": "The system shall interface with traffic management systems for real-time data exchange."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall enforce speed limits and braking alerts (REQ-DB-001).",
+      "REQ-FUNC-002": "The system shall display signal changes and train locations (REQ-DB-002, REQ-INTF-002)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an intuitive graphical interface and support multilingual functionality."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process position updates within 2 seconds.",
+      "REQ-PERF-002": "The system shall support 1,500 concurrent monitoring and control users."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall securely store train operation logs.",
+      "REQ-DB-002": "The database shall support real-time data retrieval."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall follow modular architecture.",
+      "REQ-DSGN-002": "The software shall comply with ETCS requirements under ERTMS Baseline 3."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with CENELEC EN 50126, EN 50128, and EN 50129 for functional safety and meet railway cybersecurity requirements."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall scale for high-traffic periods and log critical events for auditing."
+    }
+  },
+  "[SEC] 3. Verification": "Ensures signaling accuracy and compliance with ETCS Baseline 3.",
+  "[SEC] 4. Supporting Information": "User guides and operational documentation.",
+  "[SEC] 5. References": "ERTMS Baseline 3, CENELEC EN 50126/28/29, and GSM-R documentation."
+}

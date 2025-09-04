@@ -1,0 +1,64 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Train Reservation Management System (TRMS) defines requirements for managing train reservations, schedules, and station operations.",
+    "[SUBSEC] 1.2 Scope": "TRMS supports train reservations, cancellations, train schedules, station management, and customer data tracking.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "TRMS integrates with station databases, city transit systems, and reservation platforms.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "TRMS allows customers to book and cancel reservations, and administrators to manage train schedules.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "TRMS supports kiosks, ticket printers, and mobile devices.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "TRMS uses PostgreSQL, MongoDB, REST APIs, and OAuth 2.0 for authentication.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "TRMS secures data via TLS encryption and user role-based access control.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "TRMS is optimized for real-time ticket reservations and schedule updates.",
+      "[SUBSUBSEC] 1.3.7 Operations": "TRMS manages reservations, cancellations, train statuses, and station schedules.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "TRMS is configurable for different train companies and station layouts.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "TRMS connects with customer support, city transit maps, and financial services."
+    },
+    "[SUBSEC] 1.4 Product Functions": "TRMS handles reservations, schedules, and station data.",
+    "[SUBSEC] 1.5 User Characteristics": "TRMS is designed for train passengers, reservation agents, and railway operators.",
+    "[SUBSEC] 1.6 Limitations": "TRMS supports only one train per reservation.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "TRMS relies on accurate train schedules, station records, and customer information.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Train: Scheduled transport vehicle.",
+      "Station: Train departure and arrival point.",
+      "Reservation: Train booking."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "TRMS: Train Reservation Management System",
+      "API: Application Programming Interface",
+      "TLS: Transport Layer Security"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall manage train schedules, including arrival and departure times (REQ-DB-001).",
+      "REQ-INTF-002": "The system shall process customer reservations and cancellations (REQ-DB-002)."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall allow customers to book, modify, and cancel reservations (REQ-DB-002).",
+      "REQ-FUNC-002": "The system shall manage train details, including schedules, stops, and stations (REQ-DB-001).",
+      "REQ-FUNC-003": "The system shall store customer details, including name, contact information, and reservation history (REQ-DB-002)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an interface for booking, modifying, and canceling reservations."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process ticket transactions within 2 seconds."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store train schedules, including arrival and departure times.",
+      "REQ-DB-002": "The system shall store customer reservation records."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall ensure unique identification for trains, stations, and reservations."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with railway safety and ticketing regulations."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall maintain logs for transaction tracking and compliance."
+    }
+  },
+  "[SEC] 3. Verification": "Tests train schedules, reservations, and cancellations.",
+  "[SEC] 4. Supporting Information": "User manuals, API documentation, and railway compliance guidelines.",
+  "[SEC] 5. References": "Railway operation standards, ticketing policies, and customer service guidelines."
+}

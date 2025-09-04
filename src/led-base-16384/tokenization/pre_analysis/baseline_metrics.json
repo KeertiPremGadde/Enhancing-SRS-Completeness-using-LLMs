@@ -1,0 +1,281 @@
+{
+  "timestamp": "2025-01-01 12:01:49",
+  "model_path": "/home/gadde/Thesis/models/pretrained/led-base-16384-updated",
+  "vocabulary": {
+    "vocab_size": 50265,
+    "special_tokens": {
+      "bos_token": "<s>",
+      "eos_token": "</s>",
+      "unk_token": "<unk>",
+      "sep_token": "</s>",
+      "pad_token": "<pad>",
+      "cls_token": "<s>",
+      "mask_token": "<mask>"
+    },
+    "last_token_id": 50264,
+    "buffer_tokens": 0
+  },
+  "embeddings": {
+    "input_shape": [
+      50265,
+      768
+    ],
+    "output_shape": [
+      50265,
+      768
+    ],
+    "weight_stats": {
+      "mean": -0.014526177197694778,
+      "std": 0.0653395876288414,
+      "min": -0.5029296875,
+      "max": 0.97802734375
+    },
+    "special_token_embeddings": {
+      "pad": {
+        "id": 1,
+        "mean": -0.009639867581427097,
+        "std": 0.025584183633327484,
+        "first_5_values": [
+          -0.0113983154296875,
+          -0.0169219970703125,
+          -0.01837158203125,
+          0.0017642974853515625,
+          -0.003574371337890625
+        ]
+      },
+      "eos": {
+        "id": 2,
+        "mean": 0.009929533116519451,
+        "std": 0.05753866955637932,
+        "first_5_values": [
+          0.08416748046875,
+          -0.0389404296875,
+          0.00963592529296875,
+          0.0195770263671875,
+          0.0654296875
+        ]
+      },
+      "unk": {
+        "id": 3,
+        "mean": -0.008420064114034176,
+        "std": 0.0339549258351326,
+        "first_5_values": [
+          0.027557373046875,
+          -0.01416015625,
+          -0.033905029296875,
+          0.0081787109375,
+          -0.00799560546875
+        ]
+      },
+      "mask": {
+        "id": 50264,
+        "mean": -0.008267656899988651,
+        "std": 0.033857833594083786,
+        "first_5_values": [
+          0.01232147216796875,
+          -0.021331787109375,
+          -0.0277557373046875,
+          0.0053253173828125,
+          -0.00749969482421875
+        ]
+      }
+    }
+  },
+  "embedding_space": {
+    "embedding_norm": 1.846211314201355,
+    "embedding_variance": 0.004250008147209883,
+    "embedding_sparsity": 4.4037435031896166e-07
+  },
+  "special_token_similarities": {
+    "bos_eos": 0.17181402444839478,
+    "bos_pad": 0.565464198589325,
+    "eos_pad": -0.10299669206142426
+  },
+  "architecture": {
+    "hidden_size": 768,
+    "num_layers": 6,
+    "attention_heads": 12,
+    "max_position_embeddings": 16384
+  },
+  "weight_tying": {
+    "share_memory": true,
+    "weights_equal": true,
+    "same_object": false
+  },
+  "memory": {
+    "total_parameters": 161844480,
+    "embedding_parameters": 38603520,
+    "embedding_memory_mb": 147.2607421875
+  },
+  "future_tokens": {
+    "[SEC]": {
+      "current_tokenization": [
+        "[",
+        "SEC",
+        "]"
+      ],
+      "current_ids": [
+        10975,
+        21536,
+        742
+      ],
+      "split_behavior": true
+    },
+    "[SUBSEC]": {
+      "current_tokenization": [
+        "[",
+        "SU",
+        "BS",
+        "EC",
+        "]"
+      ],
+      "current_ids": [
+        10975,
+        10466,
+        3297,
+        3586,
+        742
+      ],
+      "split_behavior": true
+    },
+    "[SUBSUBSEC]": {
+      "current_tokenization": [
+        "[",
+        "SU",
+        "BS",
+        "U",
+        "BS",
+        "EC",
+        "]"
+      ],
+      "current_ids": [
+        10975,
+        10466,
+        3297,
+        791,
+        3297,
+        3586,
+        742
+      ],
+      "split_behavior": true
+    }
+  },
+  "madeupword_analysis": {
+    "madeupword0000": {
+      "id": 50261,
+      "current_token": "madeupword0000",
+      "embedding_stats": {
+        "mean": -0.00841869879513979,
+        "std": 0.03383024409413338,
+        "min": -0.119384765625,
+        "max": 0.6171875
+      }
+    },
+    "madeupword0001": {
+      "id": 50262,
+      "current_token": "madeupword0001",
+      "embedding_stats": {
+        "mean": -0.008199925534427166,
+        "std": 0.033335763961076736,
+        "min": -0.140869140625,
+        "max": 0.6123046875
+      }
+    },
+    "madeupword0002": {
+      "id": 50263,
+      "current_token": "madeupword0002",
+      "embedding_stats": {
+        "mean": -0.008341806940734386,
+        "std": 0.03346867114305496,
+        "min": -0.1363525390625,
+        "max": 0.6142578125
+      }
+    }
+  },
+  "model_config": {
+    "attention_window": [
+      1024,
+      1024,
+      1024,
+      1024,
+      1024,
+      1024
+    ],
+    "max_encoder_length": 16384,
+    "generation_config": true,
+    "attention_dropout": 0.0,
+    "dropout": 0.1,
+    "activation_dropout": 0.0
+  },
+  "model_weights_and_tying": {
+    "weight_tying": {
+      "embeddings_lm_head": true,
+      "encoder_decoder_shared": true
+    },
+    "training_state": {
+      "embeddings_grad": true,
+      "lm_head_grad": true,
+      "training_mode": false
+    },
+    "shape_consistency": {
+      "embeddings_shape": [
+        50265,
+        768
+      ],
+      "lm_head_shape": [
+        50265,
+        768
+      ],
+      "encoder_embed_shape": [
+        50265,
+        768
+      ],
+      "decoder_embed_shape": [
+        50265,
+        768
+      ]
+    },
+    "initialization": {
+      "embeddings_std": 0.0653395876288414,
+      "lm_head_std": 0.0653395876288414
+    },
+    "device_consistency": {
+      "embeddings_device": "cpu",
+      "lm_head_device": "cpu",
+      "encoder_device": "cpu",
+      "decoder_device": "cpu"
+    }
+  },
+  "performance": {
+    "tokenization_speed_ms": 22.467851638793945,
+    "memory_usage_mb": 1155.6875,
+    "inference_time_ms": 2895.7502841949463
+  },
+  "token_relationships": {
+    "similarities": {
+      "bos_eos": 0.17181402444839478,
+      "bos_pad": 0.565464198589325,
+      "bos_unk": 0.4742324650287628,
+      "eos_pad": -0.10299669206142426,
+      "eos_unk": -0.06699913740158081,
+      "pad_unk": 0.8328149318695068
+    },
+    "distances": {},
+    "clustering": {
+      "n_clusters": 10,
+      "special_token_clusters": {
+        "bos": 5,
+        "eos": 2,
+        "pad": 5,
+        "unk": 5
+      }
+    }
+  },
+  "model_state": {
+    "training_mode": false,
+    "requires_grad": {
+      "embeddings": true,
+      "lm_head": true
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.2 Scope": "RMS supports ingredient tracking, dish composition, meal tracking, table assignments, and client management.",
+    "[SUBSEC] 1.1 Purpose": "The Restaurant Management System (RMS) defines requirements for managing meal preparation, inventory, dish composition, reservations, and waiter assignments.",
+    "[SUBSEC] 1.4 Product Functions": "RMS manages inventory, dish preparation, table assignments, meals, and customer records.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "RMS integrates with inventory, restaurant databases, and point-of-sale systems.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "RMS allows staff to manage ingredients, dish preparation, and orders.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "RMS supports barcode scanners and tablets for order entry.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "RMS uses PostgreSQL for structured data, MongoDB for inventory, REST APIs for transactions, and OAuth 2.0 with TLS encryption.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "RMS secures data via TLS encryption and role-based access control.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "RMS is optimized for real-time tracking and stock updates.",
+      "[SUBSUBSEC] 1.3.7 Operations": "RMS manages meals, reservations, and waiter assignments.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "RMS is configurable for different restaurant sizes.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "RMS connects with food suppliers, reservations, billing services, Google Cloud Storage, and Google Analytics."
+    },
+    "[SUBSEC] 1.5 User Characteristics": "RMS is designed for managers, waiters, and chefs.",
+    "[SUBSEC] 1.6 Limitations": "RMS requires accurate ingredient tracking.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "RMS relies on updated stock, valid client data, and assigned waiters.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Dish: A prepared food item.",
+      "Meal: A collection of served dishes."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "RMS: Restaurant Management System",
+      "API: Application Programming Interface",
+      "TLS: Transport Layer Security"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall manage ingredient stock, including name, quantity, and unit (REQ-DB-001).",
+      "REQ-INTF-002": "The system shall track dish composition (REQ-DB-002)."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall allow dish registration with ingredients (REQ-DB-002).",
+      "REQ-FUNC-002": "The system shall track meals and assigned waiters (REQ-DB-003).",
+      "REQ-FUNC-003": "The system shall record waiter details, including ID and assigned meals (REQ-DB-003)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an interface for managing ingredients, meals, and assignments."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall update inventory and meal tracking within 1 second of an order or stock change."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store ingredient details, including name, unit, and quantity.",
+      "REQ-DB-002": "The system shall maintain dish composition records.",
+      "REQ-DB-003": "The system shall store meal details, including table number, ordered dishes, assigned waiters, and timestamps."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall enforce unique identification for ingredients, dishes, and waiters."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with food safety standards."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall log ingredient updates and meal records."
+    }
+  },
+  "[SEC] 3. Verification": "Tests meal tracking, dish creation, and assignments.",
+  "[SEC] 4. Supporting Information": "User manuals, API documentation, and restaurant policies.",
+  "[SEC] 5. References": "Food service guidelines, customer tracking, and inventory management."
+}

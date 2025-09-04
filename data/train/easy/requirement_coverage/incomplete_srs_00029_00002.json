@@ -1,0 +1,66 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Automated Diagnostics Tool (ADT) defines requirements for fault detection and diagnostics, ensuring accurate real-time and historical analysis.",
+    "[SUBSEC] 1.2 Scope": "ADT detects faults in chillers, cooling towers, and HVAC subsystems using automated analytics.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "ADT integrates with sensors, storage, and analytics tools for fault detection.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "ADT offers a Windows dashboard for monitoring and configuration.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "ADT operates on portable and fixed HVAC diagnostic platforms.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "ADT processes ASCII-formatted data and supports interoperability.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "ADT ensures secure real-time data transmission.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "ADT supports high-volume processing with optimized storage.",
+      "[SUBSUBSEC] 1.3.7 Operations": "ADT ensures continuous fault detection with automatic failover mechanisms.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "ADT adapts to diverse HVAC system configurations.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "ADT integrates with external analytics platforms for enhanced diagnostics."
+    },
+    "[SUBSEC] 1.4 Product Functions": "ADT handles fault detection, diagnostics, and alerts.",
+    "[SUBSEC] 1.5 User Characteristics": "Designed for HVAC engineers and maintenance teams.",
+    "[SUBSEC] 1.6 Limitations": "ADT depends on stable networks and HVAC data.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "ADT requires HVAC protocol compliance and secure exchange.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Fault Detection: Identifying HVAC issues.",
+      "Diagnostics: Finding HVAC fault causes."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "HVAC: Heating, Ventilation, and Air Conditioning"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall connect to HVAC subsystems via standard protocols.",
+      "REQ-INTF-002": "The system shall validate real-time data inputs before analysis (REQ-FUNC-001)."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall preprocess input data for diagnostics.",
+      "REQ-FUNC-002": "The system shall detect faults in cooling towers and chillers.",
+      "REQ-FUNC-003": "The system shall store TO-BE-DEFINED."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide configurable fault detection thresholds.",
+      "REQ-USAB-002": "The system shall offer an intuitive interface with structured navigation."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process data within 2 seconds for fault detection.",
+      "REQ-PERF-002": "The system shall retrieve historical data within 5 seconds."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall maintain logs of input, processed, and diagnostic data.",
+      "REQ-DB-002": "The database shall comply with ACID principles for reliable storage."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall operate exclusively on Windows-compatible platforms.",
+      "REQ-DSGN-002": "The system shall support modular plug-and-play diagnostics."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall adhere to ISO/IEC 27001 for secure diagnostics."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall dynamically scale for varying data loads.",
+      "REQ-ATTR-002": "The system shall log all events for compliance and debugging (REQ-COMP-001).",
+      "REQ-ATTR-003": "The system shall ensure 99.9% uptime with failover mechanisms."
+    }
+  },
+  "[SEC] 3. Verification": "Diagnostics verified via unit, integration, and performance tests.",
+  "[SEC] 4. Supporting Information": "User manuals, API documentation, and troubleshooting guides.",
+  "[SEC] 5. References": "ISO/IEC standards, HVAC protocols, and diagnostic tool best practices."
+}

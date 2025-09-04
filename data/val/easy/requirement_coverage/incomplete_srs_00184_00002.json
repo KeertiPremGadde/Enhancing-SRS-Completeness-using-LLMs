@@ -1,0 +1,64 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Online Trading and Investment System (OTIS) enables users to manage investments, track retirement savings, and make informed trading decisions.",
+    "[SUBSEC] 1.2 Scope": "OTIS supports stock trading, portfolio management, financial planning, and real-time investment tracking.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "OTIS integrates with payment gateways, delivery services, and financial systems.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "OTIS offers web and mobile UIs for users and admins.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "OTIS supports desktops, laptops, and mobile devices for accessing the system.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "OTIS uses REST APIs for integration with stock exchanges and financial institutions.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "OTIS sends notifications via email, SMS, and in-app for updates.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "OTIS optimizes storage for user data, transactions, and investment information.",
+      "[SUBSUBSEC] 1.3.7 Operations": "OTIS supports order creation, payment, and real-time delivery tracking.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "OTIS customizes notifications and interfaces based on user roles and preferences.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "OTIS integrates with third-party systems for payment and order tracking."
+    },
+    "[SUBSEC] 1.4 Product Functions": "OTIS lets users browse, trade stocks, track investments, manage payments, and set up plans.",
+    "[SUBSEC] 1.5 User Characteristics": "OTIS serves customers, traders, administrators, and financial advisors.",
+    "[SUBSEC] 1.6 Limitations": "OTIS requires internet for trading, portfolio management, and real-time stock tracking.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "OTIS depends on external payment processors, stock exchanges, and financial data systems.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Order: Request to buy or sell.",
+      "Investment: Financial asset.",
+      "Portfolio: Collection of investments.",
+      "Retirement Savings: Savings for retirement."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "UI: User Interface",
+      "API: Application Programming Interface"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall let users place orders and manage preferences.",
+      "REQ-INTF-002": "The system shall integrate with external payment processors and financial data systems."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall let users browse stocks, place orders, track performance, and select preferences. (REQ-INTF-001, REQ-DB-001)",
+      "REQ-FUNC-002": "The system shall provide TO-BE-DEFINED (REQ-INTF-002, REQ-DB-001)",
+      "REQ-FUNC-003": "The system shall generate order confirmations and track stock statuses in real-time. (REQ-INTF-002, REQ-DB-001)"
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an intuitive UI for stock trading and portfolio management.",
+      "REQ-USAB-002": "The system shall let users save payment and shipping details for faster checkout."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall provide real-time updates on stock prices and account status within 2 seconds."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall securely store user account information, transaction history, and investment data."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall ensure secure user authentication and data storage."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with GDPR and data protection regulations for financial data."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall ensure encrypted communication for secure financial transactions."
+    }
+  },
+  "[SEC] 3. Verification": "Test order creation, payment, and stock tracking.",
+  "[SEC] 4. Supporting Information": "User guides, API docs, and setup instructions.",
+  "[SEC] 5. References": "E-commerce best practices, financial standards, and GDPR compliance."
+}

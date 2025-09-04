@@ -1,0 +1,66 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Factory Management System (FMS) defines requirements for managing furniture production, components, sales, and orders.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "FMS integrates with inventory, sales, and production systems for real-time tracking.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "FMS offers dashboards for inventory, production, and order tracking.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "FMS supports manufacturing machinery, barcode scanners, and POS systems.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "FMS connects with ERP, warehouse, and logistics systems.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "FMS secures data with HTTPS, TLS encryption, and authentication protocols.",
+      "[SUBSUBSEC] 1.3.7 Operations": "FMS enables real-time tracking and scheduled maintenance.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "FMS is configurable for multiple locations and product lines.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "FMS integrates with suppliers, logistics, and third-party distribution.",
+      "[SUBSUBSEC] 1.3.6 MISSING-TAG2": "FMS optimizes storage for inventory, orders, and production data."
+    },
+    "[SUBSEC] 1.4 Product Functions": "FMS manages production, component tracking, inventory, sales, and order fulfillment.",
+    "[SUBSEC] 1.5 User Characteristics": "FMS serves factory managers, production supervisors, warehouse staff, and store personnel.",
+    "[SUBSEC] 1.6 Limitations": "FMS requires internet connectivity for real-time synchronization.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "FMS relies on warehouse, sales, and supply chain databases.",
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "HTTPS: Hypertext Transfer Protocol Secure",
+      "TLS: Transport Layer Security",
+      "POS: Point of Sale",
+      "ERP: Enterprise Resource Planning"
+    ],
+    "[SUBSEC] 1.8 Definitions": [
+      "Furniture Line: A classification of products.",
+      "Component: Standardized reusable part.",
+      "Order: Purchase request."
+    ],
+    "[SUBSEC] 1.2 MISSING-TAG1": "FMS supports inventory, component tracking, order processing, and manufacturing coordination across factories and stores."
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall integrate with store databases for tracking sales and stock levels.",
+      "REQ-INTF-002": "The system shall communicate with warehouses to update inventory and manage restocking."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall manage furniture lines and product variations (REQ-DB-001).",
+      "REQ-FUNC-002": "The system shall track components by numerical codes, type, and price (REQ-DB-001).",
+      "REQ-FUNC-003": "The system shall process orders, storing order details including number, store, date, furniture list, and quantities (REQ-DB-001)."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall update inventory in 3 seconds.",
+      "REQ-PERF-002": "The system shall load data in 2 seconds (REQ-FUNC-002)."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall securely store furniture catalogs, components, and order records."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall log stock movements, order changes, and production updates."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall enforce unique identification for furniture, components, and orders."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with supply chain and inventory standards."
+    },
+    "[SUBSEC] 2.3 MISSING-TAG3": {
+      "REQ-USAB-001": "The system shall provide an interface for inventory and orders (REQ-FUNC-001, REQ-FUNC-002).",
+      "REQ-USAB-002": "The system shall allow stores to place and review orders through an interactive dashboard (REQ-FUNC-003)."
+    }
+  },
+  "[SEC] 3. Verification": "Tests for furniture tracking, component management, and order processing.",
+  "[SEC] 4. Supporting Information": "Guides and API docs.",
+  "[SEC] 5. References": "Supply chain management policies and inventory control standards."
+}

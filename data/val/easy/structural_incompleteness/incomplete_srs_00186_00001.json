@@ -1,0 +1,63 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Education Diploma System (EDS) defines requirements for diploma validation, eligibility verification, jury evaluations, and issuance.",
+    "[SUBSEC] 1.2 Scope": "EDS supports candidate applications, jury reviews, validation, and issuance notifications.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "EDS integrates with Academy databases for application tracking and jury coordination.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "EDS provides web interfaces for candidates, inspectors, and jury members.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "EDS supports standard computing devices for submissions and validation.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "EDS uses PostgreSQL for storage  REST APIs for diploma validation.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "EDS secures candidate communications via TLS encryption.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "EDS optimizes memory for candidate records and validation history.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "EDS is configurable for multiple institutions and diploma types.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "EDS links with notification systems for application updates.",
+      "[SUBSUBSEC] 1.3.7 MISSING-TAG2": "EDS manages validation scheduling  jury evaluations  decision notifications."
+    },
+    "[SUBSEC] 1.4 Product Functions": "EDS manages applications  validation  jury scheduling  diploma issuance.",
+    "[SUBSEC] 1.6 Limitations": "Requires internet access for submissions and jury coordination.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "EDS relies on Academy records  jury schedules  diploma verification procedures.",
+    "[SUBSEC] 1.8 Definitions": {
+      "CAVA": "Validation center handling diploma applications.",
+      "Jury": "Panel responsible for evaluating applications."
+    },
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": {
+      "EDS": "Education Diploma System",
+      "TLS": "Transport Layer Security"
+    },
+    "[SUBSEC] 1.5 MISSING-TAG1": "Designed for candidates  Academy inspectors  jury members."
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall integrate with Academy databases to process candidate applications.",
+      "REQ-INTF-002": "The system shall allow inspectors to verify eligibility and review applications."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall allow candidates to submit applications  including personal details  experience  diploma requests (REQ-DB-001).",
+      "REQ-FUNC-002": "The system shall track applications  assign numbers  allow inspectors to verify eligibility  accepting or rejecting candidates (REQ-DB-001  REQ-INTF-002).",
+      "REQ-FUNC-003": "The system shall provide candidates with real-time application status updates and notifications (REQ-DB-001).",
+      "REQ-FUNC-004": "The system shall schedule jury evaluations  notify candidates and jury members  record decisions  issuing diplomas or rejections (REQ-DB-002  REQ-DB-003)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide a dashboard for candidates to track application status and updates."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall securely store candidate details  application status  eligibility decisions.",
+      "REQ-DB-002": "The system shall store jury schedules  evaluation results  diploma issuance records."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall generate unique tracking IDs for applications."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with education data security regulations."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall log application submissions  jury evaluations  diploma issuances."
+    },
+    "[SUBSEC] 2.4 MISSING-TAG3": {
+      "REQ-PERF-001": "The system shall process candidate applications within 5 seconds."
+    }
+  },
+  "[SEC] 3. Verification": "Tests application processing  eligibility verification  jury evaluations  diploma issuance.",
+  "[SEC] 4. Supporting Information": "User guides  API documentation  validation manuals  compliance requirements.",
+  "[SEC] 5. References": "Education validation policies  Academy guidelines  diploma issuance standards."
+}

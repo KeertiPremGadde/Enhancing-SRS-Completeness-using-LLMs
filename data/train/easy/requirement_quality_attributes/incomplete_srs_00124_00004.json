@@ -1,0 +1,66 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Archives Space System (AS) defines functional, technical, and security requirements for managing and preserving archival records.",
+    "[SUBSEC] 1.2 Scope": "AS supports record creation, metadata management, access control, rights handling, and long-term preservation.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "AS integrates with LDAP, EAD, MARCXML, APIs, and external repositories for metadata exchange.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "AS provides web-based workflows for archival description and authentication.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "AS operates on cloud or on-premises servers.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "AS supports REST APIs for data exchange and integration with preservation tools.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "AS ensures secure HTTPS for metadata retrieval.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "AS optimizes hierarchical data storage for archival records.",
+      "[SUBSUBSEC] 1.3.7 Operations": "AS ensures 24/7 availability with automated backups.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "AS supports localized metadata and configurable policies.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "AS links to repositories, indexing tools, and aggregators."
+    },
+    "[SUBSEC] 1.4 Product Functions": "AS enables record creation, metadata handling, and rights management.",
+    "[SUBSEC] 1.5 User Characteristics": "AS serves archivists, researchers, and administrators.",
+    "[SUBSEC] 1.6 Limitations": "AS depends on third-party metadata aggregators and repositories.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "AS requires compliance with archival and data protection standards.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Record: Archival resource.",
+      "Metadata: Structured descriptive data."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "LDAP: Lightweight Directory Access Protocol",
+      "REST: Representational State Transfer",
+      "EAD: Encoded Archival Description."
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall integrate with LDAP for authentication and access control.",
+      "REQ-INTF-002": "The system shall support EAD, MARCXML import/export, and REST APIs for interoperability (REQ-DSGN-001)."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall enable hierarchical record organization.",
+      "REQ-FUNC-002": "The system shall allow metadata import, record editing, and role-based access (REQ-INTF-002).",
+      "REQ-FUNC-003": "The system shall mint DOIs and manage version history (REQ-DB-002)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an intuitive, web-based interface with accessibility support (REQ-DSGN-002)."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process metadata uploads promptly.",
+      "REQ-PERF-002": "The system shall support several thousand users without degradation (REQ-ATTR-002)."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store metadata in an indexed relational database.",
+      "REQ-DB-002": "The system shall manage record versions and track changes."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall comply with archival metadata standards (e.g., EAD).",
+      "REQ-DSGN-002": "The system shall encrypt all data in transit and at rest."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall adhere to ISO 14721 for digital preservation."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall provide role-based access control.",
+      "REQ-ATTR-002": "The system shall maintain nearly always uptime."
+    }
+  },
+  "[SEC] 3. Verification": "Tests for record creation, metadata validation, security compliance, and performance benchmarks.",
+  "[SEC] 4. Supporting Information": "Metadata schemas, system architecture, and security protocols.",
+  "[SEC] 5. References": "ISO 14721, LDAP, EAD, and MARCXML standards."
+}

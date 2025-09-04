@@ -1,0 +1,64 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Invoice Generation System (IGS) automates invoice creation, tracking, and management for businesses and freelancers.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "IGS integrates with payment gateways, accounting platforms, and customer management systems.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "IGS provides a web and mobile UI for businesses and freelancers.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "IGS supports desktops, tablets, and mobile devices.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "IGS uses REST APIs, secure authentication, and cloud storage.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "IGS supports email notifications and reminders.",
+      "[SUBSUBSEC] 1.3.7 Operations": "IGS enables invoice creation, payment tracking, and reporting.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "IGS customizes invoice formats based on user preferences.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "IGS connects with tax calculators, accounting tools, and digital wallets.",
+      "[SUBSUBSEC] 1.3.6 MISSING-TAG2": "IGS optimizes storage for invoices, payments, and customer details."
+    },
+    "[SUBSEC] 1.4 Product Functions": "IGS generates invoices, tracks payments, sends reminders, and allows PDF downloads.",
+    "[SUBSEC] 1.5 User Characteristics": "IGS serves businesses, freelancers, and customers.",
+    "[SUBSEC] 1.6 Limitations": "IGS requires internet access for real-time updates.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "IGS relies on payment gateways, tax calculators, and customer databases.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Invoice: Record of a transaction.",
+      "Payment Gateway: Service for online payments."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "API: Application Programming Interface",
+      "UI: User Interface",
+      "REST: Representational State Transfer"
+    ],
+    "[SUBSEC] 1.2 MISSING-TAG1": "IGS enables invoice generation for purchases, services, and rentals with customization, tracking, and secure payments."
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall allow users to generate invoices for products, services, and rentals.",
+      "REQ-INTF-002": "The system shall support multiple payment options, including credit cards, PayPal, and bank transfers.",
+      "REQ-INTF-003": "The system shall integrate with accounting and tax platforms."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall generate invoices with customizable templates, tax calculations, and transaction details (REQ-INTF-001, REQ-DB-001).",
+      "REQ-FUNC-002": "The system shall allow users to download invoices in PDF format and track payments (REQ-INTF-002, REQ-DB-001).",
+      "REQ-FUNC-003": "The system shall send automated reminders for pending and overdue payments.",
+      "REQ-FUNC-004": "The system shall provide financial tracking and reporting."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an intuitive UI for creating and managing invoices."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process invoices and payments within 2 seconds."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store invoice records, payment history, and tax details."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall support country-specific tax regulations."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with financial and data privacy regulations."
+    },
+    "[SUBSEC] 2.8 MISSING-TAG3": {
+      "REQ-ATTR-001": "The system shall ensure encrypted storage and secure authentication."
+    }
+  },
+  "[SEC] 3. Verification": "Tests validate invoice generation, payment tracking, reminders, and reporting.",
+  "[SEC] 4. Supporting Information": "User guides, API documentation, and compliance guidelines.",
+  "[SEC] 5. References": "Accounting standards, tax regulations, and payment gateway requirements."
+}

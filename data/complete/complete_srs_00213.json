@@ -1,0 +1,61 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Library & Banking System (LBS) defines requirements for cataloging, digital access, reservations, overdue tracking, inter-library loans, and financial reporting.",  
+    "[SUBSEC] 1.2 Scope": "LBS enables librarians to manage records, while members handle loans and reservations.",  
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "LBS integrates with digital libraries, loan networks, and financial platforms.",  
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "LBS provides a web and mobile UI for librarians and members.",  
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "LBS supports kiosks, desktops, tablets, and smartphones.",  
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "LBS uses REST APIs, authentication, and cloud storage.",  
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "LBS supports notifications, messaging, and updates.",  
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "LBS optimizes storage for records and transactions.",  
+      "[SUBSUBSEC] 1.3.7 Operations": "LBS supports cataloging, reservations, digital access, and overdue tracking.",  
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "LBS customizes recommendations based on user history.",  
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "LBS connects with loan services, digital providers, and financial systems."
+    },  
+    "[SUBSEC] 1.4 Product Functions": "LBS supports cataloging, reservations, loans, and financial management.",  
+    "[SUBSEC] 1.5 User Characteristics": "LBS serves librarians, members, and financial administrators.",  
+    "[SUBSEC] 1.6 Limitations": "LBS requires internet access for digital resources and inter-library loans.",  
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "LBS relies on external digital libraries, accounting platforms, and authentication.",  
+    "[SUBSEC] 1.8 Definitions": [
+      "Inter-library Loan: Borrowing from partner libraries."
+    ],  
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "UI: User Interface",  
+      "REST: Representational State Transfer"
+    ]
+  },  
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall allow librarians to catalog books and manage classification.",  
+      "REQ-INTF-002": "The system shall allow members to search, borrow, and access digital resources.",  
+      "REQ-INTF-003": "The system shall integrate with financial platforms for reporting."
+    },  
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall allow librarians to catalog books, track overdue materials, notify borrowers, and manage fines (REQ-INTF-001, REQ-DB-001).",  
+      "REQ-FUNC-002": "The system shall enable members to browse, borrow, reserve digital and physical resources, and request inter-library loans (REQ-INTF-002, REQ-DB-001).",  
+      "REQ-FUNC-003": "The system shall allow librarians to manage events, track attendance, notify participants, and generate financial reports (REQ-INTF-003, REQ-DB-001)."
+    },  
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an intuitive UI for cataloging, reservations, and financial management."
+    },  
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process transactions within 2 seconds."
+    },  
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall store catalog records, loan history, reservations, and financial data."
+    },  
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall support adaptive search and recommendations."
+    },  
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with data privacy and financial reporting laws."
+    },  
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall ensure encrypted data storage and secure authentication."
+    }
+  },  
+  "[SEC] 3. Verification": "Tests validate cataloging, access, reservations, overdue tracking, and financial exports.",  
+  "[SEC] 4. Supporting Information": "User guides, API documentation, and compliance guidelines.",  
+  "[SEC] 5. References": "Library standards, financial reports, and digital resource policies."
+}

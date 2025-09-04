@@ -1,0 +1,67 @@
+{
+  "[SEC] 1. Introduction": {
+    "[SUBSEC] 1.1 Purpose": "The Gemini Control System defines requirements to streamline telescope operations and data acquisition.",
+    "[SUBSEC] 1.2 Scope": "Gemini supports astronomers, operators, and developers in planning, managing, and monitoring observations.",
+    "[SUBSEC] 1.3 Product Perspective": {
+      "[SUBSUBSEC] 1.3.1 System Interfaces": "Gemini integrates with telescope instruments and astronomical databases.",
+      "[SUBSUBSEC] 1.3.2 User Interfaces": "Gemini provides responsive interfaces for astronomers and operators.",
+      "[SUBSUBSEC] 1.3.3 Hardware Interfaces": "Gemini runs on scalable VME-based hardware systems.",
+      "[SUBSUBSEC] 1.3.4 Software Interfaces": "Gemini interfaces with EPICS for real-time control and monitoring.",
+      "[SUBSUBSEC] 1.3.5 Communications Interfaces": "Gemini uses secure TCP/IP protocols for data transmission.",
+      "[SUBSUBSEC] 1.3.6 Memory Constraints": "The system optimizes memory usage for efficiency in real-time operations.",
+      "[SUBSUBSEC] 1.3.7 Operations": "Gemini ensures 24/7 availability with planned maintenance and automated failover.",
+      "[SUBSUBSEC] 1.3.8 Site Adaptation Requirements": "Gemini operates in diverse observatory conditions, ensuring compatibility across different environments.",
+      "[SUBSUBSEC] 1.3.9 Interfaces with Services": "Gemini links with remote systems for real-time data sharing and archival."
+    },
+    "[SUBSEC] 1.4 Product Functions": "Gemini enables observation planning, data management, and instrument control.",
+    "[SUBSEC] 1.5 User Characteristics": "Users include astronomers, telescope operators, and system administrators.",
+    "[SUBSEC] 1.6 Limitations": "Gemini relies on external hardware and stable network connections for continuous operation.",
+    "[SUBSEC] 1.7 Assumptions and Dependencies": "Gemini requires a functional EPICS framework and access to external astronomical databases.",
+    "[SUBSEC] 1.8 Definitions": [
+      "Workflow: Sequence of tasks.",
+      "Task: System action.",
+      "Observation Schedule: Telescope usage plan."
+    ],
+    "[SUBSEC] 1.9 Acronyms and Abbreviations": [
+      "EPICS: Experimental Physics and Industrial Control System",
+      "TCP/IP: Transmission Control Protocol/Internet Protocol",
+      "VME: Versa Module Europa"
+    ]
+  },
+  "[SEC] 2. Requirements": {
+    "[SUBSEC] 2.1 External Interfaces": {
+      "REQ-INTF-001": "The system shall integrate with EPICS for real-time telescope control and monitoring.",
+      "REQ-INTF-002": "The system shall access astronomical catalogs to assist in observation planning."
+    },
+    "[SUBSEC] 2.2 Functions": {
+      "REQ-FUNC-001": "The system shall allow TO-BE-DEFINED (REQ-INTF-002).",
+      "REQ-FUNC-002": "The system shall allow operators to monitor and adjust instruments during operations (REQ-DB-002)."
+    },
+    "[SUBSEC] 2.3 Usability Requirements": {
+      "REQ-USAB-001": "The system shall provide an intuitive dashboard with multilingual support."
+    },
+    "[SUBSEC] 2.4 Performance Requirements": {
+      "REQ-PERF-001": "The system shall process control commands within 2 seconds (REQ-INTF-001).",
+      "REQ-PERF-002": "The system shall support up to 50 concurrent user sessions."
+    },
+    "[SUBSEC] 2.5 Logical Database Requirements": {
+      "REQ-DB-001": "The system shall securely store observation data, logs, and schedules (REQ-FUNC-001).",
+      "REQ-DB-002": "The database shall implement role-based access control and versioning."
+    },
+    "[SUBSEC] 2.6 Design Constraints": {
+      "REQ-DSGN-001": "The system shall follow a modular architecture to facilitate maintenance and upgrades.",
+      "REQ-DSGN-002": "The system shall adhere to EPICS control system standards."
+    },
+    "[SUBSEC] 2.7 Standards Compliance": {
+      "REQ-COMP-001": "The system shall comply with international data-sharing protocols.",
+      "REQ-COMP-002": "The system shall meet cybersecurity standards for secure operations."
+    },
+    "[SUBSEC] 2.8 Software System Attributes": {
+      "REQ-ATTR-001": "The system shall dynamically scale based on workload variations.",
+      "REQ-ATTR-002": "The system shall log and retain all critical events for auditing and troubleshooting."
+    }
+  },
+  "[SEC] 3. Verification": "Usability, performance, and compliance testing.",
+  "[SEC] 4. Supporting Information": "Operational Workflows, user manuals, and system documentation.",
+  "[SEC] 5. References": "EPICS standards, TCP/IP, and VME specifications."
+}
