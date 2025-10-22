@@ -63,6 +63,3 @@ The goal is to:
 1. Detect incompleteness in SRS documents.
 2. Generate corrections aligned with **ISO/IEC/IEEE 29148:2018**.
 3. Evaluate performance on large structured SRS datasets.
-
-* keep this README **concise** (good for GitHub), or
-* expand it with **examples** (like showing a before/after incomplete → complete SRS transformation)?
