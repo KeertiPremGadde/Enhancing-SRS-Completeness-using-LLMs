@@ -9,16 +9,16 @@ embed = model.get_input_embeddings().weight
 
 # === Get All Special Tokens ===
 all_specials = tokenizer.all_special_tokens
-print(f"\n🔍 Total special tokens found: {len(all_specials)}\n")
+print(f"\n Total special tokens found: {len(all_specials)}\n")
 
 # === Print token ID and embedding row index ===
 rows = []
 for token in all_specials:
     token_id = tokenizer.convert_tokens_to_ids(token)
     if token_id is None or token_id >= embed.shape[0]:
-        status = "❌ Outside embedding range"
+        status = " Outside embedding range"
     else:
-        status = "✅ Inside embedding range"
+        status = " Inside embedding range"
     rows.append((token, token_id, status))
 
 # === Nicely formatted output ===
