@@ -105,18 +105,17 @@ def generate_output(model, tokenizer, inputs, global_attention_mask):
     print("Decoded output length (chars):", len(decoded_raw))
     print("Input token length:", inputs['input_ids'].shape[1])
     
-    print("\U0001f9fe Decoded output:\n", decoded)  # ⬅️ Debug print
-    print("\U0001f9fe Decoded raw output:\n", decoded_raw)  # ⬅️ Debug print
+    print("\U0001f9fe Decoded output:\n", decoded)  #Debug print
+    print("\U0001f9fe Decoded raw output:\n", decoded_raw)  #Debug print
     # Log both
     logger.info(f" Decoded (clean):\n{decoded}")
     logger.info(f" Decoded (raw):\n{decoded_raw}")
     
     # check
     if not any(tok in decoded_raw for tok in ['[SEC]', '[SUBSEC]', '[SUBSUBSEC]']):
-        logger.warning("⚠️ Missing structure tokens in decoded raw output!")
+        logger.warning("Missing structure tokens in decoded raw output!")
     return decoded, decoded_raw
 
-# ✅ INSERT HERE
 def preprocess_output_for_parsing(output):
     output = re.sub(r"(\[SEC\])", r"\n\1", output)
     output = re.sub(r"(\[SUBSEC\])", r"\n\t\1", output)
@@ -138,14 +137,14 @@ def preprocess_output_for_parsing(output):
 
 #New
 def save_output_as_json(text_output, output_path):
-    preprocessed = preprocess_output_for_parsing(text_output)  # 👈 Preprocess structure tokens
+    preprocessed = preprocess_output_for_parsing(text_output)  #Preprocess structure tokens
     structured = parse_srs_to_json(preprocessed)
     print("🔍 Parsed sections:", structured.keys())  # Optional debug
     with open(output_path, 'w') as f:
         json.dump(structured, f, indent=2)
     logger.info(f"✓ Structured JSON saved at: {output_path}")
 
-    # ✅ Step 4: Optional — save the readable preprocessed output to a .txt file
+    # Step 4: Optional — save the readable preprocessed output to a .txt file
     txt_path = output_path.replace(".json", ".txt")
     with open(txt_path, "w") as f:
         f.write(preprocessed)
@@ -154,7 +153,7 @@ def save_output_as_json(text_output, output_path):
 
 
 def parse_srs_to_json(text):
-     # ⚠️ Check for structure tokens
+     #Check for structure tokens
     missing = []
     if '[SEC]' not in text:
         missing.append('[SEC]')
