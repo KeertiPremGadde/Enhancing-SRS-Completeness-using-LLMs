@@ -105,7 +105,7 @@
 # model.get_output_embeddings().weight = model.get_input_embeddings().weight
 # weights_tied = embed.data_ptr() == model.get_output_embeddings().weight.data_ptr()
 
-# # ✅ Now refresh and clone lm_head properly
+# Clone lm_head properly
 # lm_head = model.get_output_embeddings().weight
 # original_lm_head = lm_head.detach().clone()
 
@@ -433,12 +433,12 @@ combined_tokens = SPECIAL_TOKENS + [tok for tok in existing_extra_ids if tok not
 #tokenizer.add_special_tokens({"additional_special_tokens": combined_tokens})
 num_added_toks = tokenizer.add_special_tokens({"additional_special_tokens": combined_tokens})
 
-# 🧹 Remove old tokenizer.json to regenerate cleanly
+# Remove old tokenizer.json to regenerate cleanly
 tokenizer_json_path = os.path.join(MODEL_PATH, "tokenizer.json")
 if os.path.exists(tokenizer_json_path):
     os.remove(tokenizer_json_path)
 
-# ✅ Write tokenizer_config.json explicitly (before saving tokenizer)
+# Write tokenizer_config.json explicitly (before saving tokenizer)
 tokenizer_config_path = os.path.join(MODEL_PATH, "tokenizer_config.json")
 tokenizer_config_data = {
     "tokenizer_class": "T5TokenizerFast",
@@ -463,13 +463,13 @@ model.lm_head.weight = model.get_input_embeddings().weight
 
 # === Verify tying worked ===
 assert model.get_input_embeddings().weight.data_ptr() == model.get_output_embeddings().weight.data_ptr(), \
-    "❌ LM head is NOT memory-tied to input embeddings!"
+    " LM head is NOT memory-tied to input embeddings!"
 
 
 
 #model.tie_weights()  # Proper memory-level tying
 #assert model.get_input_embeddings().weight.data_ptr() == model.get_output_embeddings().weight.data_ptr(), \
-#    "❌ LM head is NOT memory-tied to input embeddings!"
+#    " LM head is NOT memory-tied to input embeddings!"
 weights_tied = model.get_output_embeddings().weight.data_ptr() == model.get_input_embeddings().weight.data_ptr()
 
 # === INIT SPECIAL TOKEN EMBEDDINGS ===
@@ -592,7 +592,7 @@ model.save_pretrained(MODEL_PATH)
 fast_tokenizer_path = os.path.join(MODEL_PATH, "tokenizer.json")
 
 # Save tokenizer properly — whether it's slow or fast
-#tokenizer.config.tokenizer_class = "T5TokenizerFast"  # ✅ Ensure correct class again
+#tokenizer.config.tokenizer_class = "T5TokenizerFast"  # Ensure correct class again
 #tokenizer.save_pretrained(MODEL_PATH)
 
 if os.path.exists(fast_tokenizer_path):
@@ -601,8 +601,8 @@ if os.path.exists(fast_tokenizer_path):
     wrapped.add_special_tokens({"additional_special_tokens": combined_tokens}) #failsafe step, not a bug
     wrapped.save_pretrained(MODEL_PATH)
 
-# ✅ Inspect special_tokens_map.json content after saving
-print("\n📄 Contents of special_tokens_map.json:")
+# Inspect special_tokens_map.json content after saving
+print("\n Contents of special_tokens_map.json:")
 with open(os.path.join(MODEL_PATH, "special_tokens_map.json")) as f:
     data = json.load(f)
     print(json.dumps(data, indent=2))
@@ -709,13 +709,13 @@ with torch.no_grad():
     plt.savefig(os.path.join(LOG_DIR, "embedding_pca_plot.png"))
     plt.close()
 
-print(f"✅ Done. Special tokens added and properly initialized.")
-print(f"🔁 LM Head and Input Embeddings are tied: {weights_tied}")
-print(f"📁 Logs, plots, and model saved in: {LOG_DIR}")
+print(f" Done. Special tokens added and properly initialized.")
+print(f" LM Head and Input Embeddings are tied: {weights_tied}")
+print(f" Logs, plots, and model saved in: {LOG_DIR}")
 
 
 # === Force tokenizer.json to be regenerated from correct class ===
-print("\n🧹 Regenerating tokenizer.json with correct class (T5TokenizerFast)...")
+print("\n Regenerating tokenizer.json with correct class (T5TokenizerFast)...")
 tokenizer_json_path = os.path.join(MODEL_PATH, "tokenizer.json")
 if os.path.exists(tokenizer_json_path):
     os.remove(tokenizer_json_path)
@@ -723,15 +723,15 @@ if os.path.exists(tokenizer_json_path):
 # Reload using correct class
 tokenizer = T5TokenizerFast.from_pretrained(MODEL_PATH)
 tokenizer.save_pretrained(MODEL_PATH)
-print("✅ tokenizer.json regenerated using T5TokenizerFast.\n")
+print(" tokenizer.json regenerated using T5TokenizerFast.\n")
 
 
 # === Sanity check: test token IDs ===
-print("\n🔍 Sanity Check: Special Token IDs")
+print("\n Sanity Check: Special Token IDs")
 tok = T5TokenizerFast.from_pretrained(MODEL_PATH)
 print(tok.convert_tokens_to_ids(["[SEC]", "[SUBSEC]", "[SUBSUBSEC]", "[/SEC]", "[/SUBSEC]", "[/SUBSUBSEC]"]))
 assert tok.convert_tokens_to_ids("[SEC]") == tokenizer.convert_tokens_to_ids("[SEC]")
-print("🧠 Tokenizer class used in tokenizer_config.json:", tokenizer_config_data["tokenizer_class"])
+print(" Tokenizer class used in tokenizer_config.json:", tokenizer_config_data["tokenizer_class"])
 
 
 
@@ -837,7 +837,7 @@ print("🧠 Tokenizer class used in tokenizer_config.json:", tokenizer_config_da
 # unchanged = [i for i in range(buffer_start, buffer_end) if i not in SPECIAL_TOKEN_IDS.values() and torch.allclose(embed[i], original_embeddings[i])]
 # changed = [i for i in range(buffer_start, buffer_end) if not torch.allclose(embed[i], original_embeddings[i])]
 
-# # ✅ Now refresh and clone lm_head properly
+# Now refresh and clone lm_head properly
 # lm_head = model.get_output_embeddings().weight
 # original_lm_head = lm_head.detach().clone()
 
