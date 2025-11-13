@@ -261,39 +261,39 @@ def train(model, train_loader, val_loader, optimizer, scheduler, config, device,
                 # # Detect any IDs that are invalid, special token loss
                 # invalid_ids = [tid for tid in token_ids if tid >= tokenizer.vocab_size or tid < 0]
                 # if invalid_ids:
-                #     logger.error(f"❌ Invalid token IDs found in labels[0]: {invalid_ids}")
+                #     logger.error(f" Invalid token IDs found in labels[0]: {invalid_ids}")
                 # else:
                 #     try:
                 #         decoded_text = tokenizer.decode(label_for_decode, skip_special_tokens=False)
-                #         logger.info(f"🔍 Decoded labels[0]:\n{decoded_text}")
+                #         logger.info(f" Decoded labels[0]:\n{decoded_text}")
                 #     except Exception as decode_error:
-                #         logger.error(f"❌ Decoding failed: {decode_error}")
-                #         logger.error(f"🧩 Raw token IDs: {token_ids}")
-                #print("🔍 Decoded labels[0]:\n", tokenizer.decode(labels[0], skip_special_tokens=False))
+                #         logger.error(f" Decoding failed: {decode_error}")
+                #         logger.error(f" Raw token IDs: {token_ids}")
+                #print(" Decoded labels[0]:\n", tokenizer.decode(labels[0], skip_special_tokens=False))
                 # # (1) Check for invalid token IDs
                 # invalid_ids = [tid for tid in token_ids if tid >= tokenizer.vocab_size or tid < 0]
                 # if invalid_ids:
-                #     logger.error(f"❌ Invalid token IDs found in labels[0]: {invalid_ids}")
+                #     logger.error(f" Invalid token IDs found in labels[0]: {invalid_ids}")
                 # else:
                 # # (2) Try decoding safely
                 #     try:
                 #         decoded_text = tokenizer.decode(label_for_decode, skip_special_tokens=False)
-                #         logger.info(f"🔍 Decoded labels[0]:\n{decoded_text}")
+                #         logger.info(f" Decoded labels[0]:\n{decoded_text}")
                 #     except Exception as decode_error:
-                #         logger.error(f"❌ Decoding failed: {decode_error}")
-                #         logger.error(f"🧩 Raw token IDs: {token_ids}")
+                #         logger.error(f" Decoding failed: {decode_error}")
+                #         logger.error(f" Raw token IDs: {token_ids}")
 
                 # # (3) Log max target ID for sanity check
                 # logger.info(f"Max target ID: {label_for_decode.max().item()}, Vocab size: {tokenizer.vocab_size}")
-                # assert label_for_decode.max().item() < tokenizer.vocab_size, "❌ Target ID exceeds vocab size!"
+                # assert label_for_decode.max().item() < tokenizer.vocab_size, " Target ID exceeds vocab size!"
 
                 #exit()
 
 
                 if epoch == 0 and batch_idx % 200 == 0:
                     label_ids = labels[0]
-                    logger.info(f"🧠 Label Tokens: {tokenizer.convert_ids_to_tokens(label_ids.tolist())}")
-                    logger.info(f"🧠 Label Text: {tokenizer.decode(label_ids, skip_special_tokens=False)}")
+                    logger.info(f" Label Tokens: {tokenizer.convert_ids_to_tokens(label_ids.tolist())}")
+                    logger.info(f" Label Text: {tokenizer.decode(label_ids, skip_special_tokens=False)}")
 
                 # Debug first batch
                 if epoch == 0 and batch_idx == 0:
@@ -448,8 +448,8 @@ def train(model, train_loader, val_loader, optimizer, scheduler, config, device,
                 decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=False)
 
                 if batch_idx % 200 == 0:
-                    logger.info(f"🧾 Raw token IDs: {preds[0]}")
-                    logger.info(f"🧾 Decoded (no skip): {tokenizer.decode(preds[0], skip_special_tokens=False)}")
+                    logger.info(f" Raw token IDs: {preds[0]}")
+                    logger.info(f" Decoded (no skip): {tokenizer.decode(preds[0], skip_special_tokens=False)}")
 
                     #Comment out for non structural tokens run
                     structure_tokens = ["[SEC]", "[SUBSEC]", "[SUBSUBSEC]"]
@@ -710,7 +710,7 @@ def print_model_config(model):
 
 def main():
     try:
-        #set_seed(42)  # 👈 Right here, only once for the whole script
+        #set_seed(42)  # once for the whole script
         # Initialize data loader and get config
         data_loader = LEDDataLoader()
         config = data_loader.config
