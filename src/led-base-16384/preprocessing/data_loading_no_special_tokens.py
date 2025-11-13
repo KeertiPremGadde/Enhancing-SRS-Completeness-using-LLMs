@@ -65,7 +65,7 @@ class LEDDataLoader:
         self.tokenizer = None
         self._validate_paths()
         self.load_tokenizer()
-        logger.info("⚠️ Running WITHOUT special tokens — structural markers will be ignored.")
+        logger.info(" Running WITHOUT special tokens — structural markers will be ignored.")
 
     def _load_config(self, config_path: str) -> Dict:
         with open(config_path, 'r') as f:
@@ -78,22 +78,22 @@ class LEDDataLoader:
         }
         for name, path in paths.items():
             if not os.path.exists(path):
-                logger.error(f"❌ {name} not found: {path}")
+                logger.error(f" {name} not found: {path}")
             else:
-                logger.info(f"✓ {name} exists: {path}")
+                logger.info(f" {name} exists: {path}")
 
     def load_tokenizer(self) -> None:
         self.tokenizer = LEDTokenizer.from_pretrained(self.config["model"]["tokenizer_path"])
         #self.tokenizer.add_tokens(['[SEC]', '[SUBSEC]', '[SUBSUBSEC]'])
 
-        # ✅ Verification logs
+        # Verification logs
         for tok in ['[SEC]', '[SUBSEC]', '[SUBSUBSEC]']:
             tok_id = self.tokenizer.convert_tokens_to_ids(tok)
             logger.info(f"Token: {tok} → ID: {tok_id}")
             if tok_id == self.tokenizer.unk_token_id:
-                logger.warning(f"❌ Token {tok} not found in tokenizer vocabulary!")
+                logger.warning(f" Token {tok} not found in tokenizer vocabulary!")
 
-        # ✅ Optional: strict safety check (will raise error if any special token is missing)
+        # Optional: strict safety check (will raise error if any special token is missing)
         missing = [tok for tok in ['[SEC]', '[SUBSEC]', '[SUBSUBSEC]']
                if self.tokenizer.convert_tokens_to_ids(tok) == self.tokenizer.unk_token_id]
         if missing:
@@ -176,7 +176,7 @@ class LEDDataLoader:
         #     if isinstance(d, dict):
         #         for k, v in d.items():
         #             logger.debug(f"Original key: '{k}', cleaned: '{clean_key(k)}'")
-        #             flat_text += f"{clean_key(k)}\n" # ✅ strips [SEC] tokens
+        #             flat_text += f"{clean_key(k)}\n" #strips [SEC] tokens
         #             recurse(v)
         #     elif isinstance(d, list):
         #         flat_text += "\n".join(str(item) for item in d) + "\n"
@@ -190,7 +190,7 @@ class LEDDataLoader:
                     cleaned = clean_key(k)
                     logger.debug(f"Original key: '{k}', cleaned: '{cleaned}'")
                     flat_text += f"{cleaned}\n"
-                    if isinstance(v, str):  # ✅ Add string values directly
+                    if isinstance(v, str):  #Add string values directly
                         logger.debug(f"Value: {v}")
                         flat_text += f"{v}\n"
                     else:
@@ -321,8 +321,8 @@ class LEDDataLoader:
                 collate_fn=self.collate_fn,
                 #worker_init_fn=self.seed_worker,
                 #generator=generator,
-                worker_init_fn=seed_worker,                    # 🔄 From training/seeding.py
-                generator=get_torch_generator(seed)            # 🔄 From training/seeding.py
+                worker_init_fn=seed_worker,                    # From training/seeding.py
+                generator=get_torch_generator(seed)            # From training/seeding.py
             )
         else:
         # No randomness in val/test
@@ -336,7 +336,7 @@ class LEDDataLoader:
 __all__ = ['LEDDataLoader']
 if __name__ == "__main__":
     try:
-        logger.info("✅ Debug: Initializing and testing LEDDataLoader")
+        logger.info(" Debug: Initializing and testing LEDDataLoader")
         loader = LEDDataLoader()
         train_loader = loader.get_dataloader("train")
         for batch in train_loader:
