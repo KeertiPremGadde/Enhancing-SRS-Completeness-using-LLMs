@@ -77,22 +77,22 @@ class LEDDataLoader:
         }
         for name, path in paths.items():
             if not os.path.exists(path):
-                logger.error(f"❌ {name} not found: {path}")
+                logger.error(f" {name} not found: {path}")
             else:
-                logger.info(f"✓ {name} exists: {path}")
+                logger.info(f" {name} exists: {path}")
 
     def load_tokenizer(self) -> None:
         self.tokenizer = LEDTokenizer.from_pretrained(self.config["model"]["tokenizer_path"])
         #self.tokenizer.add_tokens(['[SEC]', '[SUBSEC]', '[SUBSUBSEC]'])
 
-        # ✅ Verification logs
+        #Verification logs
         for tok in ['[SEC]', '[SUBSEC]', '[SUBSUBSEC]']:
             tok_id = self.tokenizer.convert_tokens_to_ids(tok)
             logger.info(f"Token: {tok} → ID: {tok_id}")
             if tok_id == self.tokenizer.unk_token_id:
-                logger.warning(f"❌ Token {tok} not found in tokenizer vocabulary!")
+                logger.warning(f" Token {tok} not found in tokenizer vocabulary!")
 
-        # ✅ Optional: strict safety check (will raise error if any special token is missing)
+        #Optional: strict safety check (will raise error if any special token is missing)
         missing = [tok for tok in ['[SEC]', '[SUBSEC]', '[SUBSUBSEC]']
                if self.tokenizer.convert_tokens_to_ids(tok) == self.tokenizer.unk_token_id]
         if missing:
@@ -308,8 +308,8 @@ class LEDDataLoader:
                 collate_fn=self.collate_fn,
                 #worker_init_fn=self.seed_worker,
                 #generator=generator,
-                worker_init_fn=seed_worker,                    # 🔄 From training/seeding.py
-                generator=get_torch_generator(seed)            # 🔄 From training/seeding.py
+                worker_init_fn=seed_worker,                    #From training/seeding.py
+                generator=get_torch_generator(seed)            #From training/seeding.py
             )
         else:
         # No randomness in val/test
@@ -323,25 +323,25 @@ class LEDDataLoader:
 __all__ = ['LEDDataLoader']
 if __name__ == "__main__":
     try:
-        logger.info("✅ Debug: Initializing and testing LEDDataLoader")
+        logger.info("Debug: Initializing and testing LEDDataLoader")
         loader = LEDDataLoader()
         train_loader = loader.get_dataloader("train")
         for batch in train_loader:
             logger.info(f"✓ Test batch loaded: input shape {batch['input_ids'].shape}, labels shape {batch['labels'].shape}")
             
-            # ✅ Decode the input and output (first item in batch)
+            #Decode the input and output (first item in batch)
             input_text = loader.tokenizer.decode(batch["input_ids"][0], skip_special_tokens=False)
             label_text = loader.tokenizer.decode(batch["labels"][0], skip_special_tokens=False)
 
-            print("\n\n✅ DECODED INPUT TEXT SAMPLE:\n")
+            print("\n\n DECODED INPUT TEXT SAMPLE:\n")
             print(input_text)
 
-            print("\n\n✅ DECODED LABEL TEXT SAMPLE:\n")
+            print("\n\n DECODED LABEL TEXT SAMPLE:\n")
             print(label_text)
 
             # Optional: look for REQ IDs or section headers
-            assert "REQ-" in input_text or "[SEC]" in input_text, "❌ No REQ ID or section token found in input!"
-            assert "REQ-" in label_text or "[SEC]" in label_text, "❌ No REQ ID or section token found in label!"
+            assert "REQ-" in input_text or "[SEC]" in input_text, " No REQ ID or section token found in input!"
+            assert "REQ-" in label_text or "[SEC]" in label_text, " No REQ ID or section token found in label!"
             
             
             
