@@ -13,7 +13,6 @@ import sys
 sys.path.append('/home/gadde/Thesis/src/led-base-16384')
 from transformers import LEDForConditionalGeneration, get_linear_schedule_with_warmup
 from training.seeding import set_deterministic_seed, seed_worker, get_torch_generator
-# Call this FIRST
 set_deterministic_seed(42)
 from peft import LoraConfig, get_peft_model
 from rouge_score import rouge_scorer
