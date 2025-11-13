@@ -61,7 +61,7 @@
 #     example_id = os.path.splitext(fname)[0]
 #     tokenize_example(text, example_id)
 
-# print("\n✅ Tokenization complete. Results saved to:", OUTPUT_DIR)  # Final confirmation
+# print("\n Tokenization complete. Results saved to:", OUTPUT_DIR)  # Final confirmation
 
 
 
@@ -118,16 +118,16 @@ SPECIAL_TOKEN_IDS = {
     t: tokenizer.convert_tokens_to_ids(t) 
     for t in ["[SEC]", "[SUBSEC]", "[SUBSUBSEC]", "[/SEC]", "[/SUBSEC]", "[/SUBSUBSEC]"]
 }
-print("✅ Special Token IDs:", SPECIAL_TOKEN_IDS)
+print(" Special Token IDs:", SPECIAL_TOKEN_IDS)
 
 # Check if any token is mapped to <unk>
 unk_id = tokenizer.unk_token_id
 for tok, tid in SPECIAL_TOKEN_IDS.items():
-    assert tid != unk_id, f"❌ Token {tok} is mapped to [UNK]!"
+    assert tid != unk_id, f" Token {tok} is mapped to [UNK]!"
 
 # Check split behavior (should not split into sub-parts)
 split_behavior = {tok: tokenizer.tokenize(tok) for tok in SPECIAL_TOKEN_IDS}
-print("🧪 Token split behavior:", split_behavior)
+print(" Token split behavior:", split_behavior)
 
 
 # === DIRECT INPUT TEXT ===
@@ -159,7 +159,7 @@ encoded = tokenizer(
 
 # === Token count and truncation check ===
 non_pad_count = (encoded["attention_mask"][0] == 1).sum().item()
-print("🔢 Non-padding token count:", non_pad_count)
+print(" Non-padding token count:", non_pad_count)
 
 # Save .pt
 torch.save(encoded, os.path.join(OUTPUT_DIR, f"{EXAMPLE_ID}.pt"))
@@ -175,6 +175,6 @@ with open(os.path.join(OUTPUT_DIR, f"{EXAMPLE_ID}.json"), "w") as f:
 
 # === Round-trip decoding to inspect post-tokenization structure ===
 decoded = tokenizer.decode(encoded["input_ids"][0], skip_special_tokens=False)
-print("\n🔁 Decoded Output:\n", decoded)
+print("\n Decoded Output:\n", decoded)
 
-print(f"\n✅ Tokenized output saved to {OUTPUT_DIR} as '{EXAMPLE_ID}.pt' and '{EXAMPLE_ID}.json'")
+print(f"\n Tokenized output saved to {OUTPUT_DIR} as '{EXAMPLE_ID}.pt' and '{EXAMPLE_ID}.json'")
