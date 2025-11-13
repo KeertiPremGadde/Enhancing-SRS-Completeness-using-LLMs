@@ -7,7 +7,7 @@ from transformers import LEDTokenizer, LEDForConditionalGeneration
 from datetime import datetime
 import sys
 sys.path.append("/home/gadde/Thesis/src/led-base-16384")  # Ensure module visibility
-#from preprocessing.data_loading0 import LEDDataLoader  # Uses your existing flatten_srs_to_text
+#from preprocessing.data_loading0 import LEDDataLoader  # Uses existing flatten_srs_to_text
 #from preprocessing.data_loading_revival import flatten_srs_to_text
 from preprocessing.data_loading_revival_no_special_tokens import LEDDataLoader
 import logging
@@ -52,7 +52,7 @@ def prepare_input(input_json, tokenizer):
 
     flat_text = LEDDataLoader.flatten_srs_to_text(srs_data)
                                                   #, remove_special_tokens=True, keep_titles=True)  # Using static-like call
-    print("⬇️ Final input to tokenizer:")
+    print("Final input to tokenizer:")
     print(flat_text)
     #flat_text = flatten_srs_to_text(None, srs_data)
 
@@ -105,18 +105,18 @@ def generate_output(model, tokenizer, inputs, global_attention_mask):
     print("Decoded output length (chars):", len(decoded_raw))
     print("Input token length:", inputs['input_ids'].shape[1])
     
-    print("\U0001f9fe Decoded output:\n", decoded)  # ⬅️ Debug print
-    print("\U0001f9fe Decoded raw output:\n", decoded_raw)  # ⬅️ Debug print
+    print("\U0001f9fe Decoded output:\n", decoded)  #Debug print
+    print("\U0001f9fe Decoded raw output:\n", decoded_raw)  #Debug print
     # Log both
     logger.info(f" Decoded (clean):\n{decoded}")
     logger.info(f" Decoded (raw):\n{decoded_raw}")
     
     # check
     # if not any(tok in decoded_raw for tok in ['[SEC]', '[SUBSEC]', '[SUBSUBSEC]']):
-    #     logger.warning("⚠️ Missing structure tokens in decoded raw output!")
+    #     logger.warning("Missing structure tokens in decoded raw output!")
     return decoded, decoded_raw
 
-# ✅ INSERT HERE
+
 # def preprocess_output_for_parsing(output):
 #     output = re.sub(r"(\[SEC\])", r"\n\1", output)
 #     output = re.sub(r"(\[SUBSEC\])", r"\n\t\1", output)
@@ -128,7 +128,7 @@ def generate_output(model, tokenizer, inputs, global_attention_mask):
 
 # def save_output_as_json(text_output, output_path):
 #     structured = parse_srs_to_json(text_output)
-#     print("🔍 Parsed sections:", structured.keys())  # Optional debug
+#     print("Parsed sections:", structured.keys())  # Optional debug
 #     with open(output_path, 'w') as f:
 #         json.dump(structured, f, indent=2)
 #     logger.info(f"✓ Structured JSON saved at: {output_path}")
@@ -138,14 +138,14 @@ def generate_output(model, tokenizer, inputs, global_attention_mask):
 
 #New
 # def save_output_as_json(text_output, output_path):
-#     # preprocessed = preprocess_output_for_parsing(text_output)  # 👈 Preprocess structure tokens
+#     # preprocessed = preprocess_output_for_parsing(text_output)  #Preprocess structure tokens
 #     # structured = parse_srs_to_json(preprocessed)
-#     # print("🔍 Parsed sections:", structured.keys())  # Optional debug
+#     # print("Parsed sections:", structured.keys())  # Optional debug
 #     with open(output_path, 'w') as f:
 #         json.dump(structured, f, indent=2)
 #     logger.info(f"✓ Structured JSON saved at: {output_path}")
 
-#     # ✅ Step 4: Optional — save the readable preprocessed output to a .txt file
+#     #Step 4: Optional — save the readable preprocessed output to a .txt file
 #     txt_path = output_path.replace(".json", ".txt")
 #     with open(txt_path, "w") as f:
 #         f.write(preprocessed)
@@ -159,7 +159,7 @@ def save_output_as_json(text_output, output_path):
 
 
 # def parse_srs_to_json(text):
-#      # ⚠️ Check for structure tokens
+#      #Check for structure tokens
 #     missing = []
 #     if '[SEC]' not in text:
 #         missing.append('[SEC]')
@@ -226,7 +226,7 @@ def save_output_as_json(text_output, output_path):
 
 def parse_srs_to_json(text, strict_mode=True):
     if strict_mode and not any(tok in text for tok in ['[SEC]', '[SUBSEC]', '[SUBSUBSEC]']):
-        logger.warning("⚠️ No structure tokens found — skipping parse.")
+        logger.warning("No structure tokens found — skipping parse.")
         return {"raw_text": text.strip()}
 
 
