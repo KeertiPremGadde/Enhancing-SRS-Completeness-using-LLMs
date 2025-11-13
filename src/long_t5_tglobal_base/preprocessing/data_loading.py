@@ -46,9 +46,9 @@
 #         }
 #         for name, path in paths.items():
 #             if not os.path.exists(path):
-#                 logger.error(f"❌ {name} not found: {path}")
+#                 logger.error(f" {name} not found: {path}")
 #             else:
-#                 logger.info(f"✓ {name} exists: {path}")
+#                 logger.info(f" {name} exists: {path}")
 
 #     def load_tokenizer(self) -> None:
 #         self.tokenizer = AutoTokenizer.from_pretrained(self.config["model"]["tokenizer_path"])
@@ -183,7 +183,7 @@
 
 # if __name__ == "__main__":
 #     try:
-#         logger.info("✅ Debug: Initializing and testing LongT5DataLoader")
+#         logger.info(" Debug: Initializing and testing LongT5DataLoader")
 #         loader = LongT5DataLoader()
 #         train_loader = loader.get_dataloader("train")
 #         for batch in train_loader:
@@ -236,9 +236,9 @@
 #         self.load_tokenizer()
 
 #         if self.remove_structural_tokens:
-#             logger.warning("⚠️ Structural tokens will be removed from inputs and outputs (ablation test enabled).")
+#             logger.warning(" Structural tokens will be removed from inputs and outputs (ablation test enabled).")
 #         else:
-#             logger.info("✅ Structural tokens will be retained.")
+#             logger.info(" Structural tokens will be retained.")
 
 #     def _load_config(self, config_path: str) -> Dict:
 #         with open(config_path, 'r') as f:
@@ -251,7 +251,7 @@
 #         }
 #         for name, path in paths.items():
 #             if not os.path.exists(path):
-#                 logger.error(f"❌ {name} not found: {path}")
+#                 logger.error(f" {name} not found: {path}")
 #             else:
 #                 logger.info(f"✓ {name} exists: {path}")
 
@@ -259,13 +259,13 @@
 #         #self.tokenizer = AutoTokenizer.from_pretrained(self.config["model"]["tokenizer_path"])
 #         self.tokenizer = T5TokenizerFast.from_pretrained(self.config["model"]["path"])
 #         #self.tokenizer.add_tokens(['[SEC]', '[SUBSEC]', '[SUBSUBSEC]', '[/SEC]', '[/SUBSEC]', '[/SUBSUBSEC]'])
-#         # ✅ Add logs here for debugging tokenizer
+#         #  Add logs here for debugging tokenizer
 #         logger.info(f"Tokenizer loaded from: {self.config['model']['path']}")
 #         logger.info(f"Special tokens in tokenizer vocab: {self.tokenizer.additional_special_tokens}")
 #         logger.info(f"Tokenizer size: {len(self.tokenizer)}")
 #         if self.remove_structural_tokens:
 #             assert all(tok not in self.tokenizer.get_vocab() for tok in ["[SEC]", "[SUBSEC]", "[SUBSUBSEC]"]), \
-#                 "⚠️ Structural tokens still present in tokenizer during ablation!"
+#                 " Structural tokens still present in tokenizer during ablation!"
 
 #     def flatten_srs_to_text(self, srs_dict) -> str:
 #         def flatten(node):
@@ -386,11 +386,11 @@
 
 # if __name__ == "__main__":
 #     try:
-#         logger.info("✅ Debug: Initializing and testing LongT5DataLoader")
-#         loader = LongT5DataLoader(remove_structural_tokens=True)  # 👈 Set this to False to disable ablation
+#         logger.info(" Debug: Initializing and testing LongT5DataLoader")
+#         loader = LongT5DataLoader(remove_structural_tokens=True)  # Set to False to disable ablation
 #         train_loader = loader.get_dataloader("train")
 #         for batch in train_loader:
-#             logger.info(f"✓ Test batch loaded: input shape {batch['input_ids'].shape}, labels shape {batch['labels'].shape}")
+#             logger.info(f" Test batch loaded: input shape {batch['input_ids'].shape}, labels shape {batch['labels'].shape}")
 #             break
 #     except Exception as e:
 #         logger.error(f"Error during testing: {e}", exc_info=True)
@@ -436,9 +436,9 @@ class LongT5DataLoader:
         self.load_tokenizer()
 
         if self.remove_structural_tokens:
-            logger.warning("⚠️ Structural tokens will be removed from inputs and outputs (ablation test enabled).")
+            logger.warning(" Structural tokens will be removed from inputs and outputs (ablation test enabled).")
         else:
-            logger.info("✅ Structural tokens will be retained.")
+            logger.info(" Structural tokens will be retained.")
 
     def _load_config(self, config_path: str) -> Dict:
         with open(config_path, 'r') as f:
@@ -451,21 +451,21 @@ class LongT5DataLoader:
         }
         for name, path in paths.items():
             if not os.path.exists(path):
-                logger.error(f"❌ {name} not found: {path}")
+                logger.error(f" {name} not found: {path}")
             else:
-                logger.info(f"✓ {name} exists: {path}")
+                logger.info(f" {name} exists: {path}")
 
     def load_tokenizer(self) -> None:
         #self.tokenizer = AutoTokenizer.from_pretrained(self.config["model"]["tokenizer_path"])
         self.tokenizer = T5TokenizerFast.from_pretrained(self.config["model"]["path"])
         #self.tokenizer.add_tokens(['[SEC]', '[SUBSEC]', '[SUBSUBSEC]', '[/SEC]', '[/SUBSEC]', '[/SUBSUBSEC]'])
-        # ✅ Add logs here for debugging tokenizer
+        #  Add logs here for debugging tokenizer
         logger.info(f"Tokenizer loaded from: {self.config['model']['path']}")
         logger.info(f"Special tokens in tokenizer vocab: {self.tokenizer.additional_special_tokens}")
         logger.info(f"Tokenizer size: {len(self.tokenizer)}")
         if self.remove_structural_tokens:
             assert all(tok not in self.tokenizer.get_vocab() for tok in ["[SEC]", "[SUBSEC]", "[SUBSUBSEC]"]), \
-                "⚠️ Structural tokens still present in tokenizer during ablation!"
+                " Structural tokens still present in tokenizer during ablation!"
 
     def flatten_srs_to_text(self, srs_dict) -> str:
         def flatten(node):
@@ -533,14 +533,14 @@ class LongT5DataLoader:
             input_encoding["input_ids"],
             input_encoding["attention_mask"],
             #output_encoding["input_ids"]
-            labels  # 👈 Return the fixed labels
+            labels  # Return the fixed labels
         )
 
     def __getitem__(self, idx):
         if not hasattr(self, 'processed_items'):
             self.processed_items = self.load_dataset()
         item = self.processed_items[idx]
-        # ⛳ Optional debug check
+        # Optional debug check
         assert item[2].shape[1] == self.max_output_length, f"Label length mismatch: {item[2].shape[1]}"
         
         return {
@@ -600,8 +600,8 @@ class LongT5DataLoader:
 
 if __name__ == "__main__":
     try:
-        logger.info("✅ Debug: Initializing and testing LongT5DataLoader")
-        loader = LongT5DataLoader(remove_structural_tokens=True)  # 👈 Set this to False to disable ablation
+        logger.info(" Debug: Initializing and testing LongT5DataLoader")
+        loader = LongT5DataLoader(remove_structural_tokens=True)  # Set this to False to disable ablation
         train_loader = loader.get_dataloader("train")
         for batch in train_loader:
             logger.info(f"✓ Test batch loaded: input shape {batch['input_ids'].shape}, labels shape {batch['labels'].shape}")
