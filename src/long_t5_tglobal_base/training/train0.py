@@ -44,7 +44,7 @@
 # def train():
 #     set_seed()
 
-#     logger.info("✅ Initializing DataLoader and Config")
+#     logger.info(" Initializing DataLoader and Config")
 #     data_loader = LongT5DataLoader()
 #     config = data_loader.config
 
@@ -64,7 +64,7 @@
 #             task_type="SEQ_2_SEQ_LM"
 #         )
 #         model = get_peft_model(model, lora_cfg)
-#         logger.info("🔗 LoRA adapters added.")
+#         logger.info(" LoRA adapters added.")
 
 #     tokenizer = data_loader.tokenizer
 
@@ -343,27 +343,27 @@ def save_checkpoint(model, optimizer, scheduler, epoch, save_dir, config, is_bes
     # torch.save(ckpt, os.path.join(save_dir, 'checkpoints', f"epoch_{epoch+1}.pth"))
     # if is_best:
     #     torch.save(ckpt, os.path.join(save_dir, 'checkpoints', 'best_model.pth'))
-    #     logger.info("💎 Best model checkpoint saved")
+    #     logger.info(" Best model checkpoint saved")
     
     # if is_best:
     #     torch.save(ckpt, os.path.join(save_dir, 'checkpoints', 'best_model.pth'))
-    #     logger.info("💎 Best model checkpoint saved")
+    #     logger.info(" Best model checkpoint saved")
 
     # # Save periodic checkpoints only on intervals (not best)
     # if not is_best and (epoch + 1) % config['training'].get('save_interval', 1) == 0:
     #     torch.save(ckpt, os.path.join(save_dir, 'checkpoints', f"epoch_{epoch+1}.pth"))
-    #     logger.info(f"📝 Checkpoint saved at epoch {epoch+1}")
+    #     logger.info(f" Checkpoint saved at epoch {epoch+1}")
 
     if is_best:
         path = os.path.join(save_dir, 'checkpoints', 'best_model.pth')
         torch.save(ckpt, path)
-        logger.info("💎 Best model checkpoint saved")
+        logger.info(" Best model checkpoint saved")
         logger.info(f"Saved checkpoint to {path}")
 
     if not is_best and (epoch + 1) % config['training'].get('save_interval', 1) == 0:
         path = os.path.join(save_dir, 'checkpoints', f"epoch_{epoch+1}.pth")
         torch.save(ckpt, path)
-        logger.info(f"📝 Checkpoint saved at epoch {epoch+1}")
+        logger.info(f" Checkpoint saved at epoch {epoch+1}")
         logger.info(f"Saved checkpoint to {path}")
     
 
@@ -385,13 +385,13 @@ def plot_metrics(train_losses, val_losses, perplexities, save_path):
 def train():
     set_seed()
 
-    logger.info("✅ Initializing DataLoader and Config")
-    #logger.info("🧪 Running in ablation mode: structural tokens will be stripped")
+    logger.info(" Initializing DataLoader and Config")
+    #logger.info(" Running in ablation mode: structural tokens will be stripped")
     data_loader = LongT5DataLoader(remove_structural_tokens=True)
     if data_loader.remove_structural_tokens:
-        logger.info("🧪 Running in ablation mode: structural tokens will be stripped")
+        logger.info(" Running in ablation mode: structural tokens will be stripped")
     else:
-        logger.info("✅ Structural tokens included in training")
+        logger.info(" Structural tokens included in training")
 
     config = data_loader.config
 
@@ -401,10 +401,10 @@ def train():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = LongT5ForConditionalGeneration.from_pretrained(config["model"]["path"]).to(device)
 
-    # 🔍 Log and optionally override dropout
+    #  Log and optionally override dropout
     logger.info(f"Model dropout: {model.config.dropout_rate}")
     model.config.dropout_rate = 0.0  # set to 0.0 to disable dropout during training (ablation)
-    logger.info("🔧 Overriding dropout rate to 0.0 for ablation")
+    logger.info(" Overriding dropout rate to 0.0 for ablation")
 
     if not config.get("debug_mode", True):
         lora_cfg = LoraConfig(
@@ -416,7 +416,7 @@ def train():
             task_type="SEQ_2_SEQ_LM"
         )
         model = get_peft_model(model, lora_cfg)
-        logger.info("🔗 LoRA adapters added.")
+        logger.info(" LoRA adapters added.")
         logger.info(f"LoRA config: r={lora_cfg.r}, alpha={lora_cfg.lora_alpha}, dropout={lora_cfg.lora_dropout}")
 
         total = sum(p.numel() for p in model.parameters())
@@ -428,12 +428,12 @@ def train():
     logger.info(f"Additional: {tokenizer.additional_special_tokens}")
     logger.info(f"IDs: {tokenizer.convert_tokens_to_ids(['[SEC]', '[SUBSEC]', '[SUBSUBSEC]'])}")
     #sys.exit()
-    # ✅ NEW: Confirm special tokens are not in tokenizer if ablation mode
+    # Confirm special tokens are not in tokenizer if ablation mode
     logger.info(f"Tokenizer size: {len(tokenizer)}")
     logger.info(f"Special tokens in tokenizer vocab: {tokenizer.additional_special_tokens}")
     #assert all(tok not in tokenizer.get_vocab() for tok in ["[SEC]", "[SUBSEC]", "[SUBSUBSEC]"]), \
-    #    "⚠️ Structural tokens still present in tokenizer!"
-    assert all(tok not in tokenizer.get_vocab() for tok in ["[SEC]", "[SUBSEC]", "[SUBSUBSEC]"]), "⚠️ Structural tokens still present in tokenizer!"
+    #    " Structural tokens still present in tokenizer!"
+    assert all(tok not in tokenizer.get_vocab() for tok in ["[SEC]", "[SUBSEC]", "[SUBSUBSEC]"]), " Structural tokens still present in tokenizer!"
 
 
     optimizer = torch.optim.AdamW(model.parameters(), lr=config['training']['learning_rate'])
@@ -477,43 +477,43 @@ def train():
             # Replace any invalid values < -1
             invalid_mask = labels < -1
             if invalid_mask.any():
-                logger.warning("⚠️ Found label tokens less than -1 (invalid). Fixing them.")
+                logger.warning(" Found label tokens less than -1 (invalid). Fixing them.")
                 labels = torch.where(invalid_mask, labels.new_full(labels.shape, -100), labels)
 
             # Replace tokens >= vocab size
             if (labels >= model.config.vocab_size).any():
-                logger.warning("⚠️ Found label tokens outside vocab size. Fixing them.")
+                logger.warning(" Found label tokens outside vocab size. Fixing them.")
                 labels = torch.where(labels >= model.config.vocab_size, labels.new_full(labels.shape, -100), labels)
 
             invalid_tokens = (labels < -1).sum().item()
             if invalid_tokens > 0:
-                logger.warning(f"🧨 Number of label tokens < -1: {invalid_tokens}")
+                logger.warning(f" Number of label tokens < -1: {invalid_tokens}")
 
-            # ✅ Final catch: Only -100 should remain below 0
+            #  Final catch: Only -100 should remain below 0
             if (labels < -1).any():
                 offending = labels[labels < -1]
                 if (offending != -100).any():
-                    logger.warning(f"⚠️ Found truly invalid tokens < -1 (not -100): {offending}")
+                    logger.warning(f" Found truly invalid tokens < -1 (not -100): {offending}")
                 else:
-                    logger.info("ℹ️ Labels contain only expected -100 ignore tokens.")
+                    logger.info(" Labels contain only expected -100 ignore tokens.")
 
             # (Optional) log sample bad values
             if invalid_mask.any() and epoch == 0 and step == 0:
                 bad_vals = labels[invalid_mask]
-                logger.warning(f"🔍 Invalid label values: {bad_vals[:10]}")
+                logger.warning(f" Invalid label values: {bad_vals[:10]}")
 
-            # ✅ DEBUG STRUCTURAL TOKENS IN LABELS
+            # DEBUG STRUCTURAL TOKENS IN LABELS
             if epoch == 0 and step == 0:
                 special_token_ids = [tokenizer.convert_tokens_to_ids(t) for t in ["[SEC]", "[SUBSEC]", "[SUBSUBSEC]"]]
                 logger.info(f"Special Token IDs: {special_token_ids}")
                 logger.info(f"Label sample (raw): {labels[0][:50]}")
                 for tok_id in special_token_ids:
                     if tok_id in labels[0]:
-                        logger.info(f"✅ Found special token ID {tok_id} in first label batch.")
+                        logger.info(f" Found special token ID {tok_id} in first label batch.")
                     else:
-                        logger.warning(f"⚠️ Special token ID {tok_id} NOT found in first label batch.")
+                        logger.warning(f" Special token ID {tok_id} NOT found in first label batch.")
 
-                # ✅ Decode label to check structural tokens in text
+                #  Decode label to check structural tokens in text
                 safe_label_ids = labels[0][labels[0] != -100].tolist()
                 decoded = tokenizer.decode(safe_label_ids, skip_special_tokens=True)
                 logger.info(f"Decoded label: {decoded[:300]}")
@@ -533,7 +533,7 @@ def train():
             #labels = torch.where(labels < -1, labels.new_tensor(-100), labels) 
             
             
-            # ✅ ADD THIS SAFETY CHECK HERE
+            #  ADD THIS SAFETY CHECK HERE
             #assert labels.shape[1] == model.config.max_length, f"Label length mismatch: got {labels.shape[1]} vs expected {model.config.max_length}"
             #assert labels.shape[1] <= model.config.max_length, f"Label too long: {labels.shape[1]} > {model.config.max_length}"
 
@@ -561,10 +561,10 @@ def train():
                     tok_id = tokenizer.convert_tokens_to_ids(token)
                     weight[tok_id] = 1.5
                 loss_fct = CrossEntropyLoss(weight=weight, ignore_index=-100)
-                logger.info("🎯 Using structural token-weighted loss.")
+                logger.info(" Using structural token-weighted loss.")
             else:
                 loss_fct = CrossEntropyLoss(ignore_index=-100)
-                logger.info("🔬 Using unweighted CrossEntropyLoss (ablation mode).")
+                logger.info(" Using unweighted CrossEntropyLoss (ablation mode).")
 
             loss = loss_fct(logits, target)
 
@@ -573,7 +573,7 @@ def train():
                 logger.info(f"Unweighted loss: {unweighted_loss:.4f}, Structural loss: {loss.item():.4f}")
 
             if torch.isnan(loss):
-                logger.warning("⚠️ Loss is NaN. Skipping step.")
+                logger.warning(" Loss is NaN. Skipping step.")
                 continue
 
             # # --- Normal loss version ---
@@ -589,7 +589,7 @@ def train():
             progress.set_postfix({"loss": loss.item()})
 
             # if epoch == 0 and step == 0:
-            #     logger.info(f"🔍 First batch decoded:")
+            #     logger.info(f" First batch decoded:")
             #     label_ids = labels[0]
             #     label_ids = label_ids[label_ids != -100]  # filter out ignored label positions
             #     #logger.info(tokenizer.decode(label_ids, skip_special_tokens=False))
@@ -602,9 +602,9 @@ def train():
     
             #     # === C: Check for invalid token IDs ===
             #     if (labels > tokenizer.vocab_size).any():
-            #         logger.warning("⚠️ Found label tokens outside vocab size")
+            #         logger.warning(" Found label tokens outside vocab size")
             #     if (labels < -1).any():
-            #         logger.warning("⚠️ Found label tokens less than -1 (invalid)")
+            #         logger.warning(" Found label tokens less than -1 (invalid)")
 
             #     # === Optional: Decode safely to avoid overflow ===
             #     try:
@@ -614,7 +614,7 @@ def train():
             #         logger.warning(f"Decode failed due to overflow: {e}")
 
             if epoch == 0 and step == 0:
-                logger.info(f"🔍 First batch decoded:")
+                logger.info(f" First batch decoded:")
 
                 # === B: Print shapes and label sample ===
                 logger.info(f"input_ids shape: {input_ids.shape}")
@@ -624,10 +624,10 @@ def train():
     
                 # === C: Check for invalid token IDs ===
                 if (labels > tokenizer.vocab_size).any():
-                    logger.warning("⚠️ Found label tokens outside vocab size")
+                    logger.warning(" Found label tokens outside vocab size")
                 if (labels < -1).any():
-                    logger.warning("⚠️ Found label tokens less than -1 (invalid)")
-                    logger.warning(f"⚠️ Offending label values: {labels[labels < -1][:10].tolist()}")
+                    logger.warning(" Found label tokens less than -1 (invalid)")
+                    logger.warning(f" Offending label values: {labels[labels < -1][:10].tolist()}")
 
                 # === Optional: Decode safely to avoid overflow ===
                 try:
@@ -640,13 +640,13 @@ def train():
                     logger.info(f"Decoded label: {decoded[:300]}")
                 except OverflowError as e:
                     #logger.warning(f"Decode failed due to overflow: {e}")
-                    logger.warning(f"⚠️ Safe decode failed: {e}")
+                    logger.warning(f" Safe decode failed: {e}")
 
         avg_train_loss = total_loss / len(train_loader)
         train_losses.append(avg_train_loss)
         logger.info(f"Epoch {epoch+1}: Training Loss = {avg_train_loss:.4f}")
 
-        logger.info(f"🕒 Epoch {epoch+1} time: {(time.time() - start_time) / 60:.2f} min")
+        logger.info(f" Epoch {epoch+1} time: {(time.time() - start_time) / 60:.2f} min")
 
         # --- Validation Loop ---
         model.eval()
@@ -692,7 +692,7 @@ def train():
                 is_best = False
                 epochs_no_improve += 1
                 if epochs_no_improve >= config["training"]["early_stopping"]["patience"]:
-                    logger.info(f"⏹️ Early stopping triggered. No significant improvement in {epochs_no_improve} epochs.")
+                    logger.info(f" Early stopping triggered. No significant improvement in {epochs_no_improve} epochs.")
                     break
         else:
             is_best = avg_val_loss < best_val_loss
@@ -737,7 +737,7 @@ def train():
         bleu = bleu_result['bleu']
 
 
-        # ✅ Add BERTScore computation here
+        # Add BERTScore computation here
         P, R, F1 = bert_score.score(predictions, [ref[0] for ref in references], lang="en", verbose=False)
         bert_f1 = F1.mean().item()
         bert_precision = P.mean().item()
@@ -781,7 +781,7 @@ def train():
         plot_metrics(train_losses, val_losses, perplexities, os.path.join(save_dir, "results"))
 
     if isinstance(model, PeftModel):
-        logger.info("💾 Saving LoRA model...")
+        logger.info(" Saving LoRA model...")
         adapter_dir = os.path.join(save_dir, "checkpoints")
         model.save_pretrained(adapter_dir)
         tokenizer.save_pretrained(adapter_dir)
