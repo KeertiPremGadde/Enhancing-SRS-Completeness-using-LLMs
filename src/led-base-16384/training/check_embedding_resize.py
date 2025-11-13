@@ -18,24 +18,24 @@ print(f"Tokenizer vocab size: {tokenizer_vocab_size}")
 print(f"Model vocab size:     {model_vocab_size}")
 
 if tokenizer_vocab_size != model_vocab_size:
-    print("❌ Mismatch detected — Model embedding size does not match tokenizer vocab.")
+    print(" Mismatch detected — Model embedding size does not match tokenizer vocab.")
 else:
-    print("✅ Vocab size match confirmed.")
+    print(" Vocab size match confirmed.")
 
-# === Check special token IDs ===
+#Check special token IDs
 special_tokens = ['[SEC]', '[SUBSEC]', '[SUBSUBSEC]']
 print("\n=== Special Token ID Check ===")
 for token in special_tokens:
     token_id = tokenizer.convert_tokens_to_ids(token)
     print(f"{token} → Token ID: {token_id}")
     if token_id >= model_vocab_size:
-        print(f"❌ Token ID {token_id} exceeds model vocab size!")
+        print(f" Token ID {token_id} exceeds model vocab size!")
     elif token_id == tokenizer.unk_token_id:
-        print(f"❌ Token {token} is unknown (UNK) — not added to tokenizer?")
+        print(f" Token {token} is unknown (UNK) — not added to tokenizer?")
     else:
-        print(f"✅ Token {token} is valid and within range.")
+        print(f" Token {token} is valid and within range.")
 
-# === Optional: Inspect sample label input ===
+#Sample label input
 sample_text = "[SEC] 1. Introduction [SUBSEC] 1.1 Purpose [SUBSUBSEC] 1.1.1 Detail"
 encoded = tokenizer(
     sample_text,
@@ -49,8 +49,6 @@ print(f"\n=== Max Token ID in Sample Text ===")
 print(f"Max token ID: {max_token_id}")
 print(f"Model vocab size: {model_vocab_size}")
 if max_token_id >= model_vocab_size:
-    print("❌ Sample token ID exceeds model vocab — training will crash.")
+    print(" Sample token ID exceeds model vocab — training will crash.")
 else:
-    print("✅ Sample is safe for training.")
-
-# === DONE ===
+    print(" Sample is safe for training.")
