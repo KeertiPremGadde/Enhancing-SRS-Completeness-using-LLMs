@@ -80,12 +80,12 @@ def run_analysis():
         "custom_token_check": {},
     }
     
-    # ✅ INSERT HERE — 1. Last 50 tokens in vocab
+    # 1. Last 50 tokens in vocab
     vocab_items = list(tokenizer.get_vocab().items())
     vocab_items_sorted = sorted(vocab_items, key=lambda x: x[1])  # Sort by ID
     analysis["vocabulary"]["last_50_tokens"] = vocab_items_sorted[-50:]
 
-    # ✅ INSERT HERE — 2. Extra token vectors analysis
+    # 2. Extra token vectors analysis
     extra_token_vectors = []
     for i in range(100):
         token = f"<extra_id_{i}>"
@@ -100,7 +100,7 @@ def run_analysis():
         "embedding_shape": list(extra_token_matrix.shape)
     }
 
-    # ✅ INSERT HERE — 3. Norm stats for all tokens
+    # 3. Norm stats for all tokens
     embedding_norms = embedding_weight.norm(p=2, dim=1).detach().cpu().numpy()
     analysis["embeddings"]["norm_stats"] = {
         "mean_norm": float(np.mean(embedding_norms)),
@@ -110,12 +110,12 @@ def run_analysis():
     }
     np.save(os.path.join(OUTPUT_DIR, "embedding_norms.npy"), embedding_norms)
 
-    # ✅ INSERT HERE — 4. Save embedding clone (first 32100 rows)
+    # 4. Save embedding clone (first 32100 rows)
     embedding_core = embedding_weight[:32100].detach().cpu()
     torch.save(embedding_core, os.path.join(OUTPUT_DIR, "embedding_core_32100.pt"))
     np.save(os.path.join(OUTPUT_DIR, "embedding_core_32100.npy"), embedding_core.numpy())
 
-    # ✅ INSERT HERE — 5. Save <extra_id_*> token mappings explicitly
+    # 5. Save <extra_id_*> token mappings explicitly
     extra_ids = [f"<extra_id_{i}>" for i in range(100)]
     extra_token_info = {
         tok: tokenizer.convert_tokens_to_ids(tok)
@@ -144,7 +144,7 @@ def run_analysis():
         }
 
     save_json(analysis, "baseline_metrics.json")
-    print("✅ Pre-tokenization analysis complete.")
+    print(" Pre-tokenization analysis complete.")
 
 if __name__ == "__main__":
     run_analysis()
