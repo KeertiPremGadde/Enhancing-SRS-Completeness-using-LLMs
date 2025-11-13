@@ -13,7 +13,6 @@ import sys
 sys.path.append('/home/gadde/Thesis/src/led-base-16384')
 from transformers import LEDForConditionalGeneration, get_linear_schedule_with_warmup
 from training.seeding import set_deterministic_seed, seed_worker, get_torch_generator
-# Call this FIRST
 set_deterministic_seed(42)
 from peft import LoraConfig, get_peft_model
 from rouge_score import rouge_scorer
@@ -163,7 +162,7 @@ def inspect_lora_dropout(model):
 def train(model, train_loader, val_loader, optimizer, scheduler, config, device, tokenizer):
     """Complete training loop"""
     logger.info("Starting training...")
-    #set_seed(config.get("seed", 42))  # 👈 seed call early
+    #set_seed(config.get("seed", 42))  # seed call early
     if torch.cuda.is_available():
         log_gpu_memory()
         torch.cuda.empty_cache()
@@ -231,10 +230,10 @@ def train(model, train_loader, val_loader, optimizer, scheduler, config, device,
         model.train()
          # Confirm LoRA modules are active
         if isinstance(model, torch.nn.Module) and hasattr(model, "peft_config"):
-            logger.info("✅ Training with LoRA-enabled model.")
+            logger.info(" Training with LoRA-enabled model.")
             inspect_lora_dropout(model)
         else:
-            logger.info("⚠️ LoRA not active — training full model.")
+            logger.info(" LoRA not active — training full model.")
         epoch_loss = 0
         progress_bar = tqdm(train_loader, desc=f'Epoch {epoch+1}/{num_epochs}', leave=True, dynamic_ncols=True)
         
@@ -245,14 +244,14 @@ def train(model, train_loader, val_loader, optimizer, scheduler, config, device,
                 attention_mask = batch['attention_mask'][:, :max_decoder_length].to(device)
                 global_attention_mask = batch['global_attention_mask'][:, :max_decoder_length].to(device)
                 labels = batch['labels'][:, :max_decoder_length].to(device)
-                print("🔍 Decoded labels[0]:\n", tokenizer.decode(labels[0], skip_special_tokens=False))
+                print(" Decoded labels[0]:\n", tokenizer.decode(labels[0], skip_special_tokens=False))
                 #exit()
 
 
                 if epoch == 0 and batch_idx % 200 == 0:
                     label_ids = labels[0]
-                    logger.info(f"🧠 Label Tokens: {tokenizer.convert_ids_to_tokens(label_ids.tolist())}")
-                    logger.info(f"🧠 Label Text: {tokenizer.decode(label_ids, skip_special_tokens=False)}")
+                    logger.info(f" Label Tokens: {tokenizer.convert_ids_to_tokens(label_ids.tolist())}")
+                    logger.info(f" Label Text: {tokenizer.decode(label_ids, skip_special_tokens=False)}")
 
                 # Debug first batch
                 if epoch == 0 and batch_idx == 0:
@@ -263,11 +262,11 @@ def train(model, train_loader, val_loader, optimizer, scheduler, config, device,
                     logger.info(f"Labels shape: {labels.shape}")
                     
                     # Verify dimensions match
-                    # ✅ Encoder inputs must align
+                    # Encoder inputs must align
                     assert input_ids.size(1) == attention_mask.size(1) == global_attention_mask.size(1), \
                         "Encoder input dimensions must match"
 
-                    # ✅ Decoder labels should match model's max decoder length
+                    # Decoder labels should match model's max decoder length
                     assert labels.size(1) == model.config.max_decoder_position_embeddings, \
                         f"Labels length must match decoder max length: expected {model.config.max_decoder_position_embeddings}, got {labels.size(1)}"
                     
@@ -403,8 +402,8 @@ def train(model, train_loader, val_loader, optimizer, scheduler, config, device,
                 decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=False)
 
                 if batch_idx % 200 == 0:
-                    logger.info(f"🧾 Raw token IDs: {preds[0]}")
-                    logger.info(f"🧾 Decoded (no skip): {tokenizer.decode(preds[0], skip_special_tokens=False)}")
+                    logger.info(f" Raw token IDs: {preds[0]}")
+                    logger.info(f" Decoded (no skip): {tokenizer.decode(preds[0], skip_special_tokens=False)}")
 
                     #Comment out for non structural tokens run
                     structure_tokens = ["[SEC]", "[SUBSEC]", "[SUBSUBSEC]"]
@@ -412,7 +411,7 @@ def train(model, train_loader, val_loader, optimizer, scheduler, config, device,
                         pred_count = decoded_preds[0].count(tok)
                         label_count = decoded_labels[0].count(tok)
                         match_count = min(pred_count, label_count)
-                        logger.info(f"📐 {tok} — Predicted: {pred_count}, Target: {label_count}, Matched approx: {match_count}")
+                        logger.info(f" {tok} — Predicted: {pred_count}, Target: {label_count}, Matched approx: {match_count}")
 
                 
                 
@@ -429,16 +428,16 @@ def train(model, train_loader, val_loader, optimizer, scheduler, config, device,
                 predictions.extend(decoded_preds)
                 references.extend(decoded_labels)
 
-                # 👇 This will print every 200 batches during the first epoch only.
+                # Print every 200 batches during the first epoch only.
                 if epoch == 0 and batch_idx % 200 == 0:
-                    logger.info(f"🔁 [Predicted]:\n{decoded_preds[0][:300]}")
-                    logger.info(f"✅ [Reference]:\n{decoded_labels[0][:300]}")
+                    logger.info(f" [Predicted]:\n{decoded_preds[0][:300]}")
+                    logger.info(f" [Reference]:\n{decoded_labels[0][:300]}")
 
                 if batch_idx % 100 == 0:
                     val_progress.set_postfix({'val_loss': outputs.loss.item()})
             
             # After the validation loop — log final stats
-            logger.info("📊 Structure Token Match Summary (Validation):")
+            logger.info(" Structure Token Match Summary (Validation):")
             for tok in structure_tokens:
                 pred = token_match_stats[tok]["pred"]
                 label = token_match_stats[tok]["label"]
@@ -466,9 +465,9 @@ def train(model, train_loader, val_loader, optimizer, scheduler, config, device,
         #         early_stop_counter = 0
         #     else:
         #         early_stop_counter += 1
-        #         logger.info(f"⚠️ Early stopping patience: {early_stop_counter} / {config['training']['early_stopping']['patience']}")
+        #         logger.info(f" Early stopping patience: {early_stop_counter} / {config['training']['early_stopping']['patience']}")
         #         if early_stop_counter >= config['training']['early_stopping']['patience']:
-        #             logger.info("🛑 Early stopping triggered.")
+        #             logger.info(" Early stopping triggered.")
         #             break
 
         # === Early stopping logic ===
@@ -479,14 +478,14 @@ def train(model, train_loader, val_loader, optimizer, scheduler, config, device,
         if avg_val_loss < best_val_loss - min_delta:
             best_val_loss = avg_val_loss
             early_stop_counter = 0
-            logger.info(f"✅ Validation loss improved to {avg_val_loss:.6f}")
+            logger.info(f" Validation loss improved to {avg_val_loss:.6f}")
             # Optional: Save best model checkpoint here
             torch.save(model.state_dict(), os.path.join(config['training']['save_dir'], "best_model.pth"))
         else:
             early_stop_counter += 1
-            logger.info(f"⚠️ Early stopping patience: {early_stop_counter} / {patience}")
+            logger.info(f" Early stopping patience: {early_stop_counter} / {patience}")
             if early_stop_counter >= patience:
-                logger.info("🛑 Early stopping triggered. Stopping training.")
+                logger.info(" Early stopping triggered. Stopping training.")
                 break
 
 
@@ -523,7 +522,7 @@ def train(model, train_loader, val_loader, optimizer, scheduler, config, device,
                 save_dir, epoch, config=config
             )
 
-            logger.info(f"📊 Metrics (ROUGE, BLEU, BERTScore) saved to: {os.path.join(save_dir, 'results', 'metrics.json')}")
+            logger.info(f" Metrics (ROUGE, BLEU, BERTScore) saved to: {os.path.join(save_dir, 'results', 'metrics.json')}")
 
         
         # Save checkpoints
@@ -549,12 +548,12 @@ def train(model, train_loader, val_loader, optimizer, scheduler, config, device,
             )
 
 
-        # ✅ Save LoRA adapter (if LoRA is used)
+        # Save LoRA adapter (if LoRA is used)
         if isinstance(model, PeftModel):
-            logger.info("💾 Saving LoRA adapter model...")
+            logger.info(" Saving LoRA adapter model...")
             model.save_pretrained(os.path.join(save_dir, 'checkpoints'))
 
-            logger.info("💾 Saving tokenizer files...")
+            logger.info(" Saving tokenizer files...")
             tokenizer.save_pretrained(os.path.join(save_dir, 'checkpoints'))
         
         # Save best model
@@ -587,12 +586,12 @@ def train(model, train_loader, val_loader, optimizer, scheduler, config, device,
         if torch.cuda.is_available():
             torch.cuda.empty_cache()
 
-        # ✅ Restore best model if early stopping was used
+        #  Restore best model if early stopping was used
     if config['training'].get('early_stopping', {}).get('enabled', False):
         best_model_path = os.path.join(config['training']['save_dir'], "best_model.pth")
         if os.path.exists(best_model_path):
             model.load_state_dict(torch.load(best_model_path))
-            logger.info("✅ Restored best model after early stopping.")
+            logger.info(" Restored best model after early stopping.")
     
     return train_losses, val_losses, perplexities, rougeL_scores, bleu4_scores, bert_f1_scores, save_dir
 
@@ -665,17 +664,17 @@ def print_model_config(model):
 
 def main():
     try:
-        #set_seed(42)  # 👈 Right here, only once for the whole script
+        #set_seed(42)  
         # Initialize data loader and get config
         data_loader = LEDDataLoader()
         config = data_loader.config
         validate_config(config)
 
-        # ✅ Debug: Inspect a sample flattened label before training
+        # Debug: Inspect a sample flattened label before training
         train_map = json.load(open(config['data']['train_mapping']))
         sample_path = train_map[0]['output']
         sample_label_flat = LEDDataLoader.flatten_srs_to_text(json.load(open(sample_path)))
-        logger.info("🧪 Sample training label (flattened):\n" + sample_label_flat[:1500])
+        logger.info(" Sample training label (flattened):\n" + sample_label_flat[:1500])
                
         # Set device
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -687,7 +686,7 @@ def main():
 
         # Disable dropout for overfit-debug mode
         # if config.get("debug_mode", False):
-        #     logger.info("⏩ Disabling dropout layers for overfit-debug mode...")
+        #     logger.info(" Disabling dropout layers for overfit-debug mode...")
         #     def disable_dropout(module):
         #         if isinstance(module, torch.nn.Dropout):
         #             module.p = 0.0
@@ -734,7 +733,7 @@ def main():
             model = get_peft_model(model, lora_config)
             logger.info("✓ LoRA adapters applied.")
         else:
-            logger.info("⏩ Skipping LoRA adapters (debug mode active)")
+            logger.info(" Skipping LoRA adapters (debug mode active)")
         
         # Print parameters after LoRA
         logger.info("=== Model Parameters (After LoRA) ===")
@@ -779,12 +778,12 @@ def main():
             tokenizer.save_pretrained(os.path.join(save_dir, "checkpoints"))  # optional but helpful
             logger.info(f"✓ LoRA adapter and tokenizer saved at: {save_dir}/checkpoints")
 
-        logger.info(f"📉 Final Training Losses: {train_losses}")
-        logger.info(f"📊 Final Validation Losses: {val_losses}")
-        logger.info(f"📈 Final Perplexities: {perplexities}")
-        logger.info(f"📉 Final ROUGE Scores: {rougeL_scores}")
-        logger.info(f"📊 Final BLEU Scores: {bleu4_scores}")
-        logger.info(f"📈 Final BERT F1 Scores: {bert_f1_scores}")
+        logger.info(f" Final Training Losses: {train_losses}")
+        logger.info(f" Final Validation Losses: {val_losses}")
+        logger.info(f" Final Perplexities: {perplexities}")
+        logger.info(f" Final ROUGE Scores: {rougeL_scores}")
+        logger.info(f" Final BLEU Scores: {bleu4_scores}")
+        logger.info(f" Final BERT F1 Scores: {bert_f1_scores}")
         logger.info("Training completed successfully!")
         
     except Exception as e:
