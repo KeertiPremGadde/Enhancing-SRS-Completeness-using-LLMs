@@ -2,14 +2,14 @@ import os
 import json
 import random
 
-# ✅ Define Base Paths for Cluster
+# Define Base Paths for Cluster
 BASE_PATH = "/home/gadde/Thesis/data"
 OUTPUT_PATH = os.path.join(BASE_PATH, "mappings")
 
-# ✅ Ensure output directory exists
+# Ensure output directory exists
 os.makedirs(OUTPUT_PATH, exist_ok=True)
 
-# ✅ Define dataset categories and their respective folders
+# Define dataset categories and their respective folders
 DATASETS = {
     "train": "train/easy",
     "val": "val/easy",
@@ -18,18 +18,18 @@ DATASETS = {
 
 CATEGORIES = ["structural_incompleteness", "requirement_coverage", "traceability", "requirement_quality_attributes"]
 
-# ✅ Define dataset splits for complete files
+# Define dataset splits for complete files
 TRAIN_COMPLETE_RANGE = range(1, 165)
 VAL_COMPLETE_RANGE = range(165, 209)
 TEST_COMPLETE_RANGE = range(209, 220)
 
-# ✅ Function to scan folders and create mappings
+# Function to scan folders and create mappings
 def generate_mappings(dataset_type, shuffle=False):
     mappings = []
     mapping_id = 1
     complete_srs_path = os.path.join(BASE_PATH, "complete")
     
-    # ✅ Add mappings for incomplete SRS files in the dataset
+    # Add mappings for incomplete SRS files in the dataset
     for category in CATEGORIES:
         category_path = os.path.join(BASE_PATH, DATASETS[dataset_type], category)
 
@@ -47,12 +47,12 @@ def generate_mappings(dataset_type, shuffle=False):
                     })
                     mapping_id += 1
 
-    # ✅ Special handling for training dataset (shuffle with repeatable randomness)
+    # Special handling for training dataset (shuffle with repeatable randomness)
     if shuffle:
         random.seed(42)  # Ensures repeatability
         random.shuffle(mappings)
 
-    # ✅ Add complete SRS mappings only within the dataset split
+    # Add complete SRS mappings only within the dataset split
     if os.path.exists(complete_srs_path):
         for filename in sorted(os.listdir(complete_srs_path)):
             if filename.startswith("complete_srs") and filename.endswith(".json"):
@@ -70,16 +70,16 @@ def generate_mappings(dataset_type, shuffle=False):
                     })
                     mapping_id += 1
 
-    # ✅ Save mappings to JSON file
+    # Save mappings to JSON file
     output_file = os.path.join(OUTPUT_PATH, f"{dataset_type}_mapping.json")
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(mappings, f, indent=4)
 
-    print(f"✅ {dataset_type}_mapping.json generated successfully!")
+    print(f" {dataset_type}_mapping.json generated successfully!")
 
-# ✅ Generate mappings for all datasets
+# Generate mappings for all datasets
 generate_mappings("train", shuffle=True)  # Training set (shuffled)
 generate_mappings("val", shuffle=False)   # Validation set (ordered)
 generate_mappings("test", shuffle=False)  # Test set (ordered)
 
-print("\n🚀 All mappings generated successfully!")
+print("\n All mappings generated successfully!")
