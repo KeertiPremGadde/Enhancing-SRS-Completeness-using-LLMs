@@ -103,7 +103,6 @@ def save_metrics(train_losses, val_losses, perplexities, rouge_scores, bleu_scor
         'current_epoch': epoch
     }
 
-    #Why this code is commented
     # if avg_rouge is not None and bleu_score is not None and bert_f1 is not None:
     #     json_metrics.update({
     #         'rougeL': avg_rouge,
@@ -136,7 +135,6 @@ def log_gpu_memory():
     except Exception as e:
         logger.warning(f"Failed to log GPU memory: {e}")
 
-# # At top of your script, is this required now?
 # def set_seed(seed: int = 42):
 
 #     random.seed(seed)
