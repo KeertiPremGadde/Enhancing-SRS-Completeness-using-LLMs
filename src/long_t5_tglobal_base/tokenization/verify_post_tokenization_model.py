@@ -14,7 +14,7 @@ model.lm_head.weight = model.get_input_embeddings().weight
 model.eval()
 
 # === DEBUG CHECKPOINT ===
-print("\n🔍 Sanity Debug Checkpoint")
+print("\n Sanity Debug Checkpoint")
 
 # 1.  Confirm token IDs for custom tokens
 specials = ["[SEC]", "[SUBSEC]", "[SUBSUBSEC]", "[/SEC]", "[/SUBSEC]", "[/SUBSUBSEC]"]
